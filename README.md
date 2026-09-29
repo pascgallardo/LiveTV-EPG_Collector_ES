@@ -1,10 +1,13 @@
 # LiveTVCollectorES
 
-A GitHub repository that automatically collects, filters, and exports live TV streaming links for Country/Category wise using GitHub Actions. This project fetches M3U playlists from multiple sources, removes duplicates, verifies active links, and exports them into various formats under the `LiveTV/Country Name/` directory.
+A GitHub repository that automatically collects, filters, and exports live TV streaming links per country using GitHub Actions. This project fetches M3U playlists from multiple sources, removes duplicates, and exports them into various formats under the `LiveTV/Country Name/` directory.
+
+Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVCollector), currently tracking **Spain**.
+
 # 📊 Project Stats
-[![GitHub forks](https://img.shields.io/github/forks/bugsfreeweb/LiveTVCollector?logo=forks&style=plastic)](https://github.com/bugsfreeweb/LiveTVCollector/network) [![GitHub stars](https://img.shields.io/github/stars/bugsfreeweb/LiveTVCollector)](https://github.com/bugsfreeweb/LiveTVCollector/stargazers) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-![GitHub issues](https://img.shields.io/github/issues/bugsfreeweb/LiveTVCollector)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/bugsfreeweb/LiveTVCollector)
+[![GitHub forks](https://img.shields.io/github/forks/pascgallardo/LiveTVCollectorES?logo=forks&style=plastic)](https://github.com/pascgallardo/LiveTVCollectorES/network) [![GitHub stars](https://img.shields.io/github/stars/pascgallardo/LiveTVCollectorES)](https://github.com/pascgallardo/LiveTVCollectorES/stargazers) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+![GitHub issues](https://img.shields.io/github/issues/pascgallardo/LiveTVCollectorES)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pascgallardo/LiveTVCollectorES)
 
 ## Online Useable Tools:
 <a href="https://gmtv.netlify.app" target="_blank"><img src="https://gmtv.netlify.app/img/gmtv.png" style="width:auto; height:60px" alt="GM TV Player"></a>
@@ -24,11 +27,14 @@ A GitHub repository that automatically collects, filters, and exports live TV st
 
 ## Features
 
-- **Automated Updates**: Runs every 8 hours (approximately 05:30, 13:30, 21:30 IST) via GitHub Actions.
-- **Large Source Handling**: Processes large M3U files efficiently with streaming to minimize memory usage.
-- **Active Link Verification**: Checks links for availability using concurrent requests (50 workers).
-- **Duplicate Removal**: Ensures no duplicate streams (based on URL) are included.
-- **HTML Source Parsing**: Extracts streaming URLs from HTML pages, filtering out non-stream links (e.g., Telegram, GitHub).
+- **Automated Updates**: Runs once a day at **12:00 mainland Spain time** via GitHub Actions. Because GitHub cron expressions are always interpreted in UTC and ignore daylight saving, the workflow is woken at both candidate hours (10:00 and 11:00 UTC) and a `gate` job checks `Europe/Madrid` with `zoneinfo` so only the correct one runs — `11:00 UTC` in winter (CET) and `10:00 UTC` in summer (CEST).
+- **Large Source Handling**: Streams M3U responses line by line instead of loading whole files, and only materialises the joined text for HTML sources that need parsing.
+- **Optional Active Link Verification**: Off by default for speed. Run `python BugsfreeMain/TV-Spain.py --check-links` to probe every stream with 10 concurrent workers (HEAD, falling back to GET and then to the alternate protocol). Results are cached per URL.
+- **Duplicate Removal**: Ensures no duplicate streams (based on URL) are included. When the same URL arrives from several playlists, the first source keeps ownership, but a `tvg-id` or `tvg-name` that the first one lacked is filled in from a later source.
+- **tvg-* Metadata**: `tvg-id` and `tvg-name` are read from the source `#EXTINF` lines and carried through to every export format. Attributes a source does not provide are simply omitted from the generated `#EXTINF` line.
+- **HTML Source Parsing**: A source ending in `.html` is scanned for nested playlist links, filtering out non-stream links (e.g., Telegram, GitHub).
+- **Deterministic Exports**: Groups and channels are sorted, so re-running without source changes produces identical files and no spurious commits.
+- **Web Hub (`index.html`)**: Static browser UI to browse the generated playlists, search channels, copy/download links, and track download statistics locally.
 - **Multiple Export Formats**:
   - `LiveTV.m3u`: Standard M3U playlist.
   - `LiveTV.txt`: Human-readable text format with detailed channel info.
@@ -38,18 +44,20 @@ A GitHub repository that automatically collects, filters, and exports live TV st
 ## Exported File Formats
 
 ### `LiveTV.m3u`
-Standard M3U playlist format:
+Standard M3U playlist format. `tvg-id` and `tvg-name` are emitted only when the source playlist provided them:
 ```
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://i.imgur.com/VQVr4Nk.png" group-title="Entertainment",Adventure TV
+#EXTINF:-1 tvg-id="AdventureTV.us" tvg-name="Adventure TV" tvg-logo="https://i.imgur.com/VQVr4Nk.png" group-title="Entertainment",Adventure TV
 http://109.233.89.170/Adventure_HD/index.m3u8
 ```
 
 ### `LiveTV.txt`
-Readable text format:
+Readable text format. `TvgID` and `TvgName` are written only when present:
 ```
 Group: Entertainment
 Name: Adventure TV
+TvgID: AdventureTV.us
+TvgName: Adventure TV
 URL: http://109.233.89.170/Adventure_HD/index.m3u8
 Logo: https://i.imgur.com/VQVr4Nk.png
 Source: https://example.com/source.m3u
@@ -65,6 +73,8 @@ Structured JSON with timestamp:
     "Entertainment": [
       {
         "name": "Adventure TV",
+        "tvg_id": "AdventureTV.us",
+        "tvg_name": "Adventure TV",
         "logo": "https://i.imgur.com/VQVr4Nk.png",
         "group": "Entertainment",
         "source": "https://example.com/source.m3u",
@@ -81,6 +91,8 @@ Custom JSON list without extension:
 [
   {
     "name": "Adventure TV",
+    "tvg_id": "AdventureTV.us",
+    "tvg_name": "Adventure TV",
     "type": "Entertainment",
     "url": "http://109.233.89.170/Adventure_HD/index.m3u8",
     "img": "https://i.imgur.com/VQVr4Nk.png"
@@ -102,7 +114,7 @@ Custom JSON list without extension:
    ```
 
 2. **Customize Sources** (Optional):
-   - Edit `BugsfreeMain/Country Name.py` to update the `source_urls` list with additional CountryName-specific M3U sources.
+   - Edit `BugsfreeMain/TV-Spain.py` to update the `source_urls` list with additional M3U sources.
 
 3. **Push Changes**:
    ```bash
@@ -113,7 +125,7 @@ Custom JSON list without extension:
 
 4. **Verify Workflow**:
    - Go to the "Actions" tab in your GitHub repository.
-   - The workflow "Country Name LiveTV Files" runs every 8 hours or can be triggered manually.
+   - The workflow "TV-Spain Update Files" runs daily at 12:00 Spain time or can be triggered manually (a manual run always executes, whatever the local time is).
 
 ## How It Works
 
@@ -123,42 +135,68 @@ Custom JSON list without extension:
 
 2. **Processing**:
    - Removes duplicates based on stream URLs.
-   - Verifies link activity with concurrent HEAD/GET requests (5-second timeout).
+   - Optionally verifies link activity with concurrent HEAD/GET requests (2-second timeout, 10 workers) when `--check-links` is passed.
 
 3. **Exporting**:
-   - Saves active, unique channels to four files in `LiveTV/Country Name/`.
+   - Saves unique channels to four files in `LiveTV/Country Name/`, sorted for stable diffs.
 
 4. **Automation**:
-   - GitHub Actions runs `BugsfreeMain/Country Name.py` every 8 hours (UTC: 00:00, 08:00, 16:00 ≈ IST: 05:30, 13:30, 21:30).
+   - GitHub Actions runs `BugsfreeMain/TV-Spain.py` once a day at 12:00 Europe/Madrid, honouring CET and CEST.
+   - A second job regenerates `LiveTV/index.json` and `Movies/index.json` from the directories present.
    - Commits and pushes changes automatically using `GITHUB_TOKEN`.
+
+## Local usage
+
+```bash
+pip install -r requirements.txt
+python -m unittest discover -s tests -t .       # run the test suite
+python BugsfreeMain/TV-Spain.py                # fast: no link verification
+python BugsfreeMain/TV-Spain.py --check-links # slower: drop unreachable streams
+python generate_indexes.py                     # refresh section indexes
+python scripts/madrid_noon_gate.py             # exit 0 only at 12:00 Europe/Madrid
+```
+
+`index.html` is a static page: serve the repository root over any static host and it reads the generated files from the raw GitHub URL (this repository first, the upstream repository as fallback).
+
+## Tests
+
+The suite uses only the standard library (`unittest`), so no extra dependency is needed. It never touches the network: every HTTP call is stubbed, and generated files are written to a temporary directory.
+
+`tests/test_tv_spain.py` covers:
+
+- **M3U parsing** — `#EXTINF` attributes, missing or empty `tvg-logo` (default logo), missing `group-title` (`Uncategorized`), missing name (`Unnamed Channel`), orphan URLs, directive lines such as `#EXTVLCOPT`, consecutive `#EXTINF` entries, and channel dicts not being mutated by the next entry.
+- **tvg metadata** (`TestTvgMetadataParsing`, `TestTvgMetadataMerging`, `TestTvgMetadataExports`) — reading `tvg-id` and `tvg-name` regardless of attribute order, values containing spaces and commas, quotes that cannot corrupt a line, filling missing metadata from a later source without ever overwriting existing values, emitting the attributes in the M3U only when present, and a round trip that re-parses an exported playlist.
+- **URL deduplication** — repeated URLs within a playlist, across different sources (the first source wins), identical names with different URLs (both kept), and `seen_urls` being reset between runs.
+- **Link filtering** — each unique URL probed once even when several channels share it, dead channels dropped, resolved URL replacing the original, and `check_links=False` skipping the probe entirely.
+- **Link checking** — success, error status returning `(False, url)` instead of `None`, HEAD to GET fallback, alternate-protocol retry, and the per-URL cache.
+- **HTML source extraction** — playlist detection, relative link resolution, and excluded hosts.
+- **Exports** — the four output files, `#EXTM3U` structure, and identical deterministic ordering across all formats.
+- **Scheduling gate** (`tests/test_madrid_noon_gate.py`) — `Europe/Madrid` noon detection under CET and CEST, both daylight saving switch days, late-start tolerance, and a sweep of two full years asserting that exactly one of the two candidate hours fires on every single day.
 
 ## Dependencies
 
-Managed by GitHub Actions:
+Declared in `requirements.txt` and installed by the workflow with `pip install -r requirements.txt`:
 - `requests`: For fetching M3U and HTML content.
 - `pytz`: For Mumbai timezone timestamps.
 - `beautifulsoup4`: For HTML parsing.
-
-Installed in the workflow:
-```bash
-pip install requests pytz beautifulsoup4
-```
 
 ## Troubleshooting
 
 - **Empty Files**: Check the Actions logs for errors:
   - "Error fetching [url]": Source might be down or inaccessible.
   - "No channels parsed": Verify source format (`#EXTINF:` followed by URL).
-  - "Active channels after filtering: 0": Links may be timing out; increase `timeout` in `check_link_active`.
+  - "No channels exported": The workflow logs a warning and the run fails so a broken export is never committed.
 
-- **Permissions Error**: Ensure `permissions: contents: write` is in `Country Name.yml`.
+- **Permissions Error**: Ensure `permissions: contents: write` is in `TV-Spain.yml`.
+
+- **Index out of date**: The `update-indexes` job runs after the collector and regenerates the `index.json` files. It is called from the upstream repository's reusable workflow, so upstream changes affect this repo.
 
 - **Logs**: View detailed logs in the "Actions" tab to diagnose issues.
 
 ## Contributing
 
 Feel free to:
-- Add more Country Name-specific sources to `BugsfreeMain/CountryName.py`.
+- Add more sources to `BugsfreeMain/TV-Spain.py`.
 - Suggest improvements via issues or pull requests.
 
 ## License

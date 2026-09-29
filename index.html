@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M3U Links Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"
+            integrity="sha384-JUh163oCRItcbPme8pYnROHQMC6fNKTBWtRG3I3I0erJkzNgL7uxKlNwcrcFKeqF"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -162,6 +164,19 @@
             font-weight: 600;
         }
         .line-chart { max-width: 100%; margin: 20px 0; }
+        .search-summary { margin-bottom: 12px; font-size: 0.95em; color: #aaa; }
+        .search-list { list-style: none; }
+        .search-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .search-list li:last-child { border-bottom: none; }
+        .search-list li > span:first-of-type { flex: 1; font-size: 0.9em; color: #999; }
+        .search-count { font-size: 0.85em; color: #888; white-space: nowrap; }
+        body.light .search-list li { border-color: rgba(0, 0, 0, 0.08); }
         .leaderboard { margin: 20px 0; }
         .leaderboard-item { padding: 5px 0; display: flex; justify-content: space-between; }
         .export-btn {
@@ -244,24 +259,48 @@
     </div>
     <div class="notification" id="notification"></div>
     <footer>
-        Powered by <a href="https://github.com/bugsfreeweb/LiveTVCollector" target="_blank">M3U Collector</a> | Updated Daily
+        Powered by <a href="https://github.com/bugsfreeweb/LiveTVCollector" target="_blank" rel="noopener">M3U Collector</a> | Playlists refreshed daily at 12:00 (Spain)
     </footer>
 
     <script>
-        const baseUrl = window.location.hostname.includes('netlify.app') ? 'https://tvm3u.netlify.app/' : 
-                       window.location.hostname.includes('github.io') ? 'https://bugsfreeweb.github.io/LiveTVCollector/' : 
-                       '/';
-        const rawBaseUrl = 'https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/main/';
-        let analytics = JSON.parse(localStorage.getItem('m3u_analytics')) || { 
-            liveTv: {}, 
-            movies: {}, 
-            totalChannels: 0, 
-            activeChannels: 0, 
-            lastSync: {} 
+        // Candidate data sources, in priority order: this fork first, upstream as fallback.
+        const RAW_BASES = [
+            'https://raw.githubusercontent.com/pascgallardo/LiveTVCollectorES/main/',
+            'https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/main/'
+        ];
+        let rawBaseUrl = RAW_BASES[0];
+        let baseUrl = '/';
+
+        const STORE_KEYS = { analytics: 'm3u_analytics', downloads: 'download_history', status: 'm3u_status', theme: 'm3u_theme' };
+
+        // Persisted click/copy/download counters. Totals are derived, never stored.
+        const storedAnalytics = JSON.parse(localStorage.getItem(STORE_KEYS.analytics) || 'null') || {};
+        let analytics = {
+            liveTv: storedAnalytics.liveTv || {},
+            movies: storedAnalytics.movies || {},
+            totalChannels: 0,
+            lastSync: storedAnalytics.lastSync || {}
         };
         let contentMap = { liveTv: {}, movies: {} };
-        let downloadHistory = JSON.parse(localStorage.getItem('download_history')) || [];
-        let statusCache = JSON.parse(localStorage.getItem('m3u_status')) || {};
+        let downloadHistory = JSON.parse(localStorage.getItem(STORE_KEYS.downloads) || '[]');
+        let statusCache = JSON.parse(localStorage.getItem(STORE_KEYS.status) || '{}');
+        const charts = {};
+
+        function persistAnalytics() {
+            localStorage.setItem(STORE_KEYS.analytics, JSON.stringify(analytics));
+        }
+
+        function sectionKey(dir) {
+            return dir === 'LiveTV' ? 'liveTv' : 'movies';
+        }
+
+        function fileBaseName(dir, name) {
+            return dir === 'LiveTV' ? name : name.replace('LiveTV', 'Movies');
+        }
+
+        function fileUrl(dir, subDir, file) {
+            return `${rawBaseUrl}${dir}/${encodeURIComponent(subDir)}/${file}`;
+        }
 
         async function fetchJson(url) {
             try {
@@ -275,107 +314,160 @@
         }
 
         async function checkStatus(url) {
+            // Cross-origin stream URLs rarely allow CORS, so a no-cors request is the only
+            // option. An opaque response still means the server answered; the badge therefore
+            // reports "reachable", not "the stream is valid".
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), 5000);
             try {
-                const response = await fetch(url, { method: 'HEAD', mode: 'no-cors', timeout: 5000 });
-                return response.ok || response.type === 'opaque';
+                const response = await fetch(url, { mode: 'no-cors', cache: 'no-store', signal: controller.signal });
+                return response.type === 'opaque' || response.ok;
             } catch {
                 return false;
+            } finally {
+                clearTimeout(timer);
             }
+        }
+
+        async function resolveBaseUrl() {
+            for (const base of RAW_BASES) {
+                try {
+                    const response = await fetch(`${base}LiveTV/index.json`, { method: 'GET' });
+                    if (response.ok) return base;
+                } catch {
+                    // Try the next candidate
+                }
+            }
+            return null;
+        }
+
+        function allChannelsOf(json) {
+            return Object.values(json.channels || {}).flat();
+        }
+
+        // Totals are always derived from the loaded data, so they cannot drift between visits.
+        function recomputeTotals() {
+            let total = 0;
+            for (const section of Object.values(contentMap)) {
+                for (const json of Object.values(section)) {
+                    total += allChannelsOf(json).length;
+                }
+            }
+            analytics.totalChannels = total;
+        }
+
+        async function loadSection(kind) {
+            const dir = kind === 'liveTv' ? 'LiveTV' : 'Movies';
+            const select = document.getElementById(kind === 'liveTv' ? 'live-tv-select' : 'movies-select');
+            const index = await fetchJson(`${rawBaseUrl}${dir}/index.json`);
+            if (!Array.isArray(index) || index.length === 0) {
+                select.disabled = true;
+                select.options[0].textContent = `No ${dir} data available`;
+                return;
+            }
+            const pending = [];
+            for (const subDir of index) {
+                const option = document.createElement('option');
+                option.value = subDir;
+                option.textContent = subDir;
+                select.appendChild(option);
+                const json = await fetchJson(fileUrl(dir, subDir, fileBaseName(dir, 'LiveTV.json')));
+                if (!json) continue;
+                contentMap[kind][subDir] = json;
+                const key = `${dir}/${subDir}`;
+                analytics.lastSync[key] = json.date;
+                const cached = statusCache[key];
+                if (cached && Date.now() - cached.timestamp < 3600000) continue;
+                const sample = allChannelsOf(json).find(ch => ch.url);
+                pending.push(
+                    checkStatus(sample ? sample.url : '').then(online => {
+                        statusCache[key] = { online: sample ? online : false, timestamp: Date.now() };
+                    })
+                );
+            }
+            // Run the reachability probes in parallel instead of one country at a time.
+            await Promise.all(pending);
+            notifyUpdates();
         }
 
         async function populateDropdowns() {
-            const liveTvIndex = await fetchJson(`${rawBaseUrl}LiveTV/index.json`);
-            const moviesIndex = await fetchJson(`${rawBaseUrl}Movies/index.json`);
-            const liveTvSelect = document.getElementById('live-tv-select');
-            const moviesSelect = document.getElementById('movies-select');
-
-            if (liveTvIndex) {
-                for (const country of liveTvIndex) {
-                    const option = document.createElement('option');
-                    option.value = country;
-                    option.textContent = country;
-                    liveTvSelect.appendChild(option);
-                    const json = await fetchJson(`${rawBaseUrl}LiveTV/${country}/LiveTV.json`);
-                    if (json) {
-                        contentMap.liveTv[country] = json;
-                        analytics.totalChannels += Object.values(json.channels).flat().length;
-                        analytics.activeChannels += Object.values(json.channels).flat().filter(ch => ch.url).length;
-                        analytics.lastSync[`LiveTV/${country}`] = json.date;
-                        if (!statusCache[`LiveTV/${country}`] || Date.now() - statusCache[`LiveTV/${country}`].timestamp > 3600000) {
-                            const sampleChannel = Object.values(json.channels).flat().find(ch => ch.url);
-                            statusCache[`LiveTV/${country}`] = {
-                                online: sampleChannel ? await checkStatus(sampleChannel.url) : false,
-                                timestamp: Date.now()
-                            };
-                        }
-                        checkForUpdates(`LiveTV/${country}`, json.date);
-                    }
-                }
+            const base = await resolveBaseUrl();
+            if (!base) {
+                document.getElementById('live-tv-select').disabled = true;
+                document.getElementById('movies-select').disabled = true;
+                showNotification('Could not reach the playlist data source.');
+                return;
             }
-            if (moviesIndex) {
-                for (const category of moviesIndex) {
-                    const option = document.createElement('option');
-                    option.value = category;
-                    option.textContent = category;
-                    moviesSelect.appendChild(option);
-                    const json = await fetchJson(`${rawBaseUrl}Movies/${category}/Movies.json`);
-                    if (json) {
-                        contentMap.movies[category] = json;
-                        analytics.totalChannels += Object.values(json.channels).flat().length;
-                        analytics.activeChannels += Object.values(json.channels).flat().filter(ch => ch.url).length;
-                        analytics.lastSync[`Movies/${category}`] = json.date;
-                        if (!statusCache[`Movies/${category}`] || Date.now() - statusCache[`Movies/${category}`].timestamp > 3600000) {
-                            const sampleMovie = Object.values(json.channels).flat().find(ch => ch.url);
-                            statusCache[`Movies/${category}`] = {
-                                online: sampleMovie ? await checkStatus(sampleMovie.url) : false,
-                                timestamp: Date.now()
-                            };
-                        }
-                        checkForUpdates(`Movies/${category}`, json.date);
-                    }
-                }
-            }
-            localStorage.setItem('m3u_status', JSON.stringify(statusCache));
+            rawBaseUrl = base;
+            baseUrl = base;
+            await loadSection('liveTv');
+            await loadSection('movies');
+            localStorage.setItem(STORE_KEYS.status, JSON.stringify(statusCache));
+            recomputeTotals();
             updateAnalytics();
         }
 
+        const FILE_EXTENSIONS = [
+            { label: 'M3U File', ext: 'm3u', type: 'm3u' },
+            { label: 'JSON File', ext: 'json', type: 'json' },
+            { label: 'TXT File', ext: 'txt', type: 'txt' }
+        ];
+
+        function createFileLinkItem(dir, subDir, spec, status) {
+            const file = fileBaseName(dir, `LiveTV.${spec.ext}`);
+            const href = fileUrl(dir, subDir, file);
+            const downloadName = `${subDir}_${dir}.${spec.ext}`;
+
+            const item = document.createElement('div');
+            item.className = 'link-item';
+
+            const badge = document.createElement('div');
+            badge.className = `status-badge status-${status}`;
+            badge.title = status === 'online' ? 'Server reachable' : 'Server unreachable';
+            item.appendChild(badge);
+
+            const link = document.createElement('a');
+            link.href = href;
+            link.target = '_blank';
+            link.rel = 'noopener';
+            link.textContent = spec.label;
+            link.style.marginLeft = '15px';
+            link.addEventListener('click', () => trackLink(dir, subDir, 'click'));
+            item.appendChild(link);
+
+            const copyBtn = document.createElement('button');
+            copyBtn.className = 'copy-btn';
+            copyBtn.textContent = 'Copy';
+            copyBtn.addEventListener('click', () => copyToClipboard(href, dir, subDir, spec.type));
+            item.appendChild(copyBtn);
+
+            const downloadBtn = document.createElement('button');
+            downloadBtn.className = 'download-btn';
+            downloadBtn.textContent = 'Download';
+            downloadBtn.addEventListener('click', () => downloadFile(href, downloadName, dir, subDir));
+            item.appendChild(downloadBtn);
+
+            return item;
+        }
+
         function createFileLinks(dir, subDir) {
-            const m3uFile = dir === 'LiveTV' ? 'LiveTV.m3u' : 'Movies.m3u';
-            const jsonFile = dir === 'LiveTV' ? 'LiveTV.json' : 'Movies.json';
-            const txtFile = dir === 'LiveTV' ? 'LiveTV.txt' : 'Movies.txt';
-            const prefix = dir === 'LiveTV' ? `${subDir}_LiveTV` : `${subDir}_Movies`;
             const key = `${dir}/${subDir}`;
             const status = statusCache[key]?.online ? 'online' : 'offline';
-            return `
-                <div class="link-item">
-                    <div class="status-badge status-${status}"></div>
-                    <a href="${dir}/${subDir}/${m3uFile}" target="_blank" onclick="trackLink('${dir}', '${subDir}', 'click')" style="margin-left: 15px;">M3U File</a>
-                    <button class="copy-btn" onclick="copyToClipboard('${baseUrl}${dir}/${subDir}/${m3uFile}', '${dir}', '${subDir}', 'm3u')">Copy</button>
-                    <button class="download-btn" onclick="downloadFile('${baseUrl}${dir}/${subDir}/${m3uFile}', '${prefix}.m3u', '${dir}', '${subDir}')">Download</button>
-                </div>
-                <div class="link-item">
-                    <div class="status-badge status-${status}"></div>
-                    <a href="${dir}/${subDir}/${jsonFile}" target="_blank" onclick="trackLink('${dir}', '${subDir}', 'click')" style="margin-left: 15px;">JSON File</a>
-                    <button class="copy-btn" onclick="copyToClipboard('${baseUrl}${dir}/${subDir}/${jsonFile}', '${dir}', '${subDir}', 'json')">Copy</button>
-                    <button class="download-btn" onclick="downloadFile('${baseUrl}${dir}/${subDir}/${jsonFile}', '${prefix}.json', '${dir}', '${subDir}')">Download</button>
-                </div>
-                <div class="link-item">
-                    <div class="status-badge status-${status}"></div>
-                    <a href="${dir}/${subDir}/${txtFile}" target="_blank" onclick="trackLink('${dir}', '${subDir}', 'click')" style="margin-left: 15px;">TXT File</a>
-                    <button class="copy-btn" onclick="copyToClipboard('${baseUrl}${dir}/${subDir}/${txtFile}', '${dir}', '${subDir}', 'txt')">Copy</button>
-                    <button class="download-btn" onclick="downloadFile('${baseUrl}${dir}/${subDir}/${txtFile}', '${prefix}.txt', '${dir}', '${subDir}')">Download</button>
-                </div>
-            `;
+            const fragment = document.createDocumentFragment();
+            for (const spec of FILE_EXTENSIONS) {
+                fragment.appendChild(createFileLinkItem(dir, subDir, spec, status));
+            }
+            return fragment;
         }
 
         function showLiveTV(country) {
             const content = document.getElementById('live-tv-content');
             const moviesContent = document.getElementById('movies-content');
-            content.innerHTML = '';
+            content.replaceChildren();
             moviesContent.classList.remove('active');
             document.getElementById('movies-select').value = '';
             if (country) {
-                content.innerHTML = createFileLinks('LiveTV', country);
+                content.replaceChildren(createFileLinks('LiveTV', country));
                 content.classList.add('active');
                 document.getElementById('live-tv-select').value = country;
             }
@@ -384,11 +476,11 @@
         function showMovies(category) {
             const content = document.getElementById('movies-content');
             const liveTvContent = document.getElementById('live-tv-content');
-            content.innerHTML = '';
+            content.replaceChildren();
             liveTvContent.classList.remove('active');
             document.getElementById('live-tv-select').value = '';
             if (category) {
-                content.innerHTML = createFileLinks('Movies', category);
+                content.replaceChildren(createFileLinks('Movies', category));
                 content.classList.add('active');
                 document.getElementById('movies-select').value = category;
             }
@@ -396,204 +488,300 @@
 
         function copyToClipboard(text, dir, subDir, type) {
             navigator.clipboard.writeText(text).then(() => {
-                alert(`${type.toUpperCase()} link copied!`);
+                showNotification(`${type.toUpperCase()} link copied!`);
                 trackLink(dir, subDir, 'copy');
-            }).catch(err => console.error('Copy failed:', err));
+            }).catch(err => {
+                console.error('Copy failed:', err);
+                showNotification('Copy failed — copy the link manually.');
+            });
         }
 
-        function downloadFile(url, filename, dir, subDir) {
+        function saveBlob(blob, filename) {
+            const objectUrl = URL.createObjectURL(blob);
             const a = document.createElement('a');
-            a.href = url;
+            a.href = objectUrl;
             a.download = filename;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
+            URL.revokeObjectURL(objectUrl);
+        }
+
+        async function downloadFile(url, filename, dir, subDir) {
+            // The `download` attribute is ignored for cross-origin links, so fetch the file and
+            // save it as a blob. raw.githubusercontent.com allows CORS; otherwise fall back to a
+            // plain navigation so the file still opens.
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                saveBlob(await response.blob(), filename);
+            } catch (err) {
+                console.error(`Download failed for ${url}:`, err);
+                window.open(url, '_blank', 'noopener');
+            }
             trackLink(dir, subDir, 'download');
+        }
+
+        function renderSearchResults(dir, kind, container, query) {
+            const matches = Object.entries(contentMap[kind])
+                .map(([subDir, json]) => ({
+                    subDir,
+                    channels: allChannelsOf(json).filter(ch => (ch.name || '').toLowerCase().includes(query))
+                }))
+                .filter(match => match.channels.length > 0)
+                .sort((a, b) => b.channels.length - a.channels.length);
+            if (matches.length === 0) return 0;
+
+            const total = matches.reduce((sum, match) => sum + match.channels.length, 0);
+            const summary = document.createElement('div');
+            summary.className = 'search-summary';
+            summary.textContent = `${total} channel${total === 1 ? '' : 's'} in ${matches.length} ${dir} list${matches.length === 1 ? '' : 's'}`;
+            container.appendChild(summary);
+
+            const list = document.createElement('ul');
+            list.className = 'search-list';
+            for (const match of matches) {
+                const item = document.createElement('li');
+                const open = document.createElement('button');
+                open.className = 'copy-btn';
+                open.textContent = match.subDir;
+                open.addEventListener('click', () => {
+                    if (kind === 'liveTv') showLiveTV(match.subDir);
+                    else showMovies(match.subDir);
+                });
+                const preview = document.createElement('span');
+                preview.textContent = match.channels.slice(0, 3).map(ch => ch.name).join(', ');
+                const count = document.createElement('span');
+                count.className = 'search-count';
+                count.textContent = `${match.channels.length} match${match.channels.length === 1 ? '' : 'es'}`;
+                item.append(open, preview, count);
+                list.appendChild(item);
+            }
+            container.appendChild(list);
+            container.classList.add('active');
+            return matches.length;
         }
 
         function searchContent() {
             const query = document.getElementById('search').value.toLowerCase().trim();
             const liveTvContent = document.getElementById('live-tv-content');
             const moviesContent = document.getElementById('movies-content');
-            liveTvContent.innerHTML = '';
-            moviesContent.innerHTML = '';
+            liveTvContent.replaceChildren();
+            moviesContent.replaceChildren();
             liveTvContent.classList.remove('active');
             moviesContent.classList.remove('active');
             if (!query) return;
-            for (const [country, json] of Object.entries(contentMap.liveTv)) {
-                const channels = Object.values(json.channels).flat();
-                if (channels.some(ch => ch.name.toLowerCase().includes(query))) {
-                    showLiveTV(country);
-                    return;
-                }
+
+            const found = renderSearchResults('LiveTV', 'liveTv', liveTvContent, query)
+                + renderSearchResults('Movies', 'movies', moviesContent, query);
+            if (found === 0) {
+                liveTvContent.textContent = 'No channels or movies match your search.';
+                liveTvContent.classList.add('active');
             }
-            for (const [category, json] of Object.entries(contentMap.movies)) {
-                const movies = Object.values(json.channels).flat();
-                if (movies.some(m => m.name.toLowerCase().includes(query))) {
-                    showMovies(category);
-                    return;
-                }
+        }
+
+        const THEMES = [
+            { className: 'light', icon: '☀️' },
+            { className: 'pool', icon: '🌙' },
+            { className: '', icon: '🌀' }
+        ];
+
+        function applyTheme(className) {
+            const body = document.body;
+            for (const theme of THEMES) {
+                if (theme.className) body.classList.remove(theme.className);
             }
+            if (className) body.classList.add(className);
+            const theme = THEMES.find(candidate => candidate.className === className) || THEMES[2];
+            document.querySelector('.theme-toggle').textContent = theme.icon;
         }
 
         function toggleTheme() {
             const body = document.body;
-            if (body.classList.contains('light')) {
-                body.classList.remove('light');
-                body.classList.add('pool');
-                document.querySelector('.theme-toggle').textContent = '🌙';
-            } else if (body.classList.contains('pool')) {
-                body.classList.remove('pool');
-                document.querySelector('.theme-toggle').textContent = '☀️';
-            } else {
-                body.classList.add('light');
-                document.querySelector('.theme-toggle').textContent = '🌀';
-            }
+            const current = THEMES.find(theme => theme.className && body.classList.contains(theme.className));
+            const next = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length];
+            applyTheme(next.className);
+            localStorage.setItem(STORE_KEYS.theme, next.className);
         }
 
+        const ACTION_FIELD = { click: 'clicks', copy: 'copies', download: 'downloads' };
+
         function trackLink(dir, subDir, action) {
+            const field = ACTION_FIELD[action];
+            if (!field) return;
+            const section = analytics[sectionKey(dir)];
             const key = `${dir}/${subDir}`;
-            analytics[dir.toLowerCase()][key] = analytics[dir.toLowerCase()][key] || { clicks: 0, copies: 0, downloads: 0 };
-            analytics[dir.toLowerCase()][key][action === 'click' ? 'clicks' : action === 'copy' ? 'copies' : 'downloads']++;
-            localStorage.setItem('m3u_analytics', JSON.stringify(analytics));
+            section[key] = section[key] || { clicks: 0, copies: 0, downloads: 0 };
+            section[key][field]++;
+            persistAnalytics();
             if (action === 'download') {
                 downloadHistory.push({ key, timestamp: new Date().toISOString() });
-                localStorage.setItem('download_history', JSON.stringify(downloadHistory));
+                localStorage.setItem(STORE_KEYS.downloads, JSON.stringify(downloadHistory));
             }
             updateAnalytics();
         }
 
-        function checkForUpdates(key, date) {
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+            clearTimeout(showNotification.timer);
+            showNotification.timer = setTimeout(() => { notification.style.display = 'none'; }, 5000);
+        }
+
+        // Called once after all sections load: compares every stored sync date against a single
+        // "last visit" snapshot, then records the new one.
+        function notifyUpdates() {
             const lastVisit = new Date(localStorage.getItem('last_visit') || 0);
-            const syncDate = new Date(date);
-            if (syncDate > lastVisit) {
-                const notification = document.getElementById('notification');
-                notification.textContent = `${key} updated ${Math.round((Date.now() - syncDate) / 60000)} mins ago!`;
-                notification.style.display = 'block';
-                setTimeout(() => notification.style.display = 'none', 5000);
+            const updated = Object.entries(analytics.lastSync)
+                .filter(([, date]) => new Date(date) > lastVisit)
+                .sort((a, b) => new Date(b[1]) - new Date(a[1]));
+            if (updated.length > 0) {
+                const [key, date] = updated[0];
+                const minutes = Math.max(1, Math.round((Date.now() - new Date(date)) / 60000));
+                showNotification(`${key} updated ${minutes} min${minutes === 1 ? '' : 's'} ago!`
+                    + (updated.length > 1 ? ` (+${updated.length - 1} more)` : ''));
             }
             localStorage.setItem('last_visit', new Date().toISOString());
         }
 
-        function updateAnalytics() {
-            const gaugesContainer = document.getElementById('gauges-container');
-            gaugesContainer.innerHTML = `
+        const GAUGE_OPTIONS = {
+            cutout: '70%',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { enabled: false } }
+        };
+
+        // Chart.js refuses a second instance on the same canvas, so charts are created once and
+        // then updated in place instead of being re-instantiated on every interaction.
+        function ensureGauges() {
+            const container = document.getElementById('gauges-container');
+            if (container.childElementCount > 0) return;
+            container.innerHTML = `
                 <div class="gauge">
                     <canvas id="totalChannelsGauge"></canvas>
-                    <div class="gauge-text">${analytics.totalChannels}<br>Total Channels</div>
+                    <div class="gauge-text" id="totalChannelsLabel"></div>
                 </div>
                 <div class="gauge">
-                    <canvas id="activeChannelsGauge"></canvas>
-                    <div class="gauge-text">${analytics.activeChannels}<br>Active Channels</div>
+                    <canvas id="listCountGauge"></canvas>
+                    <div class="gauge-text" id="listCountLabel"></div>
                 </div>
             `;
-
-            const totalCtx = document.getElementById('totalChannelsGauge').getContext('2d');
-            new Chart(totalCtx, {
+            charts.total = new Chart(document.getElementById('totalChannelsGauge'), {
                 type: 'doughnut',
-                data: {
-                    datasets: [{
-                        data: [analytics.totalChannels, 10000 - analytics.totalChannels],
-                        backgroundColor: ['#ff007a', '#333'],
-                        borderWidth: 0
-                    }]
-                },
-                options: {
-                    cutout: '70%',
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false }, tooltip: { enabled: false } }
-                }
+                data: { datasets: [{ data: [0, 1], backgroundColor: ['#ff007a', '#333'], borderWidth: 0 }] },
+                options: GAUGE_OPTIONS
             });
-
-            const activeCtx = document.getElementById('activeChannelsGauge').getContext('2d');
-            new Chart(activeCtx, {
+            charts.lists = new Chart(document.getElementById('listCountGauge'), {
                 type: 'doughnut',
-                data: {
-                    datasets: [{
-                        data: [analytics.activeChannels, analytics.totalChannels - analytics.activeChannels],
-                        backgroundColor: ['#00ddeb', '#333'],
-                        borderWidth: 0
-                    }]
-                },
-                options: {
-                    cutout: '70%',
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false }, tooltip: { enabled: false } }
-                }
+                data: { datasets: [{ data: [0, 1], backgroundColor: ['#00ddeb', '#333'], borderWidth: 0 }] },
+                options: GAUGE_OPTIONS
             });
+        }
+
+        function setGauge(chart, labelId, value, caption) {
+            // Caption is a static string, so building the markup here cannot inject data.
+            chart.data.datasets[0].data = [value, 0];
+            chart.update();
+            document.getElementById(labelId).innerHTML = `${Number(value).toLocaleString()}<br>${caption}`;
+        }
+
+        function updateAnalytics() {
+            if (typeof Chart === 'undefined') {
+                document.getElementById('leaderboard').textContent = 'Charts unavailable (Chart.js did not load).';
+                return;
+            }
+            recomputeTotals();
+            ensureGauges();
+
+            setGauge(charts.total, 'totalChannelsLabel', analytics.totalChannels, 'Channels Loaded');
+            setGauge(charts.lists, 'listCountLabel', listCount(), 'Lists Available');
 
             const downloadData = {};
-            ['liveTv', 'movies'].forEach(type => {
-                Object.entries(analytics[type]).forEach(([key, { downloads }]) => {
+            for (const type of ['liveTv', 'movies']) {
+                for (const [key, { downloads }] of Object.entries(analytics[type])) {
                     downloadData[key] = downloads;
-                });
-            });
+                }
+            }
 
             const leaderboard = document.getElementById('leaderboard');
-            leaderboard.innerHTML = Object.entries(downloadData)
+            const top = Object.entries(downloadData)
+                .filter(([, downloads]) => downloads > 0)
                 .sort((a, b) => b[1] - a[1])
-                .slice(0, 5)
-                .map(([key, downloads]) => `<div class="leaderboard-item">${key.split('/')[1]}: ${downloads}</div>`)
-                .join('');
+                .slice(0, 5);
+            leaderboard.replaceChildren(...top.map(([key, downloads]) => {
+                const item = document.createElement('div');
+                item.className = 'leaderboard-item';
+                item.textContent = `${key.split('/')[1]}: ${downloads}`;
+                return item;
+            }));
 
             const historyByDay = {};
-            downloadHistory.forEach(({ timestamp }) => {
+            for (const { timestamp } of downloadHistory) {
                 const day = new Date(timestamp).toLocaleDateString();
                 historyByDay[day] = (historyByDay[day] || 0) + 1;
-            });
-            const labels = Object.keys(historyByDay).slice(-7);
-            const data = Object.values(historyByDay).slice(-7);
-            const chartCtx = document.getElementById('downloadChart').getContext('2d');
-            new Chart(chartCtx, {
-                type: 'line',
-                data: {
-                    labels,
-                    datasets: [{
-                        label: 'Downloads',
-                        data,
-                        borderColor: '#ff007a',
-                        backgroundColor: 'rgba(255, 0, 122, 0.2)',
-                        fill: true,
-                        tension: 0.4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                        y: { beginAtZero: true, title: { display: true, text: 'Downloads', color: '#fff' } },
-                        x: { title: { display: true, text: 'Date', color: '#fff' } }
+            }
+            const days = Object.keys(historyByDay).sort();
+            const labels = days.slice(-7);
+            const data = days.slice(-7).map(day => historyByDay[day]);
+
+            if (charts.downloads) {
+                charts.downloads.data.labels = labels;
+                charts.downloads.data.datasets[0].data = data;
+                charts.downloads.update();
+            } else {
+                charts.downloads = new Chart(document.getElementById('downloadChart').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels,
+                        datasets: [{
+                            label: 'Downloads',
+                            data,
+                            borderColor: '#ff007a',
+                            backgroundColor: 'rgba(255, 0, 122, 0.2)',
+                            fill: true,
+                            tension: 0.4
+                        }]
                     },
-                    plugins: {
-                        legend: { labels: { color: '#fff' } },
-                        title: { display: false }
+                    options: {
+                        responsive: true,
+                        scales: {
+                            y: { beginAtZero: true, title: { display: true, text: 'Downloads', color: '#fff' } },
+                            x: { title: { display: true, text: 'Date', color: '#fff' } }
+                        },
+                        plugins: {
+                            legend: { labels: { color: '#fff' } },
+                            title: { display: false }
+                        }
                     }
-                }
-            });
+                });
+            }
+        }
+
+        function csvCell(value) {
+            const text = String(value);
+            return /[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
         }
 
         function exportStats() {
-            const csvRows = ['Key,Clicks,Copies,Downloads,Last Sync'];
-            ['liveTv', 'movies'].forEach(type => {
-                Object.entries(analytics[type]).forEach(([key, { clicks, copies, downloads }]) => {
-                    const lastSync = analytics.lastSync[key] || 'N/A';
-                    csvRows.push(`${key},${clicks},${copies},${downloads},${lastSync}`);
-                });
-            });
-            csvRows.push(`Total Channels,,${analytics.totalChannels},,`);
-            csvRows.push(`Active Channels,,${analytics.activeChannels},,`);
-            const csvContent = 'data:text/csv;charset=utf-8,' + csvRows.join('\n');
-            const encodedUri = encodeURI(csvContent);
-            const link = document.createElement('a');
-            link.setAttribute('href', encodedUri);
-            link.setAttribute('download', `m3u_stats_${new Date().toISOString().split('T')[0]}.csv`);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            const rows = [['Key', 'Clicks', 'Copies', 'Downloads', 'Last Sync'].join(',')];
+            for (const type of ['liveTv', 'movies']) {
+                for (const [key, { clicks, copies, downloads }] of Object.entries(analytics[type])) {
+                    rows.push([key, clicks, copies, downloads, analytics.lastSync[key] || 'N/A'].map(csvCell).join(','));
+                }
+            }
+            rows.push(csvCell('Total Channels') + ',,' + analytics.totalChannels + ',,');
+            rows.push(csvCell('Lists Loaded') + ',,' + listCount() + ',,');
+            saveBlob(new Blob([rows.join('\n') + '\n'], { type: 'text/csv;charset=utf-8;' }),
+                `m3u_stats_${new Date().toISOString().split('T')[0]}.csv`);
+        }
+
+        function listCount() {
+            return Object.values(contentMap.liveTv).length + Object.values(contentMap.movies).length;
         }
 
         // Initialize
+        applyTheme(localStorage.getItem(STORE_KEYS.theme) || '');
         populateDropdowns();
     </script>
 </body>

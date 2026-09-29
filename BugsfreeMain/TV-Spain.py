@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import re
+import sys
 from urllib.parse import urlparse
 from collections import defaultdict
 from datetime import datetime
@@ -19,6 +20,7 @@ class M3UCollector:
         self.channels = defaultdict(list)
         self.default_logo = "https://buddytv.netlify.app/img/no-logo.png"
         self.seen_urls = set()
+        self.channel_by_url = {}
         self.url_status_cache = {}
         self.output_dir = os.path.join(base_dir, country)
         self.lock = threading.Lock()
@@ -26,18 +28,22 @@ class M3UCollector:
         os.makedirs(self.output_dir, exist_ok=True)
 
     def fetch_content(self, url):
-        """Fetch content (M3U or HTML) with streaming."""
+        """Fetch content (M3U or HTML) with streaming.
+
+        The joined text is only built for HTML sources, which need it for parsing; M3U sources
+        are consumed line by line so a large playlist is not held in memory twice.
+        """
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-        
+
         try:
             with requests.get(url, stream=True, headers=headers, timeout=10) as response:
                 response.raise_for_status()
                 lines = [line.decode('utf-8', errors='ignore') if isinstance(line, bytes) else line for line in response.iter_lines()]
-                content = '\n'.join(lines)
                 if not lines:
                     logging.warning(f"No content fetched from {url}")
                 else:
                     logging.info(f"Fetched {len(lines)} lines from {url}")
+                content = '\n'.join(lines) if url.endswith('.html') else None
                 return content, lines
         except requests.RequestException as e:
             logging.error(f"Failed to fetch {url}: {str(e)}")
@@ -68,13 +74,13 @@ class M3UCollector:
         return list(stream_urls)
 
     def check_link_active(self, url, timeout=2):
-        """Check if a link is active, optimized for speed."""
+        """Check if a link is active, optimized for speed. Always returns (bool, url)."""
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-        
+
         with self.lock:
             if url in self.url_status_cache:
                 return self.url_status_cache[url]
-        
+
         # Try original URL
         try:
             response = requests.head(url, timeout=timeout, headers=headers, allow_redirects=True)
@@ -106,9 +112,29 @@ class M3UCollector:
                             return True, alt_url
                     except requests.RequestException:
                         pass
-                with self.lock:
-                    self.url_status_cache[url] = (False, url)
-                return False, url
+
+        # HEAD succeeded but reported an error status, or every attempt failed.
+        with self.lock:
+            self.url_status_cache[url] = (False, url)
+        return False, url
+
+    @staticmethod
+    def extinf_attribute(line, name):
+        """Return the value of an `#EXTINF` attribute, or '' when absent or empty."""
+        match = re.search(rf'{re.escape(name)}="([^"]*)"', line)
+        return match.group(1).strip() if match else ''
+
+    @staticmethod
+    def merge_metadata(existing, candidate):
+        """Complete an already stored channel with metadata from another source.
+
+        The first source that provides a URL wins, but a later playlist may still
+        carry the tvg-id or tvg-name that the first one was missing, so those fields
+        are filled in whenever the stored channel does not have them yet.
+        """
+        for field in ('tvg_id', 'tvg_name'):
+            if not existing.get(field) and candidate.get(field):
+                existing[field] = candidate[field]
 
     def parse_and_store(self, lines, source_url):
         """Parse M3U lines and store channels."""
@@ -117,26 +143,31 @@ class M3UCollector:
         for line in lines:
             line = line.strip()
             if line.startswith('#EXTINF:'):
-                match = re.search(r'tvg-logo="([^"]*)"', line)
-                logo = match.group(1) if match and match.group(1) else self.default_logo
-                
-                match = re.search(r'group-title="([^"]*)"', line)
-                group = match.group(1) if match else "Uncategorized"
-                
+                logo = self.extinf_attribute(line, 'tvg-logo') or self.default_logo
+                group = self.extinf_attribute(line, 'group-title') or "Uncategorized"
+                tvg_id = self.extinf_attribute(line, 'tvg-id')
+                tvg_name = self.extinf_attribute(line, 'tvg-name')
+
                 match = re.search(r',(.+)$', line)
                 name = match.group(1).strip() if match else "Unnamed Channel"
-                
+
                 current_channel = {
                     'name': name,
+                    'tvg_id': tvg_id,
+                    'tvg_name': tvg_name,
                     'logo': logo,
                     'group': group,
                     'source': source_url
                 }
             elif line.startswith('http') and current_channel:
                 with self.lock:
-                    if line not in self.seen_urls:
+                    existing = self.channel_by_url.get(line)
+                    if existing is not None:
+                        self.merge_metadata(existing, current_channel)
+                    else:
                         self.seen_urls.add(line)
                         current_channel['url'] = line
+                        self.channel_by_url[line] = current_channel
                         self.channels[current_channel['group']].append(current_channel)
                         channel_count += 1
                 current_channel = {}
@@ -147,17 +178,21 @@ class M3UCollector:
         if not self.check_links:
             logging.info("Skipping link activity check for speed")
             return
-        
+
         active_channels = defaultdict(list)
         all_channels = [(group, ch) for group, chans in self.channels.items() for ch in chans]
-        url_set = set()
-        
+        checked_urls = set()
+
         logging.info(f"Total channels to check: {len(all_channels)}")
-        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:  # Even fewer workers
-            future_to_channel = {
-                executor.submit(self.check_link_active, ch['url']): (group, ch)
-                for group, ch in all_channels if ch['url'] not in url_set and not url_set.add(ch['url'])
-            }
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            future_to_channel = {}
+            for group, channel in all_channels:
+                url = channel.get('url')
+                if not url or url in checked_urls:
+                    continue
+                checked_urls.add(url)
+                future_to_channel[executor.submit(self.check_link_active, url)] = (group, channel)
+            logging.info(f"Unique URLs to check: {len(future_to_channel)}")
             for future in concurrent.futures.as_completed(future_to_channel):
                 group, channel = future_to_channel[future]
                 try:
@@ -175,8 +210,9 @@ class M3UCollector:
         """Process sources sequentially for better control."""
         self.channels.clear()
         self.seen_urls.clear()
+        self.channel_by_url.clear()
         self.url_status_cache.clear()
-        
+
         all_m3u_urls = set()
         for url in source_urls:
             html_content, lines = self.fetch_content(url)
@@ -185,23 +221,42 @@ class M3UCollector:
                 all_m3u_urls.update(m3u_urls)
             else:
                 self.parse_and_store(lines, url)
-        
-        for m3u_url in all_m3u_urls:
+
+        for m3u_url in sorted(all_m3u_urls):
             _, lines = self.fetch_content(m3u_url)
             self.parse_and_store(lines, m3u_url)
-        
+
         if self.channels:
             self.filter_active_channels()
         else:
             logging.warning("No channels parsed from sources")
 
+    def sorted_groups(self):
+        """Groups in alphabetical order, so every export is byte-stable across runs."""
+        for group in sorted(self.channels):
+            yield group, sorted(self.channels[group], key=lambda ch: (ch['name'].lower(), ch['url']))
+
+    @staticmethod
+    def extinf_line(group, channel):
+        """Build an `#EXTINF` line, omitting the tvg-* attributes the source did not provide."""
+        attributes = []
+        for name, value in (
+            ('tvg-id', channel.get('tvg_id')),
+            ('tvg-name', channel.get('tvg_name')),
+            ('tvg-logo', channel.get('logo')),
+            ('group-title', group),
+        ):
+            if value:
+                attributes.append(f'{name}="{value}"')
+        return f'#EXTINF:-1 {" ".join(attributes)},{channel["name"]}'
+
     def export_m3u(self, filename="LiveTV.m3u"):
         filepath = os.path.join(self.output_dir, filename)
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write('#EXTM3U\n')
-            for group, channels in self.channels.items():
+            for group, channels in self.sorted_groups():
                 for channel in channels:
-                    f.write(f'#EXTINF:-1 tvg-logo="{channel["logo"]}" group-title="{group}",{channel["name"]}\n')
+                    f.write(self.extinf_line(group, channel) + '\n')
                     f.write(f'{channel["url"]}\n')
         logging.info(f"Exported M3U to {filepath}")
         return filepath
@@ -209,10 +264,14 @@ class M3UCollector:
     def export_txt(self, filename="LiveTV.txt"):
         filepath = os.path.join(self.output_dir, filename)
         with open(filepath, 'w', encoding='utf-8') as f:
-            for group, channels in sorted(self.channels.items()):
+            for group, channels in self.sorted_groups():
                 f.write(f"Group: {group}\n")
                 for channel in channels:
                     f.write(f"Name: {channel['name']}\n")
+                    if channel.get('tvg_id'):
+                        f.write(f"TvgID: {channel['tvg_id']}\n")
+                    if channel.get('tvg_name'):
+                        f.write(f"TvgName: {channel['tvg_name']}\n")
                     f.write(f"URL: {channel['url']}\n")
                     f.write(f"Logo: {channel['logo']}\n")
                     f.write(f"Source: {channel['source']}\n")
@@ -225,10 +284,10 @@ class M3UCollector:
         filepath = os.path.join(self.output_dir, filename)
         mumbai_tz = pytz.timezone('Asia/Kolkata')
         current_time = datetime.now(mumbai_tz).strftime('%Y-%m-%d %H:%M:%S')
-        
+
         json_data = {
             "date": current_time,
-            "channels": dict(self.channels)
+            "channels": {group: channels for group, channels in self.sorted_groups()}
         }
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(json_data, f, ensure_ascii=False, indent=2)
@@ -239,45 +298,50 @@ class M3UCollector:
         """Export to custom format without extension."""
         filepath = os.path.join(self.output_dir, filename)
         custom_data = []
-        
-        for group, channels in self.channels.items():
+
+        for group, channels in self.sorted_groups():
             for channel in channels:
                 custom_data.append({
                     "name": channel['name'],
+                    "tvg_id": channel.get('tvg_id', ''),
+                    "tvg_name": channel.get('tvg_name', ''),
                     "type": group,
                     "url": channel['url'],
                     "img": channel['logo']
                 })
-        
+
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(custom_data, f, ensure_ascii=False, indent=2)
         logging.info(f"Exported custom format to {filepath}")
         return filepath
 
-def main():
-    # Specific M3U sources (12 sources)
+def main(check_links=False):
+    # M3U sources. An entry ending in .html is scanned for nested playlist links.
     source_urls = [
-        "https://m3u.work/OI0Q3l.m3u", 
+        "https://m3u.work/OI0Q3l.m3u",
         "https://m3u.work/YawDD3.m3u",
         "https://m3u.work/ICEQGPH.m3u",
         "https://m3u.work/hJiHE3ad.m3u",
         "https://m3u.work/qKChzP8.m3u"
     ]
 
-    # Set check_links=False for super speed, True for accuracy
-    collector = M3UCollector(country="Spain", check_links=False)
+    collector = M3UCollector(country="Spain", check_links=check_links)
     collector.process_sources(source_urls)
-    
+
     # Export files
     collector.export_m3u("LiveTV.m3u")
     collector.export_txt("LiveTV.txt")
     collector.export_json("LiveTV.json")
     collector.export_custom("LiveTV")
-    
+
     total_channels = sum(len(ch) for ch in collector.channels.values())
     mumbai_time = datetime.now(pytz.timezone('Asia/Kolkata'))
     logging.info(f"[{mumbai_time}] Collected {total_channels} unique channel for Spain")
     logging.info(f"Groups found: {len(collector.channels)}")
+    if not total_channels:
+        logging.warning("No channels exported — sources may be unreachable or empty.")
+        return 1
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main(check_links="--check-links" in sys.argv[1:]))

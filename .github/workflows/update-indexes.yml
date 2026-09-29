@@ -3,16 +3,19 @@ name: Update Indexes
 on:
   workflow_call:  # Makes this workflow reusable
 
+permissions:
+  contents: write
+
 jobs:
   update-indexes:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # Ensures push permissions
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -20,11 +23,17 @@ jobs:
         run: python generate_indexes.py
 
       - name: Commit and Push Indexes
+        env:
+          BRANCH: ${{ github.event.repository.default_branch }}
         run: |
+          set -euo pipefail
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add LiveTV/index.json
-          git commit -m "Update LiveTV index file" || echo "No changes to commit"
-          git pull --rebase origin main  # Fetch and rebase remote changes
-          git push
-
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update LiveTV index file"
+          git pull --rebase --autostash origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"

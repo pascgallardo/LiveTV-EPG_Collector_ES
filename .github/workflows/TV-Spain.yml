@@ -2,7 +2,12 @@ name: TV-Spain Update Files
 
 on:
   schedule:
-    - cron: '0 0,8,16 * * *'  # Runs at 00:00, 08:00, 16:00 UTC daily
+    # GitHub cron is always UTC and ignores daylight saving, so a single entry cannot
+    # mean "12:00 in mainland Spain". The job is woken at both candidate hours and the
+    # `gate` job below lets through only the one that is actually noon in Europe/Madrid
+    # (12:00 CET is 11:00 UTC in winter, 12:00 CEST is 10:00 UTC in summer).
+    - cron: '0 10 * * *'  # 12:00 in Madrid during summer time (CEST)
+    - cron: '0 11 * * *'  # 12:00 in Madrid during winter time (CET)
   workflow_dispatch:  # Allows manual triggering
 
 permissions:
@@ -13,37 +18,80 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  gate:
+    name: Check Madrid local time
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run only when it is 12:00 in Europe/Madrid
+        id: check
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" != "schedule" ]; then
+            echo "Triggered by $EVENT_NAME: running regardless of the local time."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif python scripts/madrid_noon_gate.py; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
   update-files:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+          cache: pip
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests pytz beautifulsoup4
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -t . -v
 
       - name: Run TV-Spain M3U collector script
         run: python BugsfreeMain/TV-Spain.py
 
       - name: Commit and push changes
+        env:
+          BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          set -euo pipefail
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add LiveTV/Spain/LiveTV.m3u LiveTV/Spain/LiveTV.txt LiveTV/Spain/LiveTV.json LiveTV/Spain/LiveTV
-          git commit -m "TV-Spain Update files - $(date -u '+%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "TV-Spain Update files - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git pull --rebase --autostash origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"
 
   update-indexes:
     needs: update-files
