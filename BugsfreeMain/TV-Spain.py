@@ -245,6 +245,97 @@ class M3UCollector:
         self.channels = active_channels
         logging.info(f"Active channels after filtering: {sum(len(ch) for ch in active_channels.values())}")
 
+    @staticmethod
+    def duplicate_key(channel):
+        """Return the normalised tvg-name that identifies a channel, or None.
+
+        Sources spell the same channel in several ways ("La 1", "la 1  ",
+        "LA 1"), so the key trims the value, collapses internal whitespace and
+        ignores case. A channel with no tvg-name returns None and is never
+        compared with anything: without metadata to match on, every such channel
+        is treated as distinct instead of collapsing into one giant group.
+        """
+        name = (channel.get('tvg_name') or '').strip()
+        if not name:
+            return None
+        return ' '.join(name.split()).casefold()
+
+    def _first_working(self, candidates):
+        """Return (channel, url) of the first candidate whose stream answers.
+
+        Candidates are probed in playlist order and the search stops at the first
+        one that responds, so a group is never probed further than it needs to be.
+        If nothing answers, the first candidate is returned anyway: a probe that
+        fails because of a network blip must not make a channel disappear from
+        the published playlist.
+        """
+        fallback = None
+        for channel in candidates:
+            if fallback is None:
+                fallback = (channel, channel.get('url'))
+            url = channel.get('url')
+            if not url:
+                continue
+            is_active, updated_url = self.check_link_active(url)
+            if is_active:
+                return channel, updated_url
+        return fallback
+
+    def dedupe_by_tvg_name(self):
+        """Keep a single entry per tvg-name in the merged playlist.
+
+        Duplicates are matched on the tvg-name metadata across the whole merged
+        playlist, not per category, and the winner is the earliest entry in
+        playlist order whose stream actually answers. The remaining copies are
+        dropped. Groups keep the position of their first surviving channel and
+        the survivors keep their own order, so nothing is reshuffled.
+
+        Each group of duplicates is resolved independently and in parallel, and
+        every probe goes through `check_link_active`, whose cache means a run
+        with --check-links already knows the answer and pays nothing here.
+        """
+        candidates = defaultdict(list)
+        for channels in self.channels.values():
+            for channel in channels:
+                key = self.duplicate_key(channel)
+                if key is not None:
+                    candidates[key].append(channel)
+
+        duplicated = {key: members for key, members in candidates.items() if len(members) > 1}
+        if not duplicated:
+            logging.info("No duplicate tvg-name found, nothing to deduplicate")
+            return
+
+        logging.info(f"Duplicate tvg-name groups: {len(duplicated)} "
+                     f"({sum(len(m) for m in duplicated.values())} channels)")
+        winners = {}
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            future_to_key = {
+                executor.submit(self._first_working, members): key
+                for key, members in duplicated.items()
+            }
+            for future in concurrent.futures.as_completed(future_to_key):
+                winners[future_to_key[future]] = future.result()
+
+        kept = defaultdict(list)
+        dropped = 0
+        for group, channels in self.channels.items():
+            for channel in channels:
+                key = self.duplicate_key(channel)
+                if key is not None and key in winners:
+                    winner, resolved_url = winners[key]
+                    if channel is not winner:
+                        dropped += 1
+                        continue
+                    if resolved_url:
+                        channel['url'] = resolved_url
+                kept[group].append(channel)
+        self.channels = kept
+
+        total = sum(len(ch) for ch in kept.values())
+        logging.info(f"Kept the first working stream of every duplicate: "
+                     f"{total} channels in {len(kept)} groups ({dropped} duplicates removed)")
+
     def process_sources(self, source_urls):
         """Process sources sequentially for better control."""
         self.channels.clear()
@@ -270,6 +361,7 @@ class M3UCollector:
 
         if self.channels:
             self.filter_active_channels()
+            self.dedupe_by_tvg_name()
         else:
             logging.warning("No channels parsed from sources")
 

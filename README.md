@@ -35,7 +35,8 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 - **HTML Source Parsing**: A source ending in `.html` is scanned for nested playlist links, filtering out non-stream links (e.g., Telegram, GitHub).
 - **Merged EPG Guides**: The EPG (XMLTV) URLs declared by each source playlist are read from its `#EXTM3U url-tvg` attribute and merged into the header of the generated `LiveTV.m3u`, in source order and without duplicates.
 - **Source Order Preserved**: The merged playlist keeps the order of its inputs. A channel stays where its source playlist had it, the first source's channels come first, and a group appears where its first channel appeared. Nothing is alphabetised, so the file reads like the playlists it was built from.
-- **Deterministic Exports**: The order is not randomised: sources are consumed in a fixed sequence and link verification never reshuffles the result, so re-running without source changes produces identical files and no spurious commits.
+- **Duplicate Channels by `tvg-name`**: When several entries share the same `tvg-name`, only one survives: the first one in playlist order **whose stream actually answers**. The rest are dropped, so a channel never appears twice just because several providers carry it. Channels with no `tvg-name` are never compared with each other.
+- **Deterministic Exports**: The order is not randomised: sources are consumed in a fixed sequence and link verification never reshuffles the result, so re-running without source changes produces identical files and no spurious commits. The only exception is the `tvg-name` deduplication, which reads live stream state by design: if a stream goes down, the next run publishes its working backup and the commit is the point.
 - **Honest Timestamps**: The `date` field in `LiveTV.json` is the moment the collector actually ran, expressed in `Europe/Madrid` and written as ISO 8601 with an explicit UTC offset (e.g. `2026-09-30T21:14:07+02:00`). Because GitHub's cron never fires on time, this is the only trustworthy publication time, and the offset lets the browser resolve the instant correctly whatever timezone the visitor is in, so the "updated N min ago" banner in `index.html` is accurate.
 - **Web Hub (`index.html`)**: Static browser UI to browse the generated playlists, search channels, copy/download links, and track download statistics locally.
 - **Multiple Export Formats**:
@@ -144,6 +145,7 @@ Custom JSON list without extension:
 
 2. **Processing**:
    - Removes duplicates based on stream URLs.
+   - Collapses duplicate `tvg-name`s across the merged playlist, keeping the first entry whose stream answers (see [Deduplication by `tvg-name`](#deduplication-by-tvg-name)).
    - Optionally verifies link activity with concurrent HEAD/GET requests (2-second timeout, 10 workers) when `--check-links` is passed.
 
 3. **Exporting**:
@@ -165,6 +167,24 @@ python generate_indexes.py                     # refresh section indexes
 ```
 
 `index.html` is a static page: serve the repository root over any static host and it reads the generated files from the raw GitHub URL (this repository first, the upstream repository as fallback).
+
+## Deduplication by `tvg-name`
+
+Providers overlap, so the same channel often arrives several times: `La 1` from `Generalistas` and again from `Entretenimiento`, `Runtime` from three different hosts. After the URL-level deduplication (which only removes the same stream repeated) the merged playlist still carried **82 duplicated `tvg-name` groups covering 182 channels**. The collector now collapses them.
+
+**How the winner is chosen.** Candidates are ordered by their position in the merged playlist and probed in that order; the first one whose stream answers wins and the rest are dropped. If none of them answers, the first is kept anyway — a probe that fails because of a network blip must never make a channel disappear from the published playlist.
+
+**How names are compared.** The key is the `tvg-name` trimmed, with internal whitespace collapsed and case ignored, so `La 1`, `la 1  ` and `LA 1` are one channel. Comparing raw strings would have found 72 groups instead of 82 and missed real variants such as `Pocoyó`/`pocoyó` or `24h`/`24H`.
+
+**Scope.** Matching is global across the whole playlist, not per category, because 81 of the 82 duplicated groups span more than one category. A consequence worth knowing: after deduplication, a channel that used to appear under both `Generalistas` and `Entretenimiento` stays only in whichever category comes first.
+
+**Channels without a `tvg-name` are never compared.** There is nothing to match on, so all 69 of them are kept. Treating the empty value as a single key would have deleted 68 channels.
+
+**Cost.** Groups are resolved in parallel and each group stops probing at its winner, so a run probes about 94 URLs instead of the 182 involved — a fraction of the 929 that a full `--check-links` pass would need. With `--check-links` the answers are already in the link status cache and deduplication costs no extra requests.
+
+**Order.** Nothing is reshuffled: the surviving channels keep their position, and a category keeps the position of its first surviving channel. A category left with no channels at all disappears. Measured on the live sources: 929 → 829 channels, 42 categories unchanged, and the surviving 829 entries in exactly the order they had before.
+
+**Determinism.** This is the one place where the export depends on something other than the sources. A stream that goes down will make the next run publish its backup, and one that comes back will make it switch again, so the daily commit is no longer purely a function of the playlists. That is the intended behaviour, but it does trade away part of the deterministic-export guarantee above.
 
 ## Scheduling
 
@@ -209,6 +229,7 @@ The suite uses only the standard library (`unittest`), so no extra dependency is
 - **Source order** (`TestSourceOrderIsPreserved`) — a single source keeps its own order, the first source's channels come before the second's, the declared order of the sources is respected, a group keeps the position of its first channel, a second identical run produces the same order, all four exports agree, link verification with `--check-links` does not reshuffle the result (futures completing in reverse still export in source order), and dropped channels do not disturb the rest.
 - **Timestamps** (`TestExportTimestamp`) — the published `date` is Madrid local time under both CET and CEST, carries an explicit offset, and parses back to the same instant.
 - **M3U EPG header** (`TestM3UEpgHeader`) — each source's `url-tvg` is read from its header line, single and multi-URL values are split and trimmed, sources without EPG contribute nothing, several sources are merged in order, a guide shared by two sources is listed once, the list is cleared between runs, the header stays bare without EPG, the source M3U never leaks into `url-tvg`, and the stream entries still follow the header.
+- **`tvg-name` deduplication** (`TestTvgNameDeduplication`) — the key trims, collapses whitespace and ignores case and is `None` without a usable `tvg-name`; channels without metadata are all kept; the first copy wins when its stream answers; the search falls back to the next copy, and to the first one when nothing answers; probing stops at the winner; the resolved URL replaces the winner's; duplicates match across categories and across case and spacing variants; unique channels are never probed; survivors and categories keep their order, an emptied category disappears, all four exports agree, and a `--check-links` run reuses the status cache instead of probing again.
 
 `tests/test_workflow_schedule.py` guards the scheduling configuration: one cron at 16:00 UTC, no leftover gate job, no stale reference to the removed gate script, and a well-formed job chain.
 

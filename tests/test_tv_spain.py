@@ -704,6 +704,239 @@ class TestUrlDeduplication(CollectorTestCase):
         self.assertEqual(len(self.all_channels(collector)), 1)
 
 
+class TestTvgNameDeduplication(CollectorTestCase):
+    """Duplicates are spotted on tvg-name; the winner is the first live stream."""
+
+    def stub_streams(self, collector, alive_urls, calls=None):
+        """Replace the network probe: *alive_urls* answer, everything else is down."""
+        def fake_check(url, timeout=2):
+            if calls is not None:
+                calls.append(url)
+            return url in alive_urls, url
+        collector.check_link_active = fake_check
+
+    def dedupe(self, collector, alive_urls, calls=None):
+        self.stub_streams(collector, alive_urls, calls)
+        collector.dedupe_by_tvg_name()
+        return [ch["name"] for ch in self.all_channels(collector)]
+
+    def build(self, collector, specs, source="https://source.example/list.m3u"):
+        """Store one channel per (tvg_name, name, group, url) tuple.
+
+        A tvg_name of None emits an #EXTINF with no tvg-* attributes at all,
+        which is what a source that ships no metadata looks like.
+        """
+        lines = []
+        for tvg_name, name, group, url in specs:
+            if tvg_name is None:
+                entry = extinf_line(group=group, name=name)
+            else:
+                entry = full_extinf_line(
+                    tvg_id=f"id-{name}", tvg_name=tvg_name, group=group, name=name)
+            lines += [entry, url]
+        return self.parse(collector, lines, source=source)
+
+    # ---- the key itself -------------------------------------------------
+
+    def test_key_normalises_case_and_inner_whitespace(self):
+        self.assertEqual(tv.M3UCollector.duplicate_key({"tvg_name": "La  1 "}), "la 1")
+        self.assertEqual(tv.M3UCollector.duplicate_key({"tvg_name": "  LA   1"}), "la 1")
+        self.assertEqual(tv.M3UCollector.duplicate_key({"tvg_name": "Pocoyó"}), "pocoyó")
+
+    def test_key_is_none_without_a_usable_tvg_name(self):
+        # Without metadata to match on, a channel must not be lumped together
+        # with every other channel that has no tvg-name.
+        for channel in ({}, {"tvg_name": ""}, {"tvg_name": "   "}, {"tvg_name": None}):
+            self.assertIsNone(tv.M3UCollector.duplicate_key(channel))
+
+    def test_channels_without_tvg_name_are_all_kept(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            (None, "Sin metadatos A", "Generalistas", "https://cdn.example/a.m3u8"),
+            (None, "Sin metadatos B", "Generalistas", "https://cdn.example/b.m3u8"),
+            (None, "Sin metadatos C", "Generalistas", "https://cdn.example/c.m3u8"),
+        ])
+        self.assertEqual(
+            self.dedupe(collector, alive_urls=set()),
+            ["Sin metadatos A", "Sin metadatos B", "Sin metadatos C"],
+        )
+
+    # ---- who wins -------------------------------------------------------
+
+    def test_keeps_the_first_copy_when_its_stream_works(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Segunda", "Entretenimiento", "https://b.example/la1.m3u8"),
+        ])
+        self.assertEqual(
+            self.dedupe(collector, alive_urls={"https://a.example/la1.m3u8"}),
+            ["Primera"],
+        )
+
+    def test_falls_back_to_the_next_copy_when_the_first_is_down(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Caida", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Viva", "Entretenimiento", "https://b.example/la1.m3u8"),
+            ("La 1", "Tercera", "Spain", "https://c.example/la1.m3u8"),
+        ])
+        self.assertEqual(
+            self.dedupe(collector, alive_urls={"https://b.example/la1.m3u8"}),
+            ["Viva"],
+        )
+
+    def test_keeps_the_first_copy_when_none_of_them_answers(self):
+        # A probe that fails because of a network blip must never make a channel
+        # disappear from the published playlist.
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Segunda", "Entretenimiento", "https://b.example/la1.m3u8"),
+        ])
+        self.assertEqual(
+            self.dedupe(collector, alive_urls=set()),
+            ["Primera"],
+        )
+
+    def test_probing_stops_at_the_first_working_copy(self):
+        # Laziness is the whole point: a group is never probed past the winner.
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Caida", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Viva", "Entretenimiento", "https://b.example/la1.m3u8"),
+            ("La 1", "Intacta", "Spain", "https://c.example/la1.m3u8"),
+        ])
+        probed = []
+        self.dedupe(collector, alive_urls={"https://b.example/la1.m3u8"}, calls=probed)
+        self.assertEqual(probed, ["https://a.example/la1.m3u8", "https://b.example/la1.m3u8"])
+
+    def test_resolved_url_replaces_the_winner_url(self):
+        # check_link_active may find the stream on the other protocol.
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "http://a.example/la1.m3u8"),
+            ("La 1", "Segunda", "Entretenimiento", "https://b.example/la1.m3u8"),
+        ])
+
+        def fake_check(url, timeout=2):
+            return True, url.replace("http://", "https://")
+
+        collector.check_link_active = fake_check
+        collector.dedupe_by_tvg_name()
+        self.assertEqual(self.all_channels(collector)[0]["url"], "https://a.example/la1.m3u8")
+
+    # ---- matching -------------------------------------------------------
+
+    def test_case_and_spacing_variants_are_duplicates(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "https://a.example/la1.m3u8"),
+            ("  la   1 ", "Tercera", "Spain", "https://c.example/la1.m3u8"),
+        ])
+        self.assertEqual(self.dedupe(collector, alive_urls=set()), ["Primera"])
+
+    def test_duplicates_are_matched_across_categories(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Segunda", "Entretenimiento", "https://b.example/la1.m3u8"),
+            ("La 2", "Otra", "Generalistas", "https://c.example/la2.m3u8"),
+        ])
+        self.assertEqual(self.dedupe(collector, alive_urls=set()), ["Primera", "Otra"])
+
+    def test_unique_channels_are_never_probed(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 2", "Segunda", "Generalistas", "https://b.example/la2.m3u8"),
+        ])
+        probed = []
+        self.assertEqual(
+            self.dedupe(collector, alive_urls=set(), calls=probed),
+            ["Primera", "Segunda"],
+        )
+        self.assertEqual(probed, [])
+
+    # ---- order is preserved ---------------------------------------------
+
+    def test_survivors_keep_their_original_order(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "A", "Generalistas", "https://a.example/1.m3u8"),
+            ("La 2", "B", "Generalistas", "https://b.example/2.m3u8"),
+            ("La 1", "C", "Generalistas", "https://c.example/1.m3u8"),
+            ("La 3", "D", "Generalistas", "https://d.example/3.m3u8"),
+        ])
+        self.assertEqual(
+            self.dedupe(collector, alive_urls={"https://a.example/1.m3u8"}),
+            ["A", "B", "D"],
+        )
+
+    def test_a_category_left_empty_disappears(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Duplicada", "Entretenimiento", "https://b.example/la1.m3u8"),
+            ("La 2", "Segunda", "Generalistas", "https://c.example/la2.m3u8"),
+        ])
+        self.dedupe(collector, alive_urls=set())
+        self.assertEqual(list(collector.channels), ["Generalistas"])
+
+    def test_groups_keep_the_position_of_their_first_surviving_channel(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "A", "Primero", "https://a.example/1.m3u8"),
+            ("La 1", "Duplicada", "Segundo", "https://b.example/1.m3u8"),
+            ("La 2", "C", "Tercero", "https://c.example/2.m3u8"),
+        ])
+        self.dedupe(collector, alive_urls=set())
+        self.assertEqual(list(collector.channels), ["Primero", "Tercero"])
+
+    # ---- it reaches the published files ---------------------------------
+
+    def test_every_export_reflects_the_deduplicated_playlist(self):
+        collector = self.make_collector()
+        self.build(collector, [
+            ("La 1", "Primera", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Duplicada", "Entretenimiento", "https://b.example/la1.m3u8"),
+        ])
+        self.dedupe(collector, alive_urls=set())
+        collector.export_m3u("LiveTV.m3u")
+        collector.export_txt("LiveTV.txt")
+        collector.export_json("LiveTV.json")
+        collector.export_custom("LiveTV")
+
+        m3u = self.read_text("Spain", "LiveTV.m3u")
+        self.assertIn("Primera", m3u)
+        self.assertNotIn("Duplicada", m3u)
+        self.assertEqual(m3u.count("#EXTINF"), 1)
+        self.assertNotIn("Duplicada", self.read_text("Spain", "LiveTV.txt"))
+        self.assertNotIn("Duplicada", self.read_text("Spain", "LiveTV"))
+        self.assertEqual(
+            [c["name"] for c in self.read_json("Spain", "LiveTV.json")["channels"]["Generalistas"]],
+            ["Primera"],
+        )
+
+    def test_runs_after_link_filtering_so_the_cache_is_reused(self):
+        # With --check-links the streams were already probed; dedup must work on
+        # that result instead of probing the whole playlist again.
+        collector = self.make_collector(check_links=True)
+        self.build(collector, [
+            ("La 1", "Caida", "Generalistas", "https://a.example/la1.m3u8"),
+            ("La 1", "Viva", "Entretenimiento", "https://b.example/la1.m3u8"),
+        ])
+        probed = []
+        self.stub_streams(collector, {"https://b.example/la1.m3u8"}, probed)
+
+        collector.filter_active_channels()
+        collector.dedupe_by_tvg_name()
+
+        self.assertEqual([c["name"] for c in self.all_channels(collector)], ["Viva"])
+        # b.example was already known to be alive from the filtering pass.
+        self.assertEqual(probed.count("https://b.example/la1.m3u8"), 1)
+
+
 class TestLinkFiltering(CollectorTestCase):
     def build_channels(self):
         return [
