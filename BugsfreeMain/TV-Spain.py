@@ -28,6 +28,9 @@ class M3UCollector:
         self.seen_urls = set()
         self.channel_by_url = {}
         self.url_status_cache = {}
+        # M3U sources merged in the last run, in the order they were consumed.
+        # Published in the #EXTM3U header so the merged result is traceable.
+        self.source_urls = []
         self.output_dir = os.path.join(base_dir, country)
         self.lock = threading.Lock()
         self.check_links = check_links  # Toggle link checking
@@ -218,6 +221,7 @@ class M3UCollector:
         self.seen_urls.clear()
         self.channel_by_url.clear()
         self.url_status_cache.clear()
+        self.source_urls.clear()
 
         all_m3u_urls = set()
         for url in source_urls:
@@ -226,9 +230,11 @@ class M3UCollector:
                 m3u_urls = self.extract_stream_urls_from_html(html_content, url)
                 all_m3u_urls.update(m3u_urls)
             else:
+                self.source_urls.append(url)
                 self.parse_and_store(lines, url)
 
         for m3u_url in sorted(all_m3u_urls):
+            self.source_urls.append(m3u_url)
             _, lines = self.fetch_content(m3u_url)
             self.parse_and_store(lines, m3u_url)
 
@@ -256,10 +262,24 @@ class M3UCollector:
                 attributes.append(f'{name}="{value}"')
         return f'#EXTINF:-1 {" ".join(attributes)},{channel["name"]}'
 
+    def m3u_header(self):
+        """The `#EXTM3U` line, carrying every merged source in `url-tvg`.
+
+        The attribute is a comma separated list, so the URLs are declared in
+        source order rather than sorted, and a source that was consumed twice
+        is only listed once. Without sources the line stays bare, which keeps
+        the output valid for callers that pass an empty playlist.
+        """
+        seen = set()
+        sources = [url for url in self.source_urls if not (url in seen or seen.add(url))]
+        if not sources:
+            return '#EXTM3U'
+        return f'#EXTM3U url-tvg="{", ".join(sources)}"'
+
     def export_m3u(self, filename="LiveTV.m3u"):
         filepath = os.path.join(self.output_dir, filename)
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write('#EXTM3U\n')
+            f.write(self.m3u_header() + '\n')
             for group, channels in self.sorted_groups():
                 for channel in channels:
                     f.write(self.extinf_line(group, channel) + '\n')

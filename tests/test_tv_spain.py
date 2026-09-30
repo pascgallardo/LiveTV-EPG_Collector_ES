@@ -386,6 +386,88 @@ class TestTvgMetadataExports(CollectorTestCase):
             self.assertEqual(after["logo"], before["logo"])
 
 
+class TestM3UHeaderSources(CollectorTestCase):
+    """The #EXTM3U line lists every M3U that was merged into the playlist."""
+
+    def populate(self, collector):
+        collector.channels["Generalistas"] = [{
+            "name": "La 1", "logo": "logo", "group": "Generalistas",
+            "source": "src", "url": "https://cdn.example/la1.m3u8",
+        }]
+
+    def header_with(self, *source_urls):
+        collector = self.make_collector()
+        self.populate(collector)
+        collector.source_urls = list(source_urls)
+        collector.export_m3u()
+        return self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
+
+    def test_header_lists_the_merged_sources(self):
+        header = self.header_with(
+            "https://m3u.work/OI0Q3l.m3u",
+            "https://m3u.work/YawDD3.m3u",
+            "https://m3u.work/ICEQGPH.m3u",
+        )
+        self.assertEqual(header, (
+            '#EXTM3U url-tvg="https://m3u.work/OI0Q3l.m3u, '
+            'https://m3u.work/YawDD3.m3u, https://m3u.work/ICEQGPH.m3u"'
+        ))
+
+    def test_header_keeps_the_declared_order(self):
+        header = self.header_with("https://b.example/z.m3u", "https://a.example/a.m3u")
+        self.assertLess(header.index("z.m3u"), header.index("a.m3u"))
+
+    def test_a_repeated_source_is_listed_once(self):
+        header = self.header_with("https://a.example/a.m3u", "https://a.example/a.m3u")
+        self.assertEqual(header.count("a.m3u"), 1)
+
+    def test_header_stays_bare_without_sources(self):
+        self.assertEqual(self.header_with(), "#EXTM3U")
+
+    def test_process_sources_records_the_playlist_it_read(self):
+        collector = self.make_collector()
+        lines = ['#EXTINF:-1 group-title="Generalistas",La 1', "https://cdn.example/la1.m3u8"]
+        with mock.patch.object(tv.M3UCollector, "fetch_content", return_value=(None, lines)):
+            collector.process_sources(["https://source.example/list.m3u"])
+
+        self.assertEqual(collector.source_urls, ["https://source.example/list.m3u"])
+
+    def test_process_sources_records_playlists_found_in_html(self):
+        collector = self.make_collector()
+        html = '<a href="https://nested.example/inner.m3u">inner</a>'
+        playlist = ['#EXTINF:-1 group-title="Generalistas",La 1', "https://cdn.example/la1.m3u8"]
+        with mock.patch.object(tv.M3UCollector, "fetch_content",
+                               side_effect=[(html, []), (None, playlist)]):
+            collector.process_sources(["https://page.example/index.html"])
+
+        self.assertEqual(collector.source_urls, ["https://nested.example/inner.m3u"])
+
+    def test_sources_are_cleared_between_runs(self):
+        collector = self.make_collector()
+        collector.source_urls = ["https://old.example/list.m3u"]
+        collector.process_sources([])
+        self.assertEqual(collector.source_urls, [])
+
+    def test_the_exported_header_is_a_valid_m3u_line(self):
+        header = self.header_with("https://m3u.work/OI0Q3l.m3u")
+        self.assertTrue(header.startswith("#EXTM3U "))
+        # The list lives inside the quotes, so no stray quote may close it early.
+        self.assertEqual(header.count('"'), 2)
+        self.assertEqual(tv.M3UCollector.extinf_attribute(header, "url-tvg"),
+                         "https://m3u.work/OI0Q3l.m3u")
+
+    def test_the_stream_entries_still_follow_the_header(self):
+        collector = self.make_collector()
+        self.populate(collector)
+        collector.source_urls = ["https://m3u.work/OI0Q3l.m3u"]
+        collector.export_m3u()
+        lines = self.read_text("Spain", "LiveTV.m3u").splitlines()
+
+        self.assertTrue(lines[0].startswith("#EXTM3U"))
+        self.assertTrue(lines[1].startswith("#EXTINF:"))
+        self.assertEqual(lines[2], "https://cdn.example/la1.m3u8")
+
+
 class TestUrlDeduplication(CollectorTestCase):
     def test_duplicate_url_in_same_playlist_is_stored_once(self):
         collector = self.make_collector()

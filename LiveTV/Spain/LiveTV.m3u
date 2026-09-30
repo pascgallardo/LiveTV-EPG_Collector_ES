@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://m3u.work/OI0Q3l.m3u, https://m3u.work/YawDD3.m3u, https://m3u.work/ICEQGPH.m3u, https://m3u.work/hJiHE3ad.m3u, https://m3u.work/qKChzP8.m3u"
 #EXTINF:-1 tvg-id="101Malaga.TV" tvg-name="101TV Málaga" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/101tv_cuadrado.jpg" group-title="Andalucía",101TV Málaga
 https://liveingesta318.cdnmedia.tv/101televisionlive/smil:malagaott.smil/playlist.m3u8?DVR
 #EXTINF:-1 tvg-id="7TV_Andalucía.TV" tvg-name="7TV Andalucía" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/7tv_andalucia_cuadrado.jpg" group-title="Andalucía",7TV Andalucía
