@@ -185,6 +185,12 @@ So the cron is a single `0 16 * * *` with **no gate**. `workflow_dispatch` still
 
 Expected publication window in mainland Spain time: roughly **19:00–23:00**, with a median around 21:30.
 
+### Validation record
+
+The first execution of this configuration was a manual request, **TV-Spain Update Files #660** ([run 36719445370](https://github.com/pascgallardo/LiveTVCollectorES/actions/runs/36719445370)), started 2026-09-30 13:07:56 UTC against commit `b9111b9`. Both jobs passed (`update-files`, `update-indexes`) and the bot committed the refreshed lists as `09ebe56`. It confirms the pipeline works end to end without a gate, but it says nothing about the `schedule` delay: only the first programmed run at 16:00 UTC will.
+
+That next one is expected to be **#661**, and it is the real measurement: comparing its start time against the 16:00 UTC it was scheduled for gives the first delay of this configuration, against a historical median of 103 min and a best-ever of 28 min for this slot.
+
 If an exact wall-clock time ever becomes a hard requirement, the fix is to stop relying on `schedule` at all: call the `workflow_dispatch` endpoint from an external scheduler.
 
 ## Tests
