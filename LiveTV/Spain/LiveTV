@@ -336,28 +336,12 @@
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/canalsurnoticias_blanco_cuadrado.jpg"
   },
   {
-    "name": "Onda Cero",
-    "tvg_id": "OndaCero.TV",
-    "tvg_name": "Onda Cero",
-    "type": "Informativos",
-    "url": "https://atres-live.ondacero.es/h264/live/obs/master.m3u8",
-    "img": "https://graph.facebook.com/ondacero/picture?width=200&height=200"
-  },
-  {
     "name": "CNN en Español",
     "tvg_id": "CNN en Español",
     "tvg_name": "",
     "type": "Informativos",
     "url": "https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist/amg00803-cnnfastinternational-cnnesponal-lges/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads_google_ad_manager_nonce=google_ad_manager_nonce",
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/cnnesp_cuadrado.jpg"
-  },
-  {
-    "name": "EuroNews",
-    "tvg_id": "EuroNews",
-    "tvg_name": "Euronews",
-    "type": "Informativos",
-    "url": "https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiMDA0YjY0NTMtYjY2MC00ZTZkLTlkNzEtMTk3YTM3ZDZhZWIxIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjoxfQ==/26034/euronews-es.m3u8",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/euronews_cuadrado.jpg"
   },
   {
     "name": "Teledeporte",
@@ -560,14 +544,6 @@
     "img": "https://images.pluto.tv/channels/68adc697116b783a33f99e6c/colorLogoPNG_1760448745473.png"
   },
   {
-    "name": "Crimen & Historia",
-    "tvg_id": "64ddcbb14c5ed80008fad416",
-    "tvg_name": "Crimen & Historia",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/plu-64ddcbb14c5ed80008fad416.m3u8",
-    "img": "https://images.pluto.tv/channels/64ddcbb14c5ed80008fad416/colorLogoPNG.png"
-  },
-  {
     "name": "Aftershock Mi Extraña Obsesión/Loca Compulsión",
     "tvg_id": "aftershock-meo-lc",
     "tvg_name": "aftershock-meo-lc",
@@ -670,14 +646,6 @@
     "type": "Documentales",
     "url": "https://jmp2.uk/stvp-ES24000028L",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png"
-  },
-  {
-    "name": "La Fiebre del Jade",
-    "tvg_id": "ES1600002QL",
-    "tvg_name": "La Fiebre del Jade",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ES1600002QL",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600002QL_20250923T011551SQUARE.png"
   },
   {
     "name": "Love the Planet",
@@ -1536,14 +1504,6 @@
     "img": "https://graph.facebook.com/ondacero/picture?width=200&height=200"
   },
   {
-    "name": "Radio Nacional",
-    "tvg_id": "RNE.Radio",
-    "tvg_name": "Radio Nacional",
-    "type": "Radio_Populares",
-    "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_r1_main.m3u8",
-    "img": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200"
-  },
-  {
     "name": "esRadio",
     "tvg_id": "esRadio.Radio",
     "tvg_name": "esRadio",
@@ -2120,14 +2080,6 @@
     "img": "https://pbs.twimg.com/profile_images/2277895539/ypj3m6ggljmfnoy5cqvt_200x200.jpeg"
   },
   {
-    "name": "Euronews",
-    "tvg_id": "60d3583ef310610007fb02b1",
-    "tvg_name": "Euronews",
-    "type": "Noticias",
-    "url": "https://jmp2.uk/plu-60d3583ef310610007fb02b1.m3u8",
-    "img": "https://images.pluto.tv/channels/60d3583ef310610007fb02b1/colorLogoPNG.png"
-  },
-  {
     "name": "CBS News 24/7",
     "tvg_id": "6231ede1be5b460007f91bc1",
     "tvg_name": "CBS News 24/7",
@@ -2142,14 +2094,6 @@
     "type": "Noticias",
     "url": "https://jmp2.uk/plu-66c45c0de7f5e80008b82005.m3u8",
     "img": "https://images.pluto.tv/channels/66c45c0de7f5e80008b82005/colorLogoPNG_1775159727857.png"
-  },
-  {
-    "name": "Actualidad 360",
-    "tvg_id": "67517fae5534bb0008187997",
-    "tvg_name": "Actualidad 360",
-    "type": "Noticias",
-    "url": "https://jmp2.uk/plu-67517fae5534bb0008187997.m3u8",
-    "img": "https://images.pluto.tv/channels/67517fae5534bb0008187997/colorLogoPNG.png"
   },
   {
     "name": "Euronews EN DIRECTO",
@@ -2232,14 +2176,6 @@
     "img": "https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/b4e13e24-5808-4dbb-8239-bf72c9611650.jpeg"
   },
   {
-    "name": "24H",
-    "tvg_id": "ESBC4100004J1",
-    "tvg_name": "24H",
-    "type": "Noticias",
-    "url": "https://jmp2.uk/stvp-ESBC4100004J1",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4100004J1_20260915T035747SQUARE.png"
-  },
-  {
     "name": "Actualidad 360",
     "tvg_id": "ES300034BT",
     "tvg_name": "Actualidad 360",
@@ -2278,14 +2214,6 @@
     "type": "Noticias",
     "url": "https://jmp2.uk/stvp-ES34000039I",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES34000039I_20260622T063630SQUARE.png"
-  },
-  {
-    "name": "CNN Headlines International",
-    "tvg_id": "ESBD190000137",
-    "tvg_name": "CNN Headlines International",
-    "type": "Noticias",
-    "url": "https://jmp2.uk/stvp-ESBD190000137",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD190000137_20260331T032325SQUARE.png"
   },
   {
     "name": "DW",
@@ -2352,28 +2280,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3400004SS_20250624T020505SQUARE.png"
   },
   {
-    "name": "World Poker Tour",
-    "tvg_id": "6080381ab7c9ea00074ec64c",
-    "tvg_name": "World Poker Tour",
-    "type": "Deportes",
-    "url": "https://jmp2.uk/plu-6080381ab7c9ea00074ec64c.m3u8",
-    "img": "https://images.pluto.tv/channels/6080381ab7c9ea00074ec64c/colorLogoPNG.png"
-  },
-  {
     "name": "MODUS Super Series Darts",
     "tvg_id": "67164414e40c4a00087f450d",
     "tvg_name": "MODUS Super Series Darts",
     "type": "Deportes",
     "url": "https://jmp2.uk/plu-67164414e40c4a00087f450d.m3u8",
     "img": "https://images.pluto.tv/channels/67164414e40c4a00087f450d/colorLogoPNG_1732095042151.png"
-  },
-  {
-    "name": "UFC",
-    "tvg_id": "67921b873de7c8cf94233f52",
-    "tvg_name": "UFC",
-    "type": "Deportes",
-    "url": "https://jmp2.uk/plu-67921b873de7c8cf94233f52.m3u8",
-    "img": "https://images.pluto.tv/channels/67921b873de7c8cf94233f52/colorLogoPNG.png"
   },
   {
     "name": "Pluto TV Snooker 900",
@@ -2414,14 +2326,6 @@
     "type": "Deportes",
     "url": "https://jmp2.uk/plu-65f96cd34e01740008ef1c97.m3u8",
     "img": "https://images.pluto.tv/channels/65f96cd34e01740008ef1c97/colorLogoPNG.png"
-  },
-  {
-    "name": "TOP BARÇA",
-    "tvg_id": "6793ac47f5c74bff95d18a99",
-    "tvg_name": "TOP BARÇA",
-    "type": "Deportes",
-    "url": "https://jmp2.uk/plu-6793ac47f5c74bff95d18a99.m3u8",
-    "img": "https://images.pluto.tv/channels/6793ac47f5c74bff95d18a99/colorLogoPNG.png"
   },
   {
     "name": "NFL Channel",
@@ -2792,14 +2696,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4200001MR_20260915T035827SQUARE.png"
   },
   {
-    "name": "MyTime Movie Network",
-    "tvg_id": "ESBA2200004G5",
-    "tvg_name": "MyTime Movie Network",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBA2200004G5",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA2200004G5_20260127T040117SQUARE.png"
-  },
-  {
     "name": "NEW K-MOVIES",
     "tvg_id": "ES170000433",
     "tvg_name": "NEW K-MOVIES",
@@ -2840,68 +2736,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2800001G7_20250624T022314SQUARE.png"
   },
   {
-    "name": "Pluto TV Cine Estelar",
-    "tvg_id": "ESAJ3800001KT",
-    "tvg_name": "Pluto TV Cine Estelar",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESAJ3800001KT",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800001KT_20241022T050403SQUARE.png"
-  },
-  {
     "name": "RTVE Somos Cine",
     "tvg_id": "ES33000058B",
     "tvg_name": "RTVE Somos Cine",
     "type": "Cine",
     "url": "https://jmp2.uk/stvp-ES33000058B",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000058B_20260915T035838SQUARE.png"
-  },
-  {
-    "name": "Runtime",
-    "tvg_id": "ESBC400001QQ",
-    "tvg_name": "Runtime",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBC400001QQ",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC400001QQ_20241022T050617SQUARE.png"
-  },
-  {
-    "name": "Runtime Acción",
-    "tvg_id": "ESBD80000288",
-    "tvg_name": "Runtime Acción",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBD80000288",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD80000288_20260915T035850SQUARE.png"
-  },
-  {
-    "name": "Runtime Clásicos",
-    "tvg_id": "ES2200003DA",
-    "tvg_name": "Runtime Clásicos",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES2200003DA",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2200003DA_20250916T003539SQUARE.png"
-  },
-  {
-    "name": "Runtime Comedia",
-    "tvg_id": "ESBD8000033W",
-    "tvg_name": "Runtime Comedia",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBD8000033W",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD8000033W_20250722T005652SQUARE.png"
-  },
-  {
-    "name": "Runtime Familia",
-    "tvg_id": "ES700004C8",
-    "tvg_name": "Runtime Familia",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES700004C8",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES700004C8_20260127T040120SQUARE.png"
-  },
-  {
-    "name": "Runtime Romance",
-    "tvg_id": "ESBD800004KU",
-    "tvg_name": "Runtime Romance",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBD800004KU",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD800004KU_20260804T051244SQUARE.png"
   },
   {
     "name": "Sci-Fi - Rakuten TV",
@@ -3008,14 +2848,6 @@
     "img": "https://images.pluto.tv/channels/608035b8d8705f0007260287/colorLogoPNG.png"
   },
   {
-    "name": "Inazuma Eleven",
-    "tvg_id": "632c6df43d2bc5000751f621",
-    "tvg_name": "Inazuma Eleven",
-    "type": "Infantil",
-    "url": "https://jmp2.uk/plu-632c6df43d2bc5000751f621.m3u8",
-    "img": "https://images.pluto.tv/channels/632c6df43d2bc5000751f621/colorLogoPNG.png"
-  },
-  {
     "name": "Lupin",
     "tvg_id": "683457e5f59cc6a13212fce4",
     "tvg_name": "Lupin",
@@ -3054,14 +2886,6 @@
     "type": "Infantil",
     "url": "https://jmp2.uk/plu-680ba8992472a7200a183eb5.m3u8",
     "img": "https://images.pluto.tv/channels/680ba8992472a7200a183eb5/colorLogoPNG_1748955630923.png"
-  },
-  {
-    "name": "Yu-Gi-Oh!",
-    "tvg_id": "63eb96754e83e70008ab8941",
-    "tvg_name": "Yu-Gi-Oh!",
-    "type": "Infantil",
-    "url": "https://jmp2.uk/plu-63eb96754e83e70008ab8941.m3u8",
-    "img": "https://images.pluto.tv/channels/63eb96754e83e70008ab8941/colorLogoPNG.png"
   },
   {
     "name": "Pluto TV Junior",
@@ -3184,14 +3008,6 @@
     "img": "https://images.pluto.tv/channels/6a0c25fe09705ebdf7e4599a/colorLogoPNG_1780925919473.png"
   },
   {
-    "name": "H2O & Friends",
-    "tvg_id": "69fc906b90dc413f536059a1",
-    "tvg_name": "H2O & Friends",
-    "type": "Infantil",
-    "url": "https://jmp2.uk/plu-69fc906b90dc413f536059a1.m3u8",
-    "img": "https://images.pluto.tv/channels/69fc906b90dc413f536059a1/colorLogoPNG_1780583615660.png"
-  },
-  {
     "name": "En Familia",
     "tvg_id": "family-rakuten-tv",
     "tvg_name": "family-rakuten-tv",
@@ -3312,14 +3128,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800005C5_20241022T050710SQUARE.png"
   },
   {
-    "name": "FailArmy",
-    "tvg_id": "ESBA1400006NP",
-    "tvg_name": "FailArmy",
-    "type": "Comedia",
-    "url": "https://jmp2.uk/stvp-ESBA1400006NP",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA1400006NP_20260210T035845SQUARE.png"
-  },
-  {
     "name": "Just For Laughs",
     "tvg_id": "ESBC2700008SK",
     "tvg_name": "Just For Laughs",
@@ -3334,22 +3142,6 @@
     "type": "Comedia",
     "url": "https://jmp2.uk/stvp-ESAJ3800003LX",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png"
-  },
-  {
-    "name": "People Are Awesome",
-    "tvg_id": "ESAJ4500023Y5",
-    "tvg_name": "People Are Awesome",
-    "type": "Comedia",
-    "url": "https://jmp2.uk/stvp-ESAJ4500023Y5",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500023Y5_20241022T050750SQUARE.png"
-  },
-  {
-    "name": "The Pet Collective",
-    "tvg_id": "ESAJ4500016BH",
-    "tvg_name": "The Pet Collective",
-    "type": "Comedia",
-    "url": "https://jmp2.uk/stvp-ESAJ4500016BH",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png"
   },
   {
     "name": "LOL España",
@@ -3488,14 +3280,6 @@
     "img": "https://images.pluto.tv/channels/6080345ebb49b90007ce0baf/colorLogoPNG.png"
   },
   {
-    "name": "Top Gear",
-    "tvg_id": "60d356a534f63f000850cdd7",
-    "tvg_name": "Top Gear",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/plu-60d356a534f63f000850cdd7.m3u8",
-    "img": "https://images.pluto.tv/channels/60d356a534f63f000850cdd7/colorLogoPNG_1756396834691.png"
-  },
-  {
     "name": "El encantador de perros",
     "tvg_id": "60e45687313c5f0007bc8e94",
     "tvg_name": "El encantador de perros",
@@ -3504,28 +3288,12 @@
     "img": "https://images.pluto.tv/channels/60e45687313c5f0007bc8e94/colorLogoPNG.png"
   },
   {
-    "name": "Ice Pilots",
-    "tvg_id": "61b9edc4a4ca6100070bb407",
-    "tvg_name": "Ice Pilots",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/plu-61b9edc4a4ca6100070bb407.m3u8",
-    "img": "https://images.pluto.tv/channels/61b9edc4a4ca6100070bb407/colorLogoPNG.png"
-  },
-  {
     "name": "Cazasubastas",
     "tvg_id": "6335a6b6e6f7a600076e589e",
     "tvg_name": "Cazasubastas",
     "type": "Entretenimiento",
     "url": "https://jmp2.uk/plu-6335a6b6e6f7a600076e589e.m3u8",
     "img": "https://images.pluto.tv/channels/6335a6b6e6f7a600076e589e/colorLogoPNG.png"
-  },
-  {
-    "name": "La fiebre del Jade",
-    "tvg_id": "65254e8d81f9420008342cee",
-    "tvg_name": "La fiebre del Jade",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/plu-65254e8d81f9420008342cee.m3u8",
-    "img": "https://images.pluto.tv/channels/65254e8d81f9420008342cee/colorLogoPNG.png"
   },
   {
     "name": "COPS",
@@ -3600,28 +3368,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3000288I_20250326T013528SQUARE.png"
   },
   {
-    "name": "Azteca Internacional",
-    "tvg_id": "ESBD1300004IG",
-    "tvg_name": "Azteca Internacional",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ESBD1300004IG",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD1300004IG_20241022T050448SQUARE.png"
-  },
-  {
     "name": "Beyblade",
     "tvg_id": "ES1400001T8",
     "tvg_name": "Beyblade",
     "type": "Entretenimiento",
     "url": "https://jmp2.uk/stvp-ES1400001T8",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1400001T8_20241106T142204SQUARE.png"
-  },
-  {
-    "name": "Canal Sur Andalucía",
-    "tvg_id": "ESBD3000002GP",
-    "tvg_name": "Canal Sur Andalucía",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ESBD3000002GP",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3000002GP_20260528T055720SQUARE.png"
   },
   {
     "name": "Chicas Guapas TV",
@@ -3638,14 +3390,6 @@
     "type": "Entretenimiento",
     "url": "https://jmp2.uk/stvp-ES3800002V5",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3800002V5_20251111T011933SQUARE.png"
-  },
-  {
-    "name": "El Mueble",
-    "tvg_id": "ES4300006I4",
-    "tvg_name": "El Mueble",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES4300006I4",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4300006I4_20260915T035803SQUARE.png"
   },
   {
     "name": "Encantador de Perros",
@@ -3680,22 +3424,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC3500002PW_20241022T051025SQUARE.png"
   },
   {
-    "name": "La 1",
-    "tvg_id": "ESBC4100001NZ",
-    "tvg_name": "La 1",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ESBC4100001NZ",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4100001NZ_20260915T035814SQUARE.png"
-  },
-  {
-    "name": "La 2",
-    "tvg_id": "ESBC4100002AG",
-    "tvg_name": "La 2",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ESBC4100002AG",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4100002AG_20260622T063715SQUARE.png"
-  },
-  {
     "name": "Mark Rober TV",
     "tvg_id": "ES4100001XD",
     "tvg_name": "Mark Rober TV",
@@ -3718,14 +3446,6 @@
     "type": "Entretenimiento",
     "url": "https://jmp2.uk/stvp-ESAJ3800006TT",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800006TT_20241106T142236SQUARE.png"
-  },
-  {
-    "name": "MTV Originals",
-    "tvg_id": "ESAJ380000226",
-    "tvg_name": "MTV Originals",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ESAJ380000226",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ380000226_20241022T050331SQUARE.png"
   },
   {
     "name": "RTVE Saber y Ganar",
@@ -3864,28 +3584,12 @@
     "img": "https://images.pluto.tv/channels/65b91e530d9ab40008340d8d/colorLogoPNG.png"
   },
   {
-    "name": "Ana y los 7",
-    "tvg_id": "5f1acce7f17797000718f9be",
-    "tvg_name": "Ana y los 7",
-    "type": "Series",
-    "url": "https://jmp2.uk/plu-5f1acce7f17797000718f9be.m3u8",
-    "img": "https://images.pluto.tv/channels/5f1acce7f17797000718f9be/colorLogoPNG.png"
-  },
-  {
     "name": "BBC Series",
     "tvg_id": "60dafb9a0df1ba000758d37b",
     "tvg_name": "BBC Series",
     "type": "Series",
     "url": "https://jmp2.uk/plu-60dafb9a0df1ba000758d37b.m3u8",
     "img": "https://images.pluto.tv/channels/60dafb9a0df1ba000758d37b/colorLogoPNG_1770367705306.png"
-  },
-  {
-    "name": "Curro Jiménez",
-    "tvg_id": "5f1acd36779de70007a680d1",
-    "tvg_name": "Curro Jiménez",
-    "type": "Series",
-    "url": "https://jmp2.uk/plu-5f1acd36779de70007a680d1.m3u8",
-    "img": "https://images.pluto.tv/channels/5f1acd36779de70007a680d1/colorLogoPNG.png"
   },
   {
     "name": "Embrujadas",
@@ -4168,14 +3872,6 @@
     "img": "https://images.pluto.tv/channels/61922be835f3910007fc58f6/colorLogoPNG.png"
   },
   {
-    "name": "Historia y Vida",
-    "tvg_id": "67517f923a61d40008c451f0",
-    "tvg_name": "Historia y Vida",
-    "type": "Cultura",
-    "url": "https://jmp2.uk/plu-67517f923a61d40008c451f0.m3u8",
-    "img": "https://images.pluto.tv/channels/67517f923a61d40008c451f0/colorLogoPNG.png"
-  },
-  {
     "name": "Homeful",
     "tvg_id": "65786abdb3801200084c593a",
     "tvg_name": "Homeful",
@@ -4222,14 +3918,6 @@
     "type": "Cultura",
     "url": "https://jmp2.uk/plu-61cd7b49543066000713b620.m3u8",
     "img": "https://images.pluto.tv/channels/61cd7b49543066000713b620/colorLogoPNG.png"
-  },
-  {
-    "name": "Space Live",
-    "tvg_id": "69b3db5d61e8e298254c7108",
-    "tvg_name": "Space Live",
-    "type": "Cultura",
-    "url": "https://jmp2.uk/plu-69b3db5d61e8e298254c7108.m3u8",
-    "img": "https://images.pluto.tv/channels/69b3db5d61e8e298254c7108/colorLogoPNG_1775061733929.png"
   },
   {
     "name": "Pelis Top",
@@ -4664,14 +4352,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/c94e3220-9a45-42e9-8bdb-01fc43e0f27c/white_textAction_Hollywood_Movies_logo_dark_-_Angela_Chan.png"
   },
   {
-    "name": "Actualidad 360",
-    "tvg_id": "643054b1fc3be59477853717-682510ec0f741b077c360512",
-    "tvg_name": "Actualidad 360",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-682510ec0f741b077c360512/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/c8f6acf9-137f-4d15-ae6d-5ccca8afdb6f/Logo_Actualidad360_1500x1000_DarkBackground_-_Belen_BrunWHITE_TEXTo.png"
-  },
-  {
     "name": "AddictaTV",
     "tvg_id": "643054b1fc3be59477853717-69d6d88b1790acff6189dea5",
     "tvg_name": "AddictaTV",
@@ -4712,14 +4392,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/d3f6d54b-64cf-44ed-a960-2feb1c4b05c7/US_STVP_AnimationPlus_logo_Color_1500x1000_-_Kai_Schneider.png"
   },
   {
-    "name": "Archivos Forenses",
-    "tvg_id": "643054b1fc3be59477853717-656fbd05cb7e8e6a9bc3f372",
-    "tvg_name": "Archivos Forenses",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656fbd05cb7e8e6a9bc3f372/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/7e4429c1-3aa4-4fb1-b0ce-d3b5d81520f1/Plex_FilmRise_ArchivosForenses_Color_Logo.png"
-  },
-  {
     "name": "Asian Drama",
     "tvg_id": "643054b1fc3be59477853717-685f27cca7111a932d28f1ae",
     "tvg_name": "Asian Drama",
@@ -4750,14 +4422,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68caada21fabab6eb2e99331/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/f6d14e42-d9be-4f81-893f-cb676d32c473/BassmasterChannel_DarkBackground_-_Will_Flowers.png"
-  },
-  {
-    "name": "Beyblade",
-    "tvg_id": "643054b1fc3be59477853717-66fd331e216b603e031725f6",
-    "tvg_name": "Beyblade",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66fd331e216b603e031725f6/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/154865e3-15a5-4f2f-874c-cfd1affee212/Plex_Beyblade_Color_Logo.png"
   },
   {
     "name": "Billiard TV",
@@ -4864,22 +4528,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/b0328822-b149-4524-ad89-1c87c2543268/FilmRise_CheatersEnEspanol_Logo_ColorRDX.png"
   },
   {
-    "name": "Cine Friki",
-    "tvg_id": "643054b1fc3be59477853717-6490e17c18a55242eea95991",
-    "tvg_name": "Cine Friki",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6490e17c18a55242eea95991/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/1e8b55ca-ef52-42c6-8390-45b1561f3d15/CINE_FRIKI_-_Logo_blanc_1500x1000_-_JC_DERSOIR.png"
-  },
-  {
-    "name": "Cine Western",
-    "tvg_id": "643054b1fc3be59477853717-66ea174c9502c5778b828d47",
-    "tvg_name": "Cine Western",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ea174c9502c5778b828d47/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/1be934c5-1520-439c-8b0d-52a4f7716311/CinewesternWhite_LogoRDX.png"
-  },
-  {
     "name": "CINEPRIDE",
     "tvg_id": "643054b1fc3be59477853717-62167144ab2095ca85353ad6",
     "tvg_name": "CINEPRIDE",
@@ -4904,14 +4552,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/5524a542-5952-4090-9e2e-780e1a3adc22/clic_logo_light_-_James_Stowe_Color_rdx.png"
   },
   {
-    "name": "CNN Headlines International",
-    "tvg_id": "643054b1fc3be59477853717-69b164bc87340e48b7b72247",
-    "tvg_name": "CNN Headlines International",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69b164bc87340e48b7b72247/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/c6b66b76-8050-4cc8-9e61-1ab6cc2b0015/CNN_HeadlinesInternational_RED_wht_logo.png"
-  },
-  {
     "name": "CombaTV",
     "tvg_id": "643054b1fc3be59477853717-63f0ca427b78030ed9990309",
     "tvg_name": "CombaTV",
@@ -4934,14 +4574,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f07e9fdf313eb0041bbecda/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/images/ott_channels/logos/cooking-panda.png"
-  },
-  {
-    "name": "COPS",
-    "tvg_id": "643054b1fc3be59477853717-626c1753ffda6789d20a452e",
-    "tvg_name": "COPS",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-626c1753ffda6789d20a452e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/41babb58-eb00-4a0d-8a5f-094950a5d8f2/James_Roebuck_-_COPDS-PLEX_CH_LOGO_07.png"
   },
   {
     "name": "Cops en Español",
@@ -5096,14 +4728,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/ece5a289-3815-4e00-acac-14ac32beccff/ElConflicto_logo_dark.png"
   },
   {
-    "name": "El Mueble",
-    "tvg_id": "643054b1fc3be59477853717-693cb1af58076a970420f591",
-    "tvg_name": "El Mueble",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-693cb1af58076a970420f591/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/d64983e2-55b1-410b-9599-98a28f7b94ba/Logo_ElMueble_1500x1000_AllWhite_-_Belen_Bruno.png"
-  },
-  {
     "name": "Euro Hits",
     "tvg_id": "643054b1fc3be59477853717-62ee74af52f7d73061eec491",
     "tvg_name": "Euro Hits",
@@ -5160,14 +4784,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/76a8ddca-38be-4d5b-b8db-be69fcaa6231/Plex-WURL_Euronews-Logos_PT_-_astrid_collomb.png"
   },
   {
-    "name": "FailArmy",
-    "tvg_id": "643054b1fc3be59477853717-5f170d62b898490041b4936e",
-    "tvg_name": "FailArmy",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d62b898490041b4936e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/c3a3b230-a40b-4409-b33f-678c1923bd77/FailArmy_logo_dark_v2.png"
-  },
-  {
     "name": "Farscape",
     "tvg_id": "643054b1fc3be59477853717-635195e9ccee3e1547a8831a",
     "tvg_name": "Farscape",
@@ -5182,14 +4798,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6490c01f3b3ce9e1aaad95be/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/47127441-d5b6-42a3-b641-a7c076d20940/Fashion_PNG_w__transparent_background__All_white_Logo_for_Attribution__-_Yuri_Alexandrov.png"
-  },
-  {
-    "name": "FIFA+",
-    "tvg_id": "643054b1fc3be59477853717-6662984e346b86608532dbdf",
-    "tvg_name": "FIFA+",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6662984e346b86608532dbdf/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/14825735-9fac-428a-80ab-39206be5efae/FIFA__Logo_Rectangle_1500x1000_WHT.png"
   },
   {
     "name": "Fight Network",
@@ -5232,14 +4840,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/471205b6-08e3-4ee9-8d67-8035fd2aac1c/FreeTV_Banda.png"
   },
   {
-    "name": "FreeTV Clásico",
-    "tvg_id": "643054b1fc3be59477853717-631bbc79a273cc38add9e5e1",
-    "tvg_name": "FreeTV Clásico",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-631bbc79a273cc38add9e5e1/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/d7752fdc-4bdf-4671-823c-ab3295cf2ed8/Free-TV_Clasico_1500X1000_dark_and_light.png"
-  },
-  {
     "name": "FreeTV Hits",
     "tvg_id": "643054b1fc3be59477853717-6018913ea15130002b284191",
     "tvg_name": "FreeTV Hits",
@@ -5278,14 +4878,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621672e42c2627c068e73ad8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/dc452291-62d8-4f01-8e5b-b1fef79fb37d/GalxyTV_logo_dark.png"
-  },
-  {
-    "name": "Gata Salvaje",
-    "tvg_id": "643054b1fc3be59477853717-67c24d5a45ae99120c07158c",
-    "tvg_name": "Gata Salvaje",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67c24d5a45ae99120c07158c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/c4604da1-d6b6-4043-95fb-9a90f4f0273c/Plex_GataSalvaje_750x500_ChannelLogo_Light_RDX.png"
   },
   {
     "name": "GFN Football TV",
@@ -5344,28 +4936,12 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/2693c8ce-05be-463b-894e-62e3a1f3b834/hip_hop_r_n_b_rdx.png"
   },
   {
-    "name": "Historia Y Vida",
-    "tvg_id": "643054b1fc3be59477853717-671ff7a5769d5ec4bf51d63a",
-    "tvg_name": "Historia Y Vida",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-671ff7a5769d5ec4bf51d63a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/d93cbfe7-324c-46eb-8c7a-6d959837e20c/Logo_Historia_Vida_1500x1000_DarkBackground_-_Belen_Bruno.png"
-  },
-  {
     "name": "Hit List",
     "tvg_id": "643054b1fc3be59477853717-61aaa014784a2161d3caf7fd",
     "tvg_name": "Hit List",
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aaa014784a2161d3caf7fd/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/d6d559f3-6a3d-4ce0-839e-55681e4a7928/Hit_List.png"
-  },
-  {
-    "name": "Homeful",
-    "tvg_id": "643054b1fc3be59477853717-682dfb2ddfc9c452b8f98426",
-    "tvg_name": "Homeful",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-682dfb2ddfc9c452b8f98426/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/e407e666-03b2-4244-ae4f-841ca20736d6/Plex_Homeful_Logo-white_1500x1000_-_Nerissa_Jones.png"
   },
   {
     "name": "Hot Ones",
@@ -5398,14 +4974,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e192cd91d13cb4c8cbb6b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/cd6eed5a-9ec7-469b-90cd-378bc8e95f3f/pilotos_del_artico_logo_WHT.png"
-  },
-  {
-    "name": "Ideas En 5 Minutos",
-    "tvg_id": "643054b1fc3be59477853717-64a355697d24564fba37bab8",
-    "tvg_name": "Ideas En 5 Minutos",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64a355697d24564fba37bab8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/dfe80db0-76d2-4437-bae4-470236b57cfb/1500x1000_dark_-_Irina_Larionova.png"
   },
   {
     "name": "INTER 24/7",
@@ -5544,14 +5112,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/4171a6a6-6d73-481a-ad91-15166befee06/Channel_Logo_MetalRocks_Color_-_Ricardo_RivasRDX.png"
   },
   {
-    "name": "Mi Casa",
-    "tvg_id": "643054b1fc3be59477853717-666e1d14d91d13cb4c8cbb73",
-    "tvg_name": "Mi Casa",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1d14d91d13cb4c8cbb73/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/024f4cb9-2765-4ec5-b222-dc3388106f16/channel_logo_1500x1000_light.png.png"
-  },
-  {
     "name": "Milenio Television",
     "tvg_id": "643054b1fc3be59477853717-65b16e7b115f5ad5450cfdac",
     "tvg_name": "Milenio Television",
@@ -5600,14 +5160,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/a28301e1-00c2-4783-9a44-1e822be96cb9/11810_MMS_Plex-TV_Channel-Logo_1500x1000_V01-Color-Rev.png"
   },
   {
-    "name": "MOVIESPHERE",
-    "tvg_id": "643054b1fc3be59477853717-695d5d279caacd2e64b7a00c",
-    "tvg_name": "MOVIESPHERE",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-695d5d279caacd2e64b7a00c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/bfb3b19f-bd6e-47cc-a99a-70f7ab38669b/MovieSphere_Intl_Logo_Color_STACKRDX__1_.png"
-  },
-  {
     "name": "Mutant X",
     "tvg_id": "643054b1fc3be59477853717-656237c55dbccec83a87b649",
     "tvg_name": "Mutant X",
@@ -5624,28 +5176,12 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/cbce9562-c7a6-460c-9d07-02ab8724bbc5/Light_Logo__Mythical_24_7_1500x1000.png"
   },
   {
-    "name": "MyTime Movie Network",
-    "tvg_id": "643054b1fc3be59477853717-64487696af92c31f4a190bc4",
-    "tvg_name": "MyTime Movie Network",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64487696af92c31f4a190bc4/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/eb43f8a1-fb9e-4a1b-b0db-0d720db95f66/MT_PLEX_1500x1000_SPAIN_WHITE_-_Sam_Abraham.png"
-  },
-  {
     "name": "Naturaleza",
     "tvg_id": "643054b1fc3be59477853717-666e2178d91d13cb4c8cbb75",
     "tvg_name": "Naturaleza",
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e2178d91d13cb4c8cbb75/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/b8f2b67e-a131-4b50-9864-dc0b13c3c6ed/channel_logo_1500x1000_light.png.png"
-  },
-  {
-    "name": "Nature Time",
-    "tvg_id": "643054b1fc3be59477853717-682d0bc9363625fa508aef43",
-    "tvg_name": "Nature Time",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-682d0bc9363625fa508aef43/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/2264f961-88d5-46c6-a987-9d5dd7a15d69/NATURE_TIMEWHITE_LOGO.png"
   },
   {
     "name": "NEW KFOOD",
@@ -5678,14 +5214,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66bfb2e6144c201b8b61c10f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/2e3bf0d9-3ca6-4f65-b1d4-f180ef725d96/NewsWorld_logo_dark_-_Angela_Chan.png"
-  },
-  {
-    "name": "NFL Channel",
-    "tvg_id": "643054b1fc3be59477853717-69f4f6c2647c1d14cc38677b",
-    "tvg_name": "NFL Channel",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69f4f6c2647c1d14cc38677b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/585a58ca-c568-4bb8-bfc7-3000ac8d5fc5/NFL_WHITE.png"
   },
   {
     "name": "NHRA TV",
@@ -5782,14 +5310,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63ec0b739866d8d2120ac759/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/6b1c4bff-1077-4ba0-a8d6-f4c39365f126/PickleTV_1500x1000_3_ChannelLogoLight_Casey_Murawskirdx.png"
-  },
-  {
-    "name": "Pitufo TV",
-    "tvg_id": "643054b1fc3be59477853717-639ba57d3f4612cc150a5723",
-    "tvg_name": "Pitufo TV",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-639ba57d3f4612cc150a5723/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/352d158b-9349-41a8-a273-af1eea090ce6/pitufotv_logo_dark_-_Jordan_Warkol.png"
   },
   {
     "name": "Platos Sucios",
@@ -5912,14 +5432,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/b0655223-8876-4ca6-be40-7886947328d8/remember_the_80s.png"
   },
   {
-    "name": "Revry",
-    "tvg_id": "643054b1fc3be59477853717-5ef11487d33ab9004048a1d9",
-    "tvg_name": "Revry",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5ef11487d33ab9004048a1d9/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/6bafecc0-03d6-4fa3-b4e7-baa241b44f12/Revry_Logo_Plex_1500x1000_colorRDX.png"
-  },
-  {
     "name": "Robot Wars by Mech+",
     "tvg_id": "643054b1fc3be59477853717-6470477fe536e0faaf10be9d",
     "tvg_name": "Robot Wars by Mech+",
@@ -5928,92 +5440,12 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/518ddf05-c7a3-4c37-aa51-1c0dde8e671b/Logo---white_Ben_Deloughery.png"
   },
   {
-    "name": "Runtime",
-    "tvg_id": "643054b1fc3be59477853717-66840253cd6f1d394094114f",
-    "tvg_name": "Runtime",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66840253cd6f1d394094114f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/397a4a3a-ab7f-4b1b-b568-84b54c52fc56/Runtime_Spain_Dark_Mode_Logordcx.png"
-  },
-  {
-    "name": "Runtime Acción",
-    "tvg_id": "643054b1fc3be59477853717-668420c2cd6f1d3940941157",
-    "tvg_name": "Runtime Acción",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-668420c2cd6f1d3940941157/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/39d2ddfb-c83e-4dbd-85dd-748e951f3c1b/Runtime_ES_Accion_Dark_Mode_Logordx.png"
-  },
-  {
     "name": "Runtime Ana y los 7",
     "tvg_id": "643054b1fc3be59477853717-66841fb8702b9db9f817725a",
     "tvg_name": "Runtime Ana y los 7",
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66841fb8702b9db9f817725a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/b69028cf-3d86-4e92-a816-e5f4dfff47e7/Runtime_ES_Ana_y_Los_7_Dark_Mode_Logordx.png"
-  },
-  {
-    "name": "Runtime Clásicos",
-    "tvg_id": "643054b1fc3be59477853717-66841b30702b9db9f8177258",
-    "tvg_name": "Runtime Clásicos",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66841b30702b9db9f8177258/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/8019022a-2401-4d51-990c-fdf0f5ac1f54/Runtime_ES_Clasicos_Dark_Mode_Logordx.png"
-  },
-  {
-    "name": "Runtime Comedia",
-    "tvg_id": "643054b1fc3be59477853717-66841966702b9db9f8177256",
-    "tvg_name": "Runtime Comedia",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66841966702b9db9f8177256/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/05de98ea-6a31-46f4-9b8e-07c344d66510/Runtime_ES_Comedia_Dark_Mode_Logordx.png"
-  },
-  {
-    "name": "Runtime Crimen",
-    "tvg_id": "643054b1fc3be59477853717-66840a26cd6f1d3940941155",
-    "tvg_name": "Runtime Crimen",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66840a26cd6f1d3940941155/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/54114614-0221-4487-bcae-168f29eb082f/Runtime_ES_Crimen_Dark_Mode_Logordx.png"
-  },
-  {
-    "name": "Runtime Familia",
-    "tvg_id": "643054b1fc3be59477853717-66840486cd6f1d3940941151",
-    "tvg_name": "Runtime Familia",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66840486cd6f1d3940941151/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/c0981fcf-6369-4c85-9a6e-09413be0911d/Runtime_ES_Familia_Attribution_Logordx.png"
-  },
-  {
-    "name": "Runtime Romance",
-    "tvg_id": "643054b1fc3be59477853717-668402fa702b9db9f8177254",
-    "tvg_name": "Runtime Romance",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-668402fa702b9db9f8177254/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/de846d7d-8bcd-4d63-876f-5b15c3368f9a/Runtime_BR_Romance_Dark_Mode_Logordx.png"
-  },
-  {
-    "name": "Runtime Series",
-    "tvg_id": "643054b1fc3be59477853717-6684011fcd6f1d394094114d",
-    "tvg_name": "Runtime Series",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6684011fcd6f1d394094114d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/077da4d3-b10f-4487-8765-3806a693f8fd/Runtime_ES_Series_Dark_Mode_Logordx.png"
-  },
-  {
-    "name": "Runtime Thriller",
-    "tvg_id": "643054b1fc3be59477853717-6683fcdf702b9db9f8177252",
-    "tvg_name": "Runtime Thriller",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6683fcdf702b9db9f8177252/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/0a1ddcc9-f356-4dec-9d9f-f019d4f24004/Runtime_ES_Thriller_Dark_Mode_Logordx.png"
-  },
-  {
-    "name": "Sangre Fría",
-    "tvg_id": "643054b1fc3be59477853717-66842aa2cd6f1d3940941159",
-    "tvg_name": "Sangre Fría",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66842aa2cd6f1d3940941159/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/2a8afd09-cee5-42af-aa6f-ddb9918abd19/Sangre_Fria_Dark_Mode_Logordx.png"
   },
   {
     "name": "Shark Tank",
@@ -6384,14 +5816,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/0e0759ed-8180-46e7-8fe9-cbc7fa4afbf3/TODO_NOVELAS_-_Logo_1500x1000.png"
   },
   {
-    "name": "Todo Pasión",
-    "tvg_id": "643054b1fc3be59477853717-68864d2d062dc5a487f806e0",
-    "tvg_name": "Todo Pasión",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68864d2d062dc5a487f806e0/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/a0a3a170-5591-4904-8191-4766a2b203a6/LOGO_BLANC_-_JC_DERSOIRRDX.png"
-  },
-  {
     "name": "Toon Goggles",
     "tvg_id": "643054b1fc3be59477853717-5eea605574085f0040ddc794",
     "tvg_name": "Toon Goggles",
@@ -6496,14 +5920,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/ae42c76a-809f-465b-aed8-cfdc8e33a04b/usatoday_logo_light.png"
   },
   {
-    "name": "Viajes & Sabores",
-    "tvg_id": "643054b1fc3be59477853717-68251044ae4546e02a6ba4f7",
-    "tvg_name": "Viajes & Sabores",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68251044ae4546e02a6ba4f7/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/03e84b82-8da3-432d-9dfe-fb32927f106e/Logo_Viajes_Sabores_1500x1000_DarkBackground_-_Belen_Bruno.png"
-  },
-  {
     "name": "VR+",
     "tvg_id": "643054b1fc3be59477853717-65a1d3996475bf522f9256e3",
     "tvg_name": "VR+",
@@ -6558,14 +5974,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6880001d015fe7e375a1a0a8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/7aa34d17-de26-4b64-b4cc-628d572de91f/PielLight_Logo__1_.png"
-  },
-  {
-    "name": "WildEarth",
-    "tvg_id": "643054b1fc3be59477853717-60d4edddb2fdec002c141135",
-    "tvg_name": "WildEarth",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60d4edddb2fdec002c141135/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/images/ott_channels/logos/wildearth_logo_dark.png"
   },
   {
     "name": "Wineman",
@@ -6632,14 +6040,6 @@
     "img": "https://provider-static.plex.tv/epg/images/ott_channels/logos/yahoo-finance.png"
   },
   {
-    "name": "Yu-Gi-Oh!",
-    "tvg_id": "643054b1fc3be59477853717-64b1dd6046d96b0c91bb1a42",
-    "tvg_name": "Yu-Gi-Oh!",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64b1dd6046d96b0c91bb1a42/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/e10f9ed3-8112-4287-8355-cc00be4413a8/Wurl_Yu-Gi-Oh_Channel_Logo_light_Astridrdx.png"
-  },
-  {
     "name": "Z Nation",
     "tvg_id": "643054b1fc3be59477853717-66ce3e009ac0b1441b19ca29",
     "tvg_name": "Z Nation",
@@ -6688,14 +6088,6 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/b2cf9ac1-5403-4568-b5d5-23f4629f4e71/GrowthDay_Network_1500_1000_ALL_WHITE_logo_Plex_-_Dan_Goodman.png"
   },
   {
-    "name": "H2O & Friends",
-    "tvg_id": "643054b1fc3be59477853717-6a63ab81a1deb5624927c631",
-    "tvg_name": "H2O & Friends",
-    "type": "Spain",
-    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a63ab81a1deb5624927c631/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
-    "img": "https://provider-static.plex.tv/epg/cms/production/b4e2190f-3258-400d-9b65-d92806a9e2c6/H20Channel_Logo_H2O_and_Friends_Color_-_Olivia_Beigh.png"
-  },
-  {
     "name": "Powder TV",
     "tvg_id": "643054b1fc3be59477853717-62280162c9f485cc7afe8c46",
     "tvg_name": "Powder TV",
@@ -6742,22 +6134,6 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6aa9bc040832270987394353/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/1ed26798-0ac2-47f2-b0ef-0c1667b2daf2/Real_Emergency_Logo_1500x1000_Jay_Crossman.png"
-  },
-  {
-    "name": "BBC Series",
-    "tvg_id": "ES2900001DQ",
-    "tvg_name": "BBC Series",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES2900001DQ",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2900001DQ_20251013T053428SQUARE.png"
-  },
-  {
-    "name": "Corazón",
-    "tvg_id": "ESBD1300003VN",
-    "tvg_name": "Corazón",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ESBD1300003VN",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD1300003VN_20241022T050520SQUARE.png"
   },
   {
     "name": "Cuéntame cómo pasó",
@@ -6848,22 +6224,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300003D4_20260421T123722SQUARE.png"
   },
   {
-    "name": "Todo Drama",
-    "tvg_id": "ES440000327",
-    "tvg_name": "Todo Drama",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES440000327",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES440000327_20260915T035905SQUARE.png"
-  },
-  {
-    "name": "Águila Roja",
-    "tvg_id": "ES500005BP",
-    "tvg_name": "Águila Roja",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES500005BP",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES500005BP_20250610T010520SQUARE.png"
-  },
-  {
     "name": "Alerta Cobra",
     "tvg_id": "ES45000012U",
     "tvg_name": "Alerta Cobra",
@@ -6904,60 +6264,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3700001S0_20241022T051012SQUARE.png"
   },
   {
-    "name": "El Comisario",
-    "tvg_id": "ESBA3300029UG",
-    "tvg_name": "El Comisario",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ESBA3300029UG",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA3300029UG_20241022T051014SQUARE.png"
-  },
-  {
     "name": "Forensic Files",
     "tvg_id": "ES2600001MC",
     "tvg_name": "Forensic Files",
     "type": "Crimen",
     "url": "https://jmp2.uk/stvp-ES2600001MC",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600001MC_20250722T005647SQUARE.png"
-  },
-  {
-    "name": "Todo Crimen",
-    "tvg_id": "ES1600004JV",
-    "tvg_name": "Todo Crimen",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ES1600004JV",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600004JV_20250819T033248SQUARE.png"
-  },
-  {
-    "name": "Los asesinatos de Midsomer",
-    "tvg_id": "ES80000246",
-    "tvg_name": "Los asesinatos de Midsomer",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ES80000246",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES80000246_20260811T161506SQUARE.png"
-  },
-  {
-    "name": "DFB Play TV",
-    "tvg_id": "ES3200003OC",
-    "tvg_name": "DFB Play TV",
-    "type": "Deporte",
-    "url": "https://jmp2.uk/stvp-ES3200003OC",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3200003OC_20251230T030907SQUARE.png"
-  },
-  {
-    "name": "FIFA+",
-    "tvg_id": "ESBC2700009B4",
-    "tvg_name": "FIFA+",
-    "type": "Deporte",
-    "url": "https://jmp2.uk/stvp-ESBC2700009B4",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700009B4_20251028T011349SQUARE.png"
-  },
-  {
-    "name": "INTER 24/7",
-    "tvg_id": "ES31000013F",
-    "tvg_name": "INTER 24/7",
-    "type": "Deporte",
-    "url": "https://jmp2.uk/stvp-ES31000013F",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES31000013F_20260324T034829SQUARE.png"
   },
   {
     "name": "Motorvision",
@@ -7008,28 +6320,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3400002PY_20250121T012834SQUARE.png"
   },
   {
-    "name": "Teledeporte",
-    "tvg_id": "ESBC410000577",
-    "tvg_name": "Teledeporte",
-    "type": "Deporte",
-    "url": "https://jmp2.uk/stvp-ESBC410000577",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC410000577_20260622T063739SQUARE.png"
-  },
-  {
     "name": "Tennis Channel",
     "tvg_id": "ESBD2600001ME",
     "tvg_name": "Tennis Channel",
     "type": "Deporte",
     "url": "https://jmp2.uk/stvp-ESBD2600001ME",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2600001ME_20250923T011606SQUARE.png"
-  },
-  {
-    "name": "Tennis+",
-    "tvg_id": "ES20000065W",
-    "tvg_name": "Tennis+",
-    "type": "Deporte",
-    "url": "https://jmp2.uk/stvp-ES20000065W",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES20000065W_20260113T032333SQUARE.png"
   },
   {
     "name": "Top Barça",
@@ -7056,28 +6352,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES17000065P_20260915T035727SQUARE.png"
   },
   {
-    "name": "Bob Esponja",
-    "tvg_id": "ESBA33000262Z",
-    "tvg_name": "Bob Esponja",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESBA33000262Z",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA33000262Z_20250307T152119SQUARE.png"
-  },
-  {
     "name": "Caillou",
     "tvg_id": "ES4800002OZ",
     "tvg_name": "Caillou",
     "type": "Niños",
     "url": "https://jmp2.uk/stvp-ES4800002OZ",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4800002OZ_20250121T012820SQUARE.png"
-  },
-  {
-    "name": "Clan",
-    "tvg_id": "ESBC4100003WE",
-    "tvg_name": "Clan",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESBC4100003WE",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4100003WE_20260622T063701SQUARE.png"
   },
   {
     "name": "Cry Babies",
@@ -7094,14 +6374,6 @@
     "type": "Niños",
     "url": "https://jmp2.uk/stvp-ESBC4700001GR",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4700001GR_20241022T050629SQUARE.png"
-  },
-  {
-    "name": "iCarly",
-    "tvg_id": "ESBA3300028OE",
-    "tvg_name": "iCarly",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESBA3300028OE",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA3300028OE_20241022T050631SQUARE.png"
   },
   {
     "name": "La Abeja Maya",
@@ -7128,44 +6400,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES5000001CS_20250218T035957SQUARE.png"
   },
   {
-    "name": "Pitufo TV",
-    "tvg_id": "ESBD130000205",
-    "tvg_name": "Pitufo TV",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESBD130000205",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD130000205_20241022T050609SQUARE.png"
-  },
-  {
-    "name": "Pluto TV Kids",
-    "tvg_id": "ESAJ38000046O",
-    "tvg_name": "Pluto TV Kids",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESAJ38000046O",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ38000046O_20241022T050405SQUARE.png"
-  },
-  {
-    "name": "Pocoyó",
-    "tvg_id": "ESBC3900004ED",
-    "tvg_name": "Pocoyó",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESBC3900004ED",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC3900004ED_20250211T014050SQUARE.png"
-  },
-  {
     "name": "Rabbids : La invasion",
     "tvg_id": "ESBD2300003S5",
     "tvg_name": "Rabbids : La invasion",
     "type": "Niños",
     "url": "https://jmp2.uk/stvp-ESBD2300003S5",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2300003S5_20251013T053506SQUARE.png"
-  },
-  {
-    "name": "Rugrats",
-    "tvg_id": "ESBA33000324U",
-    "tvg_name": "Rugrats",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESBA33000324U",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA33000324U_20241022T050615SQUARE.png"
   },
   {
     "name": "SuperToons TV",
@@ -7198,14 +6438,6 @@
     "type": "Niños",
     "url": "https://jmp2.uk/stvp-ES2100002BU",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2100002BU_20260901T054127SQUARE.png"
-  },
-  {
-    "name": "Pluto TV Cocina",
-    "tvg_id": "ESAJ3800007PC",
-    "tvg_name": "Pluto TV Cocina",
-    "type": "Viajes y Cocina",
-    "url": "https://jmp2.uk/stvp-ESAJ3800007PC",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800007PC_20241022T050753SQUARE.png"
   },
   {
     "name": "RTVE Cocina",
@@ -7246,14 +6478,6 @@
     "type": "Telenovela",
     "url": "https://jmp2.uk/stvp-ES3600001Y7",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3600001Y7_20260622T063730SQUARE.png"
-  },
-  {
-    "name": "Todo Novelas",
-    "tvg_id": "ESBC43000013T",
-    "tvg_name": "Todo Novelas",
-    "type": "Telenovela",
-    "url": "https://jmp2.uk/stvp-ESBC43000013T",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC43000013T_20241106T142336SQUARE.png"
   },
   {
     "name": "CLIPS don't lie",
@@ -7312,14 +6536,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800007GH_20260528T055756SQUARE.png"
   },
   {
-    "name": "Metal.Rocks",
-    "tvg_id": "ES4400004OX",
-    "tvg_name": "Metal.Rocks",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES4400004OX",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4400004OX_20260609T043006SQUARE.png"
-  },
-  {
     "name": "NEW KPOP",
     "tvg_id": "ES1700005ME",
     "tvg_name": "NEW KPOP",
@@ -7374,22 +6590,6 @@
     "type": "Música & ambiente",
     "url": "https://jmp2.uk/stvp-ES1900003JT",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1900003JT_20260528T055908SQUARE.png"
-  },
-  {
-    "name": "Trace Latina",
-    "tvg_id": "ESBA3300042Y6",
-    "tvg_name": "Trace Latina",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ESBA3300042Y6",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA3300042Y6_20241022T051129SQUARE.png"
-  },
-  {
-    "name": "Trace Urban",
-    "tvg_id": "ESBA3300043M0",
-    "tvg_name": "Trace Urban",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ESBA3300043M0",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA3300043M0_20241022T051131SQUARE.png"
   },
   {
     "name": "Vevo Latino",
