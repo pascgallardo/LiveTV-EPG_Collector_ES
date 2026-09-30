@@ -95,6 +95,9 @@ jobs:
 
   update-indexes:
     needs: update-files
-    uses: bugsfreeweb/LiveTVCollector/.github/workflows/update-indexes.yml@main
+    # Use the reusable workflow from this repository. The upstream one hardcodes
+    # `git add LiveTV/index.json Movies/index.json`, and this fork has no Movies/
+    # directory, so `git add` exits 128 and fails the job.
+    uses: ./.github/workflows/update-indexes.yml
     permissions:
       contents: write  # Required for the called workflow to push changes
