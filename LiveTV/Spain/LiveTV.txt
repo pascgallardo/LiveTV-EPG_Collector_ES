@@ -6,6 +6,12 @@ URL: https://rtvelivestream.rtve.es/rtvesec/la1/la1_main.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/la1_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
+Name: La 1 UHD (2160p)
+TvgID: La 1 HD
+URL: http://185.47.212.25:8080/tdp_HD/index.m3u8
+Logo: https://i.ibb.co/MxJNPHsn/La-1.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
 Name: La 2
 TvgID: La 2
 TvgName: La 2
@@ -160,12 +166,6 @@ URL: https://stream2.parlamentodeandalucia.es/realizacion4/realizacion4/playlist
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/parlamentoandalucia_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Huelva Conecta
-TvgName: Huelva Conecta
-URL: https://servidor.islahostingla.com:3542/live/huelvaconecta3live.m3u8
-Logo: https://yt3.ggpht.com/dQxpHlPEeQ6XTzXJu7eJa36C7nT7TjxecHbznRDwEqWmdV5Upl8VMafZMHhCfToJGcdTcy1_bJA=s200
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 
 Group: Eventuales
 Name: Canal Parlamento
@@ -199,6 +199,13 @@ TvgID: Cocina
 TvgName: Cocina (RTVE)
 URL: https://rtvelivestream.rtve.es/eventual/gofast/playm20_main.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplaycocina_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Los Conciertos Radio 3
+TvgID: Los Conciertos de Radio 3
+TvgName: Conciertos Radio 3 (RTVE)
+URL: https://rtvelivestream.rtve.es/eventual/gofast/playm11_main.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayconciertosradio3_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Al cielo con ella
@@ -236,11 +243,11 @@ URL: https://ztnr.rtve.es/ztnr/6712399.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayenplay_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Los Conciertos Radio 3
-TvgID: Los Conciertos de Radio 3
-TvgName: Conciertos Radio 3 (RTVE)
-URL: https://rtvelivestream.rtve.es/eventual/gofast/playm11_main.m3u8
-Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayconciertosradio3_cuadrado.jpg
+Name: Festival de San Sebastián (RTVE)
+TvgID: RTVE_PopUp2.TV
+TvgName: Festival de San Sebastián (RTVE)
+URL: https://rtvelivestream.rtve.es/eventual/gofast/playm21_main.m3u8
+Logo: https://graph.facebook.com/rtveplay/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: El club de la comedia
@@ -256,11 +263,38 @@ URL: https://fast-channels.atresmedia.com/85cecd372210bdbe2392b20413c98a8f068b05
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/multicine_atresplayer_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: San Sebastián Fes (RTVE)
-TvgID: RTVE_PopUp2.TV
-TvgName: San Sebastián Fes (RTVE)
-URL: https://rtvelivestream.rtve.es/eventual/gofast/playm21_main.m3u8
-Logo: https://graph.facebook.com/rtveplay/picture?width=200&height=200
+Name: Comedia atresplayer
+TvgID: Comedia atresplayer
+TvgName: Comedia
+URL: https://fast-channels.atresmedia.com/7d8006a3881bb6d36d7fcec8f8997820d4332b86/648ef23d2bfab0e4557e0d61/648ef23d2bfab0e4557e0d61.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/comedia_atresplayer_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: El Hormiguero
+TvgID: El Hormiguero
+URL: https://fast-channels.atresmedia.com/f903abd690456cff8bef97a426a363260c867fb3/648ef5882bfab0e4627e0d61/648ef5882bfab0e4627e0d61.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/elhormiguero_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Clásicos atresplayer
+TvgID: Clásicos atresplayer
+TvgName: Clásicos
+URL: https://fast-channels.atresmedia.com/21f0dba17c97cfb5a8919605307699120177f453/648ef12c2bfab0e4507e0d61/648ef12c2bfab0e4507e0d61/1.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/clasicos_atresplayer_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Aquí no hay quién viva
+TvgID: Aquí no hay quién viva
+TvgName: Aquí no hay quien viva
+URL: https://fast-channels.atresmedia.com/d7bd0adb7616750c83bdf3ad204ce9869f8a81d1/648ef3951756b0e425af83cc/648ef3951756b0e425af83cc.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/aquinohayquienviva_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Canal Flooxer
+TvgID: Flooxer
+TvgName: Canal Flooxer
+URL: https://live.s2l.workers.dev/hls/flooxer
+Logo: https://statics.atresmedia.com/atresplayer/assets/mobile/commons/images/channels_renew/sombreado/Flooxer_tiny.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
@@ -305,6 +339,32 @@ TvgID: Teledeporte
 TvgName: Teledeporte
 URL: https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/tdp_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Vinx TV
+TvgID: Vinx.TV
+TvgName: Vinx TV
+URL: https://live.enfoque.media:5443/live/streams/vinxtv.m3u8
+Logo: https://graph.facebook.com/VinxTV/picture?width=200&height=200
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Real Madrid TV
+TvgID: RMTV.TV
+TvgName: Real Madrid TV
+URL: https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/realmadridtv_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: like Gecko) Chrome/120.0.0.0 Safari/537.36 VLC/3.0.21 LibVLC/3.0.21" group-title="Deportivos",Deportes por Movistar Plus+
+TvgID: DeportesporMovistarPlusPlus.es@SD
+URL: https://7nyaler.streamhostingcdn.top/stream/18/index.m3u8
+Logo: https://images.seeklogo.com/logo-png/49/1/deportes-por-movistar-plus-logo-png_seeklogo-492841.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: like Gecko) Chrome/120.0.0.0 Safari/537.36 VLC/3.0.21 LibVLC/3.0.21" group-title="Deportivos",Liga de Campeones por Movistar Plus+
+TvgID: LigadeCampeonesporMovistarPlusPlus.es@SD
+URL: https://7nyaler.streamhostingcdn.top/stream/36/index.m3u8
+Logo: https://images.seeklogo.com/logo-png/49/1/liga-de-campeones-por-movistar-plus-logo-png_seeklogo-492840.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
@@ -668,23 +728,17 @@ URL: https://jmp2.uk/plu-629a066860ef810008267b70.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/detectiveconan_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Infantiles",KinoKazka
-TvgID: KinoKazka.es@SD
-URL: http://stream.mcquack.net/167/index.m3u8
-Logo: https://i.imgur.com/y6SWpsX.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: Pocoyó
 TvgID: Pocoyó
 TvgName: Pocoyó
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5626&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5626&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/pocoyo_-_logo_y_fondo_0.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Pitufo TV
 TvgID: pitufo-tv
 TvgName: Pitufo TV
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5444&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5444&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/YJek0f2QAJvIDykEd5e_U3h3kGLUZa_93MvdnXAMDB4.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -800,56 +854,56 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Runtime Acción
 TvgID: Runtime Acción
 TvgName: Runtime Acción
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6125&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6125&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_accion_16x9.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Runtime Comedia
 TvgID: Runtime Comedia
 TvgName: Runtime Comedia
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6131&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6131&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_comedia_16x9.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Runtime Crimen
 TvgID: Runtime Crimen
 TvgName: Runtime Crimen
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3527&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3527&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_crimen_16x9.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Runtime Familia
 TvgID: RunTime Familia
 TvgName: Runtime Familia
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=4647&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=4647&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_familia_16x9_2.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Runtime Romance
 TvgID: Runtime Romance
 TvgName: Runtime Romance
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3056&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3056&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_romance_16x9.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Runtime Thriller-Terror
 TvgID: Runtime Thriller-Terror
 TvgName: Runtime Thriller
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6120&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6120&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_thriller_16x9.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Runtime Clásicos
 TvgID: RunTime Clásicos
 TvgName: Runtime Clásicos
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3053&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3053&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_clasicos_16x9.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: MyTime Movi Network
 TvgID: MyTime Movie Network (Rakuten TV)
 TvgName: MyTime Movie Network
-URL: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00500-studiocitypictu-mytimespanish-runtimees/playlist.m3u8?ip=83.50.205.167&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20Chrome%2F133%20Safari%2F537.36&dnt=0&app_bundle=com.ammo.runtime.tv.html5&app_name=Runtime&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&content_episode=&content_season=&content_livestream=0&channel_name=run&network_name=&did=98018ca96d753d8ba82a6f648d50b513&us_privacy=1NNN&gdpr_consent=0&gdpr=1&lmt=0&device_make=&device_model=
+URL: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00500-studiocitypictu-mytimespanish-runtimees/playlist.m3u8?ip=79.158.28.175&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20Chrome%2F133%20Safari%2F537.36&dnt=0&app_bundle=com.ammo.runtime.tv.html5&app_name=Runtime&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&content_episode=&content_season=&content_livestream=0&channel_name=run&network_name=&did=0d5d83bc42ef2307f3e44ff5283a4f5e&us_privacy=1NNN&gdpr_consent=0&gdpr=1&lmt=0&device_make=&device_model=
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/YECKAbCgFevzZ29V9z63YYJBzO_2PHeK42PRTrTirgg.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -870,14 +924,14 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Film&Co
 TvgID: filmco
 TvgName: Film&Co
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5625&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5625&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/filmco_-_logo_y_fondo_0.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Sangre Fría
 TvgID: Sangre Fría
 TvgName: Sangre Fría
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6130&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6130&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/f5457ac0-sangre_fria_1920x1080_0.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -967,21 +1021,21 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Runtime Series
 TvgID: Runtime Series
 TvgName: Runtime Series
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6132&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6132&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_series_16x9_0.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Ana y los 7
 TvgID: ana-y-los-7
 TvgName: Ana y los 7
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=2722&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=2722&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_ana_y_los_7_16x9_v2.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Curro Jiménez
 TvgID: curro-jimenez
 TvgName: Curro Jiménez
-URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3435&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
+URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3435&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_curro_jimenez_16x9_v2.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -1043,13 +1097,6 @@ Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
 Group: Musicales
-Name: Radio 3
-TvgID: RNE_Radio3.TV
-TvgName: Radio 3
-URL: https://ztnr.rtve.es/ztnr/6982918.m3u8
-Logo: https://graph.facebook.com/radio3/picture?width=200&height=200
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: Sol Música España
 TvgID: Sol Música
 TvgName: Sol Música España
@@ -1185,6 +1232,13 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Stingray Naturescape
 URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992082&ads.xumo_streamId=99992082&ads.channelId=99992082&ads.ad_tag_id=15717&ads.csid=lgchannels_es_stingraynaturescapeeu_ssai&ads.channelName=stingraynaturescape_it&ads.xumo_contentName=StingrayNaturescapeEU&ads.xumo_contentId=3200&ads.xumo_providerName=StingrayNaturescapeEU&ads.xumo_providerId=3200&ads.content_category=IAB1-2&ads.content_genre=lifestyle&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
 Logo: https://image.xumo.com/v1/channels/channel/99992082/600x200.png?type=white_cropped
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Radio 3 España
+TvgID: RNE_Radio3.TV
+TvgName: Radio 3 España
+URL: https://ztnr.rtve.es/ztnr/6982918.m3u8
+Logo: https://graph.facebook.com/radio3/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: MTV Originals
@@ -1349,7 +1403,7 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Hit FM
 TvgID: HitFM.Radio
 TvgName: Hit FM
-URL: https://adhandler.kissfmradio.cires21.com/get_link?url=https://bbhitfm.kissfmradio.cires21.com/bbhitfm.mp3
+URL: https://kissfm.kissfmradio.cires21.com/hitfm.mp3
 Logo: https://graph.facebook.com/hitfm.es/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -1681,6 +1735,12 @@ Name: 90 FM
 TvgName: 90 FM
 URL: http://185.23.192.118:8010/;stream.mp3
 Logo: https://pbs.twimg.com/profile_images/2277895539/ypj3m6ggljmfnoy5cqvt_200x200.jpeg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: La Más FM Almuñécar
+TvgName: La Más FM Almuñécar
+URL: https://streaming2.elitecomunicacion.es:8142/stream
+Logo: https://graph.facebook.com/LAMASFM/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
@@ -2626,6 +2686,13 @@ TvgID: ESAJ3800003LX
 TvgName: MTV Catfish
 URL: https://jmp2.uk/stvp-ESAJ3800003LX
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png
+Source: https://m3u.work/qKChzP8.m3u
+--------------------------------------------------
+Name: The Pet Collective
+TvgID: ESAJ4500016BH
+TvgName: The Pet Collective
+URL: https://jmp2.uk/stvp-ESAJ4500016BH
+Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: LOL España
@@ -4911,13 +4978,6 @@ TvgID: 643054b1fc3be59477853717-672948f0297d4ea7584a2e13
 TvgName: The Martha Stewart Channel
 URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
 Logo: https://provider-static.plex.tv/epg/cms/production/a0aadc76-1caf-419f-83c7-ff8e066355a7/MSChannel_Logo_Light_-_Kimberly_DumerRDX.png
-Source: https://m3u.work/hJiHE3ad.m3u
---------------------------------------------------
-Name: The Pet Collective
-TvgID: 643054b1fc3be59477853717-5f170d61b898490041b49369
-TvgName: The Pet Collective
-URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
-Logo: https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
 Name: The Prof G Channel

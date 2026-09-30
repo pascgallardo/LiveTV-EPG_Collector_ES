@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-30T16:06:35+02:00",
+  "date": "2026-09-30T22:29:01+02:00",
   "channels": {
     "Generalistas": [
       {
@@ -10,6 +10,15 @@
         "group": "Generalistas",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la1/la1_main.m3u8"
+      },
+      {
+        "name": "La 1 UHD (2160p)",
+        "tvg_id": "La 1 HD",
+        "tvg_name": "",
+        "logo": "https://i.ibb.co/MxJNPHsn/La-1.png",
+        "group": "Generalistas",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "http://185.47.212.25:8080/tdp_HD/index.m3u8"
       },
       {
         "name": "La 2",
@@ -210,15 +219,6 @@
         "group": "Andalucía",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://stream2.parlamentodeandalucia.es/realizacion4/realizacion4/playlist.m3u8"
-      },
-      {
-        "name": "Huelva Conecta",
-        "tvg_id": "",
-        "tvg_name": "Huelva Conecta",
-        "logo": "https://yt3.ggpht.com/dQxpHlPEeQ6XTzXJu7eJa36C7nT7TjxecHbznRDwEqWmdV5Upl8VMafZMHhCfToJGcdTcy1_bJA=s200",
-        "group": "Andalucía",
-        "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://servidor.islahostingla.com:3542/live/huelvaconecta3live.m3u8"
       }
     ],
     "Eventuales": [
@@ -268,6 +268,15 @@
         "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm20_main.m3u8"
       },
       {
+        "name": "Los Conciertos Radio 3",
+        "tvg_id": "Los Conciertos de Radio 3",
+        "tvg_name": "Conciertos Radio 3 (RTVE)",
+        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayconciertosradio3_cuadrado.jpg",
+        "group": "Eventuales",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm11_main.m3u8"
+      },
+      {
         "name": "Al cielo con ella",
         "tvg_id": "Al cielo con ella",
         "tvg_name": "Al cielo con ella (RTVE)",
@@ -313,13 +322,13 @@
         "url": "https://ztnr.rtve.es/ztnr/6712399.m3u8"
       },
       {
-        "name": "Los Conciertos Radio 3",
-        "tvg_id": "Los Conciertos de Radio 3",
-        "tvg_name": "Conciertos Radio 3 (RTVE)",
-        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayconciertosradio3_cuadrado.jpg",
+        "name": "Festival de San Sebastián (RTVE)",
+        "tvg_id": "RTVE_PopUp2.TV",
+        "tvg_name": "Festival de San Sebastián (RTVE)",
+        "logo": "https://graph.facebook.com/rtveplay/picture?width=200&height=200",
         "group": "Eventuales",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm11_main.m3u8"
+        "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm21_main.m3u8"
       },
       {
         "name": "El club de la comedia",
@@ -340,13 +349,49 @@
         "url": "https://fast-channels.atresmedia.com/85cecd372210bdbe2392b20413c98a8f068b05ac/648ef18c1756b0e41daf83cc/648ef18c1756b0e41daf83cc.m3u8"
       },
       {
-        "name": "San Sebastián Fes (RTVE)",
-        "tvg_id": "RTVE_PopUp2.TV",
-        "tvg_name": "San Sebastián Fes (RTVE)",
-        "logo": "https://graph.facebook.com/rtveplay/picture?width=200&height=200",
+        "name": "Comedia atresplayer",
+        "tvg_id": "Comedia atresplayer",
+        "tvg_name": "Comedia",
+        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/comedia_atresplayer_cuadrado.jpg",
         "group": "Eventuales",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm21_main.m3u8"
+        "url": "https://fast-channels.atresmedia.com/7d8006a3881bb6d36d7fcec8f8997820d4332b86/648ef23d2bfab0e4557e0d61/648ef23d2bfab0e4557e0d61.m3u8"
+      },
+      {
+        "name": "El Hormiguero",
+        "tvg_id": "El Hormiguero",
+        "tvg_name": "",
+        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/elhormiguero_cuadrado.jpg",
+        "group": "Eventuales",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://fast-channels.atresmedia.com/f903abd690456cff8bef97a426a363260c867fb3/648ef5882bfab0e4627e0d61/648ef5882bfab0e4627e0d61.m3u8"
+      },
+      {
+        "name": "Clásicos atresplayer",
+        "tvg_id": "Clásicos atresplayer",
+        "tvg_name": "Clásicos",
+        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/clasicos_atresplayer_cuadrado.jpg",
+        "group": "Eventuales",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://fast-channels.atresmedia.com/21f0dba17c97cfb5a8919605307699120177f453/648ef12c2bfab0e4507e0d61/648ef12c2bfab0e4507e0d61/1.m3u8"
+      },
+      {
+        "name": "Aquí no hay quién viva",
+        "tvg_id": "Aquí no hay quién viva",
+        "tvg_name": "Aquí no hay quien viva",
+        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/aquinohayquienviva_cuadrado.jpg",
+        "group": "Eventuales",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://fast-channels.atresmedia.com/d7bd0adb7616750c83bdf3ad204ce9869f8a81d1/648ef3951756b0e425af83cc/648ef3951756b0e425af83cc.m3u8"
+      },
+      {
+        "name": "Canal Flooxer",
+        "tvg_id": "Flooxer",
+        "tvg_name": "Canal Flooxer",
+        "logo": "https://statics.atresmedia.com/atresplayer/assets/mobile/commons/images/channels_renew/sombreado/Flooxer_tiny.png",
+        "group": "Eventuales",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://live.s2l.workers.dev/hls/flooxer"
       }
     ],
     "Informativos": [
@@ -405,6 +450,42 @@
         "group": "Deportivos",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]"
+      },
+      {
+        "name": "Vinx TV",
+        "tvg_id": "Vinx.TV",
+        "tvg_name": "Vinx TV",
+        "logo": "https://graph.facebook.com/VinxTV/picture?width=200&height=200",
+        "group": "Deportivos",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://live.enfoque.media:5443/live/streams/vinxtv.m3u8"
+      },
+      {
+        "name": "Real Madrid TV",
+        "tvg_id": "RMTV.TV",
+        "tvg_name": "Real Madrid TV",
+        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/realmadridtv_cuadrado.jpg",
+        "group": "Deportivos",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8"
+      },
+      {
+        "name": "like Gecko) Chrome/120.0.0.0 Safari/537.36 VLC/3.0.21 LibVLC/3.0.21\" group-title=\"Deportivos\",Deportes por Movistar Plus+",
+        "tvg_id": "DeportesporMovistarPlusPlus.es@SD",
+        "tvg_name": "",
+        "logo": "https://images.seeklogo.com/logo-png/49/1/deportes-por-movistar-plus-logo-png_seeklogo-492841.png",
+        "group": "Deportivos",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://7nyaler.streamhostingcdn.top/stream/18/index.m3u8"
+      },
+      {
+        "name": "like Gecko) Chrome/120.0.0.0 Safari/537.36 VLC/3.0.21 LibVLC/3.0.21\" group-title=\"Deportivos\",Liga de Campeones por Movistar Plus+",
+        "tvg_id": "LigadeCampeonesporMovistarPlusPlus.es@SD",
+        "tvg_name": "",
+        "logo": "https://images.seeklogo.com/logo-png/49/1/liga-de-campeones-por-movistar-plus-logo-png_seeklogo-492840.png",
+        "group": "Deportivos",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://7nyaler.streamhostingcdn.top/stream/36/index.m3u8"
       }
     ],
     "Cocina": [
@@ -908,22 +989,13 @@
         "url": "https://jmp2.uk/plu-629a066860ef810008267b70.m3u8"
       },
       {
-        "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Infantiles\",KinoKazka",
-        "tvg_id": "KinoKazka.es@SD",
-        "tvg_name": "",
-        "logo": "https://i.imgur.com/y6SWpsX.png",
-        "group": "Infantiles",
-        "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "http://stream.mcquack.net/167/index.m3u8"
-      },
-      {
         "name": "Pocoyó",
         "tvg_id": "Pocoyó",
         "tvg_name": "Pocoyó",
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/pocoyo_-_logo_y_fondo_0.jpg",
         "group": "Infantiles",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5626&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5626&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Pitufo TV",
@@ -932,7 +1004,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/YJek0f2QAJvIDykEd5e_U3h3kGLUZa_93MvdnXAMDB4.jpg",
         "group": "Infantiles",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5444&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5444&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Bob Esponja",
@@ -1114,7 +1186,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_accion_16x9.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6125&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6125&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Runtime Comedia",
@@ -1123,7 +1195,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_comedia_16x9.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6131&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6131&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Runtime Crimen",
@@ -1132,7 +1204,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_crimen_16x9.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3527&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3527&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Runtime Familia",
@@ -1141,7 +1213,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_familia_16x9_2.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=4647&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=4647&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Runtime Romance",
@@ -1150,7 +1222,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_romance_16x9.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3056&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3056&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Runtime Thriller-Terror",
@@ -1159,7 +1231,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_thriller_16x9.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6120&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6120&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Runtime Clásicos",
@@ -1168,7 +1240,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_clasicos_16x9.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3053&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3053&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "MyTime Movi Network",
@@ -1177,7 +1249,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/YECKAbCgFevzZ29V9z63YYJBzO_2PHeK42PRTrTirgg.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00500-studiocitypictu-mytimespanish-runtimees/playlist.m3u8?ip=83.50.205.167&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20Chrome%2F133%20Safari%2F537.36&dnt=0&app_bundle=com.ammo.runtime.tv.html5&app_name=Runtime&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&content_episode=&content_season=&content_livestream=0&channel_name=run&network_name=&did=98018ca96d753d8ba82a6f648d50b513&us_privacy=1NNN&gdpr_consent=0&gdpr=1&lmt=0&device_make=&device_model="
+        "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00500-studiocitypictu-mytimespanish-runtimees/playlist.m3u8?ip=79.158.28.175&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20Chrome%2F133%20Safari%2F537.36&dnt=0&app_bundle=com.ammo.runtime.tv.html5&app_name=Runtime&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&content_episode=&content_season=&content_livestream=0&channel_name=run&network_name=&did=0d5d83bc42ef2307f3e44ff5283a4f5e&us_privacy=1NNN&gdpr_consent=0&gdpr=1&lmt=0&device_make=&device_model="
       },
       {
         "name": "Cines Verdi",
@@ -1204,7 +1276,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/filmco_-_logo_y_fondo_0.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5625&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5625&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Sangre Fría",
@@ -1213,7 +1285,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/f5457ac0-sangre_fria_1920x1080_0.jpg",
         "group": "Films",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6130&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6130&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Pluto TV Psycho",
@@ -1341,7 +1413,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_series_16x9_0.jpg",
         "group": "Shows",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6132&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6132&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Ana y los 7",
@@ -1350,7 +1422,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_ana_y_los_7_16x9_v2.jpg",
         "group": "Shows",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=2722&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=2722&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Curro Jiménez",
@@ -1359,7 +1431,7 @@
         "logo": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_curro_jimenez_16x9_v2.jpg",
         "group": "Shows",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3435&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08906&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=3435&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5"
       },
       {
         "name": "Los Asesinatos de Midsomer",
@@ -1437,15 +1509,6 @@
       }
     ],
     "Musicales": [
-      {
-        "name": "Radio 3",
-        "tvg_id": "RNE_Radio3.TV",
-        "tvg_name": "Radio 3",
-        "logo": "https://graph.facebook.com/radio3/picture?width=200&height=200",
-        "group": "Musicales",
-        "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://ztnr.rtve.es/ztnr/6982918.m3u8"
-      },
       {
         "name": "Sol Música España",
         "tvg_id": "Sol Música",
@@ -1681,6 +1744,15 @@
         "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992082&ads.xumo_streamId=99992082&ads.channelId=99992082&ads.ad_tag_id=15717&ads.csid=lgchannels_es_stingraynaturescapeeu_ssai&ads.channelName=stingraynaturescape_it&ads.xumo_contentName=StingrayNaturescapeEU&ads.xumo_contentId=3200&ads.xumo_providerName=StingrayNaturescapeEU&ads.xumo_providerId=3200&ads.content_category=IAB1-2&ads.content_genre=lifestyle&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]"
       },
       {
+        "name": "Radio 3 España",
+        "tvg_id": "RNE_Radio3.TV",
+        "tvg_name": "Radio 3 España",
+        "logo": "https://graph.facebook.com/radio3/picture?width=200&height=200",
+        "group": "Musicales",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://ztnr.rtve.es/ztnr/6982918.m3u8"
+      },
+      {
         "name": "MTV Originals",
         "tvg_id": "5f1aadf373bed3000794d1d7",
         "tvg_name": "MTV Originals",
@@ -1891,7 +1963,7 @@
         "logo": "https://graph.facebook.com/hitfm.es/picture?width=200&height=200",
         "group": "Radio_Musicales",
         "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://adhandler.kissfmradio.cires21.com/get_link?url=https://bbhitfm.kissfmradio.cires21.com/bbhitfm.mp3"
+        "url": "https://kissfm.kissfmradio.cires21.com/hitfm.mp3"
       },
       {
         "name": "Melodía FM",
@@ -2371,6 +2443,15 @@
         "group": "Radio_Andalucía",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "http://185.23.192.118:8010/;stream.mp3"
+      },
+      {
+        "name": "La Más FM Almuñécar",
+        "tvg_id": "",
+        "tvg_name": "La Más FM Almuñécar",
+        "logo": "https://graph.facebook.com/LAMASFM/picture?width=200&height=200",
+        "group": "Radio_Andalucía",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://streaming2.elitecomunicacion.es:8142/stream"
       }
     ],
     "Noticias": [
@@ -3582,6 +3663,15 @@
         "group": "Comedia",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ESAJ3800003LX"
+      },
+      {
+        "name": "The Pet Collective",
+        "tvg_id": "ESAJ4500016BH",
+        "tvg_name": "The Pet Collective",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png",
+        "group": "Comedia",
+        "source": "https://m3u.work/qKChzP8.m3u",
+        "url": "https://jmp2.uk/stvp-ESAJ4500016BH"
       },
       {
         "name": "LOL España",
@@ -6513,15 +6603,6 @@
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
         "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
-      },
-      {
-        "name": "The Pet Collective",
-        "tvg_id": "643054b1fc3be59477853717-5f170d61b898490041b49369",
-        "tvg_name": "The Pet Collective",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png",
-        "group": "Spain",
-        "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
       },
       {
         "name": "The Prof G Channel",
