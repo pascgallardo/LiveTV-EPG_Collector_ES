@@ -33,7 +33,7 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 - **Duplicate Removal**: Ensures no duplicate streams (based on URL) are included. When the same URL arrives from several playlists, the first source keeps ownership, but a `tvg-id` or `tvg-name` that the first one lacked is filled in from a later source.
 - **tvg-* Metadata**: `tvg-id` and `tvg-name` are read from the source `#EXTINF` lines and carried through to every export format. Attributes a source does not provide are simply omitted from the generated `#EXTINF` line.
 - **HTML Source Parsing**: A source ending in `.html` is scanned for nested playlist links, filtering out non-stream links (e.g., Telegram, GitHub).
-- **Traceable Merges**: The generated `LiveTV.m3u` lists every M3U that was merged into it in the `#EXTM3U url-tvg` header, in consumption order and without duplicates.
+- **Merged EPG Guides**: The EPG (XMLTV) URLs declared by each source playlist are read from its `#EXTM3U url-tvg` attribute and merged into the header of the generated `LiveTV.m3u`, in source order and without duplicates.
 - **Deterministic Exports**: Groups and channels are sorted, so re-running without source changes produces identical files and no spurious commits.
 - **Honest Timestamps**: The `date` field in `LiveTV.json` is the collector's own run time in `Europe/Madrid`, written as ISO 8601 with an explicit UTC offset (e.g. `2025-03-25T12:00:00+01:00`). The offset matters: it lets the browser resolve the instant correctly whatever timezone the visitor is in, so the "updated N min ago" banner in `index.html` is accurate.
 - **Web Hub (`index.html`)**: Static browser UI to browse the generated playlists, search channels, copy/download links, and track download statistics locally.
@@ -46,16 +46,16 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 ## Exported File Formats
 
 ### `LiveTV.m3u`
-Standard M3U playlist format. The `#EXTM3U` line carries every merged source in `url-tvg`, so the generated playlist documents which playlists it was built from:
+Standard M3U playlist format. The `#EXTM3U` line carries the EPG guides of the merged sources in `url-tvg`, so the generated playlist keeps the guide data its sources shipped with:
 ```
-#EXTM3U url-tvg="https://m3u.work/OI0Q3l.m3u, https://m3u.work/YawDD3.m3u, https://m3u.work/ICEQGPH.m3u"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml, https://www.tdtchannels.com/epg/TV.xml.gz, https://live.s2l.workers.dev/epg.xml"
 #EXTINF:-1 tvg-id="AdventureTV.us" tvg-name="Adventure TV" tvg-logo="https://i.imgur.com/VQVr4Nk.png" group-title="Entertainment",Adventure TV
 http://109.233.89.170/Adventure_HD/index.m3u8
 ```
 
-The URLs are listed in the order they were consumed (playlists found inside an `.html` source are appended after the declared ones) and a source is never repeated. When no source is merged the line stays bare, as `#EXTM3U`.
+Each source's own `#EXTM3U url-tvg` attribute is read and the URLs are merged in source order, dropping guides that several sources share. Sources that declare no EPG simply contribute nothing, and when no source has one the line stays bare, as `#EXTM3U`.
 
-`url-tvg` conventionally points at XMLTV EPG files rather than at M3U playlists, so players that expect EPG data there will not find any. It is published as traceability metadata, not as a working EPG pointer.
+`url-tvg` only ever holds XMLTV guide URLs (`.xml` / `.xml.gz`); the M3U sources themselves are never listed there, since that attribute is the conventional pointer to EPG data.
 
 `tvg-id` and `tvg-name` on the `#EXTINF` lines are emitted only when the source playlist provided them.
 
@@ -180,7 +180,7 @@ The suite uses only the standard library (`unittest`), so no extra dependency is
 - **HTML source extraction** — playlist detection, relative link resolution, and excluded hosts.
 - **Exports** — the four output files, `#EXTM3U` structure, and identical deterministic ordering across all formats.
 - **Timestamps** (`TestExportTimestamp`) — the published `date` is Madrid local time under both CET and CEST, carries an explicit offset, and parses back to the same instant.
-- **M3U header** (`TestM3UHeaderSources`) — the merged sources appear in the `#EXTM3U url-tvg` attribute in declared order, duplicates are dropped, playlists discovered inside an HTML source are recorded, the list is cleared between runs, the header stays bare without sources, and the stream entries still follow it.
+- **M3U EPG header** (`TestM3UEpgHeader`) — each source's `url-tvg` is read from its header line, single and multi-URL values are split and trimmed, sources without EPG contribute nothing, several sources are merged in order, a guide shared by two sources is listed once, the list is cleared between runs, the header stays bare without EPG, the source M3U never leaks into `url-tvg`, and the stream entries still follow the header.
 - **Scheduling gate** (`tests/test_madrid_noon_gate.py`) — `Europe/Madrid` noon detection under CET and CEST, both daylight saving switch days, late-start tolerance, and a sweep of two full years asserting that exactly one of the two candidate hours fires on every single day.
 
 ## Dependencies

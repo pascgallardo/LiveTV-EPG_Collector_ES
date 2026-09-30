@@ -386,8 +386,16 @@ class TestTvgMetadataExports(CollectorTestCase):
             self.assertEqual(after["logo"], before["logo"])
 
 
-class TestM3UHeaderSources(CollectorTestCase):
-    """The #EXTM3U line lists every M3U that was merged into the playlist."""
+class TestM3UEpgHeader(CollectorTestCase):
+    """The #EXTM3U url-tvg header carries the EPG URLs of the merged sources.
+
+    `url-tvg` points at XMLTV guide data, never at the M3U sources themselves,
+    so the header is built from the EPG URLs each source declared.
+    """
+
+    EPG_A = "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml"
+    EPG_B = "https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/es.xml.gz"
+    EPG_C = "https://raw.githubusercontent.com/Llorchico/Rakuten/refs/heads/main/rakuten.xml"
 
     def populate(self, collector):
         collector.channels["Generalistas"] = [{
@@ -395,75 +403,93 @@ class TestM3UHeaderSources(CollectorTestCase):
             "source": "src", "url": "https://cdn.example/la1.m3u8",
         }]
 
-    def header_with(self, *source_urls):
+    def header_with(self, *epg_urls):
         collector = self.make_collector()
         self.populate(collector)
-        collector.source_urls = list(source_urls)
+        collector.epg_urls = list(epg_urls)
         collector.export_m3u()
         return self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
 
-    def test_header_lists_the_merged_sources(self):
-        header = self.header_with(
-            "https://m3u.work/OI0Q3l.m3u",
-            "https://m3u.work/YawDD3.m3u",
-            "https://m3u.work/ICEQGPH.m3u",
-        )
-        self.assertEqual(header, (
-            '#EXTM3U url-tvg="https://m3u.work/OI0Q3l.m3u, '
-            'https://m3u.work/YawDD3.m3u, https://m3u.work/ICEQGPH.m3u"'
-        ))
+    def header_of_source(self, *header_lines):
+        """Feed *header_lines* as a source playlist and return the merged header."""
+        collector = self.make_collector()
+        body = ['#EXTINF:-1 group-title="Generalistas",La 1', "https://cdn.example/la1.m3u8"]
+        with mock.patch.object(tv.M3UCollector, "fetch_content", return_value=(None, list(header_lines) + body)):
+            collector.process_sources(["https://source.example/list.m3u"])
+        collector.export_m3u()
+        return self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
 
-    def test_header_keeps_the_declared_order(self):
-        header = self.header_with("https://b.example/z.m3u", "https://a.example/a.m3u")
-        self.assertLess(header.index("z.m3u"), header.index("a.m3u"))
+    def test_extracts_a_single_epg_url(self):
+        self.assertEqual(tv.M3UCollector.epg_urls_from_header([f'#EXTM3U url-tvg="{self.EPG_A}"']), [self.EPG_A])
 
-    def test_a_repeated_source_is_listed_once(self):
-        header = self.header_with("https://a.example/a.m3u", "https://a.example/a.m3u")
-        self.assertEqual(header.count("a.m3u"), 1)
+    def test_extracts_several_epg_urls_from_one_source(self):
+        header = f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"'
+        self.assertEqual(tv.M3UCollector.epg_urls_from_header([header]), [self.EPG_A, self.EPG_B])
 
-    def test_header_stays_bare_without_sources(self):
+    def test_trims_whitespace_around_each_url(self):
+        header = f'#EXTM3U url-tvg="  {self.EPG_A} ,   {self.EPG_B}  "'
+        self.assertEqual(tv.M3UCollector.epg_urls_from_header([header]), [self.EPG_A, self.EPG_B])
+
+    def test_a_source_without_url_tvg_contributes_nothing(self):
+        self.assertEqual(tv.M3UCollector.epg_urls_from_header(["#EXTM3U"]), [])
+
+    def test_an_empty_url_tvg_contributes_nothing(self):
+        self.assertEqual(tv.M3UCollector.epg_urls_from_header(['#EXTM3U url-tvg=""']), [])
+
+    def test_a_trailing_comma_is_ignored(self):
+        header = f'#EXTM3U url-tvg="{self.EPG_A}, "'
+        self.assertEqual(tv.M3UCollector.epg_urls_from_header([header]), [self.EPG_A])
+
+    def test_only_the_header_line_is_inspected(self):
+        lines = [f'#EXTM3U url-tvg="{self.EPG_A}"', '#EXTINF:-1 group-title="G",C', "https://x.example/s.m3u8"]
+        self.assertEqual(tv.M3UCollector.epg_urls_from_header(lines), [self.EPG_A])
+
+    def test_header_carries_the_epg_urls_of_the_sources(self):
+        header = self.header_of_source(f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"')
+        self.assertEqual(header, f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"')
+
+    def test_several_sources_are_merged_in_order(self):
+        collector = self.make_collector()
+        body = ['#EXTINF:-1 group-title="G",C', "https://cdn.example/c.m3u8"]
+        def fake_fetch(self, url):
+            return (None, [f'#EXTM3U url-tvg="{url}"]'] + body)
+        with mock.patch.object(tv.M3UCollector, "fetch_content", fake_fetch):
+            collector.process_sources(["https://a.example/a.m3u", "https://b.example/b.m3u"])
+        collector.export_m3u()
+        header = self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
+        self.assertEqual(header, '#EXTM3U url-tvg="https://a.example/a.m3u, https://b.example/b.m3u"')
+
+    def test_a_guide_shared_by_two_sources_is_listed_once(self):
+        header = self.header_with(self.EPG_A, self.EPG_B, self.EPG_A)
+        self.assertEqual(header.count(self.EPG_A), 1)
+        self.assertEqual(header, f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"')
+
+    def test_header_stays_bare_without_epg(self):
         self.assertEqual(self.header_with(), "#EXTM3U")
 
-    def test_process_sources_records_the_playlist_it_read(self):
+    def test_the_header_never_lists_an_m3u_source(self):
+        # The source URL is an .m3u; it must not reach url-tvg.
+        header = self.header_of_source(f'#EXTM3U url-tvg="{self.EPG_A}"')
+        self.assertNotIn("list.m3u", header)
+
+    def test_epg_is_cleared_between_runs(self):
         collector = self.make_collector()
-        lines = ['#EXTINF:-1 group-title="Generalistas",La 1', "https://cdn.example/la1.m3u8"]
-        with mock.patch.object(tv.M3UCollector, "fetch_content", return_value=(None, lines)):
-            collector.process_sources(["https://source.example/list.m3u"])
-
-        self.assertEqual(collector.source_urls, ["https://source.example/list.m3u"])
-
-    def test_process_sources_records_playlists_found_in_html(self):
-        collector = self.make_collector()
-        html = '<a href="https://nested.example/inner.m3u">inner</a>'
-        playlist = ['#EXTINF:-1 group-title="Generalistas",La 1', "https://cdn.example/la1.m3u8"]
-        with mock.patch.object(tv.M3UCollector, "fetch_content",
-                               side_effect=[(html, []), (None, playlist)]):
-            collector.process_sources(["https://page.example/index.html"])
-
-        self.assertEqual(collector.source_urls, ["https://nested.example/inner.m3u"])
-
-    def test_sources_are_cleared_between_runs(self):
-        collector = self.make_collector()
-        collector.source_urls = ["https://old.example/list.m3u"]
+        collector.epg_urls = [self.EPG_A]
         collector.process_sources([])
-        self.assertEqual(collector.source_urls, [])
+        self.assertEqual(collector.epg_urls, [])
 
-    def test_the_exported_header_is_a_valid_m3u_line(self):
-        header = self.header_with("https://m3u.work/OI0Q3l.m3u")
-        self.assertTrue(header.startswith("#EXTM3U "))
-        # The list lives inside the quotes, so no stray quote may close it early.
-        self.assertEqual(header.count('"'), 2)
+    def test_the_exported_header_parses_back(self):
+        header = self.header_with(self.EPG_A, self.EPG_B)
         self.assertEqual(tv.M3UCollector.extinf_attribute(header, "url-tvg"),
-                         "https://m3u.work/OI0Q3l.m3u")
+                         f"{self.EPG_A}, {self.EPG_B}")
 
-    def test_the_stream_entries_still_follow_the_header(self):
+    def test_stream_entries_still_follow_the_header(self):
         collector = self.make_collector()
         self.populate(collector)
-        collector.source_urls = ["https://m3u.work/OI0Q3l.m3u"]
+        collector.epg_urls = [self.EPG_A]
         collector.export_m3u()
         lines = self.read_text("Spain", "LiveTV.m3u").splitlines()
-
-        self.assertTrue(lines[0].startswith("#EXTM3U"))
+        self.assertTrue(lines[0].startswith("#EXTM3U "))
         self.assertTrue(lines[1].startswith("#EXTINF:"))
         self.assertEqual(lines[2], "https://cdn.example/la1.m3u8")
 

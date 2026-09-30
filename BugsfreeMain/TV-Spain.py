@@ -28,9 +28,10 @@ class M3UCollector:
         self.seen_urls = set()
         self.channel_by_url = {}
         self.url_status_cache = {}
-        # M3U sources merged in the last run, in the order they were consumed.
-        # Published in the #EXTM3U header so the merged result is traceable.
-        self.source_urls = []
+        # EPG (XMLTV) URLs declared by the merged sources, in the order they were
+        # seen. Published in the #EXTM3U url-tvg header so the generated playlist
+        # keeps the guide data its sources shipped with.
+        self.epg_urls = []
         self.output_dir = os.path.join(base_dir, country)
         self.lock = threading.Lock()
         self.check_links = check_links  # Toggle link checking
@@ -128,6 +129,20 @@ class M3UCollector:
         return False, url
 
     @staticmethod
+    def epg_urls_from_header(lines):
+        """Return the EPG URLs a playlist declares in its `#EXTM3U url-tvg` attribute.
+
+        `url-tvg` holds a comma separated list, so every entry is extracted and
+        trimmed. A source without the attribute, or with an empty one, simply
+        contributes nothing.
+        """
+        for line in lines or []:
+            if line.startswith('#EXTM3U'):
+                value = M3UCollector.extinf_attribute(line, 'url-tvg')
+                return [url.strip() for url in value.split(',') if url.strip()]
+        return []
+
+    @staticmethod
     def extinf_attribute(line, name):
         """Return the value of an `#EXTINF` attribute, or '' when absent or empty."""
         match = re.search(rf'{re.escape(name)}="([^"]*)"', line)
@@ -221,7 +236,7 @@ class M3UCollector:
         self.seen_urls.clear()
         self.channel_by_url.clear()
         self.url_status_cache.clear()
-        self.source_urls.clear()
+        self.epg_urls.clear()
 
         all_m3u_urls = set()
         for url in source_urls:
@@ -230,12 +245,12 @@ class M3UCollector:
                 m3u_urls = self.extract_stream_urls_from_html(html_content, url)
                 all_m3u_urls.update(m3u_urls)
             else:
-                self.source_urls.append(url)
+                self.epg_urls.extend(self.epg_urls_from_header(lines))
                 self.parse_and_store(lines, url)
 
         for m3u_url in sorted(all_m3u_urls):
-            self.source_urls.append(m3u_url)
             _, lines = self.fetch_content(m3u_url)
+            self.epg_urls.extend(self.epg_urls_from_header(lines))
             self.parse_and_store(lines, m3u_url)
 
         if self.channels:
@@ -263,18 +278,19 @@ class M3UCollector:
         return f'#EXTINF:-1 {" ".join(attributes)},{channel["name"]}'
 
     def m3u_header(self):
-        """The `#EXTM3U` line, carrying every merged source in `url-tvg`.
+        """The `#EXTM3U` line, carrying the EPG URLs of every merged source.
 
-        The attribute is a comma separated list, so the URLs are declared in
-        source order rather than sorted, and a source that was consumed twice
-        is only listed once. Without sources the line stays bare, which keeps
-        the output valid for callers that pass an empty playlist.
+        `url-tvg` is the conventional place to point players at the XMLTV guide,
+        so it only ever holds EPG URLs — never the M3U sources themselves. The
+        list keeps the order in which the sources were merged and drops
+        duplicates, since several sources commonly share the same guide. With no
+        EPG at all the line stays bare, which keeps the output valid.
         """
         seen = set()
-        sources = [url for url in self.source_urls if not (url in seen or seen.add(url))]
-        if not sources:
+        epg = [url for url in self.epg_urls if not (url in seen or seen.add(url))]
+        if not epg:
             return '#EXTM3U'
-        return f'#EXTM3U url-tvg="{", ".join(sources)}"'
+        return f'#EXTM3U url-tvg="{", ".join(epg)}"'
 
     def export_m3u(self, filename="LiveTV.m3u"):
         filepath = os.path.join(self.output_dir, filename)
