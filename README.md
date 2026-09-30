@@ -34,6 +34,7 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 - **tvg-* Metadata**: `tvg-id` and `tvg-name` are read from the source `#EXTINF` lines and carried through to every export format. Attributes a source does not provide are simply omitted from the generated `#EXTINF` line.
 - **HTML Source Parsing**: A source ending in `.html` is scanned for nested playlist links, filtering out non-stream links (e.g., Telegram, GitHub).
 - **Deterministic Exports**: Groups and channels are sorted, so re-running without source changes produces identical files and no spurious commits.
+- **Honest Timestamps**: The `date` field in `LiveTV.json` is the collector's own run time in `Europe/Madrid`, written as ISO 8601 with an explicit UTC offset (e.g. `2025-03-25T12:00:00+01:00`). The offset matters: it lets the browser resolve the instant correctly whatever timezone the visitor is in, so the "updated N min ago" banner in `index.html` is accurate.
 - **Web Hub (`index.html`)**: Static browser UI to browse the generated playlists, search channels, copy/download links, and track download statistics locally.
 - **Multiple Export Formats**:
   - `LiveTV.m3u`: Standard M3U playlist.
@@ -68,7 +69,7 @@ Source: https://example.com/source.m3u
 Structured JSON with timestamp:
 ```json
 {
-  "date": "2025-03-25 13:30:00",
+  "date": "2025-03-25T12:00:00+01:00",
   "channels": {
     "Entertainment": [
       {
@@ -171,14 +172,16 @@ The suite uses only the standard library (`unittest`), so no extra dependency is
 - **Link checking** — success, error status returning `(False, url)` instead of `None`, HEAD to GET fallback, alternate-protocol retry, and the per-URL cache.
 - **HTML source extraction** — playlist detection, relative link resolution, and excluded hosts.
 - **Exports** — the four output files, `#EXTM3U` structure, and identical deterministic ordering across all formats.
+- **Timestamps** (`TestExportTimestamp`) — the published `date` is Madrid local time under both CET and CEST, carries an explicit offset, and parses back to the same instant.
 - **Scheduling gate** (`tests/test_madrid_noon_gate.py`) — `Europe/Madrid` noon detection under CET and CEST, both daylight saving switch days, late-start tolerance, and a sweep of two full years asserting that exactly one of the two candidate hours fires on every single day.
 
 ## Dependencies
 
 Declared in `requirements.txt` and installed by the workflow with `pip install -r requirements.txt`:
 - `requests`: For fetching M3U and HTML content.
-- `pytz`: For Mumbai timezone timestamps.
 - `beautifulsoup4`: For HTML parsing.
+
+Timezone handling uses the standard library `zoneinfo`, so there is no third-party timezone dependency.
 
 ## Troubleshooting
 
@@ -189,7 +192,7 @@ Declared in `requirements.txt` and installed by the workflow with `pip install -
 
 - **Permissions Error**: Ensure `permissions: contents: write` is in `TV-Spain.yml`.
 
-- **Index out of date**: The `update-indexes` job runs after the collector and regenerates the `index.json` files. It is called from the upstream repository's reusable workflow, so upstream changes affect this repo.
+- **Index out of date**: The `update-indexes` job runs after the collector and regenerates the `index.json` files. It uses this repository's own reusable workflow (`.github/workflows/update-indexes.yml`), so it is not affected by upstream changes.
 
 - **Logs**: View detailed logs in the "Actions" tab to diagnose issues.
 

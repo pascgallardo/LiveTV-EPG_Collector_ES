@@ -6,7 +6,7 @@ import sys
 from urllib.parse import urlparse
 from collections import defaultdict
 from datetime import datetime
-import pytz
+from zoneinfo import ZoneInfo
 import concurrent.futures
 import threading
 import logging
@@ -14,6 +14,12 @@ from bs4 import BeautifulSoup
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# The collector runs at noon in mainland Spain, so the published timestamp is
+# expressed in that same timezone. It is written as ISO 8601 with an explicit
+# UTC offset, which is unambiguous: the browser does not have to guess the
+# visitor's timezone when index.html parses it with `new Date(...)`.
+MADRID = ZoneInfo("Europe/Madrid")
 
 class M3UCollector:
     def __init__(self, country="Spain", base_dir="LiveTV", check_links=True):
@@ -282,8 +288,7 @@ class M3UCollector:
 
     def export_json(self, filename="LiveTV.json"):
         filepath = os.path.join(self.output_dir, filename)
-        mumbai_tz = pytz.timezone('Asia/Kolkata')
-        current_time = datetime.now(mumbai_tz).strftime('%Y-%m-%d %H:%M:%S')
+        current_time = datetime.now(MADRID).isoformat(timespec='seconds')
 
         json_data = {
             "date": current_time,
@@ -335,8 +340,7 @@ def main(check_links=False):
     collector.export_custom("LiveTV")
 
     total_channels = sum(len(ch) for ch in collector.channels.values())
-    mumbai_time = datetime.now(pytz.timezone('Asia/Kolkata'))
-    logging.info(f"[{mumbai_time}] Collected {total_channels} unique channel for Spain")
+    logging.info(f"[{datetime.now(MADRID)}] Collected {total_channels} unique channel for Spain")
     logging.info(f"Groups found: {len(collector.channels)}")
     if not total_channels:
         logging.warning("No channels exported — sources may be unreachable or empty.")

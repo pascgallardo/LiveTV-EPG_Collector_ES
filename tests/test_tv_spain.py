@@ -13,6 +13,7 @@ import pathlib
 import shutil
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from unittest import mock
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -678,7 +679,61 @@ class TestExports(CollectorTestCase):
         data = self.read_json("Spain", "LiveTV.json")
 
         self.assertIn("date", data)
-        self.assertRegex(data["date"], r"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$")
+        self.assertRegex(data["date"], r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$")
+
+
+class TestExportTimestamp(CollectorTestCase):
+    """The published `date` must be Madrid time, not some upstream default.
+
+    The collector runs at 12:00 Europe/Madrid, so a timestamp in any other
+    zone makes the "updated N min ago" banner in index.html wrong. It is also
+    written as ISO 8601 with an explicit offset, so the browser resolves the
+    instant correctly no matter which timezone the visitor is in.
+    """
+
+    def export_with_now(self, now):
+        collector = self.make_collector()
+        collector.channels["Generalistas"] = [{
+            "name": "La 1", "logo": "logo", "group": "Generalistas",
+            "source": "src", "url": "https://cdn.example/la1.m3u8",
+        }]
+        real_datetime = tv.datetime
+
+        class FakeDatetime(real_datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return now.astimezone(tz) if tz else now
+
+        with mock.patch.object(tv, "datetime", FakeDatetime):
+            collector.export_json()
+        return self.read_json("Spain", "LiveTV.json")["date"]
+
+    def test_timestamp_is_madrid_time_in_summer(self):
+        # 10:00 UTC is 12:00 in Madrid during CEST.
+        now = datetime(2026, 7, 15, 10, 0, tzinfo=timezone.utc)
+        self.assertEqual(self.export_with_now(now), "2026-07-15T12:00:00+02:00")
+
+    def test_timestamp_is_madrid_time_in_winter(self):
+        # 11:00 UTC is 12:00 in Madrid during CET.
+        now = datetime(2026, 1, 15, 11, 0, tzinfo=timezone.utc)
+        self.assertEqual(self.export_with_now(now), "2026-01-15T12:00:00+01:00")
+
+    def test_timestamp_is_not_the_collector_local_timezone(self):
+        # The same instant expressed in Asia/Kolkata would be 17:30; the fix must
+        # not depend on whatever timezone the machine running the script has.
+        now = datetime(2026, 7, 15, 10, 0, tzinfo=timezone.utc)
+        self.assertNotIn("17:30", self.export_with_now(now))
+
+    def test_timestamp_carries_an_explicit_offset(self):
+        # Without the offset, `new Date(...)` in the browser would silently
+        # interpret the value in the visitor's timezone.
+        now = datetime(2026, 7, 15, 10, 0, tzinfo=timezone.utc)
+        self.assertTrue(self.export_with_now(now).endswith("+02:00"))
+
+    def test_timestamp_parses_back_to_the_same_instant(self):
+        now = datetime(2026, 7, 15, 10, 0, tzinfo=timezone.utc)
+        published = self.export_with_now(now)
+        self.assertEqual(datetime.fromisoformat(published), now)
 
 
 if __name__ == "__main__":
