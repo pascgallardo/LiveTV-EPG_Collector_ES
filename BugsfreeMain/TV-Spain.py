@@ -217,15 +217,29 @@ class M3UCollector:
                 checked_urls.add(url)
                 future_to_channel[executor.submit(self.check_link_active, url)] = (group, channel)
             logging.info(f"Unique URLs to check: {len(future_to_channel)}")
+            # Collect the results first, then re-apply them in source order:
+            # as_completed yields in completion order, which would reshuffle the
+            # playlist and make the export differ between runs.
+            is_active_by_url = {}
             for future in concurrent.futures.as_completed(future_to_channel):
                 group, channel = future_to_channel[future]
+                url = channel.get('url')
                 try:
                     is_active, updated_url = future.result()
+                    is_active_by_url[url] = (is_active, updated_url)
+                except Exception as e:
+                    logging.error(f"Error checking {url}: {e}")
+                    is_active_by_url[url] = (False, url)
+
+            for group, channels in self.channels.items():
+                for channel in channels:
+                    outcome = is_active_by_url.get(channel.get('url'))
+                    if not outcome:
+                        continue
+                    is_active, updated_url = outcome
                     if is_active:
                         channel['url'] = updated_url
                         active_channels[group].append(channel)
-                except Exception as e:
-                    logging.error(f"Error checking {channel['url']}: {e}")
 
         self.channels = active_channels
         logging.info(f"Active channels after filtering: {sum(len(ch) for ch in active_channels.values())}")
@@ -258,10 +272,17 @@ class M3UCollector:
         else:
             logging.warning("No channels parsed from sources")
 
-    def sorted_groups(self):
-        """Groups in alphabetical order, so every export is byte-stable across runs."""
-        for group in sorted(self.channels):
-            yield group, sorted(self.channels[group], key=lambda ch: (ch['name'].lower(), ch['url']))
+    def grouped_channels(self):
+        """Yield each group with its channels in the order the sources provided them.
+
+        Nothing is sorted here: a channel keeps the position it had in its
+        source playlist, and a group keeps the position of its first appearance,
+        so the merged file reads like the playlists it was built from. The order
+        is still fully deterministic because the sources are consumed in a fixed
+        sequence, which is what keeps re-runs free of spurious commits.
+        """
+        for group, channels in self.channels.items():
+            yield group, channels
 
     @staticmethod
     def extinf_line(group, channel):
@@ -296,7 +317,7 @@ class M3UCollector:
         filepath = os.path.join(self.output_dir, filename)
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(self.m3u_header() + '\n')
-            for group, channels in self.sorted_groups():
+            for group, channels in self.grouped_channels():
                 for channel in channels:
                     f.write(self.extinf_line(group, channel) + '\n')
                     f.write(f'{channel["url"]}\n')
@@ -306,7 +327,7 @@ class M3UCollector:
     def export_txt(self, filename="LiveTV.txt"):
         filepath = os.path.join(self.output_dir, filename)
         with open(filepath, 'w', encoding='utf-8') as f:
-            for group, channels in self.sorted_groups():
+            for group, channels in self.grouped_channels():
                 f.write(f"Group: {group}\n")
                 for channel in channels:
                     f.write(f"Name: {channel['name']}\n")
@@ -328,7 +349,7 @@ class M3UCollector:
 
         json_data = {
             "date": current_time,
-            "channels": {group: channels for group, channels in self.sorted_groups()}
+            "channels": {group: channels for group, channels in self.grouped_channels()}
         }
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(json_data, f, ensure_ascii=False, indent=2)
@@ -340,7 +361,7 @@ class M3UCollector:
         filepath = os.path.join(self.output_dir, filename)
         custom_data = []
 
-        for group, channels in self.sorted_groups():
+        for group, channels in self.grouped_channels():
             for channel in channels:
                 custom_data.append({
                     "name": channel['name'],

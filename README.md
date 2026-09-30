@@ -34,7 +34,8 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 - **tvg-* Metadata**: `tvg-id` and `tvg-name` are read from the source `#EXTINF` lines and carried through to every export format. Attributes a source does not provide are simply omitted from the generated `#EXTINF` line.
 - **HTML Source Parsing**: A source ending in `.html` is scanned for nested playlist links, filtering out non-stream links (e.g., Telegram, GitHub).
 - **Merged EPG Guides**: The EPG (XMLTV) URLs declared by each source playlist are read from its `#EXTM3U url-tvg` attribute and merged into the header of the generated `LiveTV.m3u`, in source order and without duplicates.
-- **Deterministic Exports**: Groups and channels are sorted, so re-running without source changes produces identical files and no spurious commits.
+- **Source Order Preserved**: The merged playlist keeps the order of its inputs. A channel stays where its source playlist had it, the first source's channels come first, and a group appears where its first channel appeared. Nothing is alphabetised, so the file reads like the playlists it was built from.
+- **Deterministic Exports**: The order is not randomised: sources are consumed in a fixed sequence and link verification never reshuffles the result, so re-running without source changes produces identical files and no spurious commits.
 - **Honest Timestamps**: The `date` field in `LiveTV.json` is the collector's own run time in `Europe/Madrid`, written as ISO 8601 with an explicit UTC offset (e.g. `2025-03-25T12:00:00+01:00`). The offset matters: it lets the browser resolve the instant correctly whatever timezone the visitor is in, so the "updated N min ago" banner in `index.html` is accurate.
 - **Web Hub (`index.html`)**: Static browser UI to browse the generated playlists, search channels, copy/download links, and track download statistics locally.
 - **Multiple Export Formats**:
@@ -146,7 +147,7 @@ Custom JSON list without extension:
    - Optionally verifies link activity with concurrent HEAD/GET requests (2-second timeout, 10 workers) when `--check-links` is passed.
 
 3. **Exporting**:
-   - Saves unique channels to four files in `LiveTV/Country Name/`, sorted for stable diffs.
+   - Saves unique channels to four files in `LiveTV/Country Name/`, in source order, so diffs stay small and predictable.
 
 4. **Automation**:
    - GitHub Actions runs `BugsfreeMain/TV-Spain.py` once a day at 12:00 Europe/Madrid, honouring CET and CEST.
@@ -178,7 +179,8 @@ The suite uses only the standard library (`unittest`), so no extra dependency is
 - **Link filtering** — each unique URL probed once even when several channels share it, dead channels dropped, resolved URL replacing the original, and `check_links=False` skipping the probe entirely.
 - **Link checking** — success, error status returning `(False, url)` instead of `None`, HEAD to GET fallback, alternate-protocol retry, and the per-URL cache.
 - **HTML source extraction** — playlist detection, relative link resolution, and excluded hosts.
-- **Exports** — the four output files, `#EXTM3U` structure, and identical deterministic ordering across all formats.
+- **Exports** — the four output files, `#EXTM3U` structure, and all four formats agreeing on the same channel order.
+- **Source order** (`TestSourceOrderIsPreserved`) — a single source keeps its own order, the first source's channels come before the second's, the declared order of the sources is respected, a group keeps the position of its first channel, a second identical run produces the same order, all four exports agree, link verification with `--check-links` does not reshuffle the result (futures completing in reverse still export in source order), and dropped channels do not disturb the rest.
 - **Timestamps** (`TestExportTimestamp`) — the published `date` is Madrid local time under both CET and CEST, carries an explicit offset, and parses back to the same instant.
 - **M3U EPG header** (`TestM3UEpgHeader`) — each source's `url-tvg` is read from its header line, single and multi-URL values are split and trimmed, sources without EPG contribute nothing, several sources are merged in order, a guide shared by two sources is listed once, the list is cleared between runs, the header stays bare without EPG, the source M3U never leaks into `url-tvg`, and the stream entries still follow the header.
 - **Scheduling gate** (`tests/test_madrid_noon_gate.py`) — `Europe/Madrid` noon detection under CET and CEST, both daylight saving switch days, late-start tolerance, and a sweep of two full years asserting that exactly one of the two candidate hours fires on every single day.

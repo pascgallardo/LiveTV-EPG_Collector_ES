@@ -494,6 +494,164 @@ class TestM3UEpgHeader(CollectorTestCase):
         self.assertEqual(lines[2], "https://cdn.example/la1.m3u8")
 
 
+class TestSourceOrderIsPreserved(CollectorTestCase):
+    """A channel keeps the position it had in its source playlist.
+
+    The merged file must read like the playlists it was built from: the first
+    source contributes its channels first, each one in its original order.
+    """
+
+    def build(self, *per_source_lines):
+        """Run process_sources over fake sources, each given as a list of lines."""
+        collector = self.make_collector()
+        queues = {f"https://src{i}.example/list.m3u": list(lines)
+                  for i, lines in enumerate(per_source_lines)}
+        urls = list(queues)
+        with mock.patch.object(tv.M3UCollector, "fetch_content",
+                               side_effect=lambda url: (None, queues[url])):
+            collector.process_sources(urls)
+        return collector
+
+    @staticmethod
+    def source(*names, group="G"):
+        lines = []
+        for name in names:
+            lines.append(f'#EXTINF:-1 group-title="{group}",{name}')
+            lines.append(f"https://cdn.example/{name}.m3u8")
+        return lines
+
+    def m3u_names(self, collector):
+        collector.export_m3u()
+        content = self.read_text("Spain", "LiveTV.m3u")
+        return [line.split(",")[-1] for line in content.splitlines()
+                if line.startswith("#EXTINF:")]
+
+    def test_channels_follow_the_order_of_a_single_source(self):
+        collector = self.build(self.source("Zeta", "Alfa", "Omega"))
+        self.assertEqual(self.m3u_names(collector), ["Zeta", "Alfa", "Omega"])
+
+    def test_channels_of_the_first_source_come_before_the_second(self):
+        collector = self.build(self.source("A1", "A2"), self.source("B1", "B2"))
+        self.assertEqual(self.m3u_names(collector), ["A1", "A2", "B1", "B2"])
+
+    def test_sources_keep_the_declared_order(self):
+        collector = self.build(self.source("X"), self.source("Y"), self.source("Z"))
+        self.assertEqual(self.m3u_names(collector), ["X", "Y", "Z"])
+
+    def test_the_same_order_repeats_on_a_second_identical_run(self):
+        first = self.m3u_names(self.build(self.source("B", "A"), self.source("D", "C")))
+        second = self.m3u_names(self.build(self.source("B", "A"), self.source("D", "C")))
+        self.assertEqual(first, second)
+
+    def test_a_group_keeps_the_position_of_its_first_channel(self):
+        collector = self.make_collector()
+        lines = ['#EXTINF:-1 group-title="Zeta",C1', "https://cdn.example/c1.m3u8",
+                 '#EXTINF:-1 group-title="Alfa",C2', "https://cdn.example/c2.m3u8",
+                 '#EXTINF:-1 group-title="Zeta",C3', "https://cdn.example/c3.m3u8"]
+        with mock.patch.object(tv.M3UCollector, "fetch_content", return_value=(None, lines)):
+            collector.process_sources(["https://src.example/list.m3u"])
+
+        self.assertEqual(list(collector.channels), ["Zeta", "Alfa"])
+        self.assertEqual(self.m3u_names(collector), ["C1", "C3", "C2"])
+
+    def test_every_export_agrees_on_the_order(self):
+        collector = self.build(self.source("B", "A"), self.source("C"))
+        names = ["B", "A", "C"]
+        self.m3u_names(collector)
+
+        collector.export_txt()
+        collector.export_json()
+        collector.export_custom()
+        from_txt = [l.split(": ", 1)[1] for l in self.read_text("Spain", "LiveTV.txt").splitlines()
+                    if l.startswith("Name: ")]
+        from_json = [c["name"] for group in self.read_json("Spain", "LiveTV.json")["channels"].values()
+                     for c in group]
+        from_custom = [e["name"] for e in self.read_json("Spain", "LiveTV")]
+
+        self.assertEqual(from_txt, names)
+        self.assertEqual(from_json, names)
+        self.assertEqual(from_custom, names)
+
+    def test_link_checking_does_not_reshuffle_the_channels(self):
+        # Results arrive in completion order; the export must still be in source order.
+        collector = self.make_collector(check_links=True)
+        collector.channels["G"] = [
+            {"name": name, "logo": "l", "group": "G", "source": "src",
+             "url": f"https://cdn.example/{name}.m3u8"}
+            for name in ("C1", "C2", "C3")
+        ]
+
+        # Complete in reverse order to imitate slow/fast futures.
+        completed = []
+
+        class FakeFuture:
+            def __init__(self, value):
+                self._value = value
+
+            def result(self):
+                return self._value
+
+        class FakeExecutor:
+            def __init__(self, *args, **kwargs):
+                pass
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *exc):
+                return False
+
+            def submit(self, fn, url):
+                completed.append(url)
+                return FakeFuture((True, url))
+
+        with mock.patch.object(tv.concurrent.futures, "ThreadPoolExecutor", FakeExecutor), \
+             mock.patch.object(tv.concurrent.futures, "as_completed",
+                               side_effect=lambda futs: reversed(list(futs))):
+            collector.filter_active_channels()
+
+        self.assertEqual(completed, ["https://cdn.example/C1.m3u8",
+                                     "https://cdn.example/C2.m3u8",
+                                     "https://cdn.example/C3.m3u8"])
+        self.assertEqual([c["name"] for c in collector.channels["G"]], ["C1", "C2", "C3"])
+
+    def test_dropped_channels_do_not_disturb_the_remaining_order(self):
+        collector = self.make_collector(check_links=True)
+        collector.channels["G"] = [
+            {"name": name, "logo": "l", "group": "G", "source": "src",
+             "url": f"https://cdn.example/{name}.m3u8"}
+            for name in ("C1", "C2", "C3", "C4")
+        ]
+        dead = "https://cdn.example/C2.m3u8"
+
+        class FakeFuture:
+            def __init__(self, url):
+                self._url = url
+
+            def result(self):
+                return (self._url != dead, self._url)
+
+        class FakeExecutor:
+            def __init__(self, *args, **kwargs):
+                pass
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *exc):
+                return False
+
+            def submit(self, fn, url):
+                return FakeFuture(url)
+
+        with mock.patch.object(tv.concurrent.futures, "ThreadPoolExecutor", FakeExecutor), \
+             mock.patch.object(tv.concurrent.futures, "as_completed",
+                               side_effect=lambda futs: list(futs)):
+            collector.filter_active_channels()
+
+        self.assertEqual([c["name"] for c in collector.channels["G"]], ["C1", "C3", "C4"])
+
+
 class TestUrlDeduplication(CollectorTestCase):
     def test_duplicate_url_in_same_playlist_is_stored_once(self):
         collector = self.make_collector()
@@ -709,7 +867,8 @@ class TestHtmlExtraction(CollectorTestCase):
 
 class TestExports(CollectorTestCase):
     def populate(self, collector):
-        # Inserted in reverse alphabetical order so the exports must actually sort them.
+        # Inserted in a deliberate non-alphabetical order (Generalistas first, and
+        # Telecinco before La 1 inside it) so the exports must reproduce it verbatim.
         collector.channels["Generalistas"] = [
             {"name": "Telecinco", "logo": "logo-t5", "group": "Generalistas",
              "source": "src", "url": "https://cdn.example/t5.m3u8"},
@@ -741,34 +900,36 @@ class TestExports(CollectorTestCase):
         self.assertEqual(lines[0], "#EXTM3U")
         self.assertEqual(sum(1 for line in lines if line.startswith("#EXTINF:")), 3)
         self.assertEqual(sum(1 for line in lines if line.startswith("http")), 3)
-        # Groups are exported in alphabetical order, so Deportes comes before Generalistas.
-        self.assertIn('tvg-logo="logo-ser"', lines[1])
-        self.assertIn('group-title="Deportes"', lines[1])
-        self.assertTrue(lines[1].endswith(",Cadena Ser"))
-        self.assertIn('tvg-logo="logo-la1"', lines[3])
+        # Groups keep the order of their first appearance, so Generalistas leads.
+        self.assertIn('tvg-logo="logo-t5"', lines[1])
+        self.assertIn('group-title="Generalistas"', lines[1])
+        self.assertTrue(lines[1].endswith(",Telecinco"))
+        self.assertIn('group-title="Deportes"', lines[5])
         self.assertIn('group-title="Generalistas"', lines[3])
         self.assertTrue(lines[3].endswith(",La 1"))
 
-    def test_channels_are_sorted_in_every_format(self):
+    def test_channels_keep_the_source_order_in_every_format(self):
         collector = self.make_collector()
         self.populate(collector)
         collector.export_m3u()
         collector.export_txt()
         collector.export_json()
         collector.export_custom()
+        # populate() inserts Generalistas first (Telecinco, La 1) and Deportes
+        # second (Cadena Ser), so the export must not regroup or alphabetise.
         m3u = self.read_text("Spain", "LiveTV.m3u")
-        self.assertLess(m3u.index("Cadena Ser"), m3u.index("La 1"))
-        self.assertLess(m3u.index("La 1"), m3u.index("Telecinco"))
+        self.assertLess(m3u.index("Telecinco"), m3u.index("La 1"))
+        self.assertLess(m3u.index("La 1"), m3u.index("Cadena Ser"))
 
         data = self.read_json("Spain", "LiveTV.json")
-        self.assertEqual(list(data["channels"]), ["Deportes", "Generalistas"])
+        self.assertEqual(list(data["channels"]), ["Generalistas", "Deportes"])
         self.assertEqual(
             [channel["name"] for channel in data["channels"]["Generalistas"]],
-            ["La 1", "Telecinco"],
+            ["Telecinco", "La 1"],
         )
 
         custom = self.read_json("Spain", "LiveTV")
-        self.assertEqual([entry["name"] for entry in custom], ["Cadena Ser", "La 1", "Telecinco"])
+        self.assertEqual([entry["name"] for entry in custom], ["Telecinco", "La 1", "Cadena Ser"])
 
     def test_txt_separates_entries_with_a_rule(self):
         collector = self.make_collector()
