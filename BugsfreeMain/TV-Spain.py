@@ -15,10 +15,11 @@ from bs4 import BeautifulSoup
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# The collector runs at noon in mainland Spain, so the published timestamp is
-# expressed in that same timezone. It is written as ISO 8601 with an explicit
-# UTC offset, which is unambiguous: the browser does not have to guess the
-# visitor's timezone when index.html parses it with `new Date(...)`.
+# GitHub's `schedule` is best effort, so the collector cannot run at a fixed
+# wall-clock moment. The published timestamp is therefore the instant it really
+# ran, expressed in mainland Spain time. It is written as ISO 8601 with an
+# explicit UTC offset, which is unambiguous: the browser does not have to guess
+# the visitor's timezone when index.html parses it with `new Date(...)`.
 MADRID = ZoneInfo("Europe/Madrid")
 
 class M3UCollector:

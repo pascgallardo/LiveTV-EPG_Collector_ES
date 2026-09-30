@@ -1,9 +1,9 @@
 """Tests for the repository .gitignore.
 
-The collector and the gate module are imported by path, so Python writes
-__pycache__ directories inside the repository on every CI run. These tests make
-sure those artefacts stay ignored and, just as important, that the patterns
-never start hiding a file the workflow actually needs to commit.
+The collector is imported by path, so Python writes __pycache__ directories
+inside the repository on every CI run. These tests make sure those artefacts stay
+ignored and, just as important, that the patterns never start hiding a file the
+workflow actually needs to commit.
 """
 import pathlib
 import subprocess
@@ -31,13 +31,11 @@ class TestGitignore(unittest.TestCase):
     def test_python_bytecode_caches_are_ignored(self):
         ignored = git_ignored(
             "BugsfreeMain/__pycache__",
-            "scripts/__pycache__",
             "tests/__pycache__",
             "BugsfreeMain/TV-Spain.cpython-312.pyc",
         )
         self.assertEqual(ignored, {
             "BugsfreeMain/__pycache__",
-            "scripts/__pycache__",
             "tests/__pycache__",
             "BugsfreeMain/TV-Spain.cpython-312.pyc",
         })

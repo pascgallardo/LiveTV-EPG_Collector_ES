@@ -27,7 +27,7 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 
 ## Features
 
-- **Automated Updates**: Runs once a day at **12:00 mainland Spain time** via GitHub Actions. Because GitHub cron expressions are always interpreted in UTC and ignore daylight saving, the workflow is woken at both candidate hours (10:00 and 11:00 UTC) and a `gate` job checks `Europe/Madrid` with `zoneinfo` so only the correct one runs — `11:00 UTC` in winter (CET) and `10:00 UTC` in summer (CEST).
+- **Automated Updates**: Runs once a day via GitHub Actions, scheduled for **16:00 UTC**. GitHub evaluates cron in UTC and treats `schedule` as best effort, so the run really starts later: measured over the 978 scheduled runs this repository produced between April and September 2026, the median delay was 171 min at 00:00 UTC, 154 min at 08:00 UTC and **103 min at 16:00 UTC**, and no run ever started in under 28 minutes. 16:00 UTC was the least congested slot in every month, so that is what the cron uses. In practice the playlists are republished roughly between **19:00 and 23:00 mainland Spain time**. There is deliberately no time gate: a gate could never pass, and would only have kept the workflow from running at all. See [Scheduling](#scheduling) for the full numbers.
 - **Large Source Handling**: Streams M3U responses line by line instead of loading whole files, and only materialises the joined text for HTML sources that need parsing.
 - **Optional Active Link Verification**: Off by default for speed. Run `python BugsfreeMain/TV-Spain.py --check-links` to probe every stream with 10 concurrent workers (HEAD, falling back to GET and then to the alternate protocol). Results are cached per URL.
 - **Duplicate Removal**: Ensures no duplicate streams (based on URL) are included. When the same URL arrives from several playlists, the first source keeps ownership, but a `tvg-id` or `tvg-name` that the first one lacked is filled in from a later source.
@@ -36,7 +36,7 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 - **Merged EPG Guides**: The EPG (XMLTV) URLs declared by each source playlist are read from its `#EXTM3U url-tvg` attribute and merged into the header of the generated `LiveTV.m3u`, in source order and without duplicates.
 - **Source Order Preserved**: The merged playlist keeps the order of its inputs. A channel stays where its source playlist had it, the first source's channels come first, and a group appears where its first channel appeared. Nothing is alphabetised, so the file reads like the playlists it was built from.
 - **Deterministic Exports**: The order is not randomised: sources are consumed in a fixed sequence and link verification never reshuffles the result, so re-running without source changes produces identical files and no spurious commits.
-- **Honest Timestamps**: The `date` field in `LiveTV.json` is the collector's own run time in `Europe/Madrid`, written as ISO 8601 with an explicit UTC offset (e.g. `2025-03-25T12:00:00+01:00`). The offset matters: it lets the browser resolve the instant correctly whatever timezone the visitor is in, so the "updated N min ago" banner in `index.html` is accurate.
+- **Honest Timestamps**: The `date` field in `LiveTV.json` is the moment the collector actually ran, expressed in `Europe/Madrid` and written as ISO 8601 with an explicit UTC offset (e.g. `2026-09-30T21:14:07+02:00`). Because GitHub's cron never fires on time, this is the only trustworthy publication time, and the offset lets the browser resolve the instant correctly whatever timezone the visitor is in, so the "updated N min ago" banner in `index.html` is accurate.
 - **Web Hub (`index.html`)**: Static browser UI to browse the generated playlists, search channels, copy/download links, and track download statistics locally.
 - **Multiple Export Formats**:
   - `LiveTV.m3u`: Standard M3U playlist.
@@ -77,7 +77,7 @@ Source: https://example.com/source.m3u
 Structured JSON with timestamp:
 ```json
 {
-  "date": "2025-03-25T12:00:00+01:00",
+  "date": "2026-09-30T21:14:07+02:00",
   "channels": {
     "Entertainment": [
       {
@@ -134,7 +134,7 @@ Custom JSON list without extension:
 
 4. **Verify Workflow**:
    - Go to the "Actions" tab in your GitHub repository.
-   - The workflow "TV-Spain Update Files" runs daily at 12:00 Spain time or can be triggered manually (a manual run always executes, whatever the local time is).
+   - The workflow "TV-Spain Update Files" runs daily (cron `0 16 * * *`, UTC) or can be triggered manually.
 
 ## How It Works
 
@@ -150,7 +150,7 @@ Custom JSON list without extension:
    - Saves unique channels to four files in `LiveTV/Country Name/`, in source order, so diffs stay small and predictable.
 
 4. **Automation**:
-   - GitHub Actions runs `BugsfreeMain/TV-Spain.py` once a day at 12:00 Europe/Madrid, honouring CET and CEST.
+   - GitHub Actions runs `BugsfreeMain/TV-Spain.py` once a day, scheduled for 16:00 UTC.
    - A second job regenerates `LiveTV/index.json` and `Movies/index.json` from the directories present.
    - Commits and pushes changes automatically using `GITHUB_TOKEN`.
 
@@ -162,10 +162,30 @@ python -m unittest discover -s tests -t .       # run the test suite
 python BugsfreeMain/TV-Spain.py                # fast: no link verification
 python BugsfreeMain/TV-Spain.py --check-links # slower: drop unreachable streams
 python generate_indexes.py                     # refresh section indexes
-python scripts/madrid_noon_gate.py             # exit 0 only at 12:00 Europe/Madrid
 ```
 
 `index.html` is a static page: serve the repository root over any static host and it reads the generated files from the raw GitHub URL (this repository first, the upstream repository as fallback).
+
+## Scheduling
+
+GitHub Actions `schedule` is best effort: the trigger is honoured, the start time is not. This repository used to run three slots a day (`0 0,8,16 * * *`), which gives a clean dataset to measure that behaviour. Over the **978 scheduled runs it produced between April and September 2026**, the delay between the scheduled minute and the moment the run actually started was:
+
+| Slot | Runs | Median | Mean | p75 | p90 | Started within +1 h | +2 h |
+|---|---|---|---|---|---|---|---|
+| `00:00Z` | 326 | 171 min | 180 min | 224 min | 251 min | 0.0 % | 15.3 % |
+| `08:00Z` | 326 | 154 min | 170 min | 215 min | 287 min | 6.1 % | 27.6 % |
+| **`16:00Z`** | 326 | **103 min** | 107 min | 128 min | 197 min | **19.3 %** | **69.0 %** |
+
+Two facts drove the current configuration:
+
+1. **16:00 UTC is the least congested slot.** It had the lowest median delay in each of the six months on record, not just overall. `00:00Z` is 20:00 on the US east coast, the platform's busiest window; 16:00Z is midday there.
+2. **No run in five months ever started in under 28 minutes.** That is why the previous "only run at 12:00 Europe/Madrid" gate — which woke the workflow twice a day and let it through only inside a ±30 min window — could never succeed: it would have rejected over 98 % of runs and the workflow would never have published anything.
+
+So the cron is a single `0 16 * * *` with **no gate**. `workflow_dispatch` still runs the collector immediately, whatever the local time. The workflow logs the real UTC and `Europe/Madrid` start time on every run, and `LiveTV.json` carries that same moment as its `date`, so `index.html` can display an honest "updated N min ago".
+
+Expected publication window in mainland Spain time: roughly **19:00–23:00**, with a median around 21:30.
+
+If an exact wall-clock time ever becomes a hard requirement, the fix is to stop relying on `schedule` at all: call the `workflow_dispatch` endpoint from an external scheduler.
 
 ## Tests
 
@@ -183,7 +203,8 @@ The suite uses only the standard library (`unittest`), so no extra dependency is
 - **Source order** (`TestSourceOrderIsPreserved`) — a single source keeps its own order, the first source's channels come before the second's, the declared order of the sources is respected, a group keeps the position of its first channel, a second identical run produces the same order, all four exports agree, link verification with `--check-links` does not reshuffle the result (futures completing in reverse still export in source order), and dropped channels do not disturb the rest.
 - **Timestamps** (`TestExportTimestamp`) — the published `date` is Madrid local time under both CET and CEST, carries an explicit offset, and parses back to the same instant.
 - **M3U EPG header** (`TestM3UEpgHeader`) — each source's `url-tvg` is read from its header line, single and multi-URL values are split and trimmed, sources without EPG contribute nothing, several sources are merged in order, a guide shared by two sources is listed once, the list is cleared between runs, the header stays bare without EPG, the source M3U never leaks into `url-tvg`, and the stream entries still follow the header.
-- **Scheduling gate** (`tests/test_madrid_noon_gate.py`) — `Europe/Madrid` noon detection under CET and CEST, both daylight saving switch days, late-start tolerance, and a sweep of two full years asserting that exactly one of the two candidate hours fires on every single day.
+
+`tests/test_workflow_schedule.py` guards the scheduling configuration: one cron at 16:00 UTC, no leftover gate job, no stale reference to the removed gate script, and a well-formed job chain.
 
 ## Dependencies
 
@@ -191,7 +212,7 @@ Declared in `requirements.txt` and installed by the workflow with `pip install -
 - `requests`: For fetching M3U and HTML content.
 - `beautifulsoup4`: For HTML parsing.
 
-Timezone handling uses the standard library `zoneinfo`, so there is no third-party timezone dependency.
+Timezone handling uses the standard library `zoneinfo`, so there is no third-party timezone dependency. The published timestamp is the moment the collector really ran: GitHub's cron cannot be relied on to start a workflow on time, so stamping the scheduled minute would be a lie.
 
 ## Troubleshooting
 

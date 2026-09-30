@@ -259,7 +259,7 @@
     </div>
     <div class="notification" id="notification"></div>
     <footer>
-        Powered by <a href="https://github.com/bugsfreeweb/LiveTVCollector" target="_blank" rel="noopener">M3U Collector</a> | Playlists refreshed daily at 12:00 (Spain)
+        Powered by <a href="https://github.com/bugsfreeweb/LiveTVCollector" target="_blank" rel="noopener">M3U Collector</a> | Playlists refreshed daily &middot; <span id="footer-updated">last update: &mdash;</span>
     </footer>
 
     <script>
@@ -641,6 +641,15 @@
                 const minutes = Math.max(1, Math.round((Date.now() - new Date(date)) / 60000));
                 showNotification(`${key} updated ${minutes} min${minutes === 1 ? '' : 's'} ago!`
                     + (updated.length > 1 ? ` (+${updated.length - 1} more)` : ''));
+            }
+            // The footer reports the real publication moment. GitHub's cron is best
+            // effort, so any fixed hour printed here would be a lie.
+            const latest = Object.values(analytics.lastSync)
+                .filter(date => date && !isNaN(new Date(date)))
+                .sort((a, b) => new Date(b) - new Date(a))[0];
+            const footer = document.getElementById('footer-updated');
+            if (footer && latest) {
+                footer.textContent = `last update: ${new Date(latest).toLocaleString('es-ES')}`;
             }
             localStorage.setItem('last_visit', new Date().toISOString());
         }
