@@ -1,4 +1,4 @@
-# LiveTVCollectorES
+# LiveTV y EPG Collector ES
 
 A GitHub repository that automatically collects, filters, and exports live TV streaming links per country using GitHub Actions. This project fetches M3U playlists from multiple sources, removes duplicates, and exports them into various formats under the `LiveTV/Country Name/` directory.
 
