@@ -1,0 +1,73 @@
+name: TV-Spain Update EPG
+
+on:
+  schedule:
+    # Every 48 hours at 08:00 UTC, as `0 8 */2 * *` expresses it: the even days
+    # of the month. Cron has no way to say "every two days" without also
+    # restarting on the first, so the interval is exactly 48 h within a month and
+    # shortens across the boundary -- from the 30th to the 1st only 24 h pass.
+    # That is the standard way to express a 48 h cadence here and the drift is
+    # one short gap a month.
+    #
+    # The same best-effort delay measured for the M3U collector applies: this
+    # fires at 10:00 mainland Spain time and really starts hours later.
+    - cron: '0 8 */2 * *'
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  update-epg:
+    runs-on: ubuntu-latest
+    # The merge downloads ~80 MB of XMLTV across nine guides and filters it.
+    timeout-minutes: 45
+
+    steps:
+      - name: Record the real publication time
+        run: |
+          echo "Scheduled for 08:00 UTC (even days), starting now."
+          echo "UTC:   $(date -u '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "Madrid: $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M:%S %Z')"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -t . -v
+
+      - name: Merge the XMLTV guides into one
+        run: python BugsfreeMain/TV-Spain-EPG.py
+
+      - name: Commit and push the merged guide
+        env:
+          BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add LiveTV/Spain/LiveTV.xml LiveTV/Spain/LiveTV.xml.gz
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "TV-Spain Update EPG - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git pull --rebase --autostash origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"

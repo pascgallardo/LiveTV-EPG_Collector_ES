@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml, https://www.tdtchannels.com/epg/TV.xml.gz, https://live.s2l.workers.dev/epg.xml, https://Llorchico.github.io/Runtime/runtime.xml, https://www.ondachannels.com/epg/RADIO.xml.gz, https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/es.xml.gz, https://raw.githubusercontent.com/Llorchico/Rakuten/refs/heads/main/rakuten.xml, https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/es.xml.gz, https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/es.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/pascgallardo/LiveTVCollectorES/refs/heads/main/LiveTV/Spain/LiveTV.xml.gz"
 #EXTINF:-1 tvg-id="La 1 HD" tvg-name="La 1" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/la1_cuadrado.jpg" group-title="Generalistas",La 1
 https://rtvelivestream.rtve.es/rtvesec/la1/la1_main.m3u8
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="Generalistas",La 1 UHD (2160p)

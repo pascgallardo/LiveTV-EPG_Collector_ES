@@ -387,10 +387,13 @@ class TestTvgMetadataExports(CollectorTestCase):
 
 
 class TestM3UEpgHeader(CollectorTestCase):
-    """The #EXTM3U url-tvg header carries the EPG URLs of the merged sources.
+    """`url-tvg` advertises the merged guide; the manifest carries the sources.
 
-    `url-tvg` points at XMLTV guide data, never at the M3U sources themselves,
-    so the header is built from the EPG URLs each source declared.
+    The playlist can no longer list the nine source guides in its header: it
+    points at the single XMLTV file `TV-Spain-EPG.py` merges them into, which is
+    what a player wants. The list of sources therefore has to live somewhere else,
+    and that is what the manifest is for. Without it the merger would read the
+    header, find its own output, and merge that into itself.
     """
 
     EPG_A = "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml"
@@ -410,14 +413,29 @@ class TestM3UEpgHeader(CollectorTestCase):
         collector.export_m3u()
         return self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
 
-    def header_of_source(self, *header_lines):
-        """Feed *header_lines* as a source playlist and return the merged header."""
+    def collector_from_sources(self, *header_lines):
+        """Feed *header_lines* as a source playlist and return the collector."""
         collector = self.make_collector()
         body = ['#EXTINF:-1 group-title="Generalistas",La 1', "https://cdn.example/la1.m3u8"]
-        with mock.patch.object(tv.M3UCollector, "fetch_content", return_value=(None, list(header_lines) + body)):
+        with mock.patch.object(tv.M3UCollector, "fetch_content",
+                               return_value=(None, list(header_lines) + body)):
             collector.process_sources(["https://source.example/list.m3u"])
-        collector.export_m3u()
-        return self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
+        return collector
+
+    def collector_from_sources_declaring(self, *epg_urls):
+        """Feed one source playlist per entry, each declaring that guide alone."""
+        collector = self.make_collector()
+        body = ['#EXTINF:-1 group-title="G",C', "https://cdn.example/c.m3u8"]
+        sources = [f"https://src{i}.example/list.m3u" for i in range(len(epg_urls))]
+
+        def fake_fetch(self, url):
+            return (None, [f'#EXTM3U url-tvg="{epg_urls[sources.index(url)]}"'] + body)
+
+        with mock.patch.object(tv.M3UCollector, "fetch_content", fake_fetch):
+            collector.process_sources(sources)
+        return collector
+
+    # ---- reading the sources out of a playlist --------------------------
 
     def test_extracts_a_single_epg_url(self):
         self.assertEqual(tv.M3UCollector.epg_urls_from_header([f'#EXTM3U url-tvg="{self.EPG_A}"']), [self.EPG_A])
@@ -441,36 +459,9 @@ class TestM3UEpgHeader(CollectorTestCase):
         self.assertEqual(tv.M3UCollector.epg_urls_from_header([header]), [self.EPG_A])
 
     def test_only_the_header_line_is_inspected(self):
-        lines = [f'#EXTM3U url-tvg="{self.EPG_A}"', '#EXTINF:-1 group-title="G",C', "https://x.example/s.m3u8"]
+        lines = [f'#EXTM3U url-tvg="{self.EPG_A}"', '#EXTINF:-1 group-title="G",C',
+                 "https://x.example/s.m3u8"]
         self.assertEqual(tv.M3UCollector.epg_urls_from_header(lines), [self.EPG_A])
-
-    def test_header_carries_the_epg_urls_of_the_sources(self):
-        header = self.header_of_source(f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"')
-        self.assertEqual(header, f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"')
-
-    def test_several_sources_are_merged_in_order(self):
-        collector = self.make_collector()
-        body = ['#EXTINF:-1 group-title="G",C', "https://cdn.example/c.m3u8"]
-        def fake_fetch(self, url):
-            return (None, [f'#EXTM3U url-tvg="{url}"]'] + body)
-        with mock.patch.object(tv.M3UCollector, "fetch_content", fake_fetch):
-            collector.process_sources(["https://a.example/a.m3u", "https://b.example/b.m3u"])
-        collector.export_m3u()
-        header = self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
-        self.assertEqual(header, '#EXTM3U url-tvg="https://a.example/a.m3u, https://b.example/b.m3u"')
-
-    def test_a_guide_shared_by_two_sources_is_listed_once(self):
-        header = self.header_with(self.EPG_A, self.EPG_B, self.EPG_A)
-        self.assertEqual(header.count(self.EPG_A), 1)
-        self.assertEqual(header, f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"')
-
-    def test_header_stays_bare_without_epg(self):
-        self.assertEqual(self.header_with(), "#EXTM3U")
-
-    def test_the_header_never_lists_an_m3u_source(self):
-        # The source URL is an .m3u; it must not reach url-tvg.
-        header = self.header_of_source(f'#EXTM3U url-tvg="{self.EPG_A}"')
-        self.assertNotIn("list.m3u", header)
 
     def test_epg_is_cleared_between_runs(self):
         collector = self.make_collector()
@@ -478,10 +469,49 @@ class TestM3UEpgHeader(CollectorTestCase):
         collector.process_sources([])
         self.assertEqual(collector.epg_urls, [])
 
-    def test_the_exported_header_parses_back(self):
+    def test_several_sources_are_merged_in_order(self):
+        collector = self.collector_from_sources_declaring("https://a.example/a.m3u",
+                                                          "https://b.example/b.m3u")
+        self.assertEqual(collector.epg_urls,
+                         ["https://a.example/a.m3u", "https://b.example/b.m3u"])
+
+    def test_a_guide_shared_by_two_sources_is_kept_once(self):
+        collector = self.make_collector()
+        collector.epg_urls = [self.EPG_A, self.EPG_B, self.EPG_A]
+        self.assertEqual(collector.unique_epg_urls(), [self.EPG_A, self.EPG_B])
+
+    # ---- what the playlist advertises -----------------------------------
+
+    def test_header_points_at_the_merged_guide(self):
         header = self.header_with(self.EPG_A, self.EPG_B)
+        self.assertEqual(header, f'#EXTM3U url-tvg="{tv.MERGED_EPG_URL}"')
+
+    def test_merged_url_is_the_compressed_guide_of_this_repository(self):
+        self.assertTrue(tv.MERGED_EPG_URL.startswith("https://raw.githubusercontent.com/"))
+        self.assertTrue(tv.MERGED_EPG_URL.endswith("LiveTV/Spain/LiveTV.xml.gz"))
+
+    def test_header_no_longer_lists_the_source_guides(self):
+        header = self.header_with(self.EPG_A, self.EPG_B)
+        self.assertNotIn(self.EPG_A, header)
+        self.assertNotIn(self.EPG_B, header)
+
+    def test_a_single_source_guide_is_enough_to_publish_the_pointer(self):
+        self.assertEqual(self.header_with(self.EPG_A),
+                         f'#EXTM3U url-tvg="{tv.MERGED_EPG_URL}"')
+
+    def test_header_stays_bare_without_epg(self):
+        self.assertEqual(self.header_with(), "#EXTM3U")
+
+    def test_the_header_never_lists_an_m3u_source(self):
+        collector = self.collector_from_sources(f'#EXTM3U url-tvg="{self.EPG_A}"')
+        collector.export_m3u()
+        header = self.read_text("Spain", "LiveTV.m3u").splitlines()[0]
+        self.assertNotIn("list.m3u", header)
+
+    def test_the_exported_header_parses_back(self):
+        header = self.header_with(self.EPG_A)
         self.assertEqual(tv.M3UCollector.extinf_attribute(header, "url-tvg"),
-                         f"{self.EPG_A}, {self.EPG_B}")
+                         tv.MERGED_EPG_URL)
 
     def test_stream_entries_still_follow_the_header(self):
         collector = self.make_collector()
@@ -492,6 +522,56 @@ class TestM3UEpgHeader(CollectorTestCase):
         self.assertTrue(lines[0].startswith("#EXTM3U "))
         self.assertTrue(lines[1].startswith("#EXTINF:"))
         self.assertEqual(lines[2], "https://cdn.example/la1.m3u8")
+
+    # ---- the manifest the merger reads ----------------------------------
+
+    def test_manifest_lists_the_source_guides(self):
+        collector = self.collector_from_sources(f'#EXTM3U url-tvg="{self.EPG_A}, {self.EPG_B}"')
+        collector.export_epg_manifest()
+
+        self.assertEqual(self.read_json("Spain", "epg-sources.json")["epg_urls"],
+                         [self.EPG_A, self.EPG_B])
+
+    def test_manifest_records_exactly_what_the_sources_declared(self):
+        # The manifest is a faithful copy of the collected list; the guard against
+        # feeding the merger its own output lives in TV-Spain-EPG.py, which is
+        # where the header fallback is read.
+        collector = self.make_collector()
+        collector.epg_urls = [self.EPG_A, tv.MERGED_EPG_URL]
+        collector.export_epg_manifest()
+
+        self.assertEqual(self.read_json("Spain", "epg-sources.json")["epg_urls"],
+                         [self.EPG_A, tv.MERGED_EPG_URL])
+
+    def test_manifest_keeps_the_source_order(self):
+        collector = self.make_collector()
+        collector.epg_urls = [self.EPG_C, self.EPG_A, self.EPG_B]
+        collector.export_epg_manifest()
+
+        self.assertEqual(self.read_json("Spain", "epg-sources.json")["epg_urls"],
+                         [self.EPG_C, self.EPG_A, self.EPG_B])
+
+    def test_manifest_drops_a_guide_shared_by_two_sources(self):
+        collector = self.make_collector()
+        collector.epg_urls = [self.EPG_A, self.EPG_B, self.EPG_A]
+        collector.export_epg_manifest()
+
+        self.assertEqual(self.read_json("Spain", "epg-sources.json")["epg_urls"],
+                         [self.EPG_A, self.EPG_B])
+
+    def test_manifest_is_empty_when_there_is_no_epg(self):
+        collector = self.make_collector()
+        collector.export_epg_manifest()
+
+        self.assertEqual(self.read_json("Spain", "epg-sources.json")["epg_urls"], [])
+
+    def test_the_manifest_sits_next_to_the_playlist(self):
+        collector = self.make_collector()
+        collector.export_m3u()
+        collector.export_epg_manifest()
+
+        self.assertEqual(sorted(os.listdir(os.path.join(self.output_dir, "Spain"))),
+                         ["LiveTV.m3u", "epg-sources.json"])
 
 
 class TestSourceOrderIsPreserved(CollectorTestCase):

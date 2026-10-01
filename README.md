@@ -33,7 +33,7 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 - **Duplicate Removal**: Ensures no duplicate streams (based on URL) are included. When the same URL arrives from several playlists, the first source keeps ownership, but a `tvg-id` or `tvg-name` that the first one lacked is filled in from a later source.
 - **tvg-* Metadata**: `tvg-id` and `tvg-name` are read from the source `#EXTINF` lines and carried through to every export format. Attributes a source does not provide are simply omitted from the generated `#EXTINF` line.
 - **HTML Source Parsing**: A source ending in `.html` is scanned for nested playlist links, filtering out non-stream links (e.g., Telegram, GitHub).
-- **Merged EPG Guides**: The EPG (XMLTV) URLs declared by each source playlist are read from its `#EXTM3U url-tvg` attribute and merged into the header of the generated `LiveTV.m3u`, in source order and without duplicates.
+- **Merged EPG Guides**: The EPG (XMLTV) URLs declared by each source playlist are read from its `#EXTM3U url-tvg` attribute, recorded in source order in `epg-sources.json`, and merged by `BugsfreeMain/TV-Spain-EPG.py` into a single `LiveTV.xml` plus its `LiveTV.xml.gz`. The generated playlist points at that merged guide. See [EPG](#epg).
 - **Source Order Preserved**: The merged playlist keeps the order of its inputs. A channel stays where its source playlist had it, the first source's channels come first, and a group appears where its first channel appeared. Nothing is alphabetised, so the file reads like the playlists it was built from.
 - **Duplicate Channels by `tvg-name`**: When several entries share the same `tvg-name`, only one survives: the first one in playlist order **whose stream actually answers**. The rest are dropped, so a channel never appears twice just because several providers carry it. Channels with no `tvg-name` are never compared with each other.
 - **Deterministic Exports**: The order is not randomised: sources are consumed in a fixed sequence and link verification never reshuffles the result, so re-running without source changes produces identical files and no spurious commits. The only exception is the `tvg-name` deduplication, which reads live stream state by design: if a stream goes down, the next run publishes its working backup and the commit is the point.
@@ -186,6 +186,40 @@ Providers overlap, so the same channel often arrives several times: `La 1` from 
 
 **Determinism.** This is the one place where the export depends on something other than the sources. A stream that goes down will make the next run publish its backup, and one that comes back will make it switch again, so the daily commit is no longer purely a function of the playlists. That is the intended behaviour, but it does trade away part of the deterministic-export guarantee above.
 
+## EPG
+
+`LiveTV.m3u` carries a `url-tvg` attribute pointing at `LiveTV/Spain/LiveTV.xml.gz`, the single guide `BugsfreeMain/TV-Spain-EPG.py` builds. It is refreshed on its own schedule, `0 8 */2 * *`, so every 48 hours at 08:00 UTC.
+
+### What the merge does
+
+The nine source guides the merged playlists declare hold **82 MB of XMLTV** describing 2 267 channels between them, of which the published playlist lists 737 `tvg-id`. Everything is filtered to those 737 before it is written, which is the difference between publishing all of it and publishing a guide that matches the playlist it belongs to: guiatv.xml alone is 33 MB with 644 channels, and only 72 of them are in the playlist.
+
+Three things decide what ends up in the file:
+
+- **Only the playlist's `tvg-id` survive.** Both the `<channel id>` of a guide and the `channel` attribute of a `<programme>` must be one of them. The 26 channels with no guide entry simply have no schedule, and a guide full of channels nobody in this playlist streams is dead weight for a player.
+- **The first guide to declare a channel owns it.** guiatv.xml and the s2l workers mirror each other, so ownership has to be decided once and the same way every run, or the output would depend on which download finished first.
+- **Programmes are deduplicated on channel, start and stop.** Guides covering different time ranges all contribute; guides repeating the same range do not. On the current data this drops 36 157 matching programmes to 26 915.
+
+Current result: **712 of 737 channels (96.6 %) and 27 067 programmes**, as a 13.2 MB `LiveTV.xml` and a 1.7 MB `LiveTV.xml.gz`.
+
+### Why the sources live in a sidecar file
+
+Pointing `url-tvg` at the merged guide makes the playlist stop listing where that guide came from, which would leave the merger with no way to find its own inputs — it would read the header, find its previous output, and merge that. The collector therefore also writes the source list to `LiveTV/Spain/epg-sources.json`, and that is what the merger reads. The `url-tvg` header is still accepted as a fallback for a checkout that predates the manifest, with any entry pointing at the merger's own output filtered out.
+
+### Guides are read compressed
+
+Every one of the nine is served gzipped, including `guiatv.xml` and `runtime.xml`, whose URLs do not end in `.gz`. Decompression is therefore decided by the gzip magic bytes and never by the extension.
+
+### Reproducibility
+
+Unlike the playlist, the merged guide is *not* a pure function of its inputs: the upstream guides are regenerated with fresh timestamps constantly, so a real run almost always produces a new file and a new commit. What can be pinned down, and is, is everything this script controls. The gzip stream is written with `mtime=0` and no stored filename, so the archive is a pure function of the XML beside it, and no timestamp is written into the document — the publication instant is already in the commit and in `LiveTV.json`. Two runs over unchanged guides therefore produce byte-identical files.
+
+### When it refuses to publish
+
+A run that would replace a good guide with an unusable one fails instead of writing. That covers every guide failing to download and the filter matching nothing, which are reported as the separate causes they are: the first is a network problem, the second means the playlist changed shape.
+
+Note on size: the merged guide is committed every 48 hours and changes almost completely each time, so it adds roughly 1.7 MB per run to the repository history. Publishing the `.gz` alone would halve that.
+
 ## Scheduling
 
 GitHub Actions `schedule` is best effort: the trigger is honoured, the start time is not. This repository used to run three slots a day (`0 0,8,16 * * *`), which gives a clean dataset to measure that behaviour. Over the **978 scheduled runs it produced between April and September 2026**, the delay between the scheduled minute and the moment the run actually started was:
@@ -202,6 +236,8 @@ Two facts drove the configuration:
 2. **No run in five months ever started in under 28 minutes.** That is why the previous "only run at 12:00 Europe/Madrid" gate — which woke the workflow twice a day and let it through only inside a ±30 min window — could never succeed: it would have rejected over 98 % of runs and the workflow would never have published anything.
 
 So the cron is a single entry with **no gate**. `workflow_dispatch` still runs the collector immediately, whatever the local time. The workflow logs the real UTC and `Europe/Madrid` start time on every run, and `LiveTV.json` carries that same moment as its `date`, so `index.html` can display an honest "updated N min ago".
+
+The merged [EPG](#epg) has its own workflow, `TV-Spain-EPG.yml`, on `0 8 */2 * *`. Cron has no 48-hour step, so the even days of the month is the closest it comes: the interval is exactly 48 h within a month and shortens to 24 h across the boundary, from the 30th to the 1st. It deliberately does not share a slot with the playlist collector, which rewrites the very files the guide job reads.
 
 ### Why the cron sits at 08:00 UTC
 
@@ -241,6 +277,12 @@ The suite uses only the standard library (`unittest`), so no extra dependency is
 - **`tvg-name` deduplication** (`TestTvgNameDeduplication`) — the key trims, collapses whitespace and ignores case and is `None` without a usable `tvg-name`; channels without metadata are all kept; the first copy wins when its stream answers; the search falls back to the next copy, and to the first one when nothing answers; probing stops at the winner; the resolved URL replaces the winner's; duplicates match across categories and across case and spacing variants; unique channels are never probed; survivors and categories keep their order, an emptied category disappears, all four exports agree, and a `--check-links` run reuses the status cache instead of probing again.
 
 `tests/test_workflow_schedule.py` guards the scheduling configuration: one cron at 08:00 UTC, on the hour, agreeing with the banner the workflow prints and with the hour the README advertises, no leftover gate job, no stale reference to the removed gate script, and a well-formed job chain.
+
+`tests/test_tv_spain_epg.py` guards the [EPG merge](#epg): the tvg-id filter on both channels and programmes, the unescaping that rescues an id like `Crimen&amp;Historia`, deduplication across mirrored guides, the first guide winning ownership, malformed input being skipped rather than fatal, the gzip container carrying no timestamp or filename, and both "do not publish" guards — including that the two of them are reported as the distinct causes they are.
+
+`tests/test_epg_workflow.py` guards the guide workflow: the `0 8 */2 * *` cadence and its documented month-boundary drift, both published files being committed, the playlist being left alone, and the two crons not colliding.
+
+The EPG merge was checked by mutation too: 23 deliberate defects — dropping either half of the tvg-id filter, disabling the normalisation or the unescaping, removing the deduplication, reversing the download order, clearing nested elements, copying elements by reference, stamping the gzip or the document, publishing an empty merge, letting the fallback read its own output, and the manifest and header changes — all fail the suite.
 
 ## Dependencies
 

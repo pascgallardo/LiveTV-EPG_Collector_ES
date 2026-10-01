@@ -22,6 +22,15 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # the visitor's timezone when index.html parses it with `new Date(...)`.
 MADRID = ZoneInfo("Europe/Madrid")
 
+# The single guide `TV-Spain-EPG.py` merges every source guide into, published by
+# this repository. It is what `url-tvg` advertises, because pointing a player at
+# nine scattered sources instead of one complete guide is worse for it, and the
+# merged file is already restricted to the channels below.
+MERGED_EPG_URL = (
+    "https://raw.githubusercontent.com/pascgallardo/LiveTVCollectorES/"
+    "refs/heads/main/LiveTV/Spain/LiveTV.xml.gz"
+)
+
 class M3UCollector:
     def __init__(self, country="Spain", base_dir="LiveTV", check_links=True):
         self.channels = defaultdict(list)
@@ -30,8 +39,9 @@ class M3UCollector:
         self.channel_by_url = {}
         self.url_status_cache = {}
         # EPG (XMLTV) URLs declared by the merged sources, in the order they were
-        # seen. Published in the #EXTM3U url-tvg header so the generated playlist
-        # keeps the guide data its sources shipped with.
+        # seen. Not published in the playlist: `TV-Spain-EPG.py` merges them into
+        # one guide and that is what url-tvg points at, so the list is exported to
+        # a sidecar manifest instead.
         self.epg_urls = []
         self.output_dir = os.path.join(base_dir, country)
         self.lock = threading.Lock()
@@ -391,20 +401,42 @@ class M3UCollector:
                 attributes.append(f'{name}="{value}"')
         return f'#EXTINF:-1 {" ".join(attributes)},{channel["name"]}'
 
-    def m3u_header(self):
-        """The `#EXTM3U` line, carrying the EPG URLs of every merged source.
+    def unique_epg_urls(self):
+        """The guides of every merged source, in order and without duplicates."""
+        seen = set()
+        return [url for url in self.epg_urls if not (url in seen or seen.add(url))]
 
-        `url-tvg` is the conventional place to point players at the XMLTV guide,
-        so it only ever holds EPG URLs — never the M3U sources themselves. The
-        list keeps the order in which the sources were merged and drops
-        duplicates, since several sources commonly share the same guide. With no
+    def m3u_header(self):
+        """The `#EXTM3U` line, pointing players at the merged XMLTV guide.
+
+        `url-tvg` advertises the single guide that `TV-Spain-EPG.py` builds out
+        of every source guide, not the sources themselves: a player is better
+        served by one file that already contains every channel below than by nine
+        scattered ones it has to merge and filter on its own.
+
+        The list of sources that went into that merge is written separately, to
+        the manifest, because it can no longer be recovered from here. With no
         EPG at all the line stays bare, which keeps the output valid.
         """
-        seen = set()
-        epg = [url for url in self.epg_urls if not (url in seen or seen.add(url))]
-        if not epg:
+        if not self.epg_urls:
             return '#EXTM3U'
-        return f'#EXTM3U url-tvg="{", ".join(epg)}"'
+        return f'#EXTM3U url-tvg="{MERGED_EPG_URL}"'
+
+    def export_epg_manifest(self, filename="epg-sources.json"):
+        """Record the source guides the merged guide is built from.
+
+        This is what lets `TV-Spain-EPG.py` find its inputs: the playlist header
+        points at the merge output, so a merger that read the header would be
+        merging its own file into itself. Written in source order, because the
+        first guide to declare a channel owns it and that choice has to survive
+        until the next run.
+        """
+        filepath = os.path.join(self.output_dir, filename)
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump({"epg_urls": self.unique_epg_urls()}, f, ensure_ascii=False, indent=2)
+            f.write('\n')
+        logging.info(f"Exported EPG manifest to {filepath}")
+        return filepath
 
     def export_m3u(self, filename="LiveTV.m3u"):
         filepath = os.path.join(self.output_dir, filename)
@@ -488,6 +520,7 @@ def main(check_links=False):
     collector.export_txt("LiveTV.txt")
     collector.export_json("LiveTV.json")
     collector.export_custom("LiveTV")
+    collector.export_epg_manifest()
 
     total_channels = sum(len(ch) for ch in collector.channels.values())
     logging.info(f"[{datetime.now(MADRID)}] Collected {total_channels} unique channel for Spain")
