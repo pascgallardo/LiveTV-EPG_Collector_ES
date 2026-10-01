@@ -5,24 +5,48 @@ These tests pin down the decisions taken after measuring 978 scheduled runs
 (April-September 2026, median delay 171 min at 00:00Z, 154 min at 08:00Z and
 103 min at 16:00Z, and never less than 28 min):
 
-* a single cron at 16:00 UTC, the least congested slot;
+* a single cron at 08:00 UTC. The slot was moved 8 h earlier than the measured
+  least congested one (16:00Z) to publish the lists in the middle of the Spanish
+  afternoon; the delay is a queue that has to be paid either way, so shifting the
+  cron shifts the publication by the same amount;
 * no time gate, because a +/-30 min window could never have passed;
-* no leftover reference to the removed scripts/madrid_noon_gate.py.
+* no leftover reference to the removed scripts/madrid_noon_gate.py;
+* one hour everywhere, so moving the cron cannot leave the banner or the README
+  advertising the previous slot.
 
 Parsing is textual on purpose: PyYAML is not a dependency of this project, so a
 malformed workflow would not be caught by a schema check here.
 """
 import pathlib
+import re
 import unittest
 from pathlib import Path
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 WORKFLOW = REPO_ROOT / ".github" / "workflows" / "TV-Spain.yml"
+README = REPO_ROOT / "README.md"
 REMOVED_GATE = REPO_ROOT / "scripts" / "madrid_noon_gate.py"
 
 
 def workflow_text():
     return WORKFLOW.read_text(encoding="utf-8")
+
+
+def readme_text():
+    return README.read_text(encoding="utf-8")
+
+
+def advertised_hours(text):
+    """Return the UTC hours a document claims the daily run is scheduled for.
+
+    Only the phrases that assert the current schedule are matched. The README also
+    quotes the three historical slots when explaining the delay measurements, and
+    those are measurements rather than promises: a bare "16:00 UTC" there must not
+    be mistaken for a stale schedule.
+    """
+    lead_ins = r"(?:scheduled for|one cron at|cron sits at|moved \d+ h earlier to)"
+    pattern = lead_ins + r" \*?\*?(\d{1,2}):00 UTC"
+    return {int(h) for h in re.findall(pattern, text)}
 
 
 def cron_entries():
@@ -47,13 +71,55 @@ class TestSchedule(unittest.TestCase):
     def test_workflow_exists(self):
         self.assertTrue(WORKFLOW.is_file(), "TV-Spain.yml is missing")
 
-    def test_single_cron_at_sixteen_utc(self):
-        self.assertEqual(cron_entries(), ["0 16 * * *"])
+    def test_single_cron_at_eight_utc(self):
+        self.assertEqual(cron_entries(), ["0 8 * * *"])
 
     def test_cron_is_expressed_in_utc(self):
         # GitHub cron has no timezone field; a non-zero hour would silently move
-        # the run away from the measured least-congested slot.
-        self.assertEqual(cron_entries()[0].split()[1], "16")
+        # the run away from the chosen slot.
+        self.assertEqual(cron_entries()[0].split()[1], "8")
+
+    def test_cron_is_daily_at_the_top_of_the_hour(self):
+        fields = cron_entries()[0].split()
+        self.assertEqual(fields[0], "0", "must fire at :00 so the delay stays measurable")
+        self.assertEqual(fields[2:], ["*", "*", "*"])
+
+    def test_logged_schedule_matches_the_cron(self):
+        # The banner must not keep advertising the old slot: it is what a reader
+        # checks to work out when the run was supposed to start.
+        self.assertIn("Scheduled for 08:00 UTC", workflow_text())
+        self.assertNotIn("Scheduled for 16:00 UTC", workflow_text())
+
+    def test_readme_advertises_the_scheduled_slot(self):
+        # Moving the cron leaves the hour advertised in the README behind by
+        # default, and that is the only place a reader learns when the lists
+        # refresh. Every hour the README calls the schedule must be the hour the
+        # cron really uses.
+        hour = int(cron_entries()[0].split()[1])
+        advertised = advertised_hours(readme_text())
+        self.assertNotEqual(
+            advertised,
+            set(),
+            "README no longer says when the daily run is scheduled; "
+            "test_advertised_hours_ignores_history must be kept in sync with it",
+        )
+        stale = advertised - {hour}
+        self.assertEqual(
+            stale,
+            set(),
+            f"README still advertises {sorted(stale)} UTC as the daily slot, "
+            f"but the cron runs at {hour}:00 UTC",
+        )
+
+    def test_advertised_hours_ignores_history(self):
+        # The check above would be worthless if it simply matched every `HH:00 UTC`
+        # in the README, because the delay statistics legitimately quote all three
+        # historical slots. Assert those quotes stay outside the result.
+        self.assertEqual(advertised_hours("median delay 171 min at 00:00 UTC"), set())
+        self.assertEqual(advertised_hours("103 min at 16:00 UTC"), set())
+        self.assertEqual(advertised_hours("**16:00 UTC** was least congested"), set())
+        self.assertEqual(advertised_hours("scheduled for **08:00 UTC**"), {8})
+        self.assertEqual(advertised_hours("one cron at 08:00 UTC"), {8})
 
     def test_manual_trigger_is_kept(self):
         self.assertIn("workflow_dispatch", workflow_text())

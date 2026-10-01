@@ -5,16 +5,22 @@ on:
     # GitHub evaluates cron in UTC and treats `schedule` as best effort: over the
     # 978 scheduled runs this repository produced between April and September 2026,
     # the median delay was 171 min at 00:00Z, 154 min at 08:00Z and 103 min at 16:00Z,
-    # and no run ever started in under 28 minutes. 16:00Z was the least congested of
-    # the three in every single month, so that is the slot used here.
+    # and no run ever started in under 28 minutes.
+    #
+    # This slot was moved back 8 hours, from 16:00Z to 08:00Z, to publish the lists
+    # earlier in the day. The delay is paid either way -- it is a queue, not a fixed
+    # offset -- so moving the cron 8 h earlier moves the publication 8 h earlier and
+    # nothing else. 08:00Z does queue somewhat harder than 16:00Z (median 154 min vs
+    # 103 min), which costs about 50 min of that margin, but the lists now land in
+    # the middle of the Spanish afternoon instead of late at night.
     #
     # There is deliberately no time gate. A gate could never pass: the shortest delay
     # ever observed was 28 min, so a +/-30 min window would have rejected ~99% of the
     # runs and the workflow would never update anything. Instead the collector stamps
     # LiveTV.json with the moment it really ran, and index.html shows the real
-    # "updated N min ago" from it. Expect publication roughly between 19:00 and 23:00
+    # "updated N min ago" from it. Expect publication roughly between 11:30 and 15:30
     # mainland Spain time, plus up to ~2h of slack.
-    - cron: '0 16 * * *'
+    - cron: '0 8 * * *'
   workflow_dispatch:  # Allows manual triggering
 
 permissions:
@@ -32,7 +38,7 @@ jobs:
     steps:
       - name: Record the real publication time
         run: |
-          echo "Scheduled for 16:00 UTC, starting now."
+          echo "Scheduled for 08:00 UTC, starting now."
           echo "UTC:   $(date -u '+%Y-%m-%d %H:%M:%S %Z')"
           echo "Madrid: $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M:%S %Z')"
 
