@@ -3216,14 +3216,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png"
   },
   {
-    "name": "The Pet Collective",
-    "tvg_id": "ESAJ4500016BH",
-    "tvg_name": "The Pet Collective",
-    "type": "Comedia",
-    "url": "https://jmp2.uk/stvp-ESAJ4500016BH",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png"
-  },
-  {
     "name": "LOL España",
     "tvg_id": "ES1600006S8",
     "tvg_name": "LOL España",
@@ -5806,6 +5798,14 @@
     "type": "Spain",
     "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
     "img": "https://provider-static.plex.tv/epg/cms/production/a0aadc76-1caf-419f-83c7-ff8e066355a7/MSChannel_Logo_Light_-_Kimberly_DumerRDX.png"
+  },
+  {
+    "name": "The Pet Collective",
+    "tvg_id": "643054b1fc3be59477853717-5f170d61b898490041b49369",
+    "tvg_name": "The Pet Collective",
+    "type": "Spain",
+    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ",
+    "img": "https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png"
   },
   {
     "name": "The Prof G Channel",

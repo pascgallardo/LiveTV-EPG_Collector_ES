@@ -803,8 +803,6 @@ https://jmp2.uk/stvp-ESAJ3800005C5
 https://jmp2.uk/stvp-ESBC2700008SK
 #EXTINF:-1 tvg-id="ESAJ3800003LX" tvg-name="MTV Catfish" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png" group-title="Comedia",MTV Catfish
 https://jmp2.uk/stvp-ESAJ3800003LX
-#EXTINF:-1 tvg-id="ESAJ4500016BH" tvg-name="The Pet Collective" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png" group-title="Comedia",The Pet Collective
-https://jmp2.uk/stvp-ESAJ4500016BH
 #EXTINF:-1 tvg-id="ES1600006S8" tvg-name="LOL España" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600006S8_20260721T035558SQUARE.png" group-title="Comedia",LOL España
 https://jmp2.uk/stvp-ES1600006S8
 #EXTINF:-1 tvg-id="61bb2814ac085a00074309a6" tvg-name="Unidad de investigación" tvg-logo="https://images.pluto.tv/channels/61bb2814ac085a00074309a6/colorLogoPNG.png" group-title="Policiacas",Unidad de investigación
@@ -1451,6 +1449,8 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-640205c68ecb
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67294a601055ef3897c73477/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-672948f0297d4ea7584a2e13" tvg-name="The Martha Stewart Channel" tvg-logo="https://provider-static.plex.tv/epg/cms/production/a0aadc76-1caf-419f-83c7-ff8e066355a7/MSChannel_Logo_Light_-_Kimberly_DumerRDX.png" group-title="Spain",The Martha Stewart Channel
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
+#EXTINF:-1 tvg-id="643054b1fc3be59477853717-5f170d61b898490041b49369" tvg-name="The Pet Collective" tvg-logo="https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png" group-title="Spain",The Pet Collective
+https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-69f52ffb6e5708fb20d36d9c" tvg-name="The Prof G Channel" tvg-logo="https://provider-static.plex.tv/epg/cms/production/883ee6c5-8ed3-41ed-b45f-b39af995fe37/TPGC-Logos_97_.ai_-_Steve_Shannon_WHT_TEXTRDX2.png" group-title="Spain",The Prof G Channel
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69f52ffb6e5708fb20d36d9c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-5eea71d65252710041e0ccbc" tvg-name="The Reuters 60" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png" group-title="Spain",The Reuters 60

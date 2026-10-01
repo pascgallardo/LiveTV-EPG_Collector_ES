@@ -2688,13 +2688,6 @@ URL: https://jmp2.uk/stvp-ESAJ3800003LX
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
-Name: The Pet Collective
-TvgID: ESAJ4500016BH
-TvgName: The Pet Collective
-URL: https://jmp2.uk/stvp-ESAJ4500016BH
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
 Name: LOL España
 TvgID: ES1600006S8
 TvgName: LOL España
@@ -4978,6 +4971,13 @@ TvgID: 643054b1fc3be59477853717-672948f0297d4ea7584a2e13
 TvgName: The Martha Stewart Channel
 URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
 Logo: https://provider-static.plex.tv/epg/cms/production/a0aadc76-1caf-419f-83c7-ff8e066355a7/MSChannel_Logo_Light_-_Kimberly_DumerRDX.png
+Source: https://m3u.work/hJiHE3ad.m3u
+--------------------------------------------------
+Name: The Pet Collective
+TvgID: 643054b1fc3be59477853717-5f170d61b898490041b49369
+TvgName: The Pet Collective
+URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ
+Logo: https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
 Name: The Prof G Channel
