@@ -42,9 +42,17 @@ def advertised_hours(text):
     Only the phrases that assert the current schedule are matched. The README also
     quotes the three historical slots when explaining the delay measurements, and
     those are measurements rather than promises: a bare "16:00 UTC" there must not
-    be mistaken for a stale schedule.
+    be mistaken for a stale schedule. It likewise quotes the 48-hour EPG slot,
+    which belongs to a different workflow.
+
+    The README is written in Spanish, so the lead-ins have to recognise it; the
+    English ones are kept so an older checkout still resolves.
     """
-    lead_ins = r"(?:scheduled for|one cron at|cron sits at|moved \d+ h earlier to)"
+    lead_ins = (
+        r"(?:scheduled for|one cron at|cron sits at|moved \d+ h earlier to"
+        r"|programada para(?: las)?|adelant[oó] \d+ h hasta las"
+        r"|cron est[áa] a las|cron a las)"
+    )
     pattern = lead_ins + r" \*?\*?(\d{1,2}):00 UTC"
     return {int(h) for h in re.findall(pattern, text)}
 
@@ -120,6 +128,19 @@ class TestSchedule(unittest.TestCase):
         self.assertEqual(advertised_hours("**16:00 UTC** was least congested"), set())
         self.assertEqual(advertised_hours("scheduled for **08:00 UTC**"), {8})
         self.assertEqual(advertised_hours("one cron at 08:00 UTC"), {8})
+        # The Spanish phrasing the README actually uses.
+        self.assertEqual(
+            advertised_hours("retraso mediano de 171 min a las 00:00 UTC"), set()
+        )
+        self.assertEqual(advertised_hours("103 min a las 16:00 UTC"), set())
+        self.assertEqual(
+            advertised_hours("**16:00 UTC** fue la franja menos saturada"), set()
+        )
+        # The 48-hour EPG slot belongs to another workflow, not the daily one.
+        self.assertEqual(advertised_hours("cada 48 horas a las 08:00 UTC"), set())
+        self.assertEqual(advertised_hours("programada para **08:00 UTC**"), {8})
+        self.assertEqual(advertised_hours("programada para las 08:00 UTC"), {8})
+        self.assertEqual(advertised_hours("un único cron a las 08:00 UTC"), {8})
 
     def test_manual_trigger_is_kept(self):
         self.assertIn("workflow_dispatch", workflow_text())

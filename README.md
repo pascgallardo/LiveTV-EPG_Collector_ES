@@ -1,15 +1,15 @@
 # LiveTV y EPG Collector ES
 
-A GitHub repository that automatically collects, filters, and exports live TV streaming links per country using GitHub Actions. This project fetches M3U playlists from multiple sources, removes duplicates, and exports them into various formats under the `LiveTV/Country Name/` directory.
+Repositorio de GitHub que recopila, filtra y exporta automáticamente enlaces de emisión de TV en vivo por país usando GitHub Actions. Este proyecto descarga listas M3U de múltiples fuentes, elimina duplicados y las exporta a varios formatos en el directorio `LiveTV/Country Name/`.
 
-Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVCollector), currently tracking **Spain**.
+Fork de [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVCollector), actualmente centrado en **Spain**.
 
-# 📊 Project Stats
+# 📊 Estadísticas del proyecto
 [![GitHub forks](https://img.shields.io/github/forks/pascgallardo/LiveTVCollectorES?logo=forks&style=plastic)](https://github.com/pascgallardo/LiveTVCollectorES/network) [![GitHub stars](https://img.shields.io/github/stars/pascgallardo/LiveTVCollectorES)](https://github.com/pascgallardo/LiveTVCollectorES/stargazers) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 ![GitHub issues](https://img.shields.io/github/issues/pascgallardo/LiveTVCollectorES)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/pascgallardo/LiveTVCollectorES)
 
-## Online Useable Tools:
+## Herramientas utilizables online:
 <a href="https://gmtv.netlify.app" target="_blank"><img src="https://gmtv.netlify.app/img/gmtv.png" style="width:auto; height:60px" alt="GM TV Player"></a>
 <a href="https://lolstream.netlify.app" target="_blank"><img src="https://lolstream.netlify.app/img/logo.png" style="width:auto; height:60px" alt="Stream Player"></a>
 <a href="https://pismarttv.netlify.app" target="_blank"><img src="https://pismarttv.netlify.app/img/logo.png" style="width:auto; height:60px" alt="IPTV Player"></a>
@@ -25,44 +25,44 @@ Fork of [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVColle
 <a href="https://bugsfreetv.vercel.app" target="_blank"><img src="https://bugsfreetv.vercel.app/img/logo.png" style="width:auto; height:60px" alt="Web IPTV Player"></a>
 
 
-## Features
+## Características
 
-- **Automated Updates**: Runs once a day via GitHub Actions, scheduled for **08:00 UTC**. GitHub evaluates cron in UTC and treats `schedule` as best effort, so the run really starts later: measured over the 978 scheduled runs this repository produced between April and September 2026, the median delay was 171 min at 00:00 UTC, **154 min at 08:00 UTC** and 103 min at 16:00 UTC, and no run ever started in under 28 minutes. 16:00 UTC was the least congested slot on record, but the cron was later moved 8 h earlier to 08:00 UTC to publish in the middle of the Spanish afternoon: the delay is a queue that has to be paid either way, so shifting the cron shifts the publication by the same amount, and the ~50 min of extra queueing is well worth the 8 h. In practice the playlists are republished roughly between **11:30 and 15:30 mainland Spain time**. There is deliberately no time gate: a gate could never pass, and would only have kept the workflow from running at all. See [Scheduling](#scheduling) for the full numbers.
-- **Large Source Handling**: Streams M3U responses line by line instead of loading whole files, and only materialises the joined text for HTML sources that need parsing.
-- **Optional Active Link Verification**: Off by default for speed. Run `python BugsfreeMain/TV-Spain.py --check-links` to probe every stream with 10 concurrent workers (HEAD, falling back to GET and then to the alternate protocol). Results are cached per URL.
-- **Duplicate Removal**: Ensures no duplicate streams (based on URL) are included. When the same URL arrives from several playlists, the first source keeps ownership, but a `tvg-id` or `tvg-name` that the first one lacked is filled in from a later source.
-- **tvg-* Metadata**: `tvg-id` and `tvg-name` are read from the source `#EXTINF` lines and carried through to every export format. Attributes a source does not provide are simply omitted from the generated `#EXTINF` line.
-- **HTML Source Parsing**: A source ending in `.html` is scanned for nested playlist links, filtering out non-stream links (e.g., Telegram, GitHub).
-- **Merged EPG Guides**: The EPG (XMLTV) URLs declared by each source playlist are read from its `#EXTM3U url-tvg` attribute, recorded in source order in `epg-sources.json`, and merged by `BugsfreeMain/TV-Spain-EPG.py` into a single `LiveTV.xml` plus its `LiveTV.xml.gz`. The generated playlist points at that merged guide. See [EPG](#epg).
-- **Source Order Preserved**: The merged playlist keeps the order of its inputs. A channel stays where its source playlist had it, the first source's channels come first, and a group appears where its first channel appeared. Nothing is alphabetised, so the file reads like the playlists it was built from.
-- **Duplicate Channels by `tvg-name`**: When several entries share the same `tvg-name`, only one survives: the first one in playlist order **whose stream actually answers**. The rest are dropped, so a channel never appears twice just because several providers carry it. Channels with no `tvg-name` are never compared with each other.
-- **Deterministic Exports**: The order is not randomised: sources are consumed in a fixed sequence and link verification never reshuffles the result, so re-running without source changes produces identical files and no spurious commits. The only exception is the `tvg-name` deduplication, which reads live stream state by design: if a stream goes down, the next run publishes its working backup and the commit is the point.
-- **Honest Timestamps**: The `date` field in `LiveTV.json` is the moment the collector actually ran, expressed in `Europe/Madrid` and written as ISO 8601 with an explicit UTC offset (e.g. `2026-09-30T21:14:07+02:00`). Because GitHub's cron never fires on time, this is the only trustworthy publication time, and the offset lets the browser resolve the instant correctly whatever timezone the visitor is in, so the "updated N min ago" banner in `index.html` is accurate.
-- **Web Hub (`index.html`)**: Static browser UI to browse the generated playlists, search channels, copy/download links, and track download statistics locally.
-- **Multiple Export Formats**:
-  - `LiveTV.m3u`: Standard M3U playlist.
-  - `LiveTV.txt`: Human-readable text format with detailed channel info.
-  - `LiveTV.json`: Structured JSON with channel metadata.
-  - `LiveTV`: Custom JSON format without extension, designed for easy integration.
+- **Actualizaciones automáticas**: Se ejecuta una vez al día mediante GitHub Actions, programada para **08:00 UTC**. GitHub evalúa el cron en UTC y trata `schedule` como «best effort», así que la ejecución empieza realmente más tarde: medido sobre las 978 ejecuciones programadas que generó este repositorio entre abril y septiembre de 2026, el retraso mediano fue de 171 min a las 00:00 UTC, **154 min a las 08:00 UTC** y 103 min a las 16:00 UTC, y ninguna ejecución llegó a empezar antes de los 28 minutos. Las 16:00 UTC eran la franja menos saturada en el registro, pero después el cron se adelantó 8 h hasta las 08:00 UTC para publicar a media tarde española: el retraso es una cola que hay que pagar de todos modos, así que desplazar el cron desplaza la publicación en la misma medida, y los ~50 min de cola adicionales compensan de sobra las 8 h. En la práctica las playlists se republican aproximadamente entre las **11:30 y las 15:30 hora peninsular española**. No hay a propósito ninguna puerta horaria: una puerta nunca podría pasar, y lo único que habría conseguido es impedir que el workflow llegara a ejecutarse alguna vez. Véase [Programación](#programación) para las cifras completas.
+- **Manejo de fuentes grandes**: Procesa las respuestas M3U línea a línea en lugar de cargar los ficheros enteros, y solo materializa el texto unido para las fuentes HTML que necesitan análisis.
+- **Verificación opcional de enlaces activos**: Desactivada por defecto por velocidad. Ejecuta `python BugsfreeMain/TV-Spain.py --check-links` para sondear cada stream con 10 workers concurrentes (HEAD, con repliegue a GET y luego al protocolo alternativo). Los resultados se cachean por URL.
+- **Eliminación de duplicados**: Garantiza que no se incluyan streams duplicados (según la URL). Cuando la misma URL llega desde varias playlists, la primera fuente conserva la propiedad, pero un `tvg-id` o `tvg-name` que a esa primera le faltara se completa desde una fuente posterior.
+- **Metadatos tvg-***: `tvg-id` y `tvg-name` se leen de las líneas `#EXTINF` de la fuente y se arrastran a todos los formatos de exportación. Los atributos que una fuente no aporta se omiten simplemente de la línea `#EXTINF` generada.
+- **Análisis de fuentes HTML**: Una fuente terminada en `.html` se explora en busca de playlists anidadas, descartando los enlaces que no son de emisión (p. ej., Telegram, GitHub).
+- **Guías EPG fusionadas**: Las URLs de EPG (XMLTV) declaradas por cada playlist de origen se leen de su atributo `#EXTM3U url-tvg`, se registran en orden de origen en `epg-sources.json`, y `BugsfreeMain/TV-Spain-EPG.py` las fusiona en un único `LiveTV.xml` más su `LiveTV.xml.gz`. La playlist generada apunta a esa guía fusionada. Véase [EPG](#epg).
+- **Orden de las fuentes preservado**: La playlist fusionada conserva el orden de sus entradas. Un canal se queda donde lo tenía su playlist de origen, los canales de la primera fuente van primero, y un grupo aparece donde apareció su primer canal. No se ordena alfabéticamente nada, así que el fichero se lee como las playlists con las que se construyó.
+- **Canales duplicados por `tvg-name`**: Cuando varias entradas comparten el mismo `tvg-name`, solo sobrevive una: la primera en orden de playlist **cuyo stream responde de verdad**. El resto se descarta, de modo que un canal nunca aparece dos veces solo porque varios proveedores lo ofrezcan. Los canales sin `tvg-name` nunca se comparan entre sí.
+- **Exportaciones deterministas**: El orden no está aleatorizado: las fuentes se consumen en una secuencia fija y la verificación de enlaces nunca reordena el resultado, así que volver a ejecutar sin cambios en las fuentes produce ficheros idénticos y ningún commit espurio. La única excepción es la deduplicación por `tvg-name`, que consulta el estado real de los streams por diseño: si un stream cae, la siguiente ejecución publica su copia de reserva operativa y ese commit es justamente la novedad.
+- **Marcas de tiempo honestas**: El campo `date` de `LiveTV.json` es el momento en que el colector se ejecutó realmente, expresado en `Europe/Madrid` y escrito como ISO 8601 con un desfase UTC explícito (p. ej. `2026-09-30T21:14:07+02:00`). Como el cron de GitHub nunca se dispara a tiempo, este es el único instante de publicación fiable, y el desfase permite al navegador resolver el instante correctamente sea cual sea la zona horaria del visitante, así que el banner «actualizado hace N min» de `index.html` es exacto.
+- **Web hub (`index.html`)**: Interfaz estática de navegador para explorar las playlists generadas, buscar canales, copiar o descargar enlaces y llevar estadísticas de descarga localmente.
+- **Múltiples formatos de exportación**:
+  - `LiveTV.m3u`: Playlist M3U estándar.
+  - `LiveTV.txt`: Formato de texto legible con información detallada de cada canal.
+  - `LiveTV.json`: JSON estructurado con metadatos de los canales.
+  - `LiveTV`: Formato JSON personalizado sin extensión, pensado para integrarse con facilidad.
 
-## Exported File Formats
+## Formatos de fichero exportados
 
 ### `LiveTV.m3u`
-Standard M3U playlist format. The `#EXTM3U` line carries the EPG guides of the merged sources in `url-tvg`, so the generated playlist keeps the guide data its sources shipped with:
+Formato de playlist M3U estándar. La línea `#EXTM3U` lleva en `url-tvg` las guías EPG de las fuentes fusionadas, de modo que la playlist generada conserva los datos de guía que traían sus fuentes:
 ```
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml, https://www.tdtchannels.com/epg/TV.xml.gz, https://live.s2l.workers.dev/epg.xml"
 #EXTINF:-1 tvg-id="AdventureTV.us" tvg-name="Adventure TV" tvg-logo="https://i.imgur.com/VQVr4Nk.png" group-title="Entertainment",Adventure TV
 http://109.233.89.170/Adventure_HD/index.m3u8
 ```
 
-Each source's own `#EXTM3U url-tvg` attribute is read and the URLs are merged in source order, dropping guides that several sources share. Sources that declare no EPG simply contribute nothing, and when no source has one the line stays bare, as `#EXTM3U`.
+Se lee el atributo `#EXTM3U url-tvg` de cada fuente y las URLs se fusionan en orden de origen, descartando las guías que varias fuentes comparten. Las fuentes que no declaran ninguna EPG simplemente no aportan nada, y cuando ninguna fuente tiene una la línea se queda desnuda, como `#EXTM3U`.
 
-`url-tvg` only ever holds XMLTV guide URLs (`.xml` / `.xml.gz`); the M3U sources themselves are never listed there, since that attribute is the conventional pointer to EPG data.
+`url-tvg` solo contiene URLs de guías XMLTV (`.xml` / `.xml.gz`); las playlists M3U nunca se listan ahí, ya que ese atributo es el puntero convencional a los datos EPG.
 
-`tvg-id` and `tvg-name` on the `#EXTINF` lines are emitted only when the source playlist provided them.
+`tvg-id` y `tvg-name` en las líneas `#EXTINF` solo se emiten cuando la playlist de origen los proporcionó.
 
 ### `LiveTV.txt`
-Readable text format. `TvgID` and `TvgName` are written only when present:
+Formato de texto legible. `TvgID` y `TvgName` solo se escriben cuando existen:
 ```
 Group: Entertainment
 Name: Adventure TV
@@ -75,7 +75,7 @@ Source: https://example.com/source.m3u
 ```
 
 ### `LiveTV.json`
-Structured JSON with timestamp:
+JSON estructurado con marca de tiempo:
 ```json
 {
   "date": "2026-09-30T21:14:07+02:00",
@@ -95,8 +95,8 @@ Structured JSON with timestamp:
 }
 ```
 
-### `LiveTV` (Custom Format)
-Custom JSON list without extension:
+### `LiveTV` (formato personalizado)
+Lista JSON personalizada sin extensión:
 ```json
 [
   {
@@ -110,53 +110,53 @@ Custom JSON list without extension:
 ]
 ```
 
-## Setup Instructions
+## Instrucciones de instalación
 
-### Prerequisites
-- A GitHub account and repository (`pascgallardo/LiveTVCollectorES`).
-- No local setup required; everything runs via GitHub Actions.
+### Requisitos
+- Una cuenta de GitHub y un repositorio (`pascgallardo/LiveTVCollectorES`).
+- No hace falta ningún entorno local; todo se ejecuta mediante GitHub Actions.
 
-### Steps
-1. **Clone or Fork**:
+### Pasos
+1. **Clonar o bifurcar**:
    ```bash
    git clone https://github.com/pascgallardo/LiveTVCollectorES.git
    cd LiveTVCollectorES
    ```
 
-2. **Customize Sources** (Optional):
-   - Edit `BugsfreeMain/TV-Spain.py` to update the `source_urls` list with additional M3U sources.
+2. **Personalizar las fuentes** (opcional):
+   - Edita `BugsfreeMain/TV-Spain.py` para actualizar la lista `source_urls` con fuentes M3U adicionales.
 
-3. **Push Changes**:
+3. **Subir los cambios**:
    ```bash
    git add .
    git commit -m "Initial setup or source update"
    git push origin main
    ```
 
-4. **Verify Workflow**:
-   - Go to the "Actions" tab in your GitHub repository.
-   - The workflow "TV-Spain Update Files" runs daily (cron `0 16 * * *`, UTC) or can be triggered manually.
+4. **Verificar el workflow**:
+   - Ve a la pestaña «Actions» de tu repositorio de GitHub.
+   - El workflow «TV-Spain Update Files» se ejecuta a diario (cron `0 8 * * *`, UTC) o se puede lanzar manualmente.
 
-## How It Works
+## Cómo funciona
 
-1. **Source Fetching**:
-   - Streams M3U files and parses HTML for streaming URLs.
-   - Uses `requests` with streaming to handle large files.
+1. **Descarga de fuentes**:
+   - Transmite los ficheros M3U y analiza el HTML en busca de URLs de emisión.
+   - Usa `requests` con streaming para poder manejar ficheros grandes.
 
-2. **Processing**:
-   - Removes duplicates based on stream URLs.
-   - Collapses duplicate `tvg-name`s across the merged playlist, keeping the first entry whose stream answers (see [Deduplication by `tvg-name`](#deduplication-by-tvg-name)).
-   - Optionally verifies link activity with concurrent HEAD/GET requests (2-second timeout, 10 workers) when `--check-links` is passed.
+2. **Procesamiento**:
+   - Elimina duplicados según la URL del stream.
+   - Colapsa los `tvg-name` duplicados de toda la playlist fusionada, conservando la primera entrada cuyo stream responde (véase [Deduplicación por `tvg-name`](#deduplicación-por-tvg-name)).
+   - Opcionalmente verifica la actividad de los enlaces con peticiones HEAD/GET concurrentes (2 segundos de tiempo de espera, 10 workers) cuando se pasa `--check-links`.
 
-3. **Exporting**:
-   - Saves unique channels to four files in `LiveTV/Country Name/`, in source order, so diffs stay small and predictable.
+3. **Exportación**:
+   - Guarda los canales únicos en cuatro ficheros dentro de `LiveTV/Country Name/`, en orden de fuente, para que los diffs sigan siendo pequeños y predecibles.
 
-4. **Automation**:
-   - GitHub Actions runs `BugsfreeMain/TV-Spain.py` once a day, scheduled for 08:00 UTC.
-   - A second job regenerates `LiveTV/index.json` and `Movies/index.json` from the directories present.
-   - Commits and pushes changes automatically using `GITHUB_TOKEN`.
+4. **Automatización**:
+   - GitHub Actions ejecuta `BugsfreeMain/TV-Spain.py` una vez al día, programada para las 08:00 UTC.
+   - Un segundo job regenera `LiveTV/index.json` y `Movies/index.json` a partir de los directorios presentes.
+   - Commitea y sube los cambios automáticamente usando `GITHUB_TOKEN`.
 
-## Local usage
+## Uso local
 
 ```bash
 pip install -r requirements.txt
@@ -166,173 +166,173 @@ python BugsfreeMain/TV-Spain.py --check-links # slower: drop unreachable streams
 python generate_indexes.py                     # refresh section indexes
 ```
 
-`index.html` is a static page: serve the repository root over any static host and it reads the generated files from the raw GitHub URL (this repository first, the upstream repository as fallback).
+`index.html` es una página estática: sirve la raíz del repositorio desde cualquier host estático y leerá los ficheros generados desde la URL raw de GitHub (primero este repositorio, y el repositorio upstream como alternativa).
 
-## Deduplication by `tvg-name`
+## Deduplicación por `tvg-name`
 
-Providers overlap, so the same channel often arrives several times: `La 1` from `Generalistas` and again from `Entretenimiento`, `Runtime` from three different hosts. After the URL-level deduplication (which only removes the same stream repeated) the merged playlist still carried **82 duplicated `tvg-name` groups covering 182 channels**. The collector now collapses them.
+Los proveedores se solapan, así que el mismo canal llega muchas veces: `La 1` desde `Generalistas` y otra vez desde `Entretenimiento`, `Runtime` desde tres hosts distintos. Tras la deduplicación por URL (que solo elimina el mismo stream repetido) la playlist fusionada todavía llevaba **82 grupos de `tvg-name` duplicados que cubrían 182 canales**. El colector ahora los colapsa.
 
-**How the winner is chosen.** Candidates are ordered by their position in the merged playlist and probed in that order; the first one whose stream answers wins and the rest are dropped. If none of them answers, the first is kept anyway — a probe that fails because of a network blip must never make a channel disappear from the published playlist.
+**Cómo se elige el ganador.** Los candidatos se ordenan por su posición en la playlist fusionada y se sondean en ese orden; gana el primero cuyo stream responde y el resto se descarta. Si ninguno responde, se conserva el primero igualmente — una sonda que falla por un tirón de red nunca debe hacer desaparecer un canal de la playlist publicada.
 
-**How names are compared.** The key is the `tvg-name` trimmed, with internal whitespace collapsed and case ignored, so `La 1`, `la 1  ` and `LA 1` are one channel. Comparing raw strings would have found 72 groups instead of 82 and missed real variants such as `Pocoyó`/`pocoyó` or `24h`/`24H`.
+**Cómo se comparan los nombres.** La clave es el `tvg-name` recortado, con los espacios internos colapsados y sin distinguir mayúsculas, así que `La 1`, `la 1  ` y `LA 1` son el mismo canal. Comparar cadenas en bruto habría encontrado 72 grupos en vez de 82 y se habría perdido variantes reales como `Pocoyó`/`pocoyó` o `24h`/`24H`.
 
-**Scope.** Matching is global across the whole playlist, not per category, because 81 of the 82 duplicated groups span more than one category. A consequence worth knowing: after deduplication, a channel that used to appear under both `Generalistas` and `Entretenimiento` stays only in whichever category comes first.
+**Alcance.** La coincidencia es global en toda la playlist, no por categoría, porque 81 de los 82 grupos duplicados abarcan más de una categoría. Una consecuencia que conviene conocer: tras la deduplicación, un canal que antes aparecía tanto en `Generalistas` como en `Entretenimiento` se queda solo en la categoría que venga primero.
 
-**Channels without a `tvg-name` are never compared.** There is nothing to match on, so all 69 of them are kept. Treating the empty value as a single key would have deleted 68 channels.
+**Los canales sin `tvg-name` nunca se comparan.** No hay nada con lo que emparejarlos, así que se conservan los 69. Tratar el valor vacío como una única clave habría borrado 68 canales.
 
-**Cost.** Groups are resolved in parallel and each group stops probing at its winner, so a run probes about 94 URLs instead of the 182 involved — a fraction of the 929 that a full `--check-links` pass would need. With `--check-links` the answers are already in the link status cache and deduplication costs no extra requests.
+**Coste.** Los grupos se resuelven en paralelo y cada grupo deja de sondear en cuanto encuentra su ganador, así que una ejecución sondea unas 94 URLs en lugar de las 182 implicadas — una fracción de las 929 que necesitaría una pasada completa con `--check-links`. Con `--check-links` las respuestas ya están en la caché de estado de enlaces y la deduplicación no cuesta ninguna petición extra.
 
-**Order.** Nothing is reshuffled: the surviving channels keep their position, and a category keeps the position of its first surviving channel. A category left with no channels at all disappears. Measured on the live sources: 929 → 829 channels, 42 categories unchanged, and the surviving 829 entries in exactly the order they had before.
+**Orden.** No se reordena nada: los canales que sobreviven conservan su posición, y una categoría conserva la posición de su primer canal superviviente. Una categoría que se queda sin canales desaparece. Medido sobre las fuentes reales: 929 → 829 canales, 42 categorías sin cambios, y las 829 entradas supervivientes exactamente en el mismo orden que antes.
 
-**Determinism.** This is the one place where the export depends on something other than the sources. A stream that goes down will make the next run publish its backup, and one that comes back will make it switch again, so the daily commit is no longer purely a function of the playlists. That is the intended behaviour, but it does trade away part of the deterministic-export guarantee above.
+**Determinismo.** Este es el único punto donde la exportación depende de algo que no son las fuentes. Un stream que cae hará que la siguiente ejecución publique su copia de reserva, y uno que vuelve hará que cambie de nuevo, así que el commit diario ya no es una función pura de las playlists. Ese es el comportamiento buscado, pero se renuncia a parte de la garantía de exportación determinista descrita arriba.
 
 ## EPG
 
-`LiveTV.m3u` carries a `url-tvg` attribute pointing at `LiveTV/Spain/LiveTV.xml.gz`, the single guide `BugsfreeMain/TV-Spain-EPG.py` builds. It is refreshed on its own schedule, `0 8 */2 * *`, so every 48 hours at 08:00 UTC.
+`LiveTV.m3u` lleva un atributo `url-tvg` que apunta a `LiveTV/Spain/LiveTV.xml.gz`, la guía única que construye `BugsfreeMain/TV-Spain-EPG.py`. Se refresca con su propia programación, `0 8 */2 * *`, es decir cada 48 horas a las 08:00 UTC.
 
-### What the merge does
+### Qué hace la fusión
 
-The nine source guides the merged playlists declare hold **82 MB of XMLTV** describing 2 267 channels between them, of which the published playlist lists 737 `tvg-id`. Everything is filtered to those 737 before it is written, which is the difference between publishing all of it and publishing a guide that matches the playlist it belongs to: guiatv.xml alone is 33 MB with 644 channels, and only 72 of them are in the playlist.
+Las nueve guías de origen que declaran las playlists fusionadas suman **82 MB de XMLTV** que describen 2 267 canales, de los cuales la playlist publicada lista 737 `tvg-id`. Todo se filtra a esos 737 antes de escribirse, y esa es la diferencia entre publicar todo y publicar una guía que encaja con la playlist a la que pertenece: guiatv.xml por sí solo son 33 MB con 644 canales, y solo 72 de ellos están en la playlist.
 
-Three things decide what ends up in the file:
+Tres cosas deciden qué acaba en el fichero:
 
-- **Only the playlist's `tvg-id` survive.** Both the `<channel id>` of a guide and the `channel` attribute of a `<programme>` must be one of them. The 26 channels with no guide entry simply have no schedule, and a guide full of channels nobody in this playlist streams is dead weight for a player.
-- **The first guide to declare a channel owns it.** guiatv.xml and the s2l workers mirror each other, so ownership has to be decided once and the same way every run, or the output would depend on which download finished first.
-- **Programmes are deduplicated on channel, start and stop.** Guides covering different time ranges all contribute; guides repeating the same range do not. On the current data this drops 36 157 matching programmes to 26 915.
+- **Solo sobreviven los `tvg-id` de la playlist.** Tanto el `<channel id>` de una guía como el atributo `channel` de un `<programme>` tienen que ser uno de ellos. Los 26 canales sin entrada de guía simplemente no tienen programación, y una guía llena de canales que nadie de esta playlist ve es lastre muerto para un reproductor.
+- **La primera guía que declara un canal es su propietaria.** guiatv.xml y los workers de s2l se reflejan mutuamente, así que la propiedad debe decidirse una sola vez y siempre igual, o la salida dependería de qué descarga terminara primero.
+- **Los programas se deduplican por canal, inicio y fin.** Las guías que cubren rangos horarios distintos aportan todas; las que repiten el mismo rango no. Con los datos actuales esto baja de 36 157 programas coincidentes a 26 915.
 
-Current result: **712 of 737 channels (96.6 %) and 27 067 programmes**, as a 13.2 MB `LiveTV.xml` and a 1.7 MB `LiveTV.xml.gz`.
+Resultado actual: **712 de 737 canales (96.6 %) y 27 067 programas**, como un `LiveTV.xml` de 13.2 MB y un `LiveTV.xml.gz` de 1.7 MB.
 
-### Why the sources live in a sidecar file
+### Por qué las fuentes viven en un fichero aparte
 
-Pointing `url-tvg` at the merged guide makes the playlist stop listing where that guide came from, which would leave the merger with no way to find its own inputs — it would read the header, find its previous output, and merge that. The collector therefore also writes the source list to `LiveTV/Spain/epg-sources.json`, and that is what the merger reads. The `url-tvg` header is still accepted as a fallback for a checkout that predates the manifest, with any entry pointing at the merger's own output filtered out.
+Apuntar `url-tvg` a la guía fusionada hace que la playlist deje de decir de dónde salió esa guía, lo que dejaría al fusionador sin forma de encontrar sus propias entradas — leería la cabecera, encontraría su salida anterior y fusionaría eso. Por eso el colector escribe además la lista de fuentes en `LiveTV/Spain/epg-sources.json`, y eso es lo que lee el fusionador. La cabecera `url-tvg` sigue aceptándose como alternativa para una copia de trabajo anterior al manifest, filtrando cualquier entrada que apunte a la propia salida del fusionador.
 
-### Guides are read compressed
+### Las guías se leen comprimidas
 
-Every one of the nine is served gzipped, including `guiatv.xml` and `runtime.xml`, whose URLs do not end in `.gz`. Decompression is therefore decided by the gzip magic bytes and never by the extension.
+Las nueve se sirven comprimidas con gzip, incluidas `guiatv.xml` y `runtime.xml`, cuyas URLs no terminan en `.gz`. Por eso la descompresión se decide por los bytes mágicos de gzip y nunca por la extensión.
 
-### Reproducibility
+### Reproducibilidad
 
-Unlike the playlist, the merged guide is *not* a pure function of its inputs: the upstream guides are regenerated with fresh timestamps constantly, so a real run almost always produces a new file and a new commit. What can be pinned down, and is, is everything this script controls. The gzip stream is written with `mtime=0` and no stored filename, so the archive is a pure function of the XML beside it, and no timestamp is written into the document — the publication instant is already in the commit and in `LiveTV.json`. Two runs over unchanged guides therefore produce byte-identical files.
+A diferencia de la playlist, la guía fusionada *no* es una función pura de sus entradas: las guías de origen se regeneran constantemente con marcas de tiempo nuevas, así que una ejecución real produce casi siempre un fichero nuevo y un commit nuevo. Lo que sí se puede fijar, y se fija, es todo lo que este script controla. El flujo gzip se escribe con `mtime=0` y sin nombre de fichero almacenado, de modo que el archivo es una función pura del XML que tiene al lado, y en el documento no se escribe ninguna marca de tiempo — el instante de publicación ya está en el commit y en `LiveTV.json`. Dos ejecuciones sobre guías sin cambios producen por tanto ficheros idénticos byte a byte.
 
-### When it refuses to publish
+### Cuándo se niega a publicar
 
-A run that would replace a good guide with an unusable one fails instead of writing. That covers every guide failing to download and the filter matching nothing, which are reported as the separate causes they are: the first is a network problem, the second means the playlist changed shape.
+Una ejecución que sustituiría una buena guía por otra inservible falla en vez de escribir. Eso cubre tanto que fallen todas las descargas como que el filtro no encuentre nada, y ambos casos se informan como las causas distintas que son: el primero es un problema de red, el segundo significa que la playlist cambió de forma.
 
-Note on size: the merged guide is committed every 48 hours and changes almost completely each time, so it adds roughly 1.7 MB per run to the repository history. Publishing the `.gz` alone would halve that.
+Nota sobre el tamaño: la guía fusionada se commitea cada 48 horas y cambia casi por completo cada vez, así que añade del orden de 1.7 MB por ejecución al historial del repositorio. Publicar solo el `.gz` lo reduciría a la mitad.
 
-## Scheduling
+## Programación
 
-GitHub Actions `schedule` is best effort: the trigger is honoured, the start time is not. This repository used to run three slots a day (`0 0,8,16 * * *`), which gives a clean dataset to measure that behaviour. Over the **978 scheduled runs it produced between April and September 2026**, the delay between the scheduled minute and the moment the run actually started was:
+El `schedule` de GitHub Actions es «best effort»: el disparo se respeta, el hora de inicio no. Este repositorio antes usaba tres franjas al día (`0 0,8,16 * * *`), lo que da un conjunto de datos limpio para medir ese comportamiento. A lo largo de las **978 ejecuciones programadas que generó entre abril y septiembre de 2026**, el retraso entre el minuto programado y el momento en que la ejecución arrancó de verdad fue:
 
-| Slot | Runs | Median | Mean | p75 | p90 | Started within +1 h | +2 h |
+| Franja | Ejecuciones | Mediana | Media | p75 | p90 | Arrancaron en +1 h | +2 h |
 |---|---|---|---|---|---|---|---|
 | `00:00Z` | 326 | 171 min | 180 min | 224 min | 251 min | 0.0 % | 15.3 % |
 | `08:00Z` | 326 | 154 min | 170 min | 215 min | 287 min | 6.1 % | 27.6 % |
 | **`16:00Z`** | 326 | **103 min** | 107 min | 128 min | 197 min | **19.3 %** | **69.0 %** |
 
-Two facts drove the configuration:
+Dos hechos marcaron la configuración:
 
-1. **16:00 UTC was the least congested slot.** It had the lowest median delay in each of the six months on record, not just overall. `00:00Z` is 20:00 on the US east coast, the platform's busiest window; 16:00Z is midday there.
-2. **No run in five months ever started in under 28 minutes.** That is why the previous "only run at 12:00 Europe/Madrid" gate — which woke the workflow twice a day and let it through only inside a ±30 min window — could never succeed: it would have rejected over 98 % of runs and the workflow would never have published anything.
+1. **Las 16:00 UTC eran la franja menos saturada.** Tenía el retraso mediano más bajo en cada uno de los seis meses del registro, no solo en el conjunto. `00:00Z` son las 20:00 en la costa este de EE. UU., la franja más cargada de la plataforma; las 16:00Z son mediodía allí.
+2. **En cinco meses ninguna ejecución arrancó antes de los 28 minutos.** Por eso la antigua puerta «ejecutar solo a las 12:00 Europe/Madrid» — que despertaba el workflow dos veces al día y solo lo dejaba pasar dentro de una ventana de ±30 min — nunca podía tener éxito: habría rechazado más del 98 % de las ejecuciones y el workflow no habría publicado nada.
 
-So the cron is a single entry with **no gate**. `workflow_dispatch` still runs the collector immediately, whatever the local time. The workflow logs the real UTC and `Europe/Madrid` start time on every run, and `LiveTV.json` carries that same moment as its `date`, so `index.html` can display an honest "updated N min ago".
+Así que el cron es una sola entrada **sin ninguna puerta**. `workflow_dispatch` sigue ejecutando el colector de inmediato, sea cual sea la hora local. El workflow registra la hora real de inicio en UTC y en `Europe/Madrid` en cada ejecución, y `LiveTV.json` lleva ese mismo instante como su `date`, de modo que `index.html` puede mostrar un honesto «actualizado hace N min».
 
-The merged [EPG](#epg) has its own workflow, `TV-Spain-EPG.yml`, on `0 8 */2 * *`. Cron has no 48-hour step, so the even days of the month is the closest it comes: the interval is exactly 48 h within a month and shortens to 24 h across the boundary, from the 30th to the 1st. It deliberately does not share a slot with the playlist collector, which rewrites the very files the guide job reads.
+El [EPG](#epg) fusionado tiene su propio workflow, `TV-Spain-EPG.yml`, en `0 8 */2 * *`. El cron no tiene paso de 48 horas, así que los días pares del mes es lo más cerca que se puede: el intervalo es exactamente de 48 h dentro de un mes y se acorta a 24 h al cruzar la frontera, del 30 al 1. Deliberadamente no comparte franja con el colector de playlists, que reescribe precisamente los ficheros que lee el job de la guía.
 
-### Why the cron sits at 08:00 UTC
+### Por qué el cron está a las 08:00 UTC
 
-The least congested slot is not the same thing as the slot you want. The delay is a queue, not a fixed offset, so it has to be paid on whichever slot you pick: moving the cron 8 h earlier moves the publication 8 h earlier and buys nothing back. Running at `0 8 * * *` instead of `0 16 * * *` therefore costs about 50 min of extra queueing (median 154 min vs 103 min) and returns 8 h of daylight, landing the refreshed lists in the middle of the Spanish afternoon instead of late at night.
+La franja menos saturada no es lo mismo que la franja que quieres. El retraso es una cola, no un desfase fijo, así que hay que pagarlo en la franja que elijas: adelantar el cron 8 h adelanta la publicación 8 h y no recupera nada. Ejecutar con `0 8 * * *` en lugar de `0 16 * * *` cuesta por tanto unos 50 min de cola adicionales (mediana 154 min frente a 103 min) y devuelve 8 h de luz, dejando las listas refrescadas a media tarde española en lugar de a última hora de la noche.
 
-Expected publication window in mainland Spain time: roughly **11:30–15:30**, with a median around 12:35.
+Ventana prevista de publicación en hora peninsular española: aproximadamente **11:30–15:30**, con una mediana en torno a las 12:35.
 
-### Validation record
+### Registro de validación
 
-| Run | Trigger | Started (UTC) | Started (Madrid) | Delay vs 16:00Z | Result |
+| Ejecución | Disparador | Inicio (UTC) | Inicio (Madrid) | Retraso frente a 16:00Z | Resultado |
 |---|---|---|---|---|---|
-| [#660](https://github.com/pascgallardo/LiveTVCollectorES/actions/runs/36719445370) | `workflow_dispatch` | 2026-09-30 13:07:56 | 15:07:56 | — (manual) | both jobs green, lists committed as `09ebe56` |
-| [#661](https://github.com/pascgallardo/LiveTVCollectorES/actions/runs/36772879590) | `schedule` | 2026-09-30 20:28:33 | **22:28:33** | **+4 h 28 min** | both jobs green, lists committed as `d085833` |
+| [#660](https://github.com/pascgallardo/LiveTVCollectorES/actions/runs/36719445370) | `workflow_dispatch` | 2026-09-30 13:07:56 | 15:07:56 | — (manual) | ambos jobs en verde, listas commiteadas como `09ebe56` |
+| [#661](https://github.com/pascgallardo/LiveTVCollectorES/actions/runs/36772879590) | `schedule` | 2026-09-30 20:28:33 | **22:28:33** | **+4 h 28 min** | ambos jobs en verde, listas commiteadas como `d085833` |
 
-#660 confirmed the pipeline works end to end without a gate. #661 was the first programmed run and therefore the first real measurement of the slot: a **268 min delay**, against a historical median of 103 min for 16:00Z and a best-ever of 28 min. That lands at the 98.7th percentile of the 200 most recent scheduled runs, though still below the worst one on record (325 min), so on its own it proves nothing new — it is a single sample, and the slot was moved on the strength of the six-month picture rather than of this run.
+#660 confirmó que el proceso funciona de principio a fin sin puerta. #661 fue la primera ejecución programada y por tanto la primera medición real de la franja: un **retraso de 268 min**, frente a una mediana histórica de 103 min para las 16:00Z y un récord de 28 min. Eso la sitúa en el percentil 98.7 de las 200 ejecuciones programadas más recientes, aunque por debajo del peor caso registrado (325 min), así que por sí sola no prueba nada nuevo — es una sola muestra, y la franja se movió en base al panorama de seis meses y no a esta ejecución.
 
-From #661 onwards the delay is measured against `08:00Z`, where the historical median was 154 min.
+Desde #661 el retraso se mide frente a `08:00Z`, donde la mediana histórica era de 154 min.
 
-If an exact wall-clock time ever becomes a hard requirement, the fix is to stop relying on `schedule` at all: call the `workflow_dispatch` endpoint from an external scheduler.
+Si alguna vez hacer falta una hora exacta de reloj como requisito duro, la solución es dejar de depender de `schedule` por completo: llamar al endpoint `workflow_dispatch` desde un planificador externo.
 
-## Tests
+## Pruebas
 
-The suite uses only the standard library (`unittest`), so no extra dependency is needed. It never touches the network: every HTTP call is stubbed, and generated files are written to a temporary directory.
+La suite usa solo la biblioteca estándar (`unittest`), así que no hace falta ninguna dependencia extra. Nunca toca la red: todas las llamadas HTTP están simuladas y los ficheros generados se escriben en un directorio temporal.
 
-`tests/test_tv_spain.py` covers:
+`tests/test_tv_spain.py` cubre:
 
-- **M3U parsing** — `#EXTINF` attributes, missing or empty `tvg-logo` (default logo), missing `group-title` (`Uncategorized`), missing name (`Unnamed Channel`), orphan URLs, directive lines such as `#EXTVLCOPT`, consecutive `#EXTINF` entries, and channel dicts not being mutated by the next entry.
-- **tvg metadata** (`TestTvgMetadataParsing`, `TestTvgMetadataMerging`, `TestTvgMetadataExports`) — reading `tvg-id` and `tvg-name` regardless of attribute order, values containing spaces and commas, quotes that cannot corrupt a line, filling missing metadata from a later source without ever overwriting existing values, emitting the attributes in the M3U only when present, and a round trip that re-parses an exported playlist.
-- **URL deduplication** — repeated URLs within a playlist, across different sources (the first source wins), identical names with different URLs (both kept), and `seen_urls` being reset between runs.
-- **Link filtering** — each unique URL probed once even when several channels share it, dead channels dropped, resolved URL replacing the original, and `check_links=False` skipping the probe entirely.
-- **Link checking** — success, error status returning `(False, url)` instead of `None`, HEAD to GET fallback, alternate-protocol retry, and the per-URL cache.
-- **HTML source extraction** — playlist detection, relative link resolution, and excluded hosts.
-- **Exports** — the four output files, `#EXTM3U` structure, and all four formats agreeing on the same channel order.
-- **Source order** (`TestSourceOrderIsPreserved`) — a single source keeps its own order, the first source's channels come before the second's, the declared order of the sources is respected, a group keeps the position of its first channel, a second identical run produces the same order, all four exports agree, link verification with `--check-links` does not reshuffle the result (futures completing in reverse still export in source order), and dropped channels do not disturb the rest.
-- **Timestamps** (`TestExportTimestamp`) — the published `date` is Madrid local time under both CET and CEST, carries an explicit offset, and parses back to the same instant.
-- **M3U EPG header** (`TestM3UEpgHeader`) — each source's `url-tvg` is read from its header line, single and multi-URL values are split and trimmed, sources without EPG contribute nothing, several sources are merged in order, a guide shared by two sources is listed once, the list is cleared between runs, the header stays bare without EPG, the source M3U never leaks into `url-tvg`, and the stream entries still follow the header.
-- **`tvg-name` deduplication** (`TestTvgNameDeduplication`) — the key trims, collapses whitespace and ignores case and is `None` without a usable `tvg-name`; channels without metadata are all kept; the first copy wins when its stream answers; the search falls back to the next copy, and to the first one when nothing answers; probing stops at the winner; the resolved URL replaces the winner's; duplicates match across categories and across case and spacing variants; unique channels are never probed; survivors and categories keep their order, an emptied category disappears, all four exports agree, and a `--check-links` run reuses the status cache instead of probing again.
+- **Análisis de M3U** — atributos `#EXTINF`, `tvg-logo` ausente o vacío (logo por defecto), `group-title` ausente (`Uncategorized`), nombre ausente (`Unnamed Channel`), URLs huérfanas, líneas de directiva como `#EXTVLCOPT`, entradas `#EXTINF` consecutivas, y que los diccionarios de canal no sean mutados por la entrada siguiente.
+- **Metadatos tvg** (`TestTvgMetadataParsing`, `TestTvgMetadataMerging`, `TestTvgMetadataExports`) — leer `tvg-id` y `tvg-name` sea cual sea el orden de los atributos, valores con espacios y comas, comillas que no pueden corromper una línea, rellenar los metadatos que falten desde una fuente posterior sin sobrescribir nunca los valores existentes, emitir los atributos en el M3U solo cuando están presentes, y un viaje de ida y vuelta que vuelve a analizar una playlist exportada.
+- **Deduplicación por URL** — URLs repetidas dentro de una playlist, entre fuentes distintas (gana la primera), nombres idénticos con URLs distintas (se conservan ambos), y que `seen_urls` se reinicie entre ejecuciones.
+- **Filtrado de enlaces** — cada URL única sondeada una sola vez aunque varios canales la compartan, canales muertos descartados, URL resuelta reemplazando a la original, y `check_links=False` saltándose el sondeo por completo.
+- **Comprobación de enlaces** — éxito, estado de error devolviendo `(False, url)` en lugar de `None`, repliegue de HEAD a GET, reintento con el protocolo alternativo, y la caché por URL.
+- **Extracción de fuentes HTML** — detección de playlists, resolución de enlaces relativos y hosts excluidos.
+- **Exportaciones** — los cuatro ficheros de salida, la estructura `#EXTM3U`, y que los cuatro formatos coincidan en el mismo orden de canales.
+- **Orden de fuentes** (`TestSourceOrderIsPreserved`) — una única fuente conserva su propio orden, los canales de la primera fuente van antes que los de la segunda, se respeta el orden declarado de las fuentes, un grupo conserva la posición de su primer canal, una segunda ejecución idéntica produce el mismo orden, las cuatro exportaciones coinciden, la verificación de enlaces con `--check-links` no reordena el resultado (futures que terminan en orden inverso siguen exportando en orden de fuente), y los canales descartados no perturban el resto.
+- **Marcas de tiempo** (`TestExportTimestamp`) — que el `date` publicado sea hora local de Madrid tanto bajo CET como bajo CEST, que lleve un desfase explícito, y que se convierta de vuelta al mismo instante.
+- **Cabecera EPG del M3U** (`TestM3UEpgHeader`) — que el `url-tvg` de cada fuente se lea de su línea de cabecera, que los valores de una y varias URLs se separen y se recorten, que las fuentes sin EPG no aporten nada, que varias fuentes se fusionen en orden, que una guía compartida por dos fuentes se liste una sola vez, que la lista se vacíe entre ejecuciones, que la cabecera quede desnuda sin EPG, que la M3U de origen nunca se filtre a `url-tvg`, y que las entradas de stream sigan a la cabecera.
+- **Deduplicación por `tvg-name`** (`TestTvgNameDeduplication`) — que la clave recorte, colapse espacios e ignore mayúsculas, y sea `None` sin un `tvg-name` utilizable; que los canales sin metadatos se conserven todos; que gane la primera copia cuando su stream responde; que la búsqueda recurra a la siguiente copia, y a la primera cuando nada responde; que el sondeo se detenga en el ganador; que la URL resuelta reemplace la del ganador; que los duplicados coincidan entre categorías y entre variantes de mayúsculas y espaciado; que los canales únicos no se sondeen nunca; que los supervivientes y las categorías conserven su orden, que una categoría vaciada desaparezca, que las cuatro exportaciones coincidan, y que una ejecución con `--check-links` reutilice la caché de estado en vez de sondear otra vez.
 
-`tests/test_workflow_schedule.py` guards the scheduling configuration: one cron at 08:00 UTC, on the hour, agreeing with the banner the workflow prints and with the hour the README advertises, no leftover gate job, no stale reference to the removed gate script, and a well-formed job chain.
+`tests/test_workflow_schedule.py` protege la configuración de programación: un único cron a las 08:00 UTC, en punto, coincidiendo con el banner que imprime el workflow y con la hora que anuncia el README, ningún job de puerta horaria sobrante, ninguna referencia obsoleta al script de la puerta eliminado y una cadena de jobs bien formada.
 
-`tests/test_tv_spain_epg.py` guards the [EPG merge](#epg): the tvg-id filter on both channels and programmes, the unescaping that rescues an id like `Crimen&amp;Historia`, deduplication across mirrored guides, the first guide winning ownership, malformed input being skipped rather than fatal, the gzip container carrying no timestamp or filename, and both "do not publish" guards — including that the two of them are reported as the distinct causes they are.
+`tests/test_tv_spain_epg.py` protege la [fusión del EPG](#epg): el filtro de `tvg-id` tanto en canales como en programas, el desescapado que rescata un id como `Crimen&amp;Historia`, la deduplicación entre guías reflejadas, que la primera guía gane la propiedad, que la entrada malformada se salte en vez de ser fatal, que el contenedor gzip no lleve marca de tiempo ni nombre de fichero, y las dos guardas de «no publicar» — incluido que las dos se informen como las causas distintas que son.
 
-`tests/test_epg_workflow.py` guards the guide workflow: the `0 8 */2 * *` cadence and its documented month-boundary drift, both published files being committed, the playlist being left alone, and the two crons not colliding.
+`tests/test_epg_workflow.py` protege el workflow de la guía: la cadencia `0 8 */2 * *` y su deriva en el cambio de mes documentada, que se commiteen los dos ficheros publicados, que la playlist quede intacta, y que los dos cron no choquen.
 
-The EPG merge was checked by mutation too: 23 deliberate defects — dropping either half of the tvg-id filter, disabling the normalisation or the unescaping, removing the deduplication, reversing the download order, clearing nested elements, copying elements by reference, stamping the gzip or the document, publishing an empty merge, letting the fallback read its own output, and the manifest and header changes — all fail the suite.
+La fusión del EPG también se comprobó por mutación: 23 defectos deliberados — quitar cualquiera de las dos mitades del filtro de `tvg-id`, desactivar la normalización o el desescapado, eliminar la deduplicación, invertir el orden de descarga, limpiar elementos anidados, copiar elementos por referencia, estampar el gzip o el documento, publicar una fusión vacía, dejar que la alternativa lea su propia salida, y los cambios del manifest y de la cabecera — todos hacen fallar la suite.
 
-## Dependencies
+## Dependencias
 
-Declared in `requirements.txt` and installed by the workflow with `pip install -r requirements.txt`:
-- `requests`: For fetching M3U and HTML content.
-- `beautifulsoup4`: For HTML parsing.
+Declaradas en `requirements.txt` e instaladas por el workflow con `pip install -r requirements.txt`:
+- `requests`: Para descargar contenido M3U y HTML.
+- `beautifulsoup4`: Para el análisis de HTML.
 
-Timezone handling uses the standard library `zoneinfo`, so there is no third-party timezone dependency. The published timestamp is the moment the collector really ran: GitHub's cron cannot be relied on to start a workflow on time, so stamping the scheduled minute would be a lie.
+El manejo de zonas horarias usa `zoneinfo` de la biblioteca estándar, así que no hay ninguna dependencia de terceros para eso. La marca de tiempo publicada es el momento en que el colector se ejecutó de verdad: no se puede confiar en que el cron de GitHub inicie un workflow a su hora, así que estampar el minuto programado sería una mentira.
 
-## Troubleshooting
+## Resolución de problemas
 
-- **Empty Files**: Check the Actions logs for errors:
-  - "Error fetching [url]": Source might be down or inaccessible.
-  - "No channels parsed": Verify source format (`#EXTINF:` followed by URL).
-  - "No channels exported": The workflow logs a warning and the run fails so a broken export is never committed.
+- **Ficheros vacíos**: Revisa los logs de Actions en busca de errores:
+  - `Failed to fetch <url>` o `No content fetched from <url>`: La fuente puede estar caída o ser inaccesible.
+  - `No channels parsed from sources`: Verifica el formato de la fuente (`#EXTINF:` seguido de la URL).
+  - `No channels exported`: El workflow registra un aviso y la ejecución falla, para que nunca se commitee una exportación rota.
 
-- **Permissions Error**: Ensure `permissions: contents: write` is in `TV-Spain.yml`.
+- **Error de permisos**: Asegúrate de que `permissions: contents: write` está en `TV-Spain.yml`.
 
-- **Index out of date**: The `update-indexes` job runs after the collector and regenerates the `index.json` files. It uses this repository's own reusable workflow (`.github/workflows/update-indexes.yml`), so it is not affected by upstream changes.
+- **Índices desactualizados**: El job `update-indexes` se ejecuta después del colector y regenera los ficheros `index.json`. Usa el workflow reutilizable propio de este repositorio (`.github/workflows/update-indexes.yml`), así que no le afectan los cambios del upstream.
 
-- **Logs**: View detailed logs in the "Actions" tab to diagnose issues.
+- **Logs**: Consulta los logs detallados en la pestaña «Actions» para diagnosticar problemas.
 
-## Contributing
+## Cómo contribuir
 
-Feel free to:
-- Add more sources to `BugsfreeMain/TV-Spain.py`.
-- Suggest improvements via issues or pull requests.
+No dudes en:
+- Añadir más fuentes a `BugsfreeMain/TV-Spain.py`.
+- Proponer mejoras mediante issues o pull requests.
 
-## License
+## Licencia
 
-This project is open-source and available under the [MIT License](LICENSE) (add a `LICENSE` file if desired).
+Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE) (añade un fichero `LICENSE` si lo deseas).
 
-## Disclaimer
+## Aviso legal
 
-This project is intended solely for educational and research purposes. It aggregates publicly available streaming links from various sources on the internet for convenience and does not host, distribute, or provide any streaming content itself. The maintainers of this repository are not affiliated with the content providers or the streams listed in the exported files.
+Este proyecto existe únicamente con fines educativos y de investigación. Agrega enlaces de emisión disponibles públicamente en distintas fuentes de internet por comodidad, y no aloja, distribuye ni ofrece por sí mismo ningún contenido de emisión. Quienes mantienen este repositorio no están afiliados a los proveedores de contenido ni a los streams listados en los ficheros exportados.
 
-- **Usage Responsibility**: Users are responsible for ensuring their use of the streaming links complies with local laws and regulations, including copyright and intellectual property rights.
-- **No Warranty**: The links provided are sourced from third-party repositories and may become unavailable or change without notice. This project offers no guarantee regarding the availability, quality, or legality of the streams.
-- **Content Ownership**: All streaming content belongs to its respective owners, and this project does not claim ownership or endorse any specific content.
+- **Responsabilidad de uso**: Quien lo usa es responsable de asegurarse de que su uso de los enlaces de emisión cumple la legislación y la normativa local, incluidos los derechos de autor y de propiedad intelectual.
+- **Sin garantía**: Los enlaces proporcionados provienen de repositorios de terceros y pueden dejar de estar disponibles o cambiar sin aviso. Este proyecto no ofrece ninguna garantía sobre la disponibilidad, la calidad ni la legalidad de los streams.
+- **Propiedad del contenido**: Todo el contenido de emisión pertenece a sus respectivos titulares, y este proyecto no reclama ninguna propiedad ni respalda ningún contenido concreto.
 
-By using this repository or its generated files, you acknowledge and agree to these terms.
+Al usar este repositorio o los ficheros que genera, reconoces y aceptas estas condiciones.
 
-## Usage Policy
-- Personal Use Only: These files are intended for personal, non-commercial use.
-- No Redistribution for Profit: Do not redistribute or sell these files for commercial purposes.
-- Respect Source Terms: Adhere to the terms of service of the original stream providers.
-- Attribution: If you share or use this data, please credit bugsfreeweb/LiveTVCollector.
-- Modification: Feel free to modify the files for personal use, but do not misrepresent them as official or endorsed content.
+## Política de uso
+- Solo uso personal: Estos ficheros están destinados a uso personal y no comercial.
+- Sin redistribución con ánimo de lucro: No redistribuyas ni vendas estos ficheros con fines comerciales.
+- Respeta los términos de las fuentes: Adhiérete a las condiciones de servicio de los proveedores originales de los streams.
+- Atribución: Si compartes o usas estos datos, cita a bugsfreeweb/LiveTVCollector.
+- Modificación: Puedes modificar los ficheros para uso personal, pero no los presentes como contenido oficial ni respaldado.
 
-## Donate the project
+## Donar al proyecto
 - DOGE: <b>DEtH2yFUjjUEBUyd3scjs38X7S1Z7ee7zD</b>
 - BTC Lightening: <b>bugsfree@speed.app</b>
 - SOL: <b>bugsfree.sol</b>
