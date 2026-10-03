@@ -120,7 +120,7 @@ Lista JSON personalizada sin extensión:
 1. **Clonar o bifurcar**:
    ```bash
    git clone https://github.com/pascgallardo/LiveTV-EPG_Collector_ES.git
-   cd LiveTVCollectorES
+   cd LiveTV-EPG_Collector_ES
    ```
 
 2. **Personalizar las fuentes** (opcional):

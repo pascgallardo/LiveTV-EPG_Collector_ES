@@ -189,7 +189,7 @@ class TestGuideDiscovery(MergerTestCase):
         # in, the merger would download its previous result and merge it again.
         merger = self.make_merger()
         merger.read_playlist = lambda: ([
-            f"https://raw.githubusercontent.com/pascgallardo/LiveTVCollectorES/"
+            f"https://raw.githubusercontent.com/pascgallardo/LiveTV-EPG_Collector_ES/"
             f"refs/heads/main/LiveTV/Spain/{epg.OUTPUT_XML}.gz",
             "https://g.example/real.xml",
         ], {"La1.es"})

@@ -27,7 +27,7 @@ MADRID = ZoneInfo("Europe/Madrid")
 # nine scattered sources instead of one complete guide is worse for it, and the
 # merged file is already restricted to the channels below.
 MERGED_EPG_URL = (
-    "https://raw.githubusercontent.com/pascgallardo/LiveTVCollectorES/"
+    "https://raw.githubusercontent.com/pascgallardo/LiveTV-EPG_Collector_ES/"
     "refs/heads/main/LiveTV/Spain/LiveTV.xml.gz"
 )
 

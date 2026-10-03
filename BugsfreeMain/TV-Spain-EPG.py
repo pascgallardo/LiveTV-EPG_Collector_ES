@@ -284,7 +284,7 @@ class EPGMerger:
         """
         root = ET.Element('tv', {
             'generator-info-name': 'LiveTVCollectorES EPG merger',
-            'generator-info-url': 'https://github.com/pascgallardo/LiveTVCollectorES',
+            'generator-info-url': 'https://github.com/pascgallardo/LiveTV-EPG_Collector_ES',
         })
         for element in channels:
             root.append(element)
