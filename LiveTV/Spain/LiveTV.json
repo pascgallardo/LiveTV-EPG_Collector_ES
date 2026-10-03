@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-02T16:24:16+02:00",
+  "date": "2026-10-03T14:19:24+02:00",
   "channels": {
     "Generalistas": [
       {
@@ -10,15 +10,6 @@
         "group": "Generalistas",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la1/la1_main.m3u8"
-      },
-      {
-        "name": "La 1 UHD (2160p)",
-        "tvg_id": "La 1 HD",
-        "tvg_name": "",
-        "logo": "https://i.ibb.co/MxJNPHsn/La-1.png",
-        "group": "Generalistas",
-        "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "http://185.47.212.25:8080/tdp_HD/index.m3u8"
       },
       {
         "name": "La 2",
@@ -3084,7 +3075,7 @@
         "name": "Cine Friki",
         "tvg_id": "ESBD800001RJ",
         "tvg_name": "Cine Friki",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD800001RJ_20260407T040044SQUARE.png",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD800001RJ_20260929T040945SQUARE.png",
         "group": "Cine",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ESBD800001RJ"
@@ -3147,7 +3138,7 @@
         "name": "Moviesphere",
         "tvg_id": "ES4200001MR",
         "tvg_name": "Moviesphere",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4200001MR_20260915T035827SQUARE.png",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4200001MR_20260929T040952SQUARE.png",
         "group": "Cine",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES4200001MR"
@@ -3598,6 +3589,15 @@
         "group": "Nuevo en Pluto TV",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-6a43d63071cbfff7dca61d23.m3u8"
+      },
+      {
+        "name": "MTV VMAs 2026",
+        "tvg_id": "6a954e12f2eaa89247e06dd6",
+        "tvg_name": "MTV VMAs 2026",
+        "logo": "https://images.pluto.tv/channels/6a954e12f2eaa89247e06dd6/colorLogoPNG_1790256418017.png",
+        "group": "Nuevo en Pluto TV",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-6a954e12f2eaa89247e06dd6.m3u8"
       }
     ],
     "Comedia": [
@@ -4045,7 +4045,7 @@
         "name": "Telemadrid",
         "tvg_id": "ES300030ZT",
         "tvg_name": "Telemadrid",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300030ZT_20260804T051259SQUARE.png",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300030ZT_20260929T041000SQUARE.png",
         "group": "Entretenimiento",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES300030ZT"
@@ -4103,6 +4103,15 @@
         "group": "Entretenimiento",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES2100003VE"
+      },
+      {
+        "name": "BBC Lifestyle",
+        "tvg_id": "ES18000040D",
+        "tvg_name": "BBC Lifestyle",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES18000040D_20260929T040939SQUARE.png",
+        "group": "Entretenimiento",
+        "source": "https://m3u.work/qKChzP8.m3u",
+        "url": "https://jmp2.uk/stvp-ES18000040D"
       }
     ],
     "MTV en Pluto TV": [
@@ -4498,24 +4507,6 @@
         "url": "https://jmp2.uk/plu-61922be835f3910007fc58f6.m3u8"
       },
       {
-        "name": "Homeful",
-        "tvg_id": "65786abdb3801200084c593a",
-        "tvg_name": "Homeful",
-        "logo": "https://images.pluto.tv/channels/65786abdb3801200084c593a/colorLogoPNG.png",
-        "group": "Cultura",
-        "source": "https://m3u.work/YawDD3.m3u",
-        "url": "https://jmp2.uk/plu-65786abdb3801200084c593a.m3u8"
-      },
-      {
-        "name": "Metal Rocks",
-        "tvg_id": "686cd8bb9d079f48dbbdfecb",
-        "tvg_name": "Metal Rocks",
-        "logo": "https://images.pluto.tv/channels/686cd8bb9d079f48dbbdfecb/colorLogoPNG_1756372280523.png",
-        "group": "Cultura",
-        "source": "https://m3u.work/YawDD3.m3u",
-        "url": "https://jmp2.uk/plu-686cd8bb9d079f48dbbdfecb.m3u8"
-      },
-      {
         "name": "Nature Time",
         "tvg_id": "60dd6b1da79e4d0007309455",
         "tvg_name": "Nature Time",
@@ -4550,6 +4541,190 @@
         "group": "Cultura",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-61cd7b49543066000713b620.m3u8"
+      }
+    ],
+    "Música": [
+      {
+        "name": "Metal Rocks",
+        "tvg_id": "686cd8bb9d079f48dbbdfecb",
+        "tvg_name": "Metal Rocks",
+        "logo": "https://images.pluto.tv/channels/686cd8bb9d079f48dbbdfecb/colorLogoPNG_1756372280523.png",
+        "group": "Música",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-686cd8bb9d079f48dbbdfecb.m3u8"
+      },
+      {
+        "name": "That's 80s",
+        "tvg_id": "6a846c44496b635ad62aa13e",
+        "tvg_name": "That's 80s",
+        "logo": "https://images.pluto.tv/channels/6a846c44496b635ad62aa13e/colorLogoPNG_1790781375896.png",
+        "group": "Música",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-6a846c44496b635ad62aa13e.m3u8"
+      },
+      {
+        "name": "That's 90s00s",
+        "tvg_id": "6a846cb6840f7d654710df00",
+        "tvg_name": "That's 90s00s",
+        "logo": "https://images.pluto.tv/channels/6a846cb6840f7d654710df00/colorLogoPNG_1790842102809.png",
+        "group": "Música",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-6a846cb6840f7d654710df00.m3u8"
+      },
+      {
+        "name": "That's Rock",
+        "tvg_id": "6a846ccd99e7db5e8a1d9b5f",
+        "tvg_name": "That's Rock",
+        "logo": "https://images.pluto.tv/channels/6a846ccd99e7db5e8a1d9b5f/colorLogoPNG_1790781023873.png",
+        "group": "Música",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-6a846ccd99e7db5e8a1d9b5f.m3u8"
+      },
+      {
+        "name": "Metal.Rocks",
+        "tvg_id": "metal-rocks",
+        "tvg_name": "metal-rocks",
+        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/d87dc825-59c3-42cd-b973-a619c211f3a3.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://amg00771-amg00771c5-rakuten-gb-9713.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00771-kochfilmsfast-metalrocks-rakutengb/playlist.m3u8?ads_amagi_channel_id=1063&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=12&ads_rtv_channel_name=metal-rocks_es&ads_rtv_content_id=7194&ads_rtv_content_language=&ads_rtvid=271859&ads_streaming_id=9ba6746d-c5eb-41df-ab03-cd3c36287d77&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "Qwest TV",
+        "tvg_id": "qwest-tv",
+        "tvg_name": "qwest-tv",
+        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/ea0298dc-538a-44b7-b58c-fa23625ff1a0.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://qwestjazz-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestjazz-rakuten/CDN/master.m3u8?ads_amagi_channel_id=711&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=qwest-tv_es&ads_rtv_content_id=2268&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=e89603b0-bcad-4190-b9f0-f6d428de3683&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "Deluxe Lounge HD",
+        "tvg_id": "deluxe-lounge-hd",
+        "tvg_name": "deluxe-lounge-hd",
+        "logo": "https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/864f2b27-4702-4308-850c-f7a1c73d4298.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/2299f30c-3582-11ec-9c7c-2cf753b8a203/0/master.m3u8?ads%3Aamznbrmid=&ads%3Aamznregion=&ads%3Aamznslots=&ads%3Aapp_bundle=&ads%3Aapp_store_url=rakuten.tv&ads%3Aapp_version=&ads%3Abrand_name=&ads%3Acontent_categories=IAB1&ads%3Acontent_classification=7&ads%3Acontent_genre=entertainment&ads%3Acontent_livestream=0&ads%3Adevice_type=web&ads%3Adevice_year=&ads%3Afunke_channel_id=RAKB0001&ads%3Agam_correlator=&ads%3Agoogle_ad_manager_nonce=&ads%3Aifa_type=&ads%3Ainv_partner_domain=rakuten.tv&ads%3Alanguage=&ads%3Amarket=es&ads%3Anetwork_name=RakutenTV&ads%3Aos_language=&ads%3Aplacement=1&ads%3Aplayer_height=&ads%3Aplayer_width=&ads%3Apod_type=playerpage_midroll&ads%3Aprodq=1&ads%3Artv_channel_name=deluxe-lounge-hd_es&ads%3Artv_content_id=4222&ads%3Astreaming_id=aaadc362-5a23-451c-8dc0-89d7e58b1d8f&ads%3Atcf=&ads%3Ativo_devcountry=&ads%3Ativo_devmakedate=&ads%3Ativo_mvpd=&ads%3Ativo_platform=&ads%3Ativo_usid=&ads%3Ativo_uxloc=&ads%3Auser_type=visitor&country=es&optout=1&uid=&vendor=rakuten"
+      },
+      {
+        "name": "Stingray Greatest Hits",
+        "tvg_id": "stingray-greatest-hits",
+        "tvg_name": "stingray-greatest-hits",
+        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/6d183d7f-50c9-40f6-825f-e3d70f97247d.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=StingrayGreatestHits&ads.content_livestream=0&ads.csid=zeus_eu_stingraygreatesthits_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=2188&ads.rakuten_streaming_id=6580f1ff-98db-4c41-a637-65ae2563f5e9&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-greatest-hits_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883053&ads.xumo_channel_id=88883053&ads.xumo_contentId=1857&ads.xumo_contentName=StingrayGreatestHits&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=1857&ads.xumo_providerName=stingray-greatest-hits-eng&ads.xumo_streamId=88883053"
+      },
+      {
+        "name": "Stingray: Remember the 80’s",
+        "tvg_id": "stingray-remember-the-80-s",
+        "tvg_name": "stingray-remember-the-80-s",
+        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/32a49d06-f203-4b4a-829c-4d1f66bf6a03.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=RememberThe80sUK&ads.content_livestream=0&ads.csid=zeus_uk_stingrayrememberthe80s_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=4883&ads.rakuten_streaming_id=53e375db-9739-4e0c-8972-c5de6c92cb52&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-remember-the-80-s_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883071&ads.xumo_channel_id=88883071&ads.xumo_contentId=2184&ads.xumo_contentName=StingrayEverything80s&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2184&ads.xumo_providerName=stingray-remember-the-80s-eng-rakutentv&ads.xumo_streamId=88883071"
+      },
+      {
+        "name": "That's 70s",
+        "tvg_id": "that-s-70s",
+        "tvg_name": "that-s-70s",
+        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/21ddd31b-ff64-4afe-aaca-0eb13b1a7cff.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://lightning-now70s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now70s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=869&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-70s_es&ads_rtv_content_id=5284&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=281fd32c-e922-47c9-b81e-11f4dafb203b&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "That's 80s",
+        "tvg_id": "that-s-80s",
+        "tvg_name": "that-s-80s",
+        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/d1bd1f06-f3a0-47ec-abac-62342ff42fdb.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now80s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=871&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-80s_es&ads_rtv_content_id=5318&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=50ef799d-da45-49b1-857d-4c9d8d4c7c9d&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "That's ROCK",
+        "tvg_id": "that-s-rock",
+        "tvg_name": "that-s-rock",
+        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/e8d66036-f48b-417d-961d-45b7bf5ca5c7.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://lightning-now90s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now90s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=870&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-rock_es&ads_rtv_content_id=5352&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=6d884822-0ac2-4de8-ba01-d8d901517549&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "Vevo Latino",
+        "tvg_id": "vevo-latino-es",
+        "tvg_name": "vevo-latino-es",
+        "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/acffba3b-1779-48a8-bf69-de8f2cdf69c2.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://amg00056-amg00056c13-rakuten-es-3246.playouts.now.amagi.tv/playlist/amg00056-vevotvfast-vevolatinoes-rakutenes/playlist.m3u8?ads_amagi_channel_id=917&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=16&ads_rtv_channel_name=vevo-latino-es_es&ads_rtv_content_id=5979&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=e83e68e6-7c29-4e40-af88-05a0059710a2&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "Vevo Pop",
+        "tvg_id": "vevo-pop-es",
+        "tvg_name": "vevo-pop-es",
+        "logo": "https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/f796c006-b189-4b90-b8ff-6a42cf6d4bd7.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://amg00056-amg00056c10-rakuten-es-3242.playouts.now.amagi.tv/playlist/amg00056-vevotvfast-vevopopes-rakutenes/playlist.m3u8?ads_amagi_channel_id=919&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=16&ads_rtv_channel_name=vevo-pop-es_es&ads_rtv_content_id=5980&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=e4e24e8b-9528-470a-a4ba-bff0e8f81702&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "That's 90s00s",
+        "tvg_id": "that-s-90s00s",
+        "tvg_name": "that-s-90s00s",
+        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/4f51ac5c-a9ee-43ef-b44e-4eba377df3b2.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8?ads_amagi_channel_id=1033&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-90s00s_es&ads_rtv_content_id=6994&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=78f68646-b351-4ef9-beb5-73669b24520c&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
+      },
+      {
+        "name": "Qello Concerts by Stingray",
+        "tvg_id": "qello-concerts-by-stingray",
+        "tvg_name": "qello-concerts-by-stingray",
+        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/47d3b1e4-e855-414a-89f5-b72e0c5cd32d.jpeg",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=QelloConcertsbyStingray&ads.content_livestream=0&ads.csid=zeus_eu_qelloconcertsbystingray_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=341&ads.rakuten_streaming_id=56046e40-431a-4492-b460-b82f130e4871&ads.rakuten_user_type=visitor&ads.rtv_channel_name=qello-concerts-by-stingray_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883052&ads.xumo_channel_id=88883052&ads.xumo_contentId=187&ads.xumo_contentName=QelloConcertsByStingray&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=187&ads.xumo_providerName=stingray-qello-concerts-eng-rakutentv&ads.xumo_streamId=88883052"
+      },
+      {
+        "name": "Stingray Total Hits Spain",
+        "tvg_id": "stingray-total-hits-spain",
+        "tvg_name": "stingray-total-hits-spain",
+        "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/d2df3db3-9f25-42d7-9da6-1e4053299b9e.png",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=es&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=stingraytotalhits&ads.content_livestream=0&ads.csid=zeus_es_stingraytotalhits_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=8137&ads.rakuten_streaming_id=22fec79d-7750-4a96-962f-39d9e6b6b5d5&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-total-hits-spain_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883163&ads.xumo_channel_id=88883163&ads.xumo_contentId=4129&ads.xumo_contentName=StingrayTotalHits&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=4129&ads.xumo_providerName=stingray-totalhits-spa-rakutentv&ads.xumo_streamId=88883163"
+      },
+      {
+        "name": "Stingray Exitos Latinos",
+        "tvg_id": "stingray-exitos-latinos",
+        "tvg_name": "stingray-exitos-latinos",
+        "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/baac0009-2c27-4dfa-9a9d-eb6cdca045ba.png",
+        "group": "Música",
+        "source": "https://m3u.work/ICEQGPH.m3u",
+        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=es&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=stingrayexitoslatinos&ads.content_livestream=0&ads.csid=zeus_es_stingrayexitoslatinos_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=8136&ads.rakuten_streaming_id=378dd6ec-5da0-4237-bbce-7450269cd1fc&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-exitos-latinos_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883154&ads.xumo_channel_id=88883154&ads.xumo_contentId=4509&ads.xumo_contentName=StingrayExitosLatinos&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=4509&ads.xumo_providerName=stingray-exitoslat-spa-rakutentv&ads.xumo_streamId=88883154"
+      }
+    ],
+    "Halloween": [
+      {
+        "name": "Pluto TV Series de Terror",
+        "tvg_id": "68345650e8377f86acdeda83",
+        "tvg_name": "Pluto TV Series de Terror",
+        "logo": "https://images.pluto.tv/channels/68345650e8377f86acdeda83/colorLogoPNG_1751021711627.png",
+        "group": "Halloween",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-68345650e8377f86acdeda83.m3u8"
+      },
+      {
+        "name": "Pluto TV Terror Clásico",
+        "tvg_id": "66b0e00814a2bb00085f5934",
+        "tvg_name": "Pluto TV Terror Clásico",
+        "logo": "https://images.pluto.tv/channels/66b0e00814a2bb00085f5934/colorLogoPNG.png",
+        "group": "Halloween",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-66b0e00814a2bb00085f5934.m3u8"
       }
     ],
     "Películas": [
@@ -4826,134 +5001,6 @@
         "url": "https://amg01821-amg01821c88-amgplt0165.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg01821-amg01821c88-amgplt0165/playlist.m3u8?ads_amagi_channel_id=1150&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=el-mueble-es_es&ads_rtv_content_id=8250&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=51877f5b-b3c1-41fa-9ac2-54d0a23df833&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
       }
     ],
-    "Música": [
-      {
-        "name": "Metal.Rocks",
-        "tvg_id": "metal-rocks",
-        "tvg_name": "metal-rocks",
-        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/d87dc825-59c3-42cd-b973-a619c211f3a3.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://amg00771-amg00771c5-rakuten-gb-9713.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00771-kochfilmsfast-metalrocks-rakutengb/playlist.m3u8?ads_amagi_channel_id=1063&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=12&ads_rtv_channel_name=metal-rocks_es&ads_rtv_content_id=7194&ads_rtv_content_language=&ads_rtvid=271859&ads_streaming_id=9ba6746d-c5eb-41df-ab03-cd3c36287d77&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "Qwest TV",
-        "tvg_id": "qwest-tv",
-        "tvg_name": "qwest-tv",
-        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/ea0298dc-538a-44b7-b58c-fa23625ff1a0.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://qwestjazz-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestjazz-rakuten/CDN/master.m3u8?ads_amagi_channel_id=711&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=qwest-tv_es&ads_rtv_content_id=2268&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=e89603b0-bcad-4190-b9f0-f6d428de3683&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "Deluxe Lounge HD",
-        "tvg_id": "deluxe-lounge-hd",
-        "tvg_name": "deluxe-lounge-hd",
-        "logo": "https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/864f2b27-4702-4308-850c-f7a1c73d4298.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/2299f30c-3582-11ec-9c7c-2cf753b8a203/0/master.m3u8?ads%3Aamznbrmid=&ads%3Aamznregion=&ads%3Aamznslots=&ads%3Aapp_bundle=&ads%3Aapp_store_url=rakuten.tv&ads%3Aapp_version=&ads%3Abrand_name=&ads%3Acontent_categories=IAB1&ads%3Acontent_classification=7&ads%3Acontent_genre=entertainment&ads%3Acontent_livestream=0&ads%3Adevice_type=web&ads%3Adevice_year=&ads%3Afunke_channel_id=RAKB0001&ads%3Agam_correlator=&ads%3Agoogle_ad_manager_nonce=&ads%3Aifa_type=&ads%3Ainv_partner_domain=rakuten.tv&ads%3Alanguage=&ads%3Amarket=es&ads%3Anetwork_name=RakutenTV&ads%3Aos_language=&ads%3Aplacement=1&ads%3Aplayer_height=&ads%3Aplayer_width=&ads%3Apod_type=playerpage_midroll&ads%3Aprodq=1&ads%3Artv_channel_name=deluxe-lounge-hd_es&ads%3Artv_content_id=4222&ads%3Astreaming_id=aaadc362-5a23-451c-8dc0-89d7e58b1d8f&ads%3Atcf=&ads%3Ativo_devcountry=&ads%3Ativo_devmakedate=&ads%3Ativo_mvpd=&ads%3Ativo_platform=&ads%3Ativo_usid=&ads%3Ativo_uxloc=&ads%3Auser_type=visitor&country=es&optout=1&uid=&vendor=rakuten"
-      },
-      {
-        "name": "Stingray Greatest Hits",
-        "tvg_id": "stingray-greatest-hits",
-        "tvg_name": "stingray-greatest-hits",
-        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/6d183d7f-50c9-40f6-825f-e3d70f97247d.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=StingrayGreatestHits&ads.content_livestream=0&ads.csid=zeus_eu_stingraygreatesthits_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=2188&ads.rakuten_streaming_id=6580f1ff-98db-4c41-a637-65ae2563f5e9&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-greatest-hits_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883053&ads.xumo_channel_id=88883053&ads.xumo_contentId=1857&ads.xumo_contentName=StingrayGreatestHits&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=1857&ads.xumo_providerName=stingray-greatest-hits-eng&ads.xumo_streamId=88883053"
-      },
-      {
-        "name": "Stingray: Remember the 80’s",
-        "tvg_id": "stingray-remember-the-80-s",
-        "tvg_name": "stingray-remember-the-80-s",
-        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/32a49d06-f203-4b4a-829c-4d1f66bf6a03.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=RememberThe80sUK&ads.content_livestream=0&ads.csid=zeus_uk_stingrayrememberthe80s_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=4883&ads.rakuten_streaming_id=53e375db-9739-4e0c-8972-c5de6c92cb52&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-remember-the-80-s_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883071&ads.xumo_channel_id=88883071&ads.xumo_contentId=2184&ads.xumo_contentName=StingrayEverything80s&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=2184&ads.xumo_providerName=stingray-remember-the-80s-eng-rakutentv&ads.xumo_streamId=88883071"
-      },
-      {
-        "name": "That's 70s",
-        "tvg_id": "that-s-70s",
-        "tvg_name": "that-s-70s",
-        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/21ddd31b-ff64-4afe-aaca-0eb13b1a7cff.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://lightning-now70s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now70s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=869&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-70s_es&ads_rtv_content_id=5284&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=281fd32c-e922-47c9-b81e-11f4dafb203b&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "That's 80s",
-        "tvg_id": "that-s-80s",
-        "tvg_name": "that-s-80s",
-        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/d1bd1f06-f3a0-47ec-abac-62342ff42fdb.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://lightning-now80s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now80s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=871&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-80s_es&ads_rtv_content_id=5318&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=50ef799d-da45-49b1-857d-4c9d8d4c7c9d&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "That's ROCK",
-        "tvg_id": "that-s-rock",
-        "tvg_name": "that-s-rock",
-        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/e8d66036-f48b-417d-961d-45b7bf5ca5c7.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://lightning-now90s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now90s-rakuten/CDN/playlist.m3u8?ads_amagi_channel_id=870&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-rock_es&ads_rtv_content_id=5352&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=6d884822-0ac2-4de8-ba01-d8d901517549&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "Vevo Latino",
-        "tvg_id": "vevo-latino-es",
-        "tvg_name": "vevo-latino-es",
-        "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/acffba3b-1779-48a8-bf69-de8f2cdf69c2.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://amg00056-amg00056c13-rakuten-es-3246.playouts.now.amagi.tv/playlist/amg00056-vevotvfast-vevolatinoes-rakutenes/playlist.m3u8?ads_amagi_channel_id=917&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=16&ads_rtv_channel_name=vevo-latino-es_es&ads_rtv_content_id=5979&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=e83e68e6-7c29-4e40-af88-05a0059710a2&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "Vevo Pop",
-        "tvg_id": "vevo-pop-es",
-        "tvg_name": "vevo-pop-es",
-        "logo": "https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/f796c006-b189-4b90-b8ff-6a42cf6d4bd7.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://amg00056-amg00056c10-rakuten-es-3242.playouts.now.amagi.tv/playlist/amg00056-vevotvfast-vevopopes-rakutenes/playlist.m3u8?ads_amagi_channel_id=919&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=16&ads_rtv_channel_name=vevo-pop-es_es&ads_rtv_content_id=5980&ads_rtv_content_language=es&ads_rtvid=271859&ads_streaming_id=e4e24e8b-9528-470a-a4ba-bff0e8f81702&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "That's 90s00s",
-        "tvg_id": "that-s-90s00s",
-        "tvg_name": "that-s-90s00s",
-        "logo": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/4f51ac5c-a9ee-43ef-b44e-4eba377df3b2.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8?ads_amagi_channel_id=1033&ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_content_categories=IAB1&ads_content_genre=entertainment&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_google_ad_manager_nonce=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_ip=79.158.28.175&ads_market=es&ads_network_name=RakutenTV&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_ppid=&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=that-s-90s00s_es&ads_rtv_content_id=6994&ads_rtv_content_language=en&ads_rtvid=271859&ads_streaming_id=78f68646-b351-4ef9-beb5-73669b24520c&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor"
-      },
-      {
-        "name": "Qello Concerts by Stingray",
-        "tvg_id": "qello-concerts-by-stingray",
-        "tvg_name": "qello-concerts-by-stingray",
-        "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/47d3b1e4-e855-414a-89f5-b72e0c5cd32d.jpeg",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=en&ads._fw_content_rating=tv-g&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=QelloConcertsbyStingray&ads.content_livestream=0&ads.csid=zeus_eu_qelloconcertsbystingray_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=341&ads.rakuten_streaming_id=56046e40-431a-4492-b460-b82f130e4871&ads.rakuten_user_type=visitor&ads.rtv_channel_name=qello-concerts-by-stingray_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883052&ads.xumo_channel_id=88883052&ads.xumo_contentId=187&ads.xumo_contentName=QelloConcertsByStingray&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=187&ads.xumo_providerName=stingray-qello-concerts-eng-rakutentv&ads.xumo_streamId=88883052"
-      },
-      {
-        "name": "Stingray Total Hits Spain",
-        "tvg_id": "stingray-total-hits-spain",
-        "tvg_name": "stingray-total-hits-spain",
-        "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/d2df3db3-9f25-42d7-9da6-1e4053299b9e.png",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=es&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=stingraytotalhits&ads.content_livestream=0&ads.csid=zeus_es_stingraytotalhits_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=8137&ads.rakuten_streaming_id=22fec79d-7750-4a96-962f-39d9e6b6b5d5&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-total-hits-spain_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883163&ads.xumo_channel_id=88883163&ads.xumo_contentId=4129&ads.xumo_contentName=StingrayTotalHits&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=4129&ads.xumo_providerName=stingray-totalhits-spa-rakutentv&ads.xumo_streamId=88883163"
-      },
-      {
-        "name": "Stingray Exitos Latinos",
-        "tvg_id": "stingray-exitos-latinos",
-        "tvg_name": "stingray-exitos-latinos",
-        "logo": "https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/baac0009-2c27-4dfa-9a9d-eb6cdca045ba.png",
-        "group": "Música",
-        "source": "https://m3u.work/ICEQGPH.m3u",
-        "url": "https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads._fw_app_bundle=&ads._fw_app_store_url=rakuten.tv&ads._fw_content_category=IAB1&ads._fw_content_genre=entertainment&ads._fw_content_language=es&ads._fw_content_rating=tv-pg&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_devicetype=3-connected_tv&ads._fw_gdpr=1&ads._fw_gdpr_consent=&ads._fw_is_lat=1&ads._ifa_type=&ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.appName=RakutenTV&ads.app_version=&ads.brand_name=&ads.caid=stingrayexitoslatinos&ads.content_livestream=0&ads.csid=zeus_es_stingrayexitoslatinos_ssai&ads.extra_eids=&ads.gam_correlator=&ads.google_ad_manager_nonce=&ads.inv_partner_domain=rakuten.tv&ads.network_name=RakutenTV&ads.os_language=&ads.placement=1&ads.prodq=1&ads.rakuten_content_type=live_channels&ads.rakuten_device_type=web&ads.rakuten_device_year=&ads.rakuten_env=prod&ads.rakuten_market=es&ads.rakuten_pod_type=playerpage_midroll&ads.rakuten_rtv_content_id=8136&ads.rakuten_streaming_id=378dd6ec-5da0-4237-bbce-7450269cd1fc&ads.rakuten_user_type=visitor&ads.rtv_channel_name=stingray-exitos-latinos_es&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.xumo_channelId=88883154&ads.xumo_channel_id=88883154&ads.xumo_contentId=4509&ads.xumo_contentName=StingrayExitosLatinos&ads.xumo_ifa=&ads.xumo_ifaType=ppid&ads.xumo_providerId=4509&ads.xumo_providerName=stingray-exitoslat-spa-rakutentv&ads.xumo_streamId=88883154"
-      }
-    ],
     "Reality": [
       {
         "name": "Pilotos del Ártico",
@@ -5009,7 +5056,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/59623ed1-b641-4001-b634-b25e307c3c49/123GO_-_Jonathan_Shrank1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63eecb32ac23d1ee072087cb/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63eecb32ac23d1ee072087cb/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "21 Jump Street",
@@ -5018,7 +5065,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a93dc428-87b4-49ce-834c-94bcad531802/21JS_Logo_Dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66f6b947515e742745f5ca34/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66f6b947515e742745f5ca34/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "5-Minute Crafts",
@@ -5027,7 +5074,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/52b33d5e-f48e-472d-896c-94759eccc1e4/5-Minute_Crafts_1500x1000_White.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63894c1965b848bf2c8a7800/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63894c1965b848bf2c8a7800/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "ACL Cornhole TV",
@@ -5036,7 +5083,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d1076185-58d6-411b-ba73-1126837074dd/Plex_cornhole__1500x1000_white_-_Brendan_Canning_white_rdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63504925a97bd70eaef54f01/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63504925a97bd70eaef54f01/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Action Hollywood Movies",
@@ -5045,7 +5092,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/c94e3220-9a45-42e9-8bdb-01fc43e0f27c/white_textAction_Hollywood_Movies_logo_dark_-_Angela_Chan.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66be944f8711311880995280/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66be944f8711311880995280/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "AddictaTV",
@@ -5054,7 +5101,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/377dc2cb-53dd-4034-84e1-125be2b086c0/2WHITEaddictaTV_Logo_Transparency-Backgroud-Official-Brand_1500x1000px.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69d6d88b1790acff6189dea5/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69d6d88b1790acff6189dea5/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "AfroLandTV",
@@ -5063,7 +5110,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/AfroLandTV_logo_dark_v3.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60e737a4ebef9d002c4d0a0c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60e737a4ebef9d002c4d0a0c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Alternative",
@@ -5072,7 +5119,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/bf09a995-48fe-45f6-abb3-56b442494c12/Rock_alternatives_Rdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62efbb8652f7d73061eec498/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62efbb8652f7d73061eec498/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Andromeda",
@@ -5081,7 +5128,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/1a6d3a8f-26ee-4968-b0b5-845a0a2e8f78/FilmRise_Andromeda_Color_Logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656236cc5dbccec83a87b647/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656236cc5dbccec83a87b647/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Animation+",
@@ -5090,7 +5137,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d3f6d54b-64cf-44ed-a960-2feb1c4b05c7/US_STVP_AnimationPlus_logo_Color_1500x1000_-_Kai_Schneider.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-674f6a6cf44561420465f9f3/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-674f6a6cf44561420465f9f3/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Asian Drama",
@@ -5099,7 +5146,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/4d7c5e34-9335-479e-8d6a-e7a80565e45b/Asian_Drama_whtLogo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-685f27cca7111a932d28f1ae/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-685f27cca7111a932d28f1ae/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Azteca Internacional",
@@ -5108,7 +5155,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/1088747e-b11d-466c-b652-ca6b291ceae5/azteca_internacional_white_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-646d06c9b09f13b2d8af68d8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-646d06c9b09f13b2d8af68d8/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Baby Einstein",
@@ -5117,7 +5164,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/e757f7e3-f3de-46f5-b6e0-9aa42bdb61d1/BabyEinstein_logo_1500x1000_light.png.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69333216ac5b3f9f53442374/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69333216ac5b3f9f53442374/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Bassmaster",
@@ -5126,7 +5173,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f6d14e42-d9be-4f81-893f-cb676d32c473/BassmasterChannel_DarkBackground_-_Will_Flowers.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68caada21fabab6eb2e99331/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68caada21fabab6eb2e99331/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Billiard TV",
@@ -5135,7 +5182,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/7a0799ac-c06c-417e-a1d1-3fade474e07d/Plex_billiard__1500x1000__color_rdxfds__1_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6334a8e48a7b2a349d903b8c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6334a8e48a7b2a349d903b8c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Bizaar",
@@ -5144,7 +5191,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f40521f6-1074-4664-b673-96a2eab164a0/Bizaar_Logo_For_Dark_Background_-_1500_x_1000_-_Michael_Bromberg.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-689e1f0dd84bfb3d54b6756f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-689e1f0dd84bfb3d54b6756f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Bloomberg Originals",
@@ -5153,7 +5200,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a69341a2-fce3-4a05-af2e-469540b25d73/BBOriginals_2023_Plex_Stacked_WHTrdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61d73c3ca7b7c7f703418518/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61d73c3ca7b7c7f703418518/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Bloomberg TV",
@@ -5162,7 +5209,7 @@
         "logo": "https://provider-static.plex.tv/6/epg/channels/logos/gracenote/66a30548bffdf5f5e158e3baf755afad.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61d73ab0a7b7c7f703418516/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61d73ab0a7b7c7f703418516/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Bondi Rescue",
@@ -5171,7 +5218,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/91ffbeaa-df66-4074-83d6-94cacb9622fa/Plex_Totem_BondiRescue_Logo_White_-_Rowan_Williams.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69ae4f38e657bab5f7a9b7ec/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69ae4f38e657bab5f7a9b7ec/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "BOOT",
@@ -5180,7 +5227,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/5e31e123-a40b-41c6-9153-67c983c6d9e6/boot_all-white_1500X1000_PNG_transparent_background.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5ef11487d33ab9004048a1d3/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5ef11487d33ab9004048a1d3/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Bowling TV",
@@ -5189,7 +5236,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/573ed04e-775e-41c9-a367-81b9597eff00/Channel_Logo_Color_Evann_D___AdamoRDX_WHT_LETTERS.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6970fdabbde579fb71262401/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6970fdabbde579fb71262401/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Brat TV",
@@ -5198,7 +5245,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9d75cf3b-be95-4785-ab5a-3cfdd4994ab7/BratTV_PlexTV_Logo_DarkBG.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63d6f6c5a9e88ee909e7ee1f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63d6f6c5a9e88ee909e7ee1f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Buen Viaje",
@@ -5207,7 +5254,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/820fe677-05d1-49d1-ae4d-e109423ba2d9/channel_logo_1500x1000_lightRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1624d91d13cb4c8cbb67/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1624d91d13cb4c8cbb67/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "C4 en Alerta",
@@ -5216,7 +5263,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/51402fbd-48ad-4307-a1be-a60c692684f6/Logotipo_C4_En_Alerta_1500x1000_for_dark_backgrounds_-_James_Stowe.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65b1568052aa31b8f64da064/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65b1568052aa31b8f64da064/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Camp Spoopy",
@@ -5225,7 +5272,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/camp-spoopy-logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6164a963766ab4f9f57e81b1/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6164a963766ab4f9f57e81b1/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Cesar's Pack Leader TV",
@@ -5234,7 +5281,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/e24d3a4c-4948-4155-82c5-b7eec0fa50b8/Cesar_Logo_Transparent_WHTRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-693cbba358076a970420f597/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-693cbba358076a970420f597/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Cheaters en Español",
@@ -5243,7 +5290,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b0328822-b149-4524-ad89-1c87c2543268/FilmRise_CheatersEnEspanol_Logo_ColorRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65623e0eb7d737841f30a4ff/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65623e0eb7d737841f30a4ff/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "CINEPRIDE",
@@ -5252,7 +5299,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f9b44328-8571-4e8a-9066-022bd8665082/cinepride-logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62167144ab2095ca85353ad6/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62167144ab2095ca85353ad6/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Classic Rock",
@@ -5261,7 +5308,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/393a107b-669d-4e64-9b1f-6fc06e5b858b/Classic_ROCK.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aaa0cc784a2161d3caf7ff/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aaa0cc784a2161d3caf7ff/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Clic",
@@ -5270,7 +5317,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/5524a542-5952-4090-9e2e-780e1a3adc22/clic_logo_light_-_James_Stowe_Color_rdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6469502df73356567a64ce8e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6469502df73356567a64ce8e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "CombaTV",
@@ -5279,7 +5326,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/2230b4ec-e410-4f49-b5b2-8ac4dfd20c5c/combatv_logo_dark_-_Jordan_Warkol.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63f0ca427b78030ed9990309/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63f0ca427b78030ed9990309/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Comercio TV",
@@ -5288,7 +5335,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f13dd872-9888-4a98-953b-2d2cf306d69a/comercioDark_Logo__1_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-686462bf1a2f321847ec0395/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-686462bf1a2f321847ec0395/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Cooking Panda",
@@ -5297,7 +5344,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/cooking-panda.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f07e9fdf313eb0041bbecda/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f07e9fdf313eb0041bbecda/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Cops en Español",
@@ -5306,7 +5353,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/59b63843-4b98-42fd-bf78-c269ce56cdb5/COPS_en_espanol_-_channel_logo_colour_-_1500x1000.png_James_Roebuck.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6477b95b7ba9c0d593859bfc/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6477b95b7ba9c0d593859bfc/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Corazón",
@@ -5315,7 +5362,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/08be4d01-35de-46c7-b600-546316cbaf4a/corazon_logo_light_-_James_Stowe.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64694d52f73356567a64ce8c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64694d52f73356567a64ce8c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Cosmic Frontiers",
@@ -5324,7 +5371,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a514ca78-cb8d-4c2f-9d21-cdb8e6ed8197/Plex_CosmicFrontiers__Logo_DarkBackground_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-635c61cc797a33fa4193cc93/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-635c61cc797a33fa4193cc93/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "CraftsyTV",
@@ -5333,7 +5380,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/7887d400-2355-41eb-9e9f-3ea13b3f949c/Craftsy_logo_color.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6365779dde08f8eec6c3f21f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6365779dde08f8eec6c3f21f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Creator Television",
@@ -5342,7 +5389,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f33d90dc-14d4-4034-8959-30dac5ed085c/CTV-WHITE_PINK_4RDXx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67884bd6d37f2fd48d6220db/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67884bd6d37f2fd48d6220db/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Cricket Gold",
@@ -5351,16 +5398,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65e0c8c6d899afe817b9d224/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
-      },
-      {
-        "name": "Crime Beat TV",
-        "tvg_id": "643054b1fc3be59477853717-68c98e7460586565cc56baab",
-        "tvg_name": "Crime Beat TV",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/6d933fc7-172f-463f-a4f4-4d08bca2694a/CrimeBeatTV_TT_1500x1000RDX_White_Letters.png",
-        "group": "Spain",
-        "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68c98e7460586565cc56baab/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65e0c8c6d899afe817b9d224/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Crimen Y Historia",
@@ -5369,7 +5407,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/0902ab10-e394-4ff0-9c94-506bc528e901/Logo_Crimen_Historia_1500x1000_DarkBackground_-_Belen_Bruno.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67200026769d5ec4bf51d63e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67200026769d5ec4bf51d63e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Crímenes Reales",
@@ -5378,7 +5416,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/6c848a12-7e7c-467e-937f-557dedcda9e4/Crimines_Logo_1500x1000_LightAndDark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69a1fe1b0f8d297b3f6ac0f0/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69a1fe1b0f8d297b3f6ac0f0/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Curro Jimenez",
@@ -5387,7 +5425,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/69a3e9ee-ac42-4afd-970d-f8c7a7caad63/Runtime_ES_Curro_Jimenez_Dark_Mode_Logordx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66840707cd6f1d3940941153/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66840707cd6f1d3940941153/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Death Valley Days",
@@ -5396,7 +5434,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f2194eb4-c78d-4502-a3ab-616eb2624c7d/FilmRise_DeathValleyDays_White_LogoRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6674b68af04cf4bb9233c916/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6674b68af04cf4bb9233c916/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "DFB Play TV",
@@ -5405,7 +5443,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a0ddf222-f909-4390-844c-b0547916be3f/1500x1000_DFBPlay_DarkBackground.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67828ebf37cd7764c53489b3/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67828ebf37cd7764c53489b3/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Dick Van Dyke",
@@ -5414,7 +5452,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/03fe73df-6585-49b7-bdd5-5ea605c4086f/FilmRise_DickVanDykeShow_Logo_Color.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6449369eb3ff17382cae5801/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6449369eb3ff17382cae5801/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Documentary+",
@@ -5423,7 +5461,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/dfb96456-2197-4b96-8cd4-3c360725528f/documentaryplus_logo_dark_1_WHT.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-614e286b2bac097ffd6fd6ab/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-614e286b2bac097ffd6fd6ab/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Dog Whisperer",
@@ -5432,16 +5470,16 @@
         "logo": "https://provider-static.plex.tv/7/epg/channels/logos/gracenote/7c58aad36639018b2b88c6ef55abf98a.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-652a8b001b5c74bc83cf727c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-652a8b001b5c74bc83cf727c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Dr. Phil",
         "tvg_id": "643054b1fc3be59477853717-66e4cbef38de9754b6b13e90",
         "tvg_name": "Dr. Phil",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/a07750e7-11a2-4563-a402-40ad1d9e7392/xPlex_DrPhil_Channel_Logo_v01RDX.png",
+        "logo": "https://provider-static.plex.tv/epg/cms/production/4bb7ff60-6011-4afa-aa7f-70e38e6f4dcf/Plex_BODP_logoWHT_BLUE_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66e4cbef38de9754b6b13e90/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66e4cbef38de9754b6b13e90/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Easy Listening",
@@ -5450,7 +5488,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9300cb7f-9eef-4e0f-b0d3-d7469da72cda/EASY_LISTENING.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee76b5271f393d2d9f709a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee76b5271f393d2d9f709a/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Eddie's Wonderland",
@@ -5459,7 +5497,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a27f5de6-ea10-48ad-ab05-6a5c3e63d46c/Eddies-Wonderland_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-618ab2f275913b296fbe56dd/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-618ab2f275913b296fbe56dd/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "El Conflicto TV",
@@ -5468,7 +5506,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/ece5a289-3815-4e00-acac-14ac32beccff/ElConflicto_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621674f168c966be92737ce6/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621674f168c966be92737ce6/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Euro Hits",
@@ -5477,7 +5515,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/97cac846-984e-4fdc-881a-6d4201d3849f/Euro_hits.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee74af52f7d73061eec491/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee74af52f7d73061eec491/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Euronews",
@@ -5486,7 +5524,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/4d63af64-c260-4f5f-aac1-240aeaa36e90/Plex-WURL_Euronews-Logos_EN_-_astrid_collomb.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60089d90f682a3002c348299/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60089d90f682a3002c348299/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Euronews Deutsch",
@@ -5495,7 +5533,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f4d271ea-6f09-46e0-910c-c052a63c3287/Plex-WURL_Euronews-Logos_DE_-_astrid_collomb.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245efe9f137de43897ea1ae/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245efe9f137de43897ea1ae/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Euronews Español",
@@ -5504,7 +5542,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/eea28bcc-26ea-4266-81b4-2945f334c3d9/Plex-WURL_Euronews-Logos_ES_-_astrid_collomb.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60089d97f682a3002c34829d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60089d97f682a3002c34829d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Euronews Français",
@@ -5513,7 +5551,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/2be15415-4f0d-4d23-a4d4-3ec22445740a/Plex-WURL_Euronews-Logos_FR_-_astrid_collomb.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245f06793b402a3d1097787/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245f06793b402a3d1097787/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Euronews Italiano",
@@ -5522,7 +5560,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/c3f285d3-0411-496b-9cee-9244c21e106c/Plex-WURL_Euronews-Logos_IT_-_astrid_collomb.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245f13093b402a3d1097789/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245f13093b402a3d1097789/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Euronews Portuguese",
@@ -5531,7 +5569,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/76a8ddca-38be-4d5b-b8db-be69fcaa6231/Plex-WURL_Euronews-Logos_PT_-_astrid_collomb.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245cd154f27f4e9c76d67e9/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245cd154f27f4e9c76d67e9/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Farscape",
@@ -5540,7 +5578,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/77115f01-d00a-4ef0-bb00-dcb3896e1c09/f5c7ee72e5a980b3ac2a31fd94e112e8.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-635195e9ccee3e1547a8831a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-635195e9ccee3e1547a8831a/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FashionTV",
@@ -5549,7 +5587,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/47127441-d5b6-42a3-b641-a7c076d20940/Fashion_PNG_w__transparent_background__All_white_Logo_for_Attribution__-_Yuri_Alexandrov.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6490c01f3b3ce9e1aaad95be/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6490c01f3b3ce9e1aaad95be/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Fight Network",
@@ -5558,7 +5596,7 @@
         "logo": "https://provider-static.plex.tv/f/epg/channels/logos/gracenote/f6e88714b4dae6026720d36ad9de611f.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-606605549dbfca002d2ae877/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-606605549dbfca002d2ae877/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FilmRise Sci-Fi",
@@ -5567,7 +5605,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/52e549aa-1c71-4285-a47c-63be6a60aa54/FilmRise_SciFi_1500x1000_Light_Logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65e9d0ad8fe4ef7053c3c872/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65e9d0ad8fe4ef7053c3c872/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Flashback 70s",
@@ -5576,7 +5614,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/32c9c7ca-8544-4434-92c5-9a5dd9577746/flashback_70srdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62f15810a3ffe928ef806c75/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62f15810a3ffe928ef806c75/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FRANCE 24",
@@ -5585,7 +5623,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d5065d4c-eb84-4fd6-862f-655ff5ca01cd/france24fastenglish_logo_dark_-_David_COURET.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-678fe7959407a53556d3e8eb/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-678fe7959407a53556d3e8eb/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FreeTV Banda",
@@ -5594,7 +5632,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/471205b6-08e3-4ee9-8d67-8035fd2aac1c/FreeTV_Banda.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-691d5cba3cc0cf773fb6ac67/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-691d5cba3cc0cf773fb6ac67/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FreeTV Hits",
@@ -5603,7 +5641,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b1c2a69a-6ca6-4c92-b090-53de85f49c8f/FreeTVHits_Circle_1500x1000_-_Ralph_Campillo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6018913ea15130002b284191/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6018913ea15130002b284191/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FrightFlix",
@@ -5612,7 +5650,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/889dcf7a-99ec-425f-8044-087c84e8eefc/FrightFlix_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621674502c2627c068e73ada/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621674502c2627c068e73ada/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FTF Sports",
@@ -5621,7 +5659,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/aa1c5515-a30f-4790-a384-ca23a3ba0740/FTFSportsWHT.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-605a309dc5acdc002c7a20aa/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-605a309dc5acdc002c7a20aa/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "FUEL TV",
@@ -5630,7 +5668,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ffc5cfa6cad6f2991745c2/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ffc5cfa6cad6f2991745c2/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Galxy TV",
@@ -5639,7 +5677,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/dc452291-62d8-4f01-8e5b-b1fef79fb37d/GalxyTV_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621672e42c2627c068e73ad8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621672e42c2627c068e73ad8/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "GFN Football TV",
@@ -5648,7 +5686,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/db267869-c485-4e8d-985a-8876cf62790a/Channel_Logo_-_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67c247c345ae99120c071586/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67c247c345ae99120c071586/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Glewed TV",
@@ -5657,7 +5695,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d6025660-0b4a-4851-a805-4c61545642f9/glewed-tv.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5eea605474085f0040ddc76d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5eea605474085f0040ddc76d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "GLORY Kickboxing",
@@ -5666,7 +5704,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63f914bffe2c3d32e1a7929f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63f914bffe2c3d32e1a7929f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Grjngo - Western Movies",
@@ -5675,7 +5713,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/0572c2c0-36cd-432f-8f7c-eabecb83f553/Grjngo-Westernfilme_logo_light_-_Toni_Newesil.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63489a771159f6a5ce819b7b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63489a771159f6a5ce819b7b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "GUSTOTV",
@@ -5684,7 +5722,7 @@
         "logo": "https://provider-static.plex.tv/d/epg/channels/logos/gracenote/dab1a7cb1336ecbd21e804d506b3ba61.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f8746eabd529300418246d9/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f8746eabd529300418246d9/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Hard Knocks",
@@ -5693,7 +5731,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/hardknocks_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5fd115bdb7ef8d002dcf1820/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5fd115bdb7ef8d002dcf1820/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Hip-Hop/R&B",
@@ -5702,7 +5740,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/2693c8ce-05be-463b-894e-62e3a1f3b834/hip_hop_r_n_b_rdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee7ae2271f393d2d9f709e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee7ae2271f393d2d9f709e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Hit List",
@@ -5711,7 +5749,16 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d6d559f3-6a3d-4ce0-839e-55681e4a7928/Hit_List.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aaa014784a2161d3caf7fd/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aaa014784a2161d3caf7fd/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
+      },
+      {
+        "name": "Homeful",
+        "tvg_id": "643054b1fc3be59477853717-682dfb2ddfc9c452b8f98426",
+        "tvg_name": "Homeful",
+        "logo": "https://provider-static.plex.tv/epg/cms/production/e407e666-03b2-4244-ae4f-841ca20736d6/Plex_Homeful_Logo-white_1500x1000_-_Nerissa_Jones.png",
+        "group": "Spain",
+        "source": "https://m3u.work/hJiHE3ad.m3u",
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-682dfb2ddfc9c452b8f98426/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Hot Ones",
@@ -5720,7 +5767,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/5f489abb-a71e-425f-b276-16d6614f6601/FilmRiseHotOnes_Logo_Color.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6582a1316b91be4547aa153c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6582a1316b91be4547aa153c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Hunter",
@@ -5729,7 +5776,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/2e34b413-32fc-4600-8b29-94562670814c/Hunter_Logo_Dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66f6b6baac1a1890ef197a4b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66f6b6baac1a1890ef197a4b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Ice Pilots NWT",
@@ -5738,7 +5785,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/2c49fafe-3ddd-443d-bdaa-c2ad358146cf/channel_logo_1500x1000_light.png.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1820ce73ed6023b55a11/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1820ce73ed6023b55a11/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Ice Pilots NWT (en español)",
@@ -5747,7 +5794,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cd6eed5a-9ec7-469b-90cd-378bc8e95f3f/pilotos_del_artico_logo_WHT.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e192cd91d13cb4c8cbb6b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e192cd91d13cb4c8cbb6b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "INTER 24/7",
@@ -5756,7 +5803,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/57fe10fd-e61b-4796-9afa-1cb853548709/channel_logo_dark.png_-_Ingrid_Barresi.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69011e71d320237a5a2d9f63/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69011e71d320237a5a2d9f63/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "ITV Deportes",
@@ -5765,16 +5812,16 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a158aa7c-26b6-4c00-af9d-6fe52cab555a/iTV_LOGO-DarkBG_-_Alejandro_N.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-688d3402a6fe30698ab42007/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-688d3402a6fe30698ab42007/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "JAIL",
-        "tvg_id": "643054b1fc3be59477853717-6448ba1baf92c31f4a190c27",
+        "tvg_id": "643054b1fc3be59477853717-6ab56313177d989ab41dfd3b",
         "tvg_name": "JAIL",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/08872b9b-a4a7-4533-a19b-d2c24a7bf2f1/JAIL_-_channel_logo_-_light_-_dark_-_1500x1000.png_James_Roebuck.png",
+        "logo": "https://provider-static.plex.tv/epg/cms/production/f1c19736-b2df-4b76-8c29-b1832b1fab5d/Jail_channel_logo_4c_1500x1000RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6448ba1baf92c31f4a190c27/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6ab56313177d989ab41dfd3b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Johnny Carson TV",
@@ -5783,7 +5830,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/johnnycarsontv_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60d4edd6b2fdec002c141123/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60d4edd6b2fdec002c141123/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Judge Nosey",
@@ -5792,7 +5839,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/42b035f7-d085-4605-89e2-fb708c3e1794/JudgeNosey_Logo_Color-whitetxt.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff262d71dcb00449ec018/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff262d71dcb00449ec018/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Just For Laughs Gags",
@@ -5801,7 +5848,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a3d02bc9-13e3-4263-aff8-6a8512501b80/1500x1500_Just_for_laughs_CARLOS_PACHECO.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64704954e536e0faaf10be9f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64704954e536e0faaf10be9f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "La Fiebre del Jade",
@@ -5810,7 +5857,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/fd21a845-1ffb-443d-91de-35d2dc3cb12c/channel_logo_1500x1000_light.png.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1af3d91d13cb4c8cbb6d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1af3d91d13cb4c8cbb6d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Legacy",
@@ -5819,7 +5866,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/10926a84-a943-418b-bd8f-885c7b212ef8/LEgacy_Light_Logo__4_RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69bb1f002028859eafc637e1/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69bb1f002028859eafc637e1/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Life Down Under",
@@ -5828,7 +5875,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/457ba162-d75e-4b43-96b0-125f61a47a44/LDU_Logo_1500_x_1000_Anna.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67c2496d45ae99120c071588/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67c2496d45ae99120c071588/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Lone Star",
@@ -5837,7 +5884,7 @@
         "logo": "https://provider-static.plex.tv/1/epg/channels/logos/gracenote/1d8c9bf417f3e12668fecafc25fc8f72.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6196c9241d310bf925e02616/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6196c9241d310bf925e02616/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Lucha Plus",
@@ -5846,7 +5893,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/e8b87f4f-ebc1-4996-b732-b70118521f61/Plex_Channel_Logo_Color_-_Juan_Miguel_Bassalik_WHT_TEXT.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67a1a8ef2358ef4dd5c3018e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67a1a8ef2358ef4dd5c3018e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Made In Hollywood",
@@ -5855,16 +5902,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cd2f9be3-7222-4b75-9653-1c9a988258dc/WHITE_LOGO_Made_Mona_Lapides.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60db63d29ec966002c9ea6f0/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
-      },
-      {
-        "name": "Made It Myself TV",
-        "tvg_id": "643054b1fc3be59477853717-65b80306e5cf85050598aba4",
-        "tvg_name": "Made It Myself TV",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/89dc782a-d85c-468c-8e3c-a5973d824ec6/MIMTV_Logo_1500x1000_LightBackgrounds.png",
-        "group": "Spain",
-        "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65b80306e5cf85050598aba4/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60db63d29ec966002c9ea6f0/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Masha and the Bear",
@@ -5873,7 +5911,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/744b401d-502f-4b92-958c-2e50f02947e3/masha_english_logo_RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69a529f77c245b3390e8a4de/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69a529f77c245b3390e8a4de/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Maverick Black Cinema",
@@ -5882,7 +5920,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/maverick_maverick_black_cinema_2.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5ef4e1b40d9ad000423c4430/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5ef4e1b40d9ad000423c4430/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Merli",
@@ -5891,7 +5929,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/8e4cba66-9b4a-49e6-becf-bcfad804dcb9/MERLI_channel_logo_whiteRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68645a8619cc2e163e38d161/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68645a8619cc2e163e38d161/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Metal.Rocks",
@@ -5900,7 +5938,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/4171a6a6-6d73-481a-ad91-15166befee06/Channel_Logo_MetalRocks_Color_-_Ricardo_RivasRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68e9436dda6bb987138625c7/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68e9436dda6bb987138625c7/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Milenio Television",
@@ -5909,7 +5947,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/1e99eb82-f642-4f2f-86e3-16df76547494/Logotipo_MILENIO_1500x1000_for_dark_backgrounds_-_James_Stowe.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65b16e7b115f5ad5450cfdac/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65b16e7b115f5ad5450cfdac/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Million Dollar Dream Home",
@@ -5918,7 +5956,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/305dc437-2a99-4e98-a872-08ae23e102f6/MDDH_WHITE_-_Principal_MediaRDX__1_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-684c2379e32026b0c1f53793/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-684c2379e32026b0c1f53793/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Misterios sin Resolver",
@@ -5927,7 +5965,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f6a0825c-3f05-421a-a733-f5eb53c37f2a/Plex_FilmRise_MisteriosSinResolver_White_Logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64d79408e5f67b0fab47ff24/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64d79408e5f67b0fab47ff24/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Monster Jam",
@@ -5936,7 +5974,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/23824964-562b-4498-9eaa-d6262cb7e0c3/Monster_Jam_Logo_on_Transparent_1500x1000_Casey_Murawski.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6615885e1eabecf2c9d56495/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6615885e1eabecf2c9d56495/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "More U",
@@ -5945,7 +5983,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/moreu_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6112a9139894c8002c6cb87f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6112a9139894c8002c6cb87f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Movie Music by Stingray",
@@ -5954,7 +5992,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a28301e1-00c2-4783-9a44-1e822be96cb9/11810_MMS_Plex-TV_Channel-Logo_1500x1000_V01-Color-Rev.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62fbf197c67d52bddf74cc87/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62fbf197c67d52bddf74cc87/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Mutant X",
@@ -5963,7 +6001,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/e7c42702-89d4-42c0-a093-4c604ab39a34/FilmRise_MutantX_Color_Logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656237c55dbccec83a87b649/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656237c55dbccec83a87b649/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Mythical 24/7",
@@ -5972,7 +6010,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cbce9562-c7a6-460c-9d07-02ab8724bbc5/Light_Logo__Mythical_24_7_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-650b5bb3f4b2d9579946a500/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-650b5bb3f4b2d9579946a500/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Naturaleza",
@@ -5981,7 +6019,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b8f2b67e-a131-4b50-9864-dc0b13c3c6ed/channel_logo_1500x1000_light.png.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e2178d91d13cb4c8cbb75/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e2178d91d13cb4c8cbb75/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "NEW KFOOD",
@@ -5990,7 +6028,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/6aedfb80-69ab-4b5d-a34b-8e720a753673/NEW_KFOOD_Color_Logo-Dark_Background.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b9f5a3d60e5dd29263c7ac/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b9f5a3d60e5dd29263c7ac/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Newsmax en Español",
@@ -5999,7 +6037,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/25db4f88-c689-4bf8-811b-603fb762d4fb/003_WHITE_NEWSMAX_EN_ESPANOL.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-688b7f47c8caf40b4a62239f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-688b7f47c8caf40b4a62239f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Newsmax2",
@@ -6008,7 +6046,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f3f74374-7cf6-4fdc-8056-7ef9e8eb989b/N2_logo_color.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5fb81660b7ad2d002dcb7335/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5fb81660b7ad2d002dcb7335/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "NewsWorld",
@@ -6017,7 +6055,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/2e3bf0d9-3ca6-4f65-b1d4-f180ef725d96/NewsWorld_logo_dark_-_Angela_Chan.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66bfb2e6144c201b8b61c10f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66bfb2e6144c201b8b61c10f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "NHRA TV",
@@ -6026,7 +6064,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/NHRA_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60aeb5cd87f9b1002ce12323/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60aeb5cd87f9b1002ce12323/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Nolly Africa HD",
@@ -6035,7 +6073,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a50425a8-5b58-47b5-96c9-43c842f77806/1500X1000_PNG_w__transparent_background__Logo_suitable_for_light_backgrounds__-_Herliane_Pedro.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64b1e1217d4037206787f384/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64b1e1217d4037206787f384/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Nosey",
@@ -6044,7 +6082,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cd9c928b-8bf5-408f-b640-a6d1b97a6a69/nosey_green.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff262d71dcb00449ec015/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff262d71dcb00449ec015/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Nosey Escándalos",
@@ -6053,7 +6091,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/53d7cc91-9e94-4192-9b0b-c13e05c8e09d/nosey-escandalos_color.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6154a863e3e4d9577f96b31a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6154a863e3e4d9577f96b31a/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Nothin' But 90s",
@@ -6062,7 +6100,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d5318898-f807-4c7f-b2b4-c4173aaae1ea/Nothin_But_90s.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62f13eeded056a1db9ef3d54/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62f13eeded056a1db9ef3d54/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Novelisima",
@@ -6071,7 +6109,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/c02431c6-190a-426a-a652-38502fec17d8/Novelisima_logo_lightbakg_1500x1000_-_Ali_Clausen.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64d4e82ac5d4668c9cb7b5df/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64d4e82ac5d4668c9cb7b5df/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Operation Repo",
@@ -6080,7 +6118,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9ea6fcd5-6337-4609-8b7c-290b0eb74c65/Oprepo_logo_-_James_PatrickRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6578e7b5eef129f30fb38df7/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6578e7b5eef129f30fb38df7/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Pac-12 Insider",
@@ -6089,7 +6127,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a3c09b3c-9f7e-40e9-b14e-5174a45ad551/P12_Insider_blue_-_Sean_Kent.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-646c0dfbfb58444e4e1e262d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-646c0dfbfb58444e4e1e262d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "PeliMex",
@@ -6098,7 +6136,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/fc750061-c748-4016-83e0-9f56a40a493c/Pelimex_red_logo_RDXC2.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67db3546d66f778a752f7eaa/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67db3546d66f778a752f7eaa/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "People are Awesome",
@@ -6107,7 +6145,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/72b8f0fc-fe7f-4a92-9881-866cfc043d94/people-are-awesome-2.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff263d71dcb00449ec021/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff263d71dcb00449ec021/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "PFL MMA",
@@ -6116,7 +6154,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/96dd0531-b500-4bd4-93ca-763cbf46defe/1500x1000_PFL_SHIELD_DARK_BG_-_Allie_Dinsmore.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-643f0ecd76de2b4015ae6c01/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-643f0ecd76de2b4015ae6c01/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "PickleTV",
@@ -6125,7 +6163,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/6b1c4bff-1077-4ba0-a8d6-f4c39365f126/PickleTV_1500x1000_3_ChannelLogoLight_Casey_Murawskirdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63ec0b739866d8d2120ac759/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63ec0b739866d8d2120ac759/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Platos Sucios",
@@ -6134,7 +6172,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/295bd4d4-c84e-4cb7-a0fe-e96f66ba2c40/PLATOS_SUCIOS_channel_logo_colorRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68645c1f1a2f321847ec0391/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68645c1f1a2f321847ec0391/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Poker Night TV",
@@ -6143,7 +6181,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/e081c886-d798-4438-855b-2f1fb10c50ee/poker-night-tv.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60afc726623f2f002c5bb49f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60afc726623f2f002c5bb49f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "PokerGO",
@@ -6152,7 +6190,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a2ff31a8-9b9a-4b7b-9aa5-71c0bc166632/1500x1000_LightBG_-_Aidan_Perrizo_white.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64ac687b4192b4e1bab96279/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64ac687b4192b4e1bab96279/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Pop Adult",
@@ -6161,7 +6199,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/050c6ca4-f732-4d97-aa14-0ed9fe3d2d36/pop_adult.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee7992271f393d2d9f709c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee7992271f393d2d9f709c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Popular Science",
@@ -6170,7 +6208,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/c6bfca5e-58fe-4ed4-a87d-5e2ccde7f085/Logo_Art_-_Popular_Science_Dark_Backgrounds.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656fb850cb7e8e6a9bc3f36e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656fb850cb7e8e6a9bc3f36e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Powernation",
@@ -6179,7 +6217,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a9bf659f-df1c-4572-856c-5b60fbc93467/powernationWhite_Logo__2_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69814bbff871095eafc65925/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69814bbff871095eafc65925/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "PursuitUP",
@@ -6188,7 +6226,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b6b9b8c8-e821-4f5c-b617-2f2d87dc8d72/Light_Logo_-_Austen_Faulk.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63628eb88e4b18ca22f897dc/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63628eb88e4b18ca22f897dc/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Qello Concerts",
@@ -6197,7 +6235,7 @@
         "logo": "https://provider-static.plex.tv/2/epg/channels/logos/gracenote/26655d04221a66d105b317c0bba65113.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d7f68fb19cbf65dc7bef7c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d7f68fb19cbf65dc7bef7c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Qwest TV",
@@ -6206,7 +6244,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9625dc39-aca4-4f28-91ca-e2b61c6c726a/Channel_Hero_Logo_-_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60b0f65c0c8ffb002c821a75/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60b0f65c0c8ffb002c821a75/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "RACER International",
@@ -6215,7 +6253,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/dd4e5871-4347-49e3-9ea1-a8770ea9c518/RACER_Intl_logo_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f90ebc726350a002d40b136/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f90ebc726350a002d40b136/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Racing America",
@@ -6224,7 +6262,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/58d6bf78-1acf-4d3e-8e82-fdf0f7b5137a/Plex_Logo_Light_1500x1000_-_Jillian_Schwartz.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61a945156547ba4d6d238dc9/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61a945156547ba4d6d238dc9/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "RCM",
@@ -6233,7 +6271,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f2c732af-553a-4ec1-b8ab-14277415e5b0/RCM_logo_white_-_Angela_Chan.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66bfb17c144c201b8b61c10d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66bfb17c144c201b8b61c10d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "RCN Más",
@@ -6242,7 +6280,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/3536c2ea-de74-421a-8942-642d472cc7c8/rcn-mas.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-685c78a77223639b1ac098a1/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-685c78a77223639b1ac098a1/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "RCN Noticias",
@@ -6251,7 +6289,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/078ace21-2c9e-4b63-b222-1dd0a525ad3e/RCN_NOTICIAS_BG_COLOR_n_-_JuanMa_VelasquezRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67e6979de1de65be88aeb39f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67e6979de1de65be88aeb39f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Remember the ‘80s",
@@ -6260,7 +6298,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b0655223-8876-4ca6-be40-7886947328d8/remember_the_80s.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aa9f50784a2161d3caf7fb/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aa9f50784a2161d3caf7fb/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Robot Wars by Mech+",
@@ -6269,7 +6307,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/518ddf05-c7a3-4c37-aa51-1c0dde8e671b/Logo---white_Ben_Deloughery.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6470477fe536e0faaf10be9d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6470477fe536e0faaf10be9d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Runtime Ana y los 7",
@@ -6278,7 +6316,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b69028cf-3d86-4e92-a816-e5f4dfff47e7/Runtime_ES_Ana_y_Los_7_Dark_Mode_Logordx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66841fb8702b9db9f817725a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66841fb8702b9db9f817725a/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Shark Tank",
@@ -6287,7 +6325,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b8d6b0a7-751e-4a5a-a0bc-10288bd726e5/ES_FAST_Plex_SharkTank_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922366b50fe592fd6d5b7ec/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922366b50fe592fd6d5b7ec/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Shemaroo Bollywood",
@@ -6296,7 +6334,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/aca5fb4a-3f31-4527-82d4-80b718821f1f/ShemarooBollywood_logo_dark_-_Shemaroo_USArdx.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d1a58e520656fda09e609d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d1a58e520656fda09e609d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "SKWAD",
@@ -6305,7 +6343,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/skwad-logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f12332eeca6a20040b328e5/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f12332eeca6a20040b328e5/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "SLOPES",
@@ -6314,7 +6352,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a8716411-7f01-4f8b-bde3-e8390a6d14ce/SLOPES_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-616df1be2cf008a748c8cb53/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-616df1be2cf008a748c8cb53/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Smooth Jazz",
@@ -6323,7 +6361,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/42ab39da-78b9-443f-9ba6-d6767a4db372/smooth_jazz.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee784852f7d73061eec493/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee784852f7d73061eec493/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Sobrévivi",
@@ -6332,7 +6370,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/667c853d-a1fe-4a08-8318-c3727ffcdb0a/Sobr__vivi_Logo_White_1500x1000_-_Harry_Marshall.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a109c56b05301ef36a6a8e4/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a109c56b05301ef36a6a8e4/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Sonic TV",
@@ -6341,7 +6379,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/14362d39-32e6-41c8-894d-2401013362ff/Adventures_of_Sonic_the_Hedgehog_channel_logo_dark_-_Dana_Foster.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ba4aaff663580a7238f327/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ba4aaff663580a7238f327/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Sony One | Hits Acción",
@@ -6350,7 +6388,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d84da4dc-887d-4a9d-8046-59a101a5173d/ES_FAST_Plex_ActionHits_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922322350fe592fd6d5b7e6/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922322350fe592fd6d5b7e6/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Sony One | Hits Comedia",
@@ -6359,7 +6397,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cbde5bbf-d9cb-4188-b1aa-fce8c91d5a45/ES_FAST_Plex_ComedyHits_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692232ee5cbe620c1f9b6bc5/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692232ee5cbe620c1f9b6bc5/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Sony One | Series Comedia",
@@ -6368,7 +6406,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a7eaa20f-e1af-4d1e-aaa7-62a0f0316fe0/ES_FAST_Plex_ComedyTV_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922338150fe592fd6d5b7e8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922338150fe592fd6d5b7e8/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Sony One | Series Thriller",
@@ -6377,7 +6415,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/50a84d66-9b2f-4a17-930d-353b26b6db35/ES_FAST_Plex_ThrillerTV_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692235265cbe620c1f9b6bc7/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692235265cbe620c1f9b6bc7/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Sony One | Éxitos",
@@ -6386,7 +6424,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/7a912ab4-bf9b-4918-9eff-05a351ff467d/ES_FAST_Plex_Faves_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692234015028288613484a8a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692234015028288613484a8a/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "SPEEDVISION",
@@ -6395,7 +6433,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9653867c-6eb1-4c68-a494-4d4897c22b96/SV_4C_LOGO_LIGHT_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6349ed0eb1adc4cfa571fd37/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6349ed0eb1adc4cfa571fd37/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "SportsGrid",
@@ -6404,7 +6442,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/ed88a8cc-a1f4-445a-a2bc-9fbb4c7104de/SG-LIVE-WHITE-ON-ALPHA-1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5ef11485d33ab9004048a1ca/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5ef11485d33ab9004048a1ca/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Startalk TV",
@@ -6413,7 +6451,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/073a7f1a-45ff-44a7-8b6b-4721a0eb01f9/StarTalk_Tv_Logo_Resize_PLEX_1500x1000_LOGO_DarkBG_Color_-_RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-664292a80e0ec7b4ce5eb28c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-664292a80e0ec7b4ce5eb28c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Stingray Classica Stream",
@@ -6422,7 +6460,7 @@
         "logo": "https://provider-static.plex.tv/4/epg/channels/logos/gracenote/48c0b1e3e9ef43979ca3e055e2ed3409.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d7f68fb19cbf65dc7bef7d/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d7f68fb19cbf65dc7bef7d/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Stingray Greatest Hits",
@@ -6431,7 +6469,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/40e1a688-aa45-4510-8110-53f3657e01d4/13212_SM_Plex_Logos_Greatest-Hits_1500x1000_V01-white_-_Olivia_bronfman.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aa97d4113e1e5137fd5325/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aa97d4113e1e5137fd5325/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Stingray Holidayscapes",
@@ -6440,7 +6478,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9cb4b15c-8244-4499-ae2c-9a92d4cdff6d/13895_SHS_Plex_Logos_Holidays_1500x1000_Dark-Background.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-654eb862dde2222e8ba551f1/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-654eb862dde2222e8ba551f1/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Stingray Hot Country",
@@ -6449,7 +6487,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/21cb88d9-8ca5-4a3c-b8dc-ca5b42ed351d/13212_SM_Plex_Logos_Hot-Country_1500x1000_V01-white_-_Olivia_bronfman.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aa9e73784a2161d3caf7f9/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aa9e73784a2161d3caf7f9/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Stingray Karaoke",
@@ -6458,7 +6496,7 @@
         "logo": "https://provider-static.plex.tv/9/epg/channels/logos/gracenote/9d4554d270d89a20e7cfbcbc6dd87c25.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d7f6904d0067dd4d60d0de/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62d7f6904d0067dd4d60d0de/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Stingray Naturescape",
@@ -6467,7 +6505,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/42759e04-9961-44c5-b9ae-585ac62f34ca/Stingray_Naturescape_logo_light.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62fbf36c1567211fdb82e920/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62fbf36c1567211fdb82e920/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Stingray Soul Storm",
@@ -6476,7 +6514,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/45da3b94-2c9d-453d-ab75-692b36245244/13212_SM_Plex_Logos_Soul-Storm_1500x1000_V01-white_-_Olivia_bronfman.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aaa17a784a2161d3caf801/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61aaa17a784a2161d3caf801/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Strongman Champions",
@@ -6485,7 +6523,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/80fb7204-c306-4759-a0d7-c4e829650c22/StrongmanChampionsLeague_Channel-Logo-Light-1500px.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-644b13a3a1c0a5b2024c8403/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-644b13a3a1c0a5b2024c8403/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Surf Cinema",
@@ -6494,7 +6532,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a244db09-7052-4237-ab42-58bcb2b56fe1/SurfCinemaStacked-DarkBackground-1500x1000y.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656fbbd6dbcce28c3a41741b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-656fbbd6dbcce28c3a41741b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Tastemade en Español",
@@ -6503,7 +6541,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cc603999-a138-434c-9bd9-ddad49009913/LogosPLEX_ESPANOL_1500X1000_ForDarkBackground.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65cd316a40ab06259e8168a0/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65cd316a40ab06259e8168a0/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Tennis+",
@@ -6512,7 +6550,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/704e7af1-90a0-4ad4-94de-af2559c19fa6/1_Tennis_Plus_Logo__Dark_Mode__1500x1000px.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6761f91555e174e95ccc4e4c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6761f91555e174e95ccc4e4c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TG Junior",
@@ -6521,7 +6559,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/tg-junior-non-us.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f123330eca6a20040b328e8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f123330eca6a20040b328e8/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Blacklist",
@@ -6530,7 +6568,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/011f6a9a-c20e-4c26-b1e2-07e905c4958b/ES_FAST_Plex_Blacklist_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692235eb50fe592fd6d5b7ea/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-692235eb50fe592fd6d5b7ea/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Bob Ross Channel",
@@ -6539,7 +6577,7 @@
         "logo": "https://provider-static.plex.tv/2/epg/channels/logos/gracenote/280e5bc9b7e116f901b3258fea16c453.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5efe1de6e0b3f5003f5d9f88/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5efe1de6e0b3f5003f5d9f88/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Bold and the Beautiful",
@@ -6548,7 +6586,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/761a81a4-bd1e-4250-a143-d5f7359414fd/The_Bold_And_The_Beautiful_TT_WHT_RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67d9a3d663c5439aeaf61305/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67d9a3d663c5439aeaf61305/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Carol Burnett Show",
@@ -6557,7 +6595,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/carolburnett_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60d4edd6b2fdec002c141125/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60d4edd6b2fdec002c141125/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Design Network",
@@ -6566,7 +6604,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/37d8221c-4a9a-4f08-8a54-6d8ce4049181/thedesignnetwork_tdn_5_Color_logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0641d3e8ffda004033b16e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0641d3e8ffda004033b16e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Ed Sullivan Show",
@@ -6575,7 +6613,7 @@
         "logo": "https://provider-static.plex.tv/0/epg/channels/logos/gracenote/0d7687fcfd8b218d2c4f0a9337b7a68f.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-640205c68ecb41f2d89d5814/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-640205c68ecb41f2d89d5814/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Emeril Lagasse Channel",
@@ -6584,7 +6622,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/31755abd-d65b-4321-b5fe-20cefeb48031/ELChannel_Logo_whitelogo_-_Kimberly_DumerRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67294a601055ef3897c73477/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67294a601055ef3897c73477/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Martha Stewart Channel",
@@ -6593,7 +6631,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a0aadc76-1caf-419f-83c7-ff8e066355a7/MSChannel_Logo_Light_-_Kimberly_DumerRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Pet Collective",
@@ -6602,7 +6640,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Prof G Channel",
@@ -6611,7 +6649,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/883ee6c5-8ed3-41ed-b45f-b39af995fe37/TPGC-Logos_97_.ai_-_Steve_Shannon_WHT_TEXTRDX2.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69f52ffb6e5708fb20d36d9c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69f52ffb6e5708fb20d36d9c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Reuters 60",
@@ -6620,7 +6658,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5eea71d65252710041e0ccbc/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5eea71d65252710041e0ccbc/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Spa",
@@ -6629,7 +6667,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/59eb2e05-e614-4880-a463-5cb254800db9/SPA.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62f11395586633e88e3a3274/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62f11395586633e88e3a3274/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The Wiggles",
@@ -6638,7 +6676,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/38d8759c-fb94-4154-ba4d-8450e99662cd/FilmRiseLogo_WigglesClassic_Color_Logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68e0371d8bbd79d66c631ab2/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68e0371d8bbd79d66c631ab2/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "The World Poker Tour",
@@ -6647,7 +6685,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/c40e4f88-6f5c-4f2a-8d54-e6812e25771c/wpt_logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f6b8e7900b0950040d0f2b2/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f6b8e7900b0950040d0f2b2/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TNA Wrestling Channel",
@@ -6656,7 +6694,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/5d4f68c3-82af-45e7-b2c4-39aff69f3ce0/TNAWrestling_Plex_LogoforDarkBG_1500x1000_-_Alex_TushinghamRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-606605549dbfca002d2ae873/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-606605549dbfca002d2ae873/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Today's K-Pop",
@@ -6665,7 +6703,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9508b18a-0b6a-4281-888a-bde4bbfe10cd/Todays_K_Pop.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee6eae271f393d2d9f7096/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee6eae271f393d2d9f7096/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Todo Crimen",
@@ -6674,7 +6712,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/e6db5aa8-8c1d-48e0-9970-27a36702ba9e/TODO_CRIMEN_white__1_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e23e4d91d13cb4c8cbb79/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e23e4d91d13cb4c8cbb79/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Todo Drama",
@@ -6683,7 +6721,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/c999a045-74ef-4a8d-991f-26b2867d00ef/TodoDrama_WHITERDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-685f25c1a7111a932d28f1ac/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-685f25c1a7111a932d28f1ac/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Todo Novelas",
@@ -6692,7 +6730,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/0e0759ed-8180-46e7-8fe9-cbc7fa4afbf3/TODO_NOVELAS_-_Logo_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6490e59918a55242eea95995/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6490e59918a55242eea95995/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Toon Goggles",
@@ -6701,7 +6739,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/662671e3-40c9-4ae9-b2e4-59500405b50f/toongoggles_logo_light_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5eea605574085f0040ddc794/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5eea605574085f0040ddc794/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TRACE Brazuca",
@@ -6710,7 +6748,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/db23a2fc-104e-4ef8-8356-6a4d87ed1a46/trace_brazuca_dark_-_Nathan_BECKER__1_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6329474265c8569187176338/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6329474265c8569187176338/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TRACE Latina",
@@ -6719,7 +6757,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/04b0a12e-b393-4456-9927-a48b793b623a/trace_latina_light_-_Nathan_BECKER.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63226c03e67cf9cd9011fcdf/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-63226c03e67cf9cd9011fcdf/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TRACE UK",
@@ -6728,7 +6766,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/23feecc3-94f6-49b7-98e6-1828f42695ea/1500X1000_PNG_w_transparent_background__Logo_suitable_for_dark_backgrounds__-_Pierre_Gournay.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66be8cd4871131188099527e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66be8cd4871131188099527e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TRACE Urban",
@@ -6737,7 +6775,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/d6fba6a2-2650-487f-ab1b-1eb034bd11c7/trace_urban_light_-_Nathan_BECKER.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6322658be67cf9cd9011fcda/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6322658be67cf9cd9011fcda/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Trailers From Hell",
@@ -6746,7 +6784,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/2a86a06c-8a32-4a88-bf69-831a26032698/trailers-from-hellCircle.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61d738b5a7b7c7f703418514/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-61d738b5a7b7c7f703418514/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "True History",
@@ -6755,7 +6793,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/f37684ab-5eb6-48dd-8999-fbb6345689d4/1500x1000-DarkBG.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-614398a08f30fa61e0da7c97/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-614398a08f30fa61e0da7c97/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TV5MONDE Chefs",
@@ -6764,7 +6802,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9adadebc-556e-4510-a632-ee532eb5863b/LOGO_PLEX_CHEFS_1500X1000_WHITE.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b74890b5b437bf872b6b72/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b74890b5b437bf872b6b72/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TV5MONDE Info",
@@ -6773,7 +6811,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/1ac1bf6b-ab6e-4a44-9268-c8c2374befce/TV5MONDE_INFO_WHT_1500x1000_-_Patrice.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68a799722895f21006e758e4/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68a799722895f21006e758e4/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "TV5MONDE Voyage",
@@ -6782,7 +6820,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/1fbf682f-90ba-4318-a649-12c7f89cdc48/LOGO_PLEX_VOYAGE_1500X1000_WHITE.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b74a235dc5413c905efd62/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b74a235dc5413c905efd62/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "UFC",
@@ -6791,7 +6829,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/c2e95493-6f98-4a65-be46-d17200ea068a/UFC_logo_WHT_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ccac69fdf9cd3a568ef135/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ccac69fdf9cd3a568ef135/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Unbeaten",
@@ -6800,7 +6838,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/0b6f4951-d177-464c-aafc-0e35b61b48da/Unbeaten_logo_dark_-_Sam_Neazi.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67f45ef989089d917e1b1634/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67f45ef989089d917e1b1634/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "USA TODAY",
@@ -6809,7 +6847,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/ae42c76a-809f-465b-aed8-cfdc8e33a04b/usatoday_logo_light.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60df3e18541143002f3b8607/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60df3e18541143002f3b8607/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "VR+",
@@ -6818,7 +6856,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cd4c6347-92c4-4381-9d09-b8d38d9729de/1500x1000_-_white_logo_VR__Juan_M_Velasquez.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65a1d3996475bf522f9256e3/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65a1d3996475bf522f9256e3/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Watch it Kid",
@@ -6827,7 +6865,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/ee175dfe-6f79-415e-a3c1-ce6a9ec831c2/Watchitkid_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621672612c2627c068e73ad6/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621672612c2627c068e73ad6/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Watch it SCREAM",
@@ -6836,7 +6874,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/945765a1-a848-4105-bf4d-5c27192e79ed/WatchitScream_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621671d05abdd3d5556a1baf/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621671d05abdd3d5556a1baf/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Waypoint TV",
@@ -6845,7 +6883,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/waypointtv_logo_dark.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5fd115b8b7ef8d002dcf1817/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5fd115b8b7ef8d002dcf1817/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "WeatherSpy",
@@ -6854,7 +6892,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/3b058b7e-f61e-4257-ae0c-894dd648565f/jukin_weatherspy_2_white.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff266d71dcb00449ec030/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff266d71dcb00449ec030/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "wedo amor",
@@ -6863,7 +6901,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/a4765ad1-345e-4cb7-b6c5-3dc970e4d78e/Light_LogoWEDDO_AMOR_WHITE.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ea196ac24d95b51b7cd18b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ea196ac24d95b51b7cd18b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Wedotv Amor Piel Salvaje",
@@ -6872,7 +6910,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/7aa34d17-de26-4b64-b4cc-628d572de91f/PielLight_Logo__1_.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6880001d015fe7e375a1a0a8/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6880001d015fe7e375a1a0a8/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Wineman",
@@ -6881,7 +6919,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/9a15a24f-c9ae-40f1-b9e5-16a95f4b650c/Wineman_whiteRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68645f7c1a2f321847ec0393/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68645f7c1a2f321847ec0393/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Wired2Fish",
@@ -6890,7 +6928,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/146827c9-ba03-4f25-86b2-d99c501e8227/wired2fish_white.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-608a2c722957c9002c6a617b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-608a2c722957c9002c6a617b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Women's Sports Network",
@@ -6899,7 +6937,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/5c5587dd-f93b-42db-b0dc-6b7a78801c3d/WSNLogoColor_1500x1000.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-630fa9e577ec3866def38fa2/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-630fa9e577ec3866def38fa2/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "World Billiards TV",
@@ -6908,7 +6946,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/55d069fe-0219-447a-a712-e3ecaed26241/_Plex__WBT_Logo_Dark_Mode.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b9f334fc12601028c5651e/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b9f334fc12601028c5651e/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "World Surf League 24/7",
@@ -6917,7 +6955,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b4cf623f-e45e-4706-ba5c-fdf92a9e1e44/WSL_WHITE_LOGO.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-652875586425fdb1f32d2169/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-652875586425fdb1f32d2169/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "XFC TV",
@@ -6926,7 +6964,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/90cd03c9-281a-4eea-964b-6a9ce5c8d07c/XFCTV_channel_logo_dark_-_Dana_Foster.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621670feab2095ca85353ad4/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-621670feab2095ca85353ad4/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Y2K",
@@ -6935,7 +6973,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/ca8ce15a-6f58-4602-9d8c-d66bb894d7a2/Y2K.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee72cc271f393d2d9f7098/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62ee72cc271f393d2d9f7098/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Yahoo Finance",
@@ -6944,7 +6982,7 @@
         "logo": "https://provider-static.plex.tv/epg/images/ott_channels/logos/yahoo-finance.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170f01b898490041b49dd1/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170f01b898490041b49dd1/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Z Nation",
@@ -6953,7 +6991,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/0ddae0a9-e4b8-43ed-91f3-e097d8376304/ZNation_logo_1500x1000_light.png.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ce3e009ac0b1441b19ca29/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ce3e009ac0b1441b19ca29/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "ZenLIFE by Stingray",
@@ -6962,7 +7000,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/6e254786-1243-462b-bf6c-75d21b68582d/10423_ZL_Plex_Launch-assets_Channel-Logo_1500x1000_V01-White_-_Sacha_Portaria.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66fd3e25216b603e031725fe/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66fd3e25216b603e031725fe/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Éxitos del Momento",
@@ -6971,7 +7009,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/db81c10a-93cb-4966-ae48-5e3f0f741110/Exitos_Del_momento.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62efba6588a16bb7d6b6fb58/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62efba6588a16bb7d6b6fb58/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Billboard Español TV",
@@ -6980,7 +7018,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/88e0bf85-8b11-4d7d-b67f-5ad11e972b06/Billboard-Espanol-TV_Logo_W.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a3c2c8c14e447db7984cc3a/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a3c2c8c14e447db7984cc3a/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Journy",
@@ -6989,7 +7027,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/cd5391da-8949-47b8-8d27-97c9b426ada0/US_STVP_JOURNY_Logo_1248x400_Colour_ForDarkBG_Primary_-_Brett_ShawRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60a9d105d162b9002d05a60c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60a9d105d162b9002d05a60c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "GrowthDay Network",
@@ -6998,7 +7036,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b2cf9ac1-5403-4568-b5d5-23f4629f4e71/GrowthDay_Network_1500_1000_ALL_WHITE_logo_Plex_-_Dan_Goodman.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a8786c4fa0d0293e2681b7c/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a8786c4fa0d0293e2681b7c/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Powder TV",
@@ -7007,7 +7045,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/103b18dc-d465-46d3-b1e6-7a5a88a5c583/PLEX_1500X1000_PNG_WHT_POWDER_TV_Logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62280162c9f485cc7afe8c46/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-62280162c9f485cc7afe8c46/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Surfer TV",
@@ -7016,7 +7054,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/228a3200-2cb9-44a1-b076-3f12aae543da/PLEX_1500X1000_PNG_tBLUE_RDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6227c215c9f485cc7afe8c41/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6227c215c9f485cc7afe8c41/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "SWAC TV",
@@ -7025,7 +7063,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/45a49345-6902-4cf0-8b4b-d6c6fa73d191/SWAC_WHT_LETTERSLogo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a9512a7f534d4312a699c22/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a9512a7f534d4312a699c22/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Tennis TV",
@@ -7034,7 +7072,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/b0aa99bd-2d1a-4823-a864-7b0fa0d60613/tennis_white_logo.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a90b2b5c0870218305e909b/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6a90b2b5c0870218305e909b/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Nomad Travel",
@@ -7043,7 +7081,7 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/89e028d4-8ec3-4060-973e-e575ecada2c6/NOMAD_Logo_AllWhiteRDX.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6aaa2279083227098739435f/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6aaa2279083227098739435f/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       },
       {
         "name": "Real Emergency",
@@ -7052,7 +7090,16 @@
         "logo": "https://provider-static.plex.tv/epg/cms/production/1ed26798-0ac2-47f2-b0ef-0c1667b2daf2/Real_Emergency_Logo_1500x1000_Jay_Crossman.png",
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6aa9bc040832270987394353/?X-Plex-Token=-3bXDzwMswH8zcgycpzQ"
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6aa9bc040832270987394353/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
+      },
+      {
+        "name": "JAIL en Español",
+        "tvg_id": "643054b1fc3be59477853717-6ab3fcd55364aa2377195429",
+        "tvg_name": "JAIL en Español",
+        "logo": "https://provider-static.plex.tv/epg/cms/production/f117aa7d-1a3e-4d49-aa6a-5df7c97566bb/Jail_channel_logo_4c_1500x1000RDX.png",
+        "group": "Spain",
+        "source": "https://m3u.work/hJiHE3ad.m3u",
+        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6ab3fcd55364aa2377195429/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD"
       }
     ],
     "Serie": [
@@ -7280,7 +7327,7 @@
         "name": "Top Barça",
         "tvg_id": "ES1100001MT",
         "tvg_name": "Top Barça",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1100001MT_20260915T035917SQUARE.png",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1100001MT_20260929T041008SQUARE.png",
         "group": "Deporte",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES1100001MT"
@@ -7549,7 +7596,7 @@
         "name": "SMTOWN",
         "tvg_id": "ES1000001EF",
         "tvg_name": "SMTOWN",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1000001EF_20260916T012158SQUARE.png",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1000001EF_20260929T040926SQUARE.png",
         "group": "Música & ambiente",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES1000001EF"
