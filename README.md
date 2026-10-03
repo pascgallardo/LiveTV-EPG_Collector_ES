@@ -5,9 +5,9 @@ Repositorio de GitHub que recopila, filtra y exporta automáticamente enlaces de
 Fork de [bugsfreeweb/LiveTVCollector](https://github.com/bugsfreeweb/LiveTVCollector), actualmente centrado en **Spain**.
 
 # 📊 Estadísticas del proyecto
-[![GitHub forks](https://img.shields.io/github/forks/pascgallardo/LiveTVCollectorES?logo=forks&style=plastic)](https://github.com/pascgallardo/LiveTVCollectorES/network) [![GitHub stars](https://img.shields.io/github/stars/pascgallardo/LiveTVCollectorES)](https://github.com/pascgallardo/LiveTVCollectorES/stargazers) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-![GitHub issues](https://img.shields.io/github/issues/pascgallardo/LiveTVCollectorES)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/pascgallardo/LiveTVCollectorES)
+[![GitHub forks](https://img.shields.io/github/forks/pascgallardo/LiveTV-EPG_Collector_ES?logo=forks&style=plastic)](https://github.com/pascgallardo/LiveTV-EPG_Collector_ES/network) [![GitHub stars](https://img.shields.io/github/stars/pascgallardo/LiveTV-EPG_Collector_ES)](https://github.com/pascgallardo/LiveTV-EPG_Collector_ES/stargazers) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+![GitHub issues](https://img.shields.io/github/issues/pascgallardo/LiveTV-EPG_Collector_ES)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pascgallardo/LiveTV-EPG_Collector_ES)
 
 ## Herramientas utilizables online:
 <a href="https://gmtv.netlify.app" target="_blank"><img src="https://gmtv.netlify.app/img/gmtv.png" style="width:auto; height:60px" alt="GM TV Player"></a>
@@ -113,13 +113,13 @@ Lista JSON personalizada sin extensión:
 ## Instrucciones de instalación
 
 ### Requisitos
-- Una cuenta de GitHub y un repositorio (`pascgallardo/LiveTVCollectorES`).
+- Una cuenta de GitHub y un repositorio (`pascgallardo/LiveTV-EPG_Collector_ES`).
 - No hace falta ningún entorno local; todo se ejecuta mediante GitHub Actions.
 
 ### Pasos
 1. **Clonar o bifurcar**:
    ```bash
-   git clone https://github.com/pascgallardo/LiveTVCollectorES.git
+   git clone https://github.com/pascgallardo/LiveTV-EPG_Collector_ES.git
    cd LiveTVCollectorES
    ```
 
@@ -249,8 +249,8 @@ Ventana prevista de publicación en hora peninsular española: aproximadamente *
 
 | Ejecución | Disparador | Inicio (UTC) | Inicio (Madrid) | Retraso frente a 16:00Z | Resultado |
 |---|---|---|---|---|---|
-| [#660](https://github.com/pascgallardo/LiveTVCollectorES/actions/runs/36719445370) | `workflow_dispatch` | 2026-09-30 13:07:56 | 15:07:56 | — (manual) | ambos jobs en verde, listas commiteadas como `09ebe56` |
-| [#661](https://github.com/pascgallardo/LiveTVCollectorES/actions/runs/36772879590) | `schedule` | 2026-09-30 20:28:33 | **22:28:33** | **+4 h 28 min** | ambos jobs en verde, listas commiteadas como `d085833` |
+| [#660](https://github.com/pascgallardo/LiveTV-EPG_Collector_ES/actions/runs/36719445370) | `workflow_dispatch` | 2026-09-30 13:07:56 | 15:07:56 | — (manual) | ambos jobs en verde, listas commiteadas como `09ebe56` |
+| [#661](https://github.com/pascgallardo/LiveTV-EPG_Collector_ES/actions/runs/36772879590) | `schedule` | 2026-09-30 20:28:33 | **22:28:33** | **+4 h 28 min** | ambos jobs en verde, listas commiteadas como `d085833` |
 
 #660 confirmó que el proceso funciona de principio a fin sin puerta. #661 fue la primera ejecución programada y por tanto la primera medición real de la franja: un **retraso de 268 min**, frente a una mediana histórica de 103 min para las 16:00Z y un récord de 28 min. Eso la sitúa en el percentil 98.7 de las 200 ejecuciones programadas más recientes, aunque por debajo del peor caso registrado (325 min), así que por sí sola no prueba nada nuevo — es una sola muestra, y la franja se movió en base al panorama de seis meses y no a esta ejecución.
 
