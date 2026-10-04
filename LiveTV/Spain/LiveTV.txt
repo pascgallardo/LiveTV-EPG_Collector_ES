@@ -2,21 +2,21 @@ Group: Generalistas
 Name: La 1
 TvgID: La 1 HD
 TvgName: La 1
-URL: https://rtvelivestream.rtve.es/rtvesec/la1/la1_main.m3u8
+URL: https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/la1_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: La 2
 TvgID: La 2
 TvgName: La 2
-URL: https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
+URL: https://stream.ads.ottera.tv/playlist.m3u8?network_id=15618
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/la2_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Antena 3
 TvgID: Antena 3 HD
 TvgName: Antena 3
-URL: https://atres-live-ssai.atresmedia.com/ad9f78660f547dc39f812cd6e43cd1ceac18d699_ES_1788889192_1788917932/hlsts/live/antena3_usp/antena3_usp.isml/master.m3u8?bpkio_sessionid=10b0c12e163-35607a6e-f7f1-4b4b-ad1c-c25f44047467&bpkio_serviceid=898aef0932f6aaec30e9acb1d721734d&category=all&bk-teardown=0&nw=514966&resp=vast4&prof=514966%3Aatres_html5_live_ssai&csid=atresplayer_desktop&caid=6320dfb038cfb0e4f4ca54715a6a165a7ed1a834493ebf6a&metr=1031&pvrn=81.82477132220167&vprn=89.79489556960993&flag_pre=%2Bplay%2Bsltp%2Bnucr%2Bslcb%2Bemcr%2Baeti%2Bexvt%2Bsync&flag_mid=%2Bplay-sltp%2Bnucr%2Bslcb%2Bemcr%2Baeti%2Bexvt%2Bsync%2Bfbad&mode=live&vdty=variable&vrdu=61&slid_pre=pre&slau_pre=preroll&slid_mid=midLive&tpos=0&ptgt=a&maxd=60&mind=60&slau_mid=Midroll%20Standard&cd=1216%2C811&_fw_gdpr=1&_fw_gdpr_consent=CQqK_EAQqK_EAAHABBENCvFsAP_gAEPgAAiQKTNR_G__bWlr-Tb3abtkeYxP9_hrboQxBgbIkm4FzLvW7JwGx2ETJAyKtiIKmRIAu3DBIQNlHBDURUCgKIAFryDMaE2UoTNKJ6BkiFMRIyNQCExnmwtjeQCZ4up_9kUwmB-t6dr-2dziy4BHn3K5bmS1UJCNIYcsBfvuZBOS89IE9-x8u4v4-EbpEm0eSVF9pEtp4zc6Yls6dBGxt-Tyfb6Pn_f71fBSYAEw0OiAMsiAQIFAQggQAKCsIAKBAEAACQFEBACYMCHIGAC6wiQAgBQABBACAAEGAAIAABIAEIgAgAIBACBAIFAAGABAEBAAQMAAYAKEQCAAEA0CFICCAQLABIjCgMECEABAICWyoQSAIEEcIUiRwCCBERBQAAIgAFQAAgHhYCEkqJGBBAFxBdAAgAAAJBgigIpCTAFFAZAtAWBJwGRpACD5gkSQ4AAA.IKTNR_G__bXlv-Tb36btkeYxf9_hrboQxBgbIsm4FzLvW7JwG32ETJEyKtiIKmRIAu3DBIQNtHBjURUChKIAVrzDsaE2UoTtKJ-BkiHMRYyNQCExnmwtjeQCZ4up_90VwmR-t6dr-2dziy5Bnn3K9buS1UJiNKYctFfvuZBOS8_IU9_x8-4v4-MbpEm0eSVN9tUtt4zc64tv6dpOxt-Tyfb6f__f73fA.f_wACHwAAAAA&_fw_google_audiences=1&_fw_h_referer=https%3A%2F%2Fwww.atresplayer.com&_fw_site_page=https%3A%2F%2Fwww.atresplayer.com%2Fdirectos%2Fantena3%2F&_fw_devicetype=2-Personal%20Computer&_fw_vcid2=07533229733463990463073721499524938584&_fw_playback_method=3&APIFramework=2&_aam_uuid=&userconsent=true&_fw_player_width=1216&_fw_player_height=680&_fw_br_lg=1&_fw_br_prm=1&_fw_br_wd=0&_fw_br_ch=1&_fw_br_nt=0&_fw_br_sf=0&orig=https%3A%2F%2Fwww.atresplayer.com&ssto=8017.000281249536&gpp=&gpp_sid=&_fw_dpr=1.58&cbfn=tv.freewheel.SDK._instanceQueue%5B%27Context_2%27%5D.requestComplete&bk-ml=1.0
+URL: https://live.s2l.workers.dev/hls/antena3
 Logo: https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/antena3_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -37,7 +37,7 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: La Sexta
 TvgID: La Sexta HD
 TvgName: La Sexta
-URL: https://atres-live-ssai.atresmedia.com/f8b8fd39027daf228bce380c3fad936033b8b08b_ES_1788819613_1788848353/hlsts/live/lasexta_usp/lasexta_usp.isml/master.m3u8
+URL: https://live.s2l.workers.dev/hls/lasexta
 Logo: https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/lasexta_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -51,7 +51,7 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Neox
 TvgID: Neox
 TvgName: Neox
-URL: https://atres-live-ssai.atresmedia.com/c852e2183847bdb49592cebca4a1b3aab373b9ef_ES_1788819909_1788848649/hlsts/live/neox_usp/neox_usp.isml/master.m3u8
+URL: https://live.s2l.workers.dev/hls/neox
 Logo: https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/neox_amarillo_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -72,7 +72,7 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Mega
 TvgID: Mega
 TvgName: Mega
-URL: https://atres-live-ssai.atresmedia.com/521997275305dd47ba4f07b66be1ec9848aa1e76_ES_1788818857_1788847597/hlsts/live/mega_usp/mega_usp.isml/master.m3u8
+URL: https://live.s2l.workers.dev/hls/mega
 Logo: https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/mega_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
@@ -116,6 +116,13 @@ TvgID: RNE.TV
 TvgName: RNE para todos
 URL: https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rneparatodos_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: El Toro TV
+TvgID: ElToroTV.TV
+TvgName: El Toro TV
+URL: https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.m3u8
+Logo: https://graph.facebook.com/eltorotv.es/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
@@ -195,13 +202,6 @@ URL: https://rtvelivestream.rtve.es/eventual/gofast/playm20_main.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplaycocina_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Los Conciertos Radio 3
-TvgID: Los Conciertos de Radio 3
-TvgName: Conciertos Radio 3 (RTVE)
-URL: https://rtvelivestream.rtve.es/eventual/gofast/playm11_main.m3u8
-Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayconciertosradio3_cuadrado.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: Al cielo con ella
 TvgID: Al cielo con ella
 TvgName: Al cielo con ella (RTVE)
@@ -237,6 +237,13 @@ URL: https://ztnr.rtve.es/ztnr/6712399.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayenplay_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
+Name: Los Conciertos Radio 3
+TvgID: Los Conciertos de Radio 3
+TvgName: Conciertos Radio 3 (RTVE)
+URL: https://rtvelivestream.rtve.es/eventual/gofast/playm11_main.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayconciertosradio3_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
 Name: Festival de San Sebastián (RTVE)
 TvgID: RTVE_PopUp2.TV
 TvgName: Festival de San Sebastián (RTVE)
@@ -264,12 +271,6 @@ URL: https://fast-channels.atresmedia.com/7d8006a3881bb6d36d7fcec8f8997820d4332b
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/comedia_atresplayer_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: El Hormiguero
-TvgID: El Hormiguero
-URL: https://fast-channels.atresmedia.com/f903abd690456cff8bef97a426a363260c867fb3/648ef5882bfab0e4627e0d61/648ef5882bfab0e4627e0d61.m3u8
-Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/elhormiguero_cuadrado.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: Clásicos atresplayer
 TvgID: Clásicos atresplayer
 TvgName: Clásicos
@@ -282,6 +283,12 @@ TvgID: Aquí no hay quién viva
 TvgName: Aquí no hay quien viva
 URL: https://fast-channels.atresmedia.com/d7bd0adb7616750c83bdf3ad204ce9869f8a81d1/648ef3951756b0e425af83cc/648ef3951756b0e425af83cc.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/aquinohayquienviva_cuadrado.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: El Hormiguero
+TvgID: El Hormiguero
+URL: https://fast-channels.atresmedia.com/f903abd690456cff8bef97a426a363260c867fb3/648ef5882bfab0e4627e0d61/648ef5882bfab0e4627e0d61.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/elhormiguero_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Canal Flooxer
@@ -305,6 +312,13 @@ TvgID: RNE.TV
 TvgName: Radio Nacional
 URL: https://ztnr.rtve.es/ztnr/6982891.m3u8
 Logo: https://graph.facebook.com/radionacionalrne/picture?width=200&height=200
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Radio 3
+TvgID: RNE_Radio3.TV
+TvgName: Radio 3 España
+URL: https://ztnr.rtve.es/ztnr/6982918.m3u8
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/radio3rne_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Radio 5
@@ -349,18 +363,6 @@ URL: https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/realmadridtv_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: like Gecko) Chrome/120.0.0.0 Safari/537.36 VLC/3.0.21 LibVLC/3.0.21" group-title="Deportivos",Deportes por Movistar Plus+
-TvgID: DeportesporMovistarPlusPlus.es@SD
-URL: https://7nyaler.streamhostingcdn.top/stream/18/index.m3u8
-Logo: https://images.seeklogo.com/logo-png/49/1/deportes-por-movistar-plus-logo-png_seeklogo-492841.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: like Gecko) Chrome/120.0.0.0 Safari/537.36 VLC/3.0.21 LibVLC/3.0.21" group-title="Deportivos",Liga de Campeones por Movistar Plus+
-TvgID: LigadeCampeonesporMovistarPlusPlus.es@SD
-URL: https://7nyaler.streamhostingcdn.top/stream/36/index.m3u8
-Logo: https://images.seeklogo.com/logo-png/49/1/liga-de-campeones-por-movistar-plus-logo-png_seeklogo-492840.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 
 Group: Cocina
 Name: Andalucía Cocina
@@ -389,13 +391,6 @@ Name: Love Wine
 TvgID: Love Wine
 URL: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01821-lovetvchannels-lovewinespain-lges/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/lovewine_redondo.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Cocina
-TvgID: PlutoTVCocina.de@ES
-TvgName: Pluto TV Cocina
-URL: https://jmp2.uk/plu-5f1acdaa8ba90f0007d5e760.m3u8
-Logo: https://images.pluto.tv/channels/5f1acdaa8ba90f0007d5e760/colorLogoPNG.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Gusto TV
@@ -431,18 +426,6 @@ URL: https://d1k3vzh2ivy22k.cloudfront.net/Historia.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/historia_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: WaterBear
-TvgID: ESBC170000388
-URL: https://amg01415-waterbearnetwor-waterbear-samsunguk-1h0y8.amagi.tv/playlist/amg01415-waterbearnetwor-waterbear-samsunguk/playlist.m3u8
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC170000388_20241022T051159SQUARE.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: NatureTime
-TvgID: NatureTime
-URL: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01576-blueskyeenterta-naturetimeemea-lges/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA22000102A_20241022T050748SQUARE.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: Love The Planet
 TvgID: Love the Planet
 URL: https://amg01821-lovetv-amg01821c9-rlaxx-gb-10458.playouts.now.amagi.tv/playlist.m3u8
@@ -472,38 +455,6 @@ TvgID: ElMueble.es@SD
 TvgName: El Mueble
 URL: https://jmp2.uk/plu-690dd10a37b131228d76d5b1.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/loveelmueble_redondo.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Mi Casa
-URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992222&ads.xumo_streamId=99992222&ads.channelId=99992222&ads.ad_tag_id=134055&ads.csid=lgchannels_es_indigeniusmicasaspanish_ssai&ads.channelName=indigeniusmicasaspanish_es&ads.xumo_contentName=IndigeniusMiCasaSpanish&ads.xumo_contentId=2160&ads.xumo_providerName=IndigeniusMiCasaSpanish&ads.xumo_providerId=2160&ads.content_category=IAB8&ads.content_genre=Food%20TV&ads.content_language=es&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://image.xumo.com/v1/channels/channel/99992222/600x200.png?type=white_cropped
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: NatureVision
-URL: https://d29h829bjuxghm.cloudfront.net/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99992449&ads.xumo_streamId=99992449&ads.channelId=99992449&ads.inventory_router_id=377&ads.csid=lgchannels_es_naturevision_ssai&ads.channelName=&ads.xumo_contentName=NatureVision&ads.xumo_contentId=133&ads.xumo_providerName=NatureVision&ads.xumo_providerId=133&ads.content_category=IAB1-7&ads.content_genre=lifestyle&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads._fw_content_genre=lifestyle&ads.did=[IFA]&ads.is_lat=[LMT]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.appName=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_version=[APP_VERSION]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://image.xumo.com/v1/channels/channel/99992449/600x200.png?type=white_cropped
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Planeta Salvaje
-URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992502&ads.xumo_streamId=99992502&ads.channelId=99992502&ads.ad_tag_id=134054&ads.csid=lgchannels_es_indigeniusnaturalezaspanish_ssai&ads.channelName=indigeniusnaturalezaspanish_es&ads.xumo_contentName=IndigeniusNaturalezaSpanish&ads.xumo_contentId=2161&ads.xumo_providerName=IndigeniusNaturalezaSpanish&ads.xumo_providerId=2161&ads.content_category=IAB1-7&ads.content_genre=lifestyle&ads.content_language=es&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://image.xumo.com/v1/channels/channel/99992502/600x200.png?type=white_cropped
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Buen Viaje
-URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992224&ads.xumo_streamId=99992224&ads.channelId=99992224&ads.ad_tag_id=134052&ads.csid=lgchannels_es_indigeniusbonviajespanish_ssai&ads.channelName=indigeniusbonviajespanish_es&ads.xumo_contentName=IndigeniusBonViajeSpanish&ads.xumo_contentId=2459&ads.xumo_providerName=IndigeniusBonViajeSpanish&ads.xumo_providerId=2459&ads.content_category=IAB20&ads.content_genre=Travel%20%26%20Lifestyle&ads.content_language=es&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://image.xumo.com/v1/channels/channel/99992224/600x200.png?type=white_cropped
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Travelxp
-URL: https://fa20e8a40a8149a2b7e14b7ed1bd4432.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/LG-es_TravelXP-1/playlist.m3u8
-Logo: http://img.platform.wurl.dev/channel/1613/lg/e2e0ef/LG-Logo-PNG-100x100_v1.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Impacto
-TvgID: PlutoTVImpacto.de@ES
-TvgName: Pluto TV Impacto
-URL: https://jmp2.uk/plu-68adc697116b783a33f99e6c.m3u8
-Logo: https://images.pluto.tv/channels/68adc697116b783a33f99e6c/colorLogoPNG_1760448745473.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Aftershock Mi Extraña Obsesión/Loca Compulsión
@@ -689,18 +640,6 @@ URL: https://cdn-canalextremadura.watchity.net/fast2/master.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/extremaduraplayinfantil_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Anime Vision
-TvgID: Anime Visión
-URL: https://daiconnect.com/live/hls/tvup/rk-animevision/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_channelstore_channel_id=6089&ads_content_categories=IAB1&ads_content_genre=animation&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=animevision_es&ads_rtv_content_id=7129&ads_rtv_content_language=es&ads_streaming_id=eb84d6c2-c151-4f11-be36-57ea7aedc237&ads_tcs_channel_id=6089&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/animevision_cuadrado.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Anime Vision Classics
-TvgID: Anime Visión Classics
-URL: https://daiconnect.com/live/hls/tvup/rk-animevisionclassics/.m3u8?ads_amznbrmid=&ads_amznregion=&ads_amznslots=&ads_app_bundle=&ads_app_store_url=rakuten.tv&ads_app_version=&ads_brand_name=&ads_channelstore_channel_id=6090&ads_content_categories=IAB1&ads_content_genre=animation&ads_content_livestream=0&ads_device_lmt=1&ads_device_make=&ads_device_model=&ads_device_type=web&ads_device_year=&ads_did=&ads_env=prod&ads_extra_eids=&ads_gam_correlator=&ads_gdpr_consent=&ads_ifa_type=&ads_inv_partner_domain=rakuten.tv&ads_market=es&ads_network_name=RakutenTV&ads_opt_out_flag=1&ads_os_language=&ads_placement=1&ads_player_height=&ads_player_width=&ads_pod_type=playerpage_midroll&ads_prodq=1&ads_rating=0&ads_rtv_channel_name=animevision-classics_es&ads_rtv_content_id=7128&ads_rtv_content_language=es&ads_streaming_id=606bb11c-11f6-4755-91e9-220c435ba65a&ads_tcs_channel_id=6090&ads_tivo_devcountry=&ads_tivo_devmakedate=&ads_tivo_mvpd=&ads_tivo_platform=&ads_tivo_usid=&ads_tivo_uxloc=&ads_user_type=visitor
-Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/animevisionclassics_cuadrado.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: EnerGeek Retro
 TvgID: EnergeekRetro.TV
 TvgName: EnerGeek Retro
@@ -715,13 +654,6 @@ URL: https://cl-2.backend.energeek.cl/bkp/egfanweb/index.m3u8?token=TDTCh4nnelsE
 Logo: https://cdn.energeek.cl/logos/EG-Fan-2025_pfp.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Detective Conan
-TvgID: 629a066860ef810008267b70
-TvgName: Detective Conan
-URL: https://jmp2.uk/plu-629a066860ef810008267b70.m3u8
-Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/detectiveconan_cuadrado.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: Pocoyó
 TvgID: Pocoyó
 TvgName: Pocoyó
@@ -734,27 +666,6 @@ TvgID: pitufo-tv
 TvgName: Pitufo TV
 URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5444&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/YJek0f2QAJvIDykEd5e_U3h3kGLUZa_93MvdnXAMDB4.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Bob Esponja
-TvgID: BobEsponja.de@ES
-TvgName: Bob Esponja
-URL: https://jmp2.uk/plu-5f1aca0b4e448e00075e7c5e.m3u8
-Logo: https://images.pluto.tv/channels/5f1aca0b4e448e00075e7c5e/colorLogoPNG.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Kids Classics
-TvgID: PlutoTVKidsClassics.de@ES
-TvgName: Pluto TV Kids Classics
-URL: https://jmp2.uk/plu-609e7e423e9173000706a681.m3u8
-Logo: https://images.pluto.tv/channels/609e7e423e9173000706a681/colorLogoPNG_1750147033956.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Teen
-TvgID: PlutoTVTeen.de@ES
-TvgName: Pluto TV Teen
-URL: https://jmp2.uk/plu-63eb944dc111bc0008fe7021.m3u8
-Logo: https://images.pluto.tv/channels/63eb944dc111bc0008fe7021/colorLogoPNG_1761820520562.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Anime Onegai Action
@@ -784,35 +695,6 @@ Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 
 Group: Films
-Name: Thrillers (Rakuten TV)
-TvgID: Thrillers (Rakuten TV)
-URL: https://thriller-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-6480-playout/master.m3u8?ads.app_bundle=&ads.app_name=LG%20Channel%20Plus&ads.app_store_url=&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.device_lmt=&ads.device_model=&ads.did=&ads.fck=&ads.gdpr_consent=&ads.givn=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.platform=lg_channelplus&ads.pod_type=playerpage_midroll&ads.rtv_channel_name=thriller-rakuten-tv_es&ads.rtv_content_id=6480&ads.rtv_language=es&ads.viewsize=&channel_id=6480&disable_subtitles=true&publishing_platform_id=2&tenant_identifier=rtv
-Logo: https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/8f5f37e8-70f0-4d3d-b8cd-ce5f34d6e916.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Sci-Fi (Rakuten TV)
-TvgID: Sci-Fi (Rakuten TV)
-URL: https://sci-fi-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-6740-playout/master.m3u8?ads.app_bundle=&ads.app_name=LG%20Channel%20Plus&ads.app_store_url=&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.device_lmt=&ads.device_model=&ads.did=&ads.fck=&ads.gdpr_consent=&ads.givn=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.platform=lg_channelplus&ads.pod_type=playerpage_midroll&ads.rtv_channel_name=sci-fi-rakuten-tv_es&ads.rtv_content_id=6740&ads.rtv_language=es&ads.viewsize=&channel_id=6740&disable_subtitles=true&publishing_platform_id=2&tenant_identifier=rtv
-Logo: https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/a0e491eb-8f73-4bd9-a034-0fe9fd6984d7.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Romántico (Rakuten TV)
-TvgID: Películas Románticas (Rakuten TV)
-URL: https://romance-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-6105-playout/master.m3u8?ads.app_bundle=&ads.app_name=LG%20Channel%20Plus&ads.app_store_url=&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.device_lmt=&ads.device_model=&ads.did=&ads.fck=&ads.gdpr_consent=&ads.givn=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.platform=lg_channelplus&ads.pod_type=playerpage_midroll&ads.rtv_channel_name=romance-rakuten-tv_es&ads.rtv_content_id=6105&ads.rtv_language=es&ads.viewsize=&channel_id=6105&disable_subtitles=true&publishing_platform_id=2&tenant_identifier=rtv
-Logo: https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/ec9d1d83-74cc-443d-b2ec-b51b970fe831.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Cine Español (Rakuten TV)
-TvgID: Cine Español (Rakuten TV)
-URL: https://spanish-cinema-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-6196-playout/master.m3u8?ads.app_bundle=&ads.app_name=LG%20Channel%20Plus&ads.app_store_url=&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.device_lmt=&ads.device_model=&ads.did=&ads.fck=&ads.gdpr_consent=&ads.givn=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.platform=lg_channelplus&ads.pod_type=playerpage_midroll&ads.rtv_channel_name=spanish-cinema-rakuten-tv_es&ads.rtv_content_id=6196&ads.rtv_language=es&ads.viewsize=&channel_id=6196&disable_subtitles=true&publishing_platform_id=2&tenant_identifier=rtv
-Logo: https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/294f65bc-fa27-494d-9cb5-423260b7e875.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Grjngo - Películas Del Oeste
-URL: https://7ae9adf49f134692a2be9c23c25d6b46.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/LG-es_GrjngoPeliculasDelOeste-1/playlist.m3u8
-Logo: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo--S3-5cQOxClLIOINqVNN5YvYJzbmEyjAUwBJJzUIjT6xqE-6lxQGHJig1rwQztxKJSAhCBCeFUQv0dYqfGj4eud9QSjI6ty252qdAg_DuirV98e0VORtXXH4Hw6bzCWnueIB4ynTp3bhdP5NaRrG_W3Gkco6ixaLwKeqgW6942RYSUJScqWP4CX/w640-h480-rw/grjngo-logoroku.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: LG 1
 URL: https://stream.ads.ottera.tv/playlist.m3u8?network_id=12783&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]&app_store_url=[APP_STOREURL]&app_name=[APP_NAME]&custom_targeting=html5&custom_4=lg_channels_sp&player_height=720&player_width=1280&content_channel=lg_channels&content_dist_name=lg_channels&device_make=[DEVICE_MAKE]&device_model=[DEVICE_MODEL]&device_os=html5&consent=[GDPR_CONSENT]&gdpr=[GDPR]&gender=not_specified&yob=0&livestream=1&custom_param_0=[DEVICE_MODEL]&custom_param_1=tv&custom_param_2=[DEVICE_MAKE]&custom_param_3=[DEVICE_ID]&custom_param_4=lg_channels&custom_param_5=html5&fck=[FCK]&viewsize=[VIEWSIZE]&nonce=[NONCE]&keep_scte=1
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/lg1_cuadrado.jpg
@@ -929,41 +811,6 @@ URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/f5457ac0-sangre_fria_1920x1080_0.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Pluto TV Psycho
-TvgID: PlutoTVPsycho.de@ES
-TvgName: Pluto TV Psycho
-URL: https://jmp2.uk/plu-65ce480a78df2200131c597b.m3u8
-Logo: https://images.pluto.tv/channels/65ce480a78df2200131c597b/colorLogoPNG.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Gore & Slasher
-TvgID: PlutoTVGoreSlasher.de@ES
-TvgName: Pluto TV Gore & Slasher
-URL: https://jmp2.uk/plu-66b0dfa1d512590008bfa7fd.m3u8
-Logo: https://images.pluto.tv/channels/66b0dfa1d512590008bfa7fd/colorLogoPNG.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Zombies
-TvgID: PlutoTVZombies.de@ES
-TvgName: Pluto TV Zombies
-URL: https://jmp2.uk/plu-65786888b228b7000843ad9a.m3u8
-Logo: https://images.pluto.tv/channels/65786888b228b7000843ad9a/colorLogoPNG.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Cine de autor
-TvgID: PlutoTVCinedeautor.de@ES
-TvgName: Pluto TV Cine de autor
-URL: https://jmp2.uk/plu-60cc807324d60a0007708dc8.m3u8
-Logo: https://images.pluto.tv/channels/60cc807324d60a0007708dc8/colorLogoPNG.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: SensaCine TV x Pluto
-TvgID: SensaCineTVxPluto.de@ES
-TvgName: SensaCine TV x Pluto
-URL: https://jmp2.uk/plu-676e7b4a4bd636000819c6a7.m3u8
-Logo: https://images.pluto.tv/channels/676e7b4a4bd636000819c6a7/colorLogoPNG_1748957675934.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 
 Group: Shows
 Name: Sony One Series Comedia
@@ -982,34 +829,6 @@ Name: Sony One The Blacklist
 TvgID: Sony One The Blacklist
 URL: https://db57ce9cb585443b89cc08f6e6d00a61.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-834-ES-SONYONETHEBLACKLIST-LG_ES/playlist.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/sonyone-blacklist_cuadrado.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: BBC Series
-TvgID: BBC Series
-URL: https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8
-Logo: https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/7ac6b11e-3ef5-48d7-a7b8-2639183af3ab.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Todo Drama
-TvgID: Todo Drama (Rakuten TV)
-URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99993053&ads.xumo_streamId=99993053&ads.channelId=99993053&ads.ad_tag_id=120204&ads.csid=lgchannels_es_tododrama_ssai&ads.channelName=tododrama_es&ads.xumo_contentName=IndigeniusSpanish&ads.xumo_contentId=2054&ads.xumo_providerName=IndigeniusSpanish&ads.xumo_providerId=2054&ads.content_category=IAB1-7&ads.content_genre=television&ads.content_language=es&ads.content_rating=tv-14&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/fd26c4b5-868a-4520-8791-d016d0dd46b8.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: LOL España
-URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99993069&ads.xumo_streamId=99993069&ads.channelId=99993069&ads.ad_tag_id=140650&ads.csid=lgchannels_es_todocomedia_ssai&ads.channelName=todocomedia_es&ads.xumo_contentName=IndigeniusSpanish&ads.xumo_contentId=2054&ads.xumo_providerName=IndigeniusSpanish&ads.xumo_providerId=2054&ads.content_category=IAB1-7&ads.content_genre=television&ads.content_language=es&ads.content_rating=tv-14&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/927977ca-717e-449a-9499-d1364efd3bdb.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Todo Crimen (Rakuten TV)
-TvgID: Todo Crimen (Rakuten TV)
-URL: https://crime-rakuten-tv-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-hls-aes128-rtv-6220-playout/master.m3u8?ads.app_bundle=&ads.app_name=LG%20Channel%20Plus&ads.app_store_url=&ads.app_version=&ads.brand_name=&ads.content_livestream=0&ads.device_lmt=&ads.device_model=&ads.did=&ads.fck=&ads.gdpr_consent=&ads.givn=&ads.ifa_type=&ads.inv_partner_domain=rakuten.tv&ads.market=es&ads.platform=lg_channelplus&ads.pod_type=playerpage_midroll&ads.rtv_channel_name=crime-rakuten-tv_es&ads.rtv_content_id=6220&ads.rtv_language=es&ads.viewsize=&channel_id=6220&disable_subtitles=true&publishing_platform_id=2&tenant_identifier=rtv
-Logo: https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/726cbff5-c46e-48ec-b025-8ac30e53f370.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: FilmRise Sci-Fi
-URL: https://d29h829bjuxghm.cloudfront.net/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99992180&ads.xumo_streamId=99992180&ads.channelId=99992180&ads.inventory_router_id=377&ads.csid=lgchannels_es_filmrisespanish_ssai&ads.channelName=&ads.xumo_contentName=FilmRiseSpanish&ads.xumo_contentId=2701&ads.xumo_providerName=FilmRiseSpanish&ads.xumo_providerId=2701&ads.content_category=IAB1-5&ads.content_genre=movies&ads.content_language=es&ads.content_rating=tv-g&ads.coppa=0&ads._fw_content_genre=movies&ads.did=[IFA]&ads.is_lat=[LMT]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.appName=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_version=[APP_VERSION]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/277ead19-5335-42c8-8c64-31bda5696bb9.jpeg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Runtime Series
@@ -1038,39 +857,6 @@ TvgID: LosAsesinatosdeMidsomer.us@Spain
 TvgName: Los Asesinatos de Midsomer
 URL: https://jmp2.uk/plu-5f1aca8310a30e00074fab92.m3u8
 Logo: https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/358e266b-c9b4-4c44-b9d3-ea4f92c878f1.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: 12 Monkeys
-URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99993070&ads.xumo_streamId=99993070&ads.channelId=99993070&ads.ad_tag_id=154587&ads.csid=lgchannels_es_nbcu12monkeys_ssai&ads.channelName=12monkeys_es&ads.xumo_contentName=NBCUES&ads.xumo_contentId=4342&ads.xumo_providerName=NBCUES&ads.xumo_providerId=4342&ads.content_category=IAB1-7&ads.content_genre=television&ads.content_language=es&ads.content_rating=tv-14&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://image.xumo.com/v1/channels/channel/99993070/600x200.png?type=white_cropped
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Series criminales
-TvgID: PlutoTVSeriescriminales.de@ES
-TvgName: Pluto TV Series criminales
-URL: https://jmp2.uk/plu-65cf6ab58145cb0008129ca8.m3u8
-Logo: https://images.pluto.tv/channels/65cf6ab58145cb0008129ca8/colorLogoPNG.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Pluto TV Comedia made in Spain
-TvgID: PlutoTVComediamadeinSpain.de@ES
-TvgName: Pluto TV Comedia made in Spain
-URL: https://jmp2.uk/plu-5f1abce155a03d0007718834.m3u8
-Logo: https://images.pluto.tv/channels/5f1abce155a03d0007718834/colorLogoPNG.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Comedia a lo bestia de Pluto TV
-TvgID: ComediaalobestiadePlutoTV.de@ES
-TvgName: Comedia a lo bestia de Pluto TV
-URL: https://jmp2.uk/plu-68de3db35fc0afe85de0b843.m3u8
-Logo: https://images.pluto.tv/channels/68de3db35fc0afe85de0b843/colorLogoPNG_1759402494389.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Vaya semanita
-TvgID: Vayasemanita.us@Spain
-TvgName: Vaya semanita
-URL: https://jmp2.uk/plu-5f28009b150b2500077766b8.m3u8
-Logo: https://i.imgur.com/0bCLNUG.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
@@ -1128,51 +914,6 @@ URL: https://cloudvideo.servers10.com:8081/8026/tracks-v1a1/index.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/spektratv_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: that's 70s
-URL: https://amg01076-lightning-amg01076c1-lg-es-3972.playouts.now.amagi.tv/playlist/amg01076-lightning-now70s-lges/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]
-Logo: https://d3bd0tgyk368z1.cloudfront.net/lightning/thats70s/Thats%2070s%20white%20logo%20transpararent%20bg%20400x400.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: that's 80s
-URL: https://amg01076-lightning-amg01076c2-lg-es-4082.playouts.now.amagi.tv/playlist/amg01076-lightning-now80s-lges/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&givn=[NONCE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]
-Logo: https://d3bd0tgyk368z1.cloudfront.net/lightning/thats80s/Thats%2080s%20white%20logo%20transpararent%20bg%20400x200.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: that's 90s00s
-URL: https://amg01076-amg01076c19-lg-es-10331.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01076-lightning-now90s00s-lges/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]
-Logo: https://d3bd0tgyk368z1.cloudfront.net/lightning/thats90s00s/Thats%2090s00s%20white%20logo%20transpararent%20bg%20400x200.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: that's ROCK
-URL: https://amg01076-lightning-amg01076c3-lg-es-10364.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01076-lightning-nowrock-lges/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]
-Logo: https://d3bd0tgyk368z1.cloudfront.net/lightning/thatsrock/Thats%20ROCK%20white%20logo%20transpararent%20bg%20400x200.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: TRACE BRAZUCA
-URL: https://trace-brazuca-lg-es.amagi.tv/hls/amagi_hls_data_tracetvAA-trace-brazuca-lg-es/CDN/master.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]
-Logo: https://d3dj3gmzxw0r4q.cloudfront.net/Trace_Brazuca/LG_Ch_Logo_505x200.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: TRACE LATINA
-URL: https://trace-latina-lg-es.amagi.tv/hls/amagi_hls_data_tracetvAA-trace-latina-lg-es/CDN/master.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]
-Logo: https://d3dj3gmzxw0r4q.cloudfront.net/Trace_Latina/LG_LOGO_TRACELATINA.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: TRACE URBAN
-URL: https://trace-urban-lg-es.amagi.tv/hls/amagi_hls_data_tracetvAA-trace-urban-lg-es/CDN/master.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&ads.givn=[NONCE]&ads.dmake=[DEVICE_MAKE]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]
-Logo: https://d3dj3gmzxw0r4q.cloudfront.net/Trace_Urban/LG_Ch_Logo_510x200.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Qwest TV
-URL: https://qwest-jazz-lg.amagi.tv/hls/amagi_hls_data_qwestAAAA-qwest-jazz-lg/CDN/master.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.coppa=0&ads.targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&givn=[NONCE]
-Logo: https://d13rrbz4t88obi.cloudfront.net/qjazz/NewQwestTV_200x200.png
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Qello Concerts by Stingray
-URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992075&ads.xumo_streamId=99992075&ads.channelId=99992075&ads.ad_tag_id=15708&ads.csid=lgchannels_es_stingrayqelloeu_ssai&ads.channelName=stingrayqelloeu_es&ads.xumo_contentName=StingrayQelloEU&ads.xumo_contentId=3478&ads.xumo_providerName=StingrayQelloEU&ads.xumo_providerId=3478&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
-Logo: https://image.xumo.com/v1/channels/channel/99992075/600x200.png?type=white_cropped
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: Stingray Karaoke
 URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992079&ads.xumo_streamId=99992079&ads.channelId=99992079&ads.ad_tag_id=15718&ads.csid=lgchannels_es_stingraykaraokeeu_ssai&ads.channelName=stingraykaraokeeu_es&ads.xumo_contentName=StingrayKaraokeEU&ads.xumo_contentId=3199&ads.xumo_providerName=StingrayKaraokeEU&ads.xumo_providerId=3199&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
 Logo: https://image.xumo.com/v1/channels/channel/99992079/600x200.png?type=white_cropped
@@ -1226,13 +967,6 @@ Source: https://m3u.work/OI0Q3l.m3u
 Name: Stingray Naturescape
 URL: https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992082&ads.xumo_streamId=99992082&ads.channelId=99992082&ads.ad_tag_id=15717&ads.csid=lgchannels_es_stingraynaturescapeeu_ssai&ads.channelName=stingraynaturescape_it&ads.xumo_contentName=StingrayNaturescapeEU&ads.xumo_contentId=3200&ads.xumo_providerName=StingrayNaturescapeEU&ads.xumo_providerId=3200&ads.content_category=IAB1-2&ads.content_genre=lifestyle&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]
 Logo: https://image.xumo.com/v1/channels/channel/99992082/600x200.png?type=white_cropped
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Radio 3 España
-TvgID: RNE_Radio3.TV
-TvgName: Radio 3 España
-URL: https://ztnr.rtve.es/ztnr/6982918.m3u8
-Logo: https://graph.facebook.com/radio3/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: MTV Originals
@@ -1503,18 +1237,6 @@ URL: https://s2.we4stream.com/listen/loca_90s_/live
 Logo: https://graph.facebook.com/LocaFmOficial/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Loca FM Melodic House
-TvgName: Loca FM Melodic House
-URL: https://s2.we4stream.com/listen/loca_melodic_house/live
-Logo: https://graph.facebook.com/LocaFmOficial/picture?width=200&height=200
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: Loca FM Melodic Techno
-TvgName: Loca FM Melodic Techno
-URL: https://s2.we4stream.com/listen/loca_melodic_techno/live
-Logo: https://graph.facebook.com/LocaFmOficial/picture?width=200&height=200
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: digitalHits FM
 TvgName: digitalHits FM
 URL: https://dhits.frilab.com:8443/dhits
@@ -1729,12 +1451,6 @@ Name: 90 FM
 TvgName: 90 FM
 URL: http://185.23.192.118:8010/;stream.mp3
 Logo: https://pbs.twimg.com/profile_images/2277895539/ypj3m6ggljmfnoy5cqvt_200x200.jpeg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
-Name: La Más FM Almuñécar
-TvgName: La Más FM Almuñécar
-URL: https://streaming2.elitecomunicacion.es:8142/stream
-Logo: https://graph.facebook.com/LAMASFM/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
@@ -2156,6 +1872,13 @@ URL: https://jmp2.uk/plu-6086d3f420fc8500075f8dbf.m3u8
 Logo: https://images.pluto.tv/channels/6086d3f420fc8500075f8dbf/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Pluto TV Cine de autor
+TvgID: 60cc807324d60a0007708dc8
+TvgName: Pluto TV Cine de autor
+URL: https://jmp2.uk/plu-60cc807324d60a0007708dc8.m3u8
+Logo: https://images.pluto.tv/channels/60cc807324d60a0007708dc8/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: Pluto TV Cine Clásico
 TvgID: 61373bb45168fe000773eecd
 TvgName: Pluto TV Cine Clásico
@@ -2184,11 +1907,39 @@ URL: https://jmp2.uk/plu-655b5d865812e80008843bd1.m3u8
 Logo: https://images.pluto.tv/channels/655b5d865812e80008843bd1/colorLogoPNG_1747044085522.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Pluto TV Psycho
+TvgID: 65ce480a78df2200131c597b
+TvgName: Pluto TV Psycho
+URL: https://jmp2.uk/plu-65ce480a78df2200131c597b.m3u8
+Logo: https://images.pluto.tv/channels/65ce480a78df2200131c597b/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: SensaCine TV x Pluto
+TvgID: 676e7b4a4bd636000819c6a7
+TvgName: SensaCine TV x Pluto
+URL: https://jmp2.uk/plu-676e7b4a4bd636000819c6a7.m3u8
+Logo: https://images.pluto.tv/channels/676e7b4a4bd636000819c6a7/colorLogoPNG_1748957675934.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Pluto TV Gore & Slasher
+TvgID: 66b0dfa1d512590008bfa7fd
+TvgName: Pluto TV Gore & Slasher
+URL: https://jmp2.uk/plu-66b0dfa1d512590008bfa7fd.m3u8
+Logo: https://images.pluto.tv/channels/66b0dfa1d512590008bfa7fd/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: Pluto TV Horror
 TvgID: 6267d4d1fb694f0007a6af0e
 TvgName: Pluto TV Horror
 URL: https://jmp2.uk/plu-6267d4d1fb694f0007a6af0e.m3u8
 Logo: https://images.pluto.tv/channels/6267d4d1fb694f0007a6af0e/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Pluto TV Zombies
+TvgID: 65786888b228b7000843ad9a
+TvgName: Pluto TV Zombies
+URL: https://jmp2.uk/plu-65786888b228b7000843ad9a.m3u8
+Logo: https://images.pluto.tv/channels/65786888b228b7000843ad9a/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: Acción - Rakuten TV
@@ -2368,6 +2119,13 @@ Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 
 Group: Ciencia Ficción
+Name: Pluto TV Series criminales
+TvgID: 65cf6ab58145cb0008129ca8
+TvgName: Pluto TV Series criminales
+URL: https://jmp2.uk/plu-65cf6ab58145cb0008129ca8.m3u8
+Logo: https://images.pluto.tv/channels/65cf6ab58145cb0008129ca8/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: Alice Nevers
 TvgID: 66d71f8ee5de930008016f83
 TvgName: Alice Nevers
@@ -2410,6 +2168,27 @@ URL: https://jmp2.uk/plu-6745f0643a61d40008a61510.m3u8
 Logo: https://images.pluto.tv/channels/6745f0643a61d40008a61510/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Pluto TV Comedia made in Spain
+TvgID: 5f1abce155a03d0007718834
+TvgName: Pluto TV Comedia made in Spain
+URL: https://jmp2.uk/plu-5f1abce155a03d0007718834.m3u8
+Logo: https://images.pluto.tv/channels/5f1abce155a03d0007718834/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Comedia a lo bestia de Pluto TV
+TvgID: 68de3db35fc0afe85de0b843
+TvgName: Comedia a lo bestia de Pluto TV
+URL: https://jmp2.uk/plu-68de3db35fc0afe85de0b843.m3u8
+Logo: https://images.pluto.tv/channels/68de3db35fc0afe85de0b843/colorLogoPNG_1759402494389.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Vaya semanita
+TvgID: 5f28009b150b2500077766b8
+TvgName: Vaya semanita
+URL: https://jmp2.uk/plu-5f28009b150b2500077766b8.m3u8
+Logo: https://images.pluto.tv/channels/5f28009b150b2500077766b8/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 
 Group: Infantil
 Name: Pluto TV Anime
@@ -2417,6 +2196,13 @@ TvgID: 608035b8d8705f0007260287
 TvgName: Pluto TV Anime
 URL: https://jmp2.uk/plu-608035b8d8705f0007260287.m3u8
 Logo: https://images.pluto.tv/channels/608035b8d8705f0007260287/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Detective Conan
+TvgID: 629a066860ef810008267b70
+TvgName: Detective Conan
+URL: https://jmp2.uk/plu-629a066860ef810008267b70.m3u8
+Logo: https://images.pluto.tv/channels/629a066860ef810008267b70/colorLogoPNG_1780997960365.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: Lupin
@@ -2468,6 +2254,20 @@ URL: https://jmp2.uk/plu-5f1aab1d29b39600073e243f.m3u8
 Logo: https://images.pluto.tv/channels/5f1aab1d29b39600073e243f/colorLogoPNG_1750751398943.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Bob Esponja
+TvgID: 5f1aca0b4e448e00075e7c5e
+TvgName: Bob Esponja
+URL: https://jmp2.uk/plu-5f1aca0b4e448e00075e7c5e.m3u8
+Logo: https://images.pluto.tv/channels/5f1aca0b4e448e00075e7c5e/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Pluto TV Kids Classics
+TvgID: 609e7e423e9173000706a681
+TvgName: Pluto TV Kids Classics
+URL: https://jmp2.uk/plu-609e7e423e9173000706a681.m3u8
+Logo: https://images.pluto.tv/channels/609e7e423e9173000706a681/colorLogoPNG_1750147033956.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: Rugrats
 TvgID: 610c09219fc0430007a3fce6
 TvgName: Rugrats
@@ -2501,6 +2301,13 @@ TvgID: 63c69c87808b740007599fe1
 TvgName: Érase una vez...
 URL: https://jmp2.uk/plu-63c69c87808b740007599fe1.m3u8
 Logo: https://images.pluto.tv/channels/63c69c87808b740007599fe1/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Pluto TV Teen
+TvgID: 63eb944dc111bc0008fe7021
+TvgName: Pluto TV Teen
+URL: https://jmp2.uk/plu-63eb944dc111bc0008fe7021.m3u8
+Logo: https://images.pluto.tv/channels/63eb944dc111bc0008fe7021/colorLogoPNG_1761820520562.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: El Reino Infantil
@@ -2842,6 +2649,13 @@ TvgID: 65bd0f53dc10a40008e68b96
 TvgName: Pluto TV Gasolina
 URL: https://jmp2.uk/plu-65bd0f53dc10a40008e68b96.m3u8
 Logo: https://images.pluto.tv/channels/65bd0f53dc10a40008e68b96/colorLogoPNG_1747382175081.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Pluto TV Impacto
+TvgID: 68adc697116b783a33f99e6c
+TvgName: Pluto TV Impacto
+URL: https://jmp2.uk/plu-68adc697116b783a33f99e6c.m3u8
+Logo: https://images.pluto.tv/channels/68adc697116b783a33f99e6c/colorLogoPNG_1760448745473.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: The Pet Collective
@@ -3359,6 +3173,13 @@ TvgID: 600ae6a78d801e0007117d21
 TvgName: Pluto TV Animales
 URL: https://jmp2.uk/plu-600ae6a78d801e0007117d21.m3u8
 Logo: https://images.pluto.tv/channels/600ae6a78d801e0007117d21/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Pluto TV Cocina
+TvgID: 5f1acdaa8ba90f0007d5e760
+TvgName: Pluto TV Cocina
+URL: https://jmp2.uk/plu-5f1acdaa8ba90f0007d5e760.m3u8
+Logo: https://images.pluto.tv/channels/5f1acdaa8ba90f0007d5e760/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: Pluto TV Diseño
