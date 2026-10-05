@@ -280,14 +280,6 @@
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayconciertosradio3_cuadrado.jpg"
   },
   {
-    "name": "Festival de San Sebastián (RTVE)",
-    "tvg_id": "RTVE_PopUp2.TV",
-    "tvg_name": "Festival de San Sebastián (RTVE)",
-    "type": "Eventuales",
-    "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm21_main.m3u8",
-    "img": "https://graph.facebook.com/rtveplay/picture?width=200&height=200"
-  },
-  {
     "name": "El club de la comedia",
     "tvg_id": "El club de la comedia",
     "tvg_name": "",
@@ -342,6 +334,14 @@
     "type": "Eventuales",
     "url": "https://live.s2l.workers.dev/hls/flooxer",
     "img": "https://statics.atresmedia.com/atresplayer/assets/mobile/commons/images/channels_renew/sombreado/Flooxer_tiny.png"
+  },
+  {
+    "name": "Segunda estrella (RTVE)",
+    "tvg_id": "RTVE_PopUp2.TV",
+    "tvg_name": "Segunda estrella (RTVE)",
+    "type": "Eventuales",
+    "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm29_main.m3u8",
+    "img": "https://graph.facebook.com/rtveplay/picture?width=200&height=200"
   },
   {
     "name": "24h",
@@ -444,7 +444,7 @@
     "tvg_id": "",
     "tvg_name": "",
     "type": "Cocina",
-    "url": "https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=newkfood&channel_id=newid_002&mpf=20b11cea-39af1962-7af06159&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=9c61e426-a2cc093a-94e6fa1a-d5bc9396&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.deviceModelNumber=[WEBOS_VERSION]",
+    "url": "https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=newkfood&channel_id=newid_002&mpf=20b11cea-39af1962-2513ee45&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=9c61e426-a2cc093a-94e6fa1a-d5bc9396&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.deviceModelNumber=[WEBOS_VERSION]",
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/newkfood_cuadrado.jpg"
   },
   {
@@ -481,11 +481,11 @@
   },
   {
     "name": "Inglés Total",
-    "tvg_id": "",
+    "tvg_id": "Inglés Total",
     "tvg_name": "",
     "type": "Documentales",
     "url": "https://daiconnect.com/live/hls/tvup/lg-inglestotal/.m3u8?DID=[DEVICE_ID]&DAdID=[IFA]&DAdIDT=[IFA_TYPE]&ULAdT=[LMT]&UDNS=[DNS]&UUA=[UA]&UIP=[IP]&UGDPR=[GDPR]&USrGDPRC=[GDPR_CONSENT]&Ucntr=[COUNTRY]&UPP=[US_PRIVACY]&ApStURL=[APP_STOREURL]&ApBdl=[APP_BUNDLE]&ApNm=[APP_NAME]&ApV=[APP_VERSION]&DT=[DEVICE_TYPE]&DMk=[DEVICE_MAKE]&DMdl=[DEVICE_MODEL]&VwSz=[VIEWSIZE]&FCK=[FCK]",
-    "img": "https://media.tvup.cloud/canales/generic_cd_628ce71965774400228da9ae.jpg?t=1658242386?t=1683806449?t=1687212737?width=200&height=200"
+    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/inglestotal_cuadrado.jpg"
   },
   {
     "name": "Historia",
@@ -616,52 +616,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3200001F1_20260804T051214SQUARE.png"
   },
   {
-    "name": "CURIOSITY Now",
-    "tvg_id": "ES1400002CJ",
-    "tvg_name": "CURIOSITY Now",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ES1400002CJ",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1400002CJ_20250527T014616SQUARE.png"
-  },
-  {
-    "name": "Historia y Vida",
-    "tvg_id": "ES12000024R",
-    "tvg_name": "Historia y Vida",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ES12000024R",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES12000024R_20260901T054105SQUARE.png"
-  },
-  {
-    "name": "Ice Pilots",
-    "tvg_id": "ES24000028L",
-    "tvg_name": "Ice Pilots",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ES24000028L",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png"
-  },
-  {
     "name": "Love the Planet",
     "tvg_id": "ESBC4700002TD",
     "tvg_name": "Love the Planet",
     "type": "Documentales",
     "url": "https://jmp2.uk/stvp-ESBC4700002TD",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4700002TD_20250722T005644SQUARE.png"
-  },
-  {
-    "name": "Mayday: Catástrofe Aérea",
-    "tvg_id": "ES2800002MM",
-    "tvg_name": "Mayday: Catástrofe Aérea",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ES2800002MM",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2800002MM_20251013T053451SQUARE.png"
-  },
-  {
-    "name": "NatureTime",
-    "tvg_id": "ESBA22000102A",
-    "tvg_name": "NatureTime",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ESBA22000102A",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA22000102A_20241022T050748SQUARE.png"
   },
   {
     "name": "Planeta Salvaje",
@@ -672,20 +632,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600003FF_20260421T125606SQUARE.png"
   },
   {
-    "name": "Royalworld - Nobleza y Dinastias",
-    "tvg_id": "ESBD1400003QN",
-    "tvg_name": "Royalworld - Nobleza y Dinastias",
+    "name": "NatureTime",
+    "tvg_id": "ESBA22000102A",
+    "tvg_name": "NatureTime",
     "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ESBD1400003QN",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD1400003QN_20260210T035856SQUARE.png"
-  },
-  {
-    "name": "Top Gear",
-    "tvg_id": "ES2700002YP",
-    "tvg_name": "Top Gear",
-    "type": "Documentales",
-    "url": "https://jmp2.uk/stvp-ES2700002YP",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2700002YP_20250805T005824SQUARE.png"
+    "url": "https://jmp2.uk/stvp-ESBA22000102A",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA22000102A_20241022T050748SQUARE.png"
   },
   {
     "name": "WaterBear",
@@ -710,6 +662,54 @@
     "type": "Documentales",
     "url": "https://jmp2.uk/stvp-ES7000088K",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000088K_20260901T054146SQUARE.png"
+  },
+  {
+    "name": "Historia y Vida",
+    "tvg_id": "ES12000024R",
+    "tvg_name": "Historia y Vida",
+    "type": "Documentales",
+    "url": "https://jmp2.uk/stvp-ES12000024R",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES12000024R_20260901T054105SQUARE.png"
+  },
+  {
+    "name": "Ice Pilots",
+    "tvg_id": "ES24000028L",
+    "tvg_name": "Ice Pilots",
+    "type": "Documentales",
+    "url": "https://jmp2.uk/stvp-ES24000028L",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png"
+  },
+  {
+    "name": "Mayday: Catástrofe Aérea",
+    "tvg_id": "ES2800002MM",
+    "tvg_name": "Mayday: Catástrofe Aérea",
+    "type": "Documentales",
+    "url": "https://jmp2.uk/stvp-ES2800002MM",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2800002MM_20251013T053451SQUARE.png"
+  },
+  {
+    "name": "CURIOSITY Now",
+    "tvg_id": "ES1400002CJ",
+    "tvg_name": "CURIOSITY Now",
+    "type": "Documentales",
+    "url": "https://jmp2.uk/stvp-ES1400002CJ",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1400002CJ_20250527T014616SQUARE.png"
+  },
+  {
+    "name": "Royalworld - Nobleza y Dinastias",
+    "tvg_id": "ESBD1400003QN",
+    "tvg_name": "Royalworld - Nobleza y Dinastias",
+    "type": "Documentales",
+    "url": "https://jmp2.uk/stvp-ESBD1400003QN",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD1400003QN_20260210T035856SQUARE.png"
+  },
+  {
+    "name": "Top Gear",
+    "tvg_id": "ES2700002YP",
+    "tvg_name": "Top Gear",
+    "type": "Documentales",
+    "url": "https://jmp2.uk/stvp-ES2700002YP",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2700002YP_20250805T005824SQUARE.png"
   },
   {
     "name": "Clan",
@@ -774,46 +774,6 @@
     "type": "Infantiles",
     "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=5444&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5",
     "img": "https://img.static-ottera.com/prod/run/linear_channel/logo/YJek0f2QAJvIDykEd5e_U3h3kGLUZa_93MvdnXAMDB4.jpg"
-  },
-  {
-    "name": "Anime Onegai Action",
-    "tvg_id": "",
-    "tvg_name": "",
-    "type": "Infantiles",
-    "url": "https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=animeonegaiaction&channel_id=newid_202&mpf=2335c884-39af1962-d13ce60d&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=003cb2ff-3bce06a7-ae78c1b5-4cbe9c0b&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/animeonegai_action_cuadrado.jpg"
-  },
-  {
-    "name": "Anime Onegai Comedy",
-    "tvg_id": "",
-    "tvg_name": "",
-    "type": "Infantiles",
-    "url": "https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=animeonegaicomedy&channel_id=newid_214&mpf=d34d5cf0-39af1962-c59c7535&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=630dbac6-86a0f716-ef4860aa-f1d06dba&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/animeonegai_comedy_cuadrado.jpg"
-  },
-  {
-    "name": "Anime Onegai Drama",
-    "tvg_id": "",
-    "tvg_name": "",
-    "type": "Infantiles",
-    "url": "https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=animeonegaidrama&channel_id=newid_213&mpf=4d29c953-39af1962-d0e330d9&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=6d077c66-7c9d0441-39688bf8-0bed9eed&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/animeonegai_drama_cuadrado.jpg"
-  },
-  {
-    "name": "Anime Onegai SCI-FI",
-    "tvg_id": "",
-    "tvg_name": "",
-    "type": "Infantiles",
-    "url": "https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=animeonegaisci-fi&channel_id=newid_215&mpf=a44a6c66-39af1962-a8421679&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=241e4c3d-29e46551-80559977-5e94fffd&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/animeonegai_sci-fi_cuadrado.jpg"
-  },
-  {
-    "name": "Anime Onegai Sports",
-    "tvg_id": "",
-    "tvg_name": "",
-    "type": "Infantiles",
-    "url": "https://ads.its-newid.net/api/manifest.m3u8?tp=lg_channels&channel_name=animeonegaisports&channel_id=newid_212&mpf=3a2ef9c5-39af1962-b3553a43&apikey=48230e6b-1cea0097-15975f93-39af1962&auth=2a148a9d-d3d99606-56757225-a4a90caa&ads.live=[CONTENT_LIVE]&ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.us_privacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/animeonegai_sports_cuadrado.jpg"
   },
   {
     "name": "LG 1",
@@ -904,14 +864,6 @@
     "img": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_romance_16x9.jpg"
   },
   {
-    "name": "Runtime Thriller-Terror",
-    "tvg_id": "Runtime Thriller-Terror",
-    "tvg_name": "Runtime Thriller",
-    "type": "Films",
-    "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6120&avod=1&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=es&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5",
-    "img": "https://img.static-ottera.com/prod/run/linear_channel/logo/runtime_thriller_16x9.jpg"
-  },
-  {
     "name": "Runtime Clásicos",
     "tvg_id": "RunTime Clásicos",
     "tvg_name": "Runtime Clásicos",
@@ -924,7 +876,7 @@
     "tvg_id": "MyTime Movie Network (Rakuten TV)",
     "tvg_name": "MyTime Movie Network",
     "type": "Films",
-    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00500-studiocitypictu-mytimespanish-runtimees/playlist.m3u8?ip=79.158.28.175&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20Chrome%2F133%20Safari%2F537.36&dnt=0&app_bundle=com.ammo.runtime.tv.html5&app_name=Runtime&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&content_episode=&content_season=&content_livestream=0&channel_name=run&network_name=&did=0d5d83bc42ef2307f3e44ff5283a4f5e&us_privacy=1NNN&gdpr_consent=0&gdpr=1&lmt=0&device_make=&device_model=",
+    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00500-studiocitypictu-mytimespanish-runtimees/playlist.m3u8?ip=83.50.115.160&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20Chrome%2F133%20Safari%2F537.36&dnt=0&app_bundle=com.ammo.runtime.tv.html5&app_name=Runtime&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&content_episode=&content_season=&content_livestream=0&channel_name=run&network_name=&did=e9efef91879a6d667956dc70155dec35&us_privacy=1NNN&gdpr_consent=0&gdpr=1&lmt=0&device_make=&device_model=",
     "img": "https://img.static-ottera.com/prod/run/linear_channel/logo/YECKAbCgFevzZ29V9z63YYJBzO_2PHeK42PRTrTirgg.jpg"
   },
   {
@@ -1085,7 +1037,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992079&ads.xumo_streamId=99992079&ads.channelId=99992079&ads.ad_tag_id=15718&ads.csid=lgchannels_es_stingraykaraokeeu_ssai&ads.channelName=stingraykaraokeeu_es&ads.xumo_contentName=StingrayKaraokeEU&ads.xumo_contentId=3199&ads.xumo_providerName=StingrayKaraokeEU&ads.xumo_providerId=3199&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992079/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992079/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Exitos del Momento",
@@ -1093,7 +1045,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992455&ads.xumo_streamId=99992455&ads.channelId=99992455&ads.ad_tag_id=15714&ads.csid=lgchannels_es_stingraylatinpop_ssai&ads.channelName=stingraylatinpop_it&ads.xumo_contentName=StingrayExitosdelMomento&ads.xumo_contentId=3196&ads.xumo_providerName=StingrayExitosdelMomento&ads.xumo_providerId=3196&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=es&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992455/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992455/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Greatest Hits",
@@ -1101,7 +1053,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992457&ads.xumo_streamId=99992457&ads.channelId=99992457&ads.ad_tag_id=15713&ads.csid=lgchannels_es_stingraygreatesthits_ssai&ads.channelName=stingraygreatesthits_es&ads.xumo_contentName=StingrayGreatestHits&ads.xumo_contentId=1857&ads.xumo_providerName=StingrayGreatestHits&ads.xumo_providerId=1857&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992457/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992457/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Hit List",
@@ -1109,7 +1061,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992456&ads.xumo_streamId=99992456&ads.channelId=99992456&ads.ad_tag_id=15712&ads.csid=lgchannels_es_stingrayhitlist_ssai&ads.channelName=stingrayhitlist_it&ads.xumo_contentName=StingrayHitlist&ads.xumo_contentId=1858&ads.xumo_providerName=StingrayHitlist&ads.xumo_providerId=1858&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992456/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992456/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Remember the 80s",
@@ -1117,7 +1069,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992461&ads.xumo_streamId=99992461&ads.channelId=99992461&ads.ad_tag_id=15707&ads.csid=lgchannels_es_stingrayeverything80s_ssai&ads.channelName=stingrayeverything80s_mx&ads.xumo_contentName=StingrayEverything80s&ads.xumo_contentId=2184&ads.xumo_providerName=StingrayEverything80s&ads.xumo_providerId=2184&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992461/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992461/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Classic Rock",
@@ -1125,7 +1077,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992459&ads.xumo_streamId=99992459&ads.channelId=99992459&ads.ad_tag_id=15723&ads.csid=lgchannels_es_stingrayclassicrock_ssai&ads.channelName=stingrayclassicrock_es&ads.xumo_contentName=StingrayClassicRock&ads.xumo_contentId=1856&ads.xumo_providerName=StingrayClassicRock&ads.xumo_providerId=1856&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992459/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992459/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Pop Adult",
@@ -1133,7 +1085,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992453&ads.xumo_streamId=99992453&ads.channelId=99992453&ads.ad_tag_id=15716&ads.csid=lgchannels_es_stingraypopadult_ssai&ads.channelName=stingraypopadult_it&ads.xumo_contentName=StingrayPopAdult&ads.xumo_contentId=3197&ads.xumo_providerName=StingrayPopAdult&ads.xumo_providerId=3197&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992453/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992453/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Hip Hop",
@@ -1141,7 +1093,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992454&ads.xumo_streamId=99992454&ads.channelId=99992454&ads.ad_tag_id=15715&ads.csid=lgchannels_es_stingrayhiphop_ssai&ads.channelName=stingrayhiphop_it&ads.xumo_contentName=StingrayHipHop&ads.xumo_contentId=3195&ads.xumo_providerName=StingrayHipHop&ads.xumo_providerId=3195&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992454/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992454/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Soul Storm",
@@ -1149,7 +1101,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992460&ads.xumo_streamId=99992460&ads.channelId=99992460&ads.ad_tag_id=15710&ads.csid=lgchannels_es_stingraysoulstorm_ssai&ads.channelName=stingraysoulstorm_it&ads.xumo_contentName=StingraySoulStorm&ads.xumo_contentId=1860&ads.xumo_providerName=StingraySoulStorm&ads.xumo_providerId=1860&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992460/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992460/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Hot Country",
@@ -1157,7 +1109,7 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992458&ads.xumo_streamId=99992458&ads.channelId=99992458&ads.ad_tag_id=15711&ads.csid=lgchannels_es_stingrayhotcountry_ssai&ads.channelName=stingrayhotcountry_it&ads.xumo_contentName=StingrayHotCountry&ads.xumo_contentId=1859&ads.xumo_providerName=StingrayHotCountry&ads.xumo_providerId=1859&ads.content_category=IAB1-6&ads.content_genre=music&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992458/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992458/400x200.png?type=white_cropped"
   },
   {
     "name": "Stingray Naturescape",
@@ -1165,7 +1117,15 @@
     "tvg_name": "",
     "type": "Musicales",
     "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992082&ads.xumo_streamId=99992082&ads.channelId=99992082&ads.ad_tag_id=15717&ads.csid=lgchannels_es_stingraynaturescapeeu_ssai&ads.channelName=stingraynaturescape_it&ads.xumo_contentName=StingrayNaturescapeEU&ads.xumo_contentId=3200&ads.xumo_providerName=StingrayNaturescapeEU&ads.xumo_providerId=3200&ads.content_category=IAB1-2&ads.content_genre=lifestyle&ads.content_language=en&ads.content_rating=tv-g&ads.coppa=0&ads.livestream=0&ads.prodq=1&ads.did=[IFA]&ads.lmt=[LMT]&ads.dnt=[DNS]&ads.us_privacy=[US_PRIVACY]&ads.gdpr=[GDPR]&ads.gdpr_consent=[GDPR_CONSENT]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.country=[COUNTRY]&ads.fck=[FCK]&ads.viewsize=[VIEWSIZE]&ads.givn=[NONCE]&ads.app_name=[APP_NAME]&ads.app_bundle=[APP_BUNDLE]&ads.app_storeurl=[APP_STOREURL]",
-    "img": "https://image.xumo.com/v1/channels/channel/99992082/600x200.png?type=white_cropped"
+    "img": "https://image.xumo.com/v1/channels/channel/99992082/400x200.png?type=white_cropped"
+  },
+  {
+    "name": "Retro Music TV Chequia",
+    "tvg_id": "",
+    "tvg_name": "Retro Music TV Chequia",
+    "type": "Musicales",
+    "url": "https://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8",
+    "img": "https://graph.facebook.com/retromusic/picture?width=200&height=200"
   },
   {
     "name": "MTV Originals",
@@ -1292,7 +1252,7 @@
     "tvg_id": "Cadena100.Radio",
     "tvg_name": "Cadena 100",
     "type": "Radio_Musicales",
-    "url": "https://cadena100-cope.flumotion.com/chunks.m3u8",
+    "url": "https://cadena100-cope.flumotion.com/playlist.m3u8",
     "img": "https://graph.facebook.com/CADENA100/picture?width=200&height=200"
   },
   {
@@ -1864,14 +1824,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300034BT_20260818T050609SQUARE.png"
   },
   {
-    "name": "Al Jazeera",
-    "tvg_id": "ES2300004XW",
-    "tvg_name": "Al Jazeera",
-    "type": "Noticias",
-    "url": "https://jmp2.uk/stvp-ES2300004XW",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2300004XW_20251118T015346SQUARE.png"
-  },
-  {
     "name": "Bloomberg TV+",
     "tvg_id": "ESBA3300024AJ",
     "tvg_name": "Bloomberg TV+",
@@ -2312,166 +2264,6 @@
     "img": "https://images.pluto.tv/channels/65786888b228b7000843ad9a/colorLogoPNG.png"
   },
   {
-    "name": "Acción - Rakuten TV",
-    "tvg_id": "ES2600004BD",
-    "tvg_name": "Acción - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES2600004BD",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600004BD_20260707T050928SQUARE.png"
-  },
-  {
-    "name": "Action Movie Channel",
-    "tvg_id": "ESBC40000248",
-    "tvg_name": "Action Movie Channel",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBC40000248",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC40000248_20250107T024921SQUARE.png"
-  },
-  {
-    "name": "Bigtime - Películas Gratis",
-    "tvg_id": "ESBC2700003T8",
-    "tvg_name": "Bigtime - Películas Gratis",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBC2700003T8",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700003T8_20241022T050457SQUARE.png"
-  },
-  {
-    "name": "Cine Español - Rakuten TV",
-    "tvg_id": "ES3000008O8",
-    "tvg_name": "Cine Español - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES3000008O8",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3000008O8_20241022T050508SQUARE.png"
-  },
-  {
-    "name": "Cine Feel Good – Verdi TV",
-    "tvg_id": "ESBC2700012RP",
-    "tvg_name": "Cine Feel Good – Verdi TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBC2700012RP",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700012RP_20241022T050510SQUARE.png"
-  },
-  {
-    "name": "Cine Friki",
-    "tvg_id": "ESBD800001RJ",
-    "tvg_name": "Cine Friki",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBD800001RJ",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD800001RJ_20260929T040945SQUARE.png"
-  },
-  {
-    "name": "Cine Western",
-    "tvg_id": "ES2300005G7",
-    "tvg_name": "Cine Western",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES2300005G7",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2300005G7_20260127T040149SQUARE.png"
-  },
-  {
-    "name": "Cines Verdi TV",
-    "tvg_id": "ESBC2700011AZ",
-    "tvg_name": "Cines Verdi TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBC2700011AZ",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700011AZ_20241022T050514SQUARE.png"
-  },
-  {
-    "name": "Comedia - Rakuten TV",
-    "tvg_id": "ES260000700",
-    "tvg_name": "Comedia - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES260000700",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES260000700_20241022T051222SQUARE.png"
-  },
-  {
-    "name": "En Familia - Rakuten TV",
-    "tvg_id": "ES260001081",
-    "tvg_name": "En Familia - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES260001081",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES260001081_20251230T030900SQUARE.png"
-  },
-  {
-    "name": "FreeTV Clásico",
-    "tvg_id": "ES500008IU",
-    "tvg_name": "FreeTV Clásico",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES500008IU",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES500008IU_20260901T054052SQUARE.png"
-  },
-  {
-    "name": "Grjngo - Películas Del Oeste",
-    "tvg_id": "ESBC2700002LO",
-    "tvg_name": "Grjngo - Películas Del Oeste",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ESBC2700002LO",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700002LO_20260310T031628SQUARE.png"
-  },
-  {
-    "name": "Moviesphere",
-    "tvg_id": "ES4200001MR",
-    "tvg_name": "Moviesphere",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES4200001MR",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4200001MR_20260929T040952SQUARE.png"
-  },
-  {
-    "name": "NEW K-MOVIES",
-    "tvg_id": "ES170000433",
-    "tvg_name": "NEW K-MOVIES",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES170000433",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES170000433_20251013T053454SQUARE.png"
-  },
-  {
-    "name": "Películas de Drama - Rakuten TV",
-    "tvg_id": "ES2600003UM",
-    "tvg_name": "Películas de Drama - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES2600003UM",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600003UM_20260707T051011SQUARE.png"
-  },
-  {
-    "name": "Películas Románticas - Rakuten TV",
-    "tvg_id": "ES2600012C9",
-    "tvg_name": "Películas Románticas - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES2600012C9",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600012C9_20241022T050603SQUARE.png"
-  },
-  {
-    "name": "Películas Top - Rakuten TV",
-    "tvg_id": "ES2600013H4",
-    "tvg_name": "Películas Top - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES2600013H4",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600013H4_20241022T050605SQUARE.png"
-  },
-  {
-    "name": "Planeta de Cine",
-    "tvg_id": "ES2800001G7",
-    "tvg_name": "Planeta de Cine",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES2800001G7",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2800001G7_20250624T022314SQUARE.png"
-  },
-  {
-    "name": "RTVE Somos Cine",
-    "tvg_id": "ES33000058B",
-    "tvg_name": "RTVE Somos Cine",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES33000058B",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000058B_20260915T035838SQUARE.png"
-  },
-  {
-    "name": "Sci-Fi - Rakuten TV",
-    "tvg_id": "ES500004NO",
-    "tvg_name": "Sci-Fi - Rakuten TV",
-    "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES500004NO",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES500004NO_20250408T021816SQUARE.png"
-  },
-  {
     "name": "Sony One Hits Acción",
     "tvg_id": "ES300006QJ",
     "tvg_name": "Sony One Hits Acción",
@@ -2488,12 +2280,52 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300007KS_20260421T123731SQUARE.png"
   },
   {
-    "name": "Thrillers - Rakuten TV",
-    "tvg_id": "ES4100002WB",
-    "tvg_name": "Thrillers - Rakuten TV",
+    "name": "Moviesphere",
+    "tvg_id": "ES4200001MR",
+    "tvg_name": "Moviesphere",
     "type": "Cine",
-    "url": "https://jmp2.uk/stvp-ES4100002WB",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4100002WB_20251125T101442SQUARE.png"
+    "url": "https://jmp2.uk/stvp-ES4200001MR",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4200001MR_20260929T040952SQUARE.png"
+  },
+  {
+    "name": "Action Movie Channel",
+    "tvg_id": "ESBC40000248",
+    "tvg_name": "Action Movie Channel",
+    "type": "Cine",
+    "url": "https://jmp2.uk/stvp-ESBC40000248",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC40000248_20250107T024921SQUARE.png"
+  },
+  {
+    "name": "Planeta de Cine",
+    "tvg_id": "ES2800001G7",
+    "tvg_name": "Planeta de Cine",
+    "type": "Cine",
+    "url": "https://jmp2.uk/stvp-ES2800001G7",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2800001G7_20250624T022314SQUARE.png"
+  },
+  {
+    "name": "Bigtime - Películas Gratis",
+    "tvg_id": "ESBC2700003T8",
+    "tvg_name": "Bigtime - Películas Gratis",
+    "type": "Cine",
+    "url": "https://jmp2.uk/stvp-ESBC2700003T8",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700003T8_20241022T050457SQUARE.png"
+  },
+  {
+    "name": "Grjngo - Películas Del Oeste",
+    "tvg_id": "ESBC2700002LO",
+    "tvg_name": "Grjngo - Películas Del Oeste",
+    "type": "Cine",
+    "url": "https://jmp2.uk/stvp-ESBC2700002LO",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700002LO_20260310T031628SQUARE.png"
+  },
+  {
+    "name": "FreeTV Clásico",
+    "tvg_id": "ES500008IU",
+    "tvg_name": "FreeTV Clásico",
+    "type": "Cine",
+    "url": "https://jmp2.uk/stvp-ES500008IU",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES500008IU_20260901T054052SQUARE.png"
   },
   {
     "name": "Todo Pasión",
@@ -2502,6 +2334,14 @@
     "type": "Cine",
     "url": "https://jmp2.uk/stvp-ES900002ZD",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES900002ZD_20250422T103210SQUARE.png"
+  },
+  {
+    "name": "NEW K-MOVIES",
+    "tvg_id": "ES170000433",
+    "tvg_name": "NEW K-MOVIES",
+    "type": "Cine",
+    "url": "https://jmp2.uk/stvp-ES170000433",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES170000433_20251013T053454SQUARE.png"
   },
   {
     "name": "Trailers",
@@ -2920,6 +2760,14 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800005C5_20241022T050710SQUARE.png"
   },
   {
+    "name": "LOL España",
+    "tvg_id": "ES1600006S8",
+    "tvg_name": "LOL España",
+    "type": "Comedia",
+    "url": "https://jmp2.uk/stvp-ES1600006S8",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600006S8_20260721T035558SQUARE.png"
+  },
+  {
     "name": "Just For Laughs",
     "tvg_id": "ESBC2700008SK",
     "tvg_name": "Just For Laughs",
@@ -2934,14 +2782,6 @@
     "type": "Comedia",
     "url": "https://jmp2.uk/stvp-ESAJ3800003LX",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png"
-  },
-  {
-    "name": "LOL España",
-    "tvg_id": "ES1600006S8",
-    "tvg_name": "LOL España",
-    "type": "Comedia",
-    "url": "https://jmp2.uk/stvp-ES1600006S8",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600006S8_20260721T035558SQUARE.png"
   },
   {
     "name": "Unidad de investigación",
@@ -3144,14 +2984,6 @@
     "img": "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/e481c9fa-07c8-4345-8638-47527a0b807b.jpeg"
   },
   {
-    "name": "2M",
-    "tvg_id": "ES4700001VS",
-    "tvg_name": "2M",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES4700001VS",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4700001VS_20260224T030748SQUARE.png"
-  },
-  {
     "name": "Anime Visión",
     "tvg_id": "ES300029LP",
     "tvg_name": "Anime Visión",
@@ -3176,6 +3008,30 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1400001T8_20241106T142204SQUARE.png"
   },
   {
+    "name": "Inazuma Eleven",
+    "tvg_id": "ES2100003VE",
+    "tvg_name": "Inazuma Eleven",
+    "type": "Entretenimiento",
+    "url": "https://jmp2.uk/stvp-ES2100003VE",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2100003VE_20260818T050632SQUARE.png"
+  },
+  {
+    "name": "Yu-Gi-Oh!",
+    "tvg_id": "ES7000056Z",
+    "tvg_name": "Yu-Gi-Oh!",
+    "type": "Entretenimiento",
+    "url": "https://jmp2.uk/stvp-ES7000056Z",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000056Z_20250408T021823SQUARE.png"
+  },
+  {
+    "name": "BBC Lifestyle",
+    "tvg_id": "ES18000040D",
+    "tvg_name": "BBC Lifestyle",
+    "type": "Entretenimiento",
+    "url": "https://jmp2.uk/stvp-ES18000040D",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES18000040D_20260929T040939SQUARE.png"
+  },
+  {
     "name": "Chicas Guapas TV",
     "tvg_id": "ES4300001K6",
     "tvg_name": "Chicas Guapas TV",
@@ -3184,52 +3040,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4300001K6_20251125T101421SQUARE.png"
   },
   {
-    "name": "Dhar Mann TV",
-    "tvg_id": "ES3800002V5",
-    "tvg_name": "Dhar Mann TV",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES3800002V5",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3800002V5_20251111T011933SQUARE.png"
-  },
-  {
-    "name": "Encantador de Perros",
-    "tvg_id": "ESBA3300033PL",
-    "tvg_name": "Encantador de Perros",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ESBA3300033PL",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA3300033PL_20241022T050532SQUARE.png"
-  },
-  {
-    "name": "Estilo y Vida – Rakuten TV",
-    "tvg_id": "ES26000068D",
-    "tvg_name": "Estilo y Vida – Rakuten TV",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES26000068D",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES26000068D_20260707T050942SQUARE.png"
-  },
-  {
-    "name": "H2O & Friends",
-    "tvg_id": "ES1200005Z1",
-    "tvg_name": "H2O & Friends",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES1200005Z1",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1200005Z1_20260505T085421SQUARE.png"
-  },
-  {
     "name": "Ideas en 5 Minutos",
     "tvg_id": "ESBC3500002PW",
     "tvg_name": "Ideas en 5 Minutos",
     "type": "Entretenimiento",
     "url": "https://jmp2.uk/stvp-ESBC3500002PW",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC3500002PW_20241022T051025SQUARE.png"
-  },
-  {
-    "name": "Mark Rober TV",
-    "tvg_id": "ES4100001XD",
-    "tvg_name": "Mark Rober TV",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES4100001XD",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4100001XD_20251111T011941SQUARE.png"
   },
   {
     "name": "Mi Casa",
@@ -3248,14 +3064,6 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800006TT_20241106T142236SQUARE.png"
   },
   {
-    "name": "RTVE Saber y Ganar",
-    "tvg_id": "ES3300004P0",
-    "tvg_name": "RTVE Saber y Ganar",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES3300004P0",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3300004P0_20250819T033238SQUARE.png"
-  },
-  {
     "name": "Sony One Shark Tank",
     "tvg_id": "ES300004C9",
     "tvg_name": "Sony One Shark Tank",
@@ -3272,12 +3080,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4700003RJ_20241106T142207SQUARE.png"
   },
   {
-    "name": "Telemadrid",
-    "tvg_id": "ES300030ZT",
-    "tvg_name": "Telemadrid",
+    "name": "H2O & Friends",
+    "tvg_id": "ES1200005Z1",
+    "tvg_name": "H2O & Friends",
     "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES300030ZT",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300030ZT_20260929T041000SQUARE.png"
+    "url": "https://jmp2.uk/stvp-ES1200005Z1",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1200005Z1_20260505T085421SQUARE.png"
   },
   {
     "name": "Xataka",
@@ -3288,52 +3096,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES42000022E_20251202T002550SQUARE.png"
   },
   {
-    "name": "Yu-Gi-Oh!",
-    "tvg_id": "ES7000056Z",
-    "tvg_name": "Yu-Gi-Oh!",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES7000056Z",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000056Z_20250408T021823SQUARE.png"
-  },
-  {
     "name": "¡Hola! Play",
     "tvg_id": "ES26000025M",
     "tvg_name": "¡Hola! Play",
     "type": "Entretenimiento",
     "url": "https://jmp2.uk/stvp-ES26000025M",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES26000025M_20241210T052650SQUARE.png"
-  },
-  {
-    "name": "Quantum Makers",
-    "tvg_id": "ES120000498",
-    "tvg_name": "Quantum Makers",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES120000498",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES120000498_20260707T051019SQUARE.png"
-  },
-  {
-    "name": "CJ ENM K-Novela en Español",
-    "tvg_id": "ES1700003C6",
-    "tvg_name": "CJ ENM K-Novela en Español",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES1700003C6",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1700003C6_20260915T035734SQUARE.png"
-  },
-  {
-    "name": "Inazuma Eleven",
-    "tvg_id": "ES2100003VE",
-    "tvg_name": "Inazuma Eleven",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES2100003VE",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2100003VE_20260818T050632SQUARE.png"
-  },
-  {
-    "name": "BBC Lifestyle",
-    "tvg_id": "ES18000040D",
-    "tvg_name": "BBC Lifestyle",
-    "type": "Entretenimiento",
-    "url": "https://jmp2.uk/stvp-ES18000040D",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES18000040D_20260929T040939SQUARE.png"
   },
   {
     "name": "MTV Catfish TV Show",
@@ -4376,6 +4144,22 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/b0328822-b149-4524-ad89-1c87c2543268/FilmRise_CheatersEnEspanol_Logo_ColorRDX.png"
   },
   {
+    "name": "Cine Friki",
+    "tvg_id": "643054b1fc3be59477853717-6490e17c18a55242eea95991",
+    "tvg_name": "Cine Friki",
+    "type": "Spain",
+    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6490e17c18a55242eea95991/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD",
+    "img": "https://provider-static.plex.tv/epg/cms/production/1e8b55ca-ef52-42c6-8390-45b1561f3d15/CINE_FRIKI_-_Logo_blanc_1500x1000_-_JC_DERSOIR.png"
+  },
+  {
+    "name": "Cine Western",
+    "tvg_id": "643054b1fc3be59477853717-66ea174c9502c5778b828d47",
+    "tvg_name": "Cine Western",
+    "type": "Spain",
+    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ea174c9502c5778b828d47/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD",
+    "img": "https://provider-static.plex.tv/epg/cms/production/1be934c5-1520-439c-8b0d-52a4f7716311/CinewesternWhite_LogoRDX.png"
+  },
+  {
     "name": "CINEPRIDE",
     "tvg_id": "643054b1fc3be59477853717-62167144ab2095ca85353ad6",
     "tvg_name": "CINEPRIDE",
@@ -5288,6 +5072,14 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/b69028cf-3d86-4e92-a816-e5f4dfff47e7/Runtime_ES_Ana_y_Los_7_Dark_Mode_Logordx.png"
   },
   {
+    "name": "Runtime Thriller",
+    "tvg_id": "643054b1fc3be59477853717-6683fcdf702b9db9f8177252",
+    "tvg_name": "Runtime Thriller",
+    "type": "Spain",
+    "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6683fcdf702b9db9f8177252/?X-Plex-Token=XuzArZ_xBsGg6WAPWtuD",
+    "img": "https://provider-static.plex.tv/epg/cms/production/0a1ddcc9-f356-4dec-9d9f-f019d4f24004/Runtime_ES_Thriller_Dark_Mode_Logordx.png"
+  },
+  {
     "name": "Shark Tank",
     "tvg_id": "643054b1fc3be59477853717-6922366b50fe592fd6d5b7ec",
     "tvg_name": "Shark Tank",
@@ -5984,68 +5776,12 @@
     "img": "https://provider-static.plex.tv/epg/cms/production/f117aa7d-1a3e-4d49-aa6a-5df7c97566bb/Jail_channel_logo_4c_1500x1000RDX.png"
   },
   {
-    "name": "Cuéntame cómo pasó",
-    "tvg_id": "ES400002P5",
-    "tvg_name": "Cuéntame cómo pasó",
+    "name": "Sony One Éxitos",
+    "tvg_id": "ES300003D4",
+    "tvg_name": "Sony One Éxitos",
     "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES400002P5",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES400002P5_20260707T050933SQUARE.png"
-  },
-  {
-    "name": "K-Drama+",
-    "tvg_id": "ESBD4100001DU",
-    "tvg_name": "K-Drama+",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ESBD4100001DU",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD4100001DU_20260707T050914SQUARE.png"
-  },
-  {
-    "name": "Los Gipsy Kings - Rakuten TV",
-    "tvg_id": "ES2900002JG",
-    "tvg_name": "Los Gipsy Kings - Rakuten TV",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES2900002JG",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2900002JG_20250923T011554SQUARE.png"
-  },
-  {
-    "name": "Mr Bean Animated",
-    "tvg_id": "ES900001SH",
-    "tvg_name": "Mr Bean Animated",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES900001SH",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES900001SH_20250923T011557SQUARE.png"
-  },
-  {
-    "name": "RTVE La Moderna",
-    "tvg_id": "ES33000036Q",
-    "tvg_name": "RTVE La Moderna",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES33000036Q",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000036Q_20260901T054134SQUARE.png"
-  },
-  {
-    "name": "RTVE La Promesa",
-    "tvg_id": "ES3300006QL",
-    "tvg_name": "RTVE La Promesa",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES3300006QL",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3300006QL_20260818T050647SQUARE.png"
-  },
-  {
-    "name": "Series K COMEDIA ROMÁNTICA",
-    "tvg_id": "ES200041FT",
-    "tvg_name": "Series K COMEDIA ROMÁNTICA",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES200041FT",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES200041FT_20260127T040140SQUARE.png"
-  },
-  {
-    "name": "Series K DRAMA",
-    "tvg_id": "ES200040YF",
-    "tvg_name": "Series K DRAMA",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES200040YF",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES200040YF_20260127T040143SQUARE.png"
+    "url": "https://jmp2.uk/stvp-ES300003D4",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300003D4_20260421T123722SQUARE.png"
   },
   {
     "name": "Sony One Series Comedia",
@@ -6064,60 +5800,36 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300005EL_20260528T055658SQUARE.png"
   },
   {
-    "name": "Sony One Éxitos",
-    "tvg_id": "ES300003D4",
-    "tvg_name": "Sony One Éxitos",
-    "type": "Serie",
-    "url": "https://jmp2.uk/stvp-ES300003D4",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300003D4_20260421T123722SQUARE.png"
-  },
-  {
     "name": "Alerta Cobra",
     "tvg_id": "ES45000012U",
     "tvg_name": "Alerta Cobra",
-    "type": "Crimen",
+    "type": "Serie",
     "url": "https://jmp2.uk/stvp-ES45000012U",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES45000012U_20251202T002544SQUARE.png"
   },
   {
-    "name": "Crimen & Historia",
-    "tvg_id": "ES33000025N",
-    "tvg_name": "Crimen & Historia",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ES33000025N",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000025N_20250715T004330SQUARE.png"
+    "name": "Series K COMEDIA ROMÁNTICA",
+    "tvg_id": "ES200041FT",
+    "tvg_name": "Series K COMEDIA ROMÁNTICA",
+    "type": "Serie",
+    "url": "https://jmp2.uk/stvp-ES200041FT",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES200041FT_20260127T040140SQUARE.png"
   },
   {
-    "name": "Crimen - Rakuten TV",
-    "tvg_id": "ES2600005G9",
-    "tvg_name": "Crimen - Rakuten TV",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ES2600005G9",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600005G9_20241126T043110SQUARE.png"
+    "name": "Series K DRAMA",
+    "tvg_id": "ES200040YF",
+    "tvg_name": "Series K DRAMA",
+    "type": "Serie",
+    "url": "https://jmp2.uk/stvp-ES200040YF",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES200040YF_20260127T040143SQUARE.png"
   },
   {
-    "name": "Crimenes Reales",
-    "tvg_id": "ES3300001MC",
-    "tvg_name": "Crimenes Reales",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ES3300001MC",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3300001MC_20241210T052636SQUARE.png"
-  },
-  {
-    "name": "DATELINE 24/7",
-    "tvg_id": "ESBD3700001S0",
-    "tvg_name": "DATELINE 24/7",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ESBD3700001S0",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3700001S0_20241022T051012SQUARE.png"
-  },
-  {
-    "name": "Forensic Files",
-    "tvg_id": "ES2600001MC",
-    "tvg_name": "Forensic Files",
-    "type": "Crimen",
-    "url": "https://jmp2.uk/stvp-ES2600001MC",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600001MC_20250722T005647SQUARE.png"
+    "name": "K-Drama+",
+    "tvg_id": "ESBD4100001DU",
+    "tvg_name": "K-Drama+",
+    "type": "Serie",
+    "url": "https://jmp2.uk/stvp-ESBD4100001DU",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD4100001DU_20260707T050914SQUARE.png"
   },
   {
     "name": "Motorvision",
@@ -6192,6 +5904,54 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2900001P9_20241022T051205SQUARE.png"
   },
   {
+    "name": "Crimen & Historia",
+    "tvg_id": "ES33000025N",
+    "tvg_name": "Crimen & Historia",
+    "type": "Crimen",
+    "url": "https://jmp2.uk/stvp-ES33000025N",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000025N_20250715T004330SQUARE.png"
+  },
+  {
+    "name": "Crimenes Reales",
+    "tvg_id": "ES3300001MC",
+    "tvg_name": "Crimenes Reales",
+    "type": "Crimen",
+    "url": "https://jmp2.uk/stvp-ES3300001MC",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3300001MC_20241210T052636SQUARE.png"
+  },
+  {
+    "name": "DATELINE 24/7",
+    "tvg_id": "ESBD3700001S0",
+    "tvg_name": "DATELINE 24/7",
+    "type": "Crimen",
+    "url": "https://jmp2.uk/stvp-ESBD3700001S0",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3700001S0_20241022T051012SQUARE.png"
+  },
+  {
+    "name": "Forensic Files",
+    "tvg_id": "ES2600001MC",
+    "tvg_name": "Forensic Files",
+    "type": "Crimen",
+    "url": "https://jmp2.uk/stvp-ES2600001MC",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2600001MC_20250722T005647SQUARE.png"
+  },
+  {
+    "name": "Journy TV",
+    "tvg_id": "ESBC27000040I",
+    "tvg_name": "Journy TV",
+    "type": "Viajes y Cocina",
+    "url": "https://jmp2.uk/stvp-ESBC27000040I",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC27000040I_20260818T051644SQUARE.png"
+  },
+  {
+    "name": "Viajes & Sabores",
+    "tvg_id": "ES300033TI",
+    "tvg_name": "Viajes & Sabores",
+    "type": "Viajes y Cocina",
+    "url": "https://jmp2.uk/stvp-ES300033TI",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300033TI_20250805T005128SQUARE.png"
+  },
+  {
     "name": "BABY SHARK TV",
     "tvg_id": "ES17000065P",
     "tvg_name": "BABY SHARK TV",
@@ -6248,6 +6008,14 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES5000001CS_20250218T035957SQUARE.png"
   },
   {
+    "name": "Mr Bean Animated",
+    "tvg_id": "ES900001SH",
+    "tvg_name": "Mr Bean Animated",
+    "type": "Niños",
+    "url": "https://jmp2.uk/stvp-ES900001SH",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES900001SH_20250923T011557SQUARE.png"
+  },
+  {
     "name": "Rabbids : La invasion",
     "tvg_id": "ESBD2300003S5",
     "tvg_name": "Rabbids : La invasion",
@@ -6286,30 +6054,6 @@
     "type": "Niños",
     "url": "https://jmp2.uk/stvp-ES2100002BU",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2100002BU_20260901T054127SQUARE.png"
-  },
-  {
-    "name": "RTVE Cocina",
-    "tvg_id": "ES33000079W",
-    "tvg_name": "RTVE Cocina",
-    "type": "Viajes y Cocina",
-    "url": "https://jmp2.uk/stvp-ES33000079W",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000079W_20260721T035618SQUARE.png"
-  },
-  {
-    "name": "Viajes & Sabores",
-    "tvg_id": "ES300033TI",
-    "tvg_name": "Viajes & Sabores",
-    "type": "Viajes y Cocina",
-    "url": "https://jmp2.uk/stvp-ES300033TI",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300033TI_20250805T005128SQUARE.png"
-  },
-  {
-    "name": "Journy TV",
-    "tvg_id": "ESBC27000040I",
-    "tvg_name": "Journy TV",
-    "type": "Viajes y Cocina",
-    "url": "https://jmp2.uk/stvp-ESBC27000040I",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC27000040I_20260818T051644SQUARE.png"
   },
   {
     "name": "Piel Salvaje",
@@ -6352,15 +6096,7 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2500001F9_20241023T143110SQUARE.png"
   },
   {
-    "name": "Cozy Vibes",
-    "tvg_id": "ES190000224",
-    "tvg_name": "Cozy Vibes",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES190000224",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES190000224_20260528T055738SQUARE.png"
-  },
-  {
-    "name": "Deluxe Lounge HD",
+    "name": "Deluxe Lounge",
     "tvg_id": "ESBA1500001C4",
     "tvg_name": "Deluxe Lounge HD",
     "type": "Música & ambiente",
@@ -6368,44 +6104,12 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA1500001C4_20260915T043012SQUARE.png"
   },
   {
-    "name": "Fireplace Vibes",
-    "tvg_id": "ES2200001SF",
-    "tvg_name": "Fireplace Vibes",
+    "name": "Rolling Stones Takeover",
+    "tvg_id": "ES700006IP",
+    "tvg_name": "Rolling Stones Takeover",
     "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES2200001SF",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2200001SF_20260609T042949SQUARE.png"
-  },
-  {
-    "name": "Island Vibes",
-    "tvg_id": "ES1800007GH",
-    "tvg_name": "Island Vibes",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES1800007GH",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800007GH_20260528T055756SQUARE.png"
-  },
-  {
-    "name": "NEW KPOP",
-    "tvg_id": "ES1700005ME",
-    "tvg_name": "NEW KPOP",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES1700005ME",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1700005ME_20251013T053458SQUARE.png"
-  },
-  {
-    "name": "Ocean Vibes",
-    "tvg_id": "ES1800008X7",
-    "tvg_name": "Ocean Vibes",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES1800008X7",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800008X7_20260528T055815SQUARE.png"
-  },
-  {
-    "name": "Rainy Day Vibes",
-    "tvg_id": "ES1800006ZS",
-    "tvg_name": "Rainy Day Vibes",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES1800006ZS",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800006ZS_20260528T055835SQUARE.png"
+    "url": "https://jmp2.uk/stvp-ES700006IP",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES700006IP_20260707T052836SQUARE.png"
   },
   {
     "name": "SMTOWN",
@@ -6414,30 +6118,6 @@
     "type": "Música & ambiente",
     "url": "https://jmp2.uk/stvp-ES1000001EF",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1000001EF_20260929T040926SQUARE.png"
-  },
-  {
-    "name": "Sol Música",
-    "tvg_id": "ESBD2300004Y7",
-    "tvg_name": "Sol Música",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ESBD2300004Y7",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2300004Y7_20241022T051039SQUARE.png"
-  },
-  {
-    "name": "Spring Vibes",
-    "tvg_id": "ES1800009VX",
-    "tvg_name": "Spring Vibes",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES1800009VX",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800009VX_20260528T055856SQUARE.png"
-  },
-  {
-    "name": "Storm Vibes",
-    "tvg_id": "ES1900003JT",
-    "tvg_name": "Storm Vibes",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES1900003JT",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1900003JT_20260528T055908SQUARE.png"
   },
   {
     "name": "Vevo Latino",
@@ -6464,19 +6144,75 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD230000289_20250513T005434SQUARE.png"
   },
   {
-    "name": "Rolling Stones Takeover",
-    "tvg_id": "ES700006IP",
-    "tvg_name": "Rolling Stones Takeover",
-    "type": "Música & ambiente",
-    "url": "https://jmp2.uk/stvp-ES700006IP",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES700006IP_20260707T052836SQUARE.png"
-  },
-  {
     "name": "CJ ENM K-POP",
     "tvg_id": "ES3900001QG",
     "tvg_name": "CJ ENM K-POP",
     "type": "Música & ambiente",
     "url": "https://jmp2.uk/stvp-ES3900001QG",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3900001QG_20260915T035740SQUARE.png"
+  },
+  {
+    "name": "NEW KPOP",
+    "tvg_id": "ES1700005ME",
+    "tvg_name": "NEW KPOP",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES1700005ME",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1700005ME_20251013T053458SQUARE.png"
+  },
+  {
+    "name": "Cozy Vibes",
+    "tvg_id": "ES190000224",
+    "tvg_name": "Cozy Vibes",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES190000224",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES190000224_20260528T055738SQUARE.png"
+  },
+  {
+    "name": "Fireplace Vibes",
+    "tvg_id": "ES2200001SF",
+    "tvg_name": "Fireplace Vibes",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES2200001SF",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2200001SF_20260609T042949SQUARE.png"
+  },
+  {
+    "name": "Ocean Vibes",
+    "tvg_id": "ES1800008X7",
+    "tvg_name": "Ocean Vibes",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES1800008X7",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800008X7_20260528T055815SQUARE.png"
+  },
+  {
+    "name": "Rainy Day Vibes",
+    "tvg_id": "ES1800006ZS",
+    "tvg_name": "Rainy Day Vibes",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES1800006ZS",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800006ZS_20260528T055835SQUARE.png"
+  },
+  {
+    "name": "Spring Vibes",
+    "tvg_id": "ES1800009VX",
+    "tvg_name": "Spring Vibes",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES1800009VX",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800009VX_20260528T055856SQUARE.png"
+  },
+  {
+    "name": "Storm Vibes",
+    "tvg_id": "ES1900003JT",
+    "tvg_name": "Storm Vibes",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES1900003JT",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1900003JT_20260528T055908SQUARE.png"
+  },
+  {
+    "name": "Island Vibes",
+    "tvg_id": "ES1800007GH",
+    "tvg_name": "Island Vibes",
+    "type": "Música & ambiente",
+    "url": "https://jmp2.uk/stvp-ES1800007GH",
+    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1800007GH_20260528T055756SQUARE.png"
   }
 ]
