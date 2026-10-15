@@ -369,6 +369,13 @@ URL: https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/realmadridtv_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
+Name: Top Barça
+TvgID: Top_Barça.TV
+TvgName: Top Barça
+URL: https://amg17560-fcb-amg17560c3-lg-es-11383.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcacatala-lges/playlist.m3u8
+Logo: https://graph.facebook.com/fcbarcelona/picture?width=200&height=200
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
 
 Group: Cocina
 Name: Andalucía Cocina
@@ -559,13 +566,6 @@ TvgID: ESBC170000388
 TvgName: WaterBear
 URL: https://jmp2.uk/stvp-ESBC170000388
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC170000388_20241022T051159SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: WildEarth
-TvgID: ESBA330004121
-TvgName: WildEarth
-URL: https://jmp2.uk/stvp-ESBA330004121
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA330004121_20241022T051202SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: Space Live
@@ -1984,13 +1984,6 @@ TvgID: ES1600006S8
 TvgName: LOL España
 URL: https://jmp2.uk/stvp-ES1600006S8
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600006S8_20260721T035558SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: FailArmy
-TvgID: ESBA1400006NP
-TvgName: FailArmy
-URL: https://jmp2.uk/stvp-ESBA1400006NP
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA1400006NP_20260210T035845SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: Just For Laughs
@@ -3809,6 +3802,13 @@ URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245cd1
 Logo: https://provider-static.plex.tv/epg/cms/production/76a8ddca-38be-4d5b-b8db-be69fcaa6231/Plex-WURL_Euronews-Logos_PT_-_astrid_collomb.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
+Name: FailArmy
+TvgID: 643054b1fc3be59477853717-5f170d62b898490041b4936e
+TvgName: FailArmy
+URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d62b898490041b4936e/?X-Plex-Token=1t--XCCkS47xxKoUEncV
+Logo: https://provider-static.plex.tv/epg/cms/production/c3a3b230-a40b-4409-b33f-678c1923bd77/FailArmy_logo_dark_v2.png
+Source: https://m3u.work/hJiHE3ad.m3u
+--------------------------------------------------
 Name: Farscape
 TvgID: 643054b1fc3be59477853717-635195e9ccee3e1547a8831a
 TvgName: Farscape
@@ -4845,6 +4845,13 @@ URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60df3e1
 Logo: https://provider-static.plex.tv/epg/cms/production/ae42c76a-809f-465b-aed8-cfdc8e33a04b/usatoday_logo_light.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
+Name: Viajes & Sabores
+TvgID: 643054b1fc3be59477853717-68251044ae4546e02a6ba4f7
+TvgName: Viajes & Sabores
+URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68251044ae4546e02a6ba4f7/?X-Plex-Token=1t--XCCkS47xxKoUEncV
+Logo: https://provider-static.plex.tv/epg/cms/production/03e84b82-8da3-432d-9dfe-fb32927f106e/Logo_Viajes_Sabores_1500x1000_DarkBackground_-_Belen_Bruno.png
+Source: https://m3u.work/hJiHE3ad.m3u
+--------------------------------------------------
 Name: VR+
 TvgID: 643054b1fc3be59477853717-65a1d3996475bf522f9256e3
 TvgName: VR+
@@ -4892,6 +4899,13 @@ TvgID: 643054b1fc3be59477853717-6880001d015fe7e375a1a0a8
 TvgName: Wedotv Amor Piel Salvaje
 URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6880001d015fe7e375a1a0a8/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 Logo: https://provider-static.plex.tv/epg/cms/production/7aa34d17-de26-4b64-b4cc-628d572de91f/PielLight_Logo__1_.png
+Source: https://m3u.work/hJiHE3ad.m3u
+--------------------------------------------------
+Name: WildEarth
+TvgID: 643054b1fc3be59477853717-60d4edddb2fdec002c141135
+TvgName: WildEarth
+URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60d4edddb2fdec002c141135/?X-Plex-Token=1t--XCCkS47xxKoUEncV
+Logo: https://provider-static.plex.tv/epg/images/ott_channels/logos/wildearth_logo_dark.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
 Name: Wineman
@@ -5178,13 +5192,6 @@ URL: https://jmp2.uk/stvp-ESBD2600001ME
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2600001ME_20250923T011606SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
-Name: Top Barça
-TvgID: ES1100001MT
-TvgName: Top Barça
-URL: https://jmp2.uk/stvp-ES1100001MT
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1100001MT_20260929T041008SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
 Name: World Poker Tour
 TvgID: ESBD2900001P9
 TvgName: World Poker Tour
@@ -5229,13 +5236,6 @@ TvgID: ESBC27000040I
 TvgName: Journy TV
 URL: https://jmp2.uk/stvp-ESBC27000040I
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC27000040I_20260818T051644SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: Viajes & Sabores
-TvgID: ES300033TI
-TvgName: Viajes & Sabores
-URL: https://jmp2.uk/stvp-ES300033TI
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300033TI_20250805T005128SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 

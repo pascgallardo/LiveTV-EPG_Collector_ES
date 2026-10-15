@@ -105,6 +105,8 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&
 https://live.enfoque.media:5443/live/streams/vinxtv.m3u8
 #EXTINF:-1 tvg-id="RMTV.TV" tvg-name="Real Madrid TV" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/realmadridtv_cuadrado.jpg" group-title="Deportivos",Real Madrid TV
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
+#EXTINF:-1 tvg-id="Top_Barça.TV" tvg-name="Top Barça" tvg-logo="https://graph.facebook.com/fcbarcelona/picture?width=200&height=200" group-title="Deportivos",Top Barça
+https://amg17560-fcb-amg17560c3-lg-es-11383.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcacatala-lges/playlist.m3u8
 #EXTINF:-1 tvg-name="Andalucía Cocina" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/canalandaluciacocina_cuadrado.jpg" group-title="Cocina",Andalucía Cocina
 https://cloud.fastchannel.es/mic/manifiest/hls/acocina/acocina.m3u8
 #EXTINF:-1 tvg-name="Tastemade" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/tastemade_cuadrado.jpg" group-title="Cocina",Tastemade
@@ -163,8 +165,6 @@ https://jmp2.uk/stvp-ES1600003FF
 https://jmp2.uk/stvp-ESBA22000102A
 #EXTINF:-1 tvg-id="ESBC170000388" tvg-name="WaterBear" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC170000388_20241022T051159SQUARE.png" group-title="Documentales",WaterBear
 https://jmp2.uk/stvp-ESBC170000388
-#EXTINF:-1 tvg-id="ESBA330004121" tvg-name="WildEarth" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA330004121_20241022T051202SQUARE.png" group-title="Documentales",WildEarth
-https://jmp2.uk/stvp-ESBA330004121
 #EXTINF:-1 tvg-id="ES7000088K" tvg-name="Space Live" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000088K_20260901T054146SQUARE.png" group-title="Documentales",Space Live
 https://jmp2.uk/stvp-ES7000088K
 #EXTINF:-1 tvg-id="ES12000024R" tvg-name="Historia y Vida" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES12000024R_20260901T054105SQUARE.png" group-title="Documentales",Historia y Vida
@@ -595,8 +595,6 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channe
 https://jmp2.uk/stvp-ESAJ3800005C5
 #EXTINF:-1 tvg-id="ES1600006S8" tvg-name="LOL España" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1600006S8_20260721T035558SQUARE.png" group-title="Comedia",LOL España
 https://jmp2.uk/stvp-ES1600006S8
-#EXTINF:-1 tvg-id="ESBA1400006NP" tvg-name="FailArmy" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA1400006NP_20260210T035845SQUARE.png" group-title="Comedia",FailArmy
-https://jmp2.uk/stvp-ESBA1400006NP
 #EXTINF:-1 tvg-id="ESBC2700008SK" tvg-name="Just For Laughs" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC2700008SK_20241022T051028SQUARE.png" group-title="Comedia",Just For Laughs
 https://jmp2.uk/stvp-ESBC2700008SK
 #EXTINF:-1 tvg-id="ESAJ3800003LX" tvg-name="MTV Catfish" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png" group-title="Comedia",MTV Catfish
@@ -1133,6 +1131,8 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245f06793b4
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245f13093b402a3d1097789/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-6245cd154f27f4e9c76d67e9" tvg-name="Euronews Portuguese" tvg-logo="https://provider-static.plex.tv/epg/cms/production/76a8ddca-38be-4d5b-b8db-be69fcaa6231/Plex-WURL_Euronews-Logos_PT_-_astrid_collomb.png" group-title="Spain",Euronews Portuguese
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6245cd154f27f4e9c76d67e9/?X-Plex-Token=1t--XCCkS47xxKoUEncV
+#EXTINF:-1 tvg-id="643054b1fc3be59477853717-5f170d62b898490041b4936e" tvg-name="FailArmy" tvg-logo="https://provider-static.plex.tv/epg/cms/production/c3a3b230-a40b-4409-b33f-678c1923bd77/FailArmy_logo_dark_v2.png" group-title="Spain",FailArmy
+https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d62b898490041b4936e/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-635195e9ccee3e1547a8831a" tvg-name="Farscape" tvg-logo="https://provider-static.plex.tv/epg/cms/production/77115f01-d00a-4ef0-bb00-dcb3896e1c09/f5c7ee72e5a980b3ac2a31fd94e112e8.png" group-title="Spain",Farscape
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-635195e9ccee3e1547a8831a/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-6490c01f3b3ce9e1aaad95be" tvg-name="FashionTV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/47127441-d5b6-42a3-b641-a7c076d20940/Fashion_PNG_w__transparent_background__All_white_Logo_for_Attribution__-_Yuri_Alexandrov.png" group-title="Spain",FashionTV
@@ -1429,6 +1429,8 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ccac69fdf9
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67f45ef989089d917e1b1634/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-60df3e18541143002f3b8607" tvg-name="USA TODAY" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ae42c76a-809f-465b-aed8-cfdc8e33a04b/usatoday_logo_light.png" group-title="Spain",USA TODAY
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60df3e18541143002f3b8607/?X-Plex-Token=1t--XCCkS47xxKoUEncV
+#EXTINF:-1 tvg-id="643054b1fc3be59477853717-68251044ae4546e02a6ba4f7" tvg-name="Viajes & Sabores" tvg-logo="https://provider-static.plex.tv/epg/cms/production/03e84b82-8da3-432d-9dfe-fb32927f106e/Logo_Viajes_Sabores_1500x1000_DarkBackground_-_Belen_Bruno.png" group-title="Spain",Viajes & Sabores
+https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68251044ae4546e02a6ba4f7/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-65a1d3996475bf522f9256e3" tvg-name="VR+" tvg-logo="https://provider-static.plex.tv/epg/cms/production/cd4c6347-92c4-4381-9d09-b8d38d9729de/1500x1000_-_white_logo_VR__Juan_M_Velasquez.png" group-title="Spain",VR+
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-65a1d3996475bf522f9256e3/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-621672612c2627c068e73ad6" tvg-name="Watch it Kid" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ee175dfe-6f79-415e-a3c1-ce6a9ec831c2/Watchitkid_logo_dark.png" group-title="Spain",Watch it Kid
@@ -1443,6 +1445,8 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff266d71d
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ea196ac24d95b51b7cd18b/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-6880001d015fe7e375a1a0a8" tvg-name="Wedotv Amor Piel Salvaje" tvg-logo="https://provider-static.plex.tv/epg/cms/production/7aa34d17-de26-4b64-b4cc-628d572de91f/PielLight_Logo__1_.png" group-title="Spain",Wedotv Amor Piel Salvaje
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6880001d015fe7e375a1a0a8/?X-Plex-Token=1t--XCCkS47xxKoUEncV
+#EXTINF:-1 tvg-id="643054b1fc3be59477853717-60d4edddb2fdec002c141135" tvg-name="WildEarth" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/wildearth_logo_dark.png" group-title="Spain",WildEarth
+https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-60d4edddb2fdec002c141135/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-68645f7c1a2f321847ec0393" tvg-name="Wineman" tvg-logo="https://provider-static.plex.tv/epg/cms/production/9a15a24f-c9ae-40f1-b9e5-16a95f4b650c/Wineman_whiteRDX.png" group-title="Spain",Wineman
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68645f7c1a2f321847ec0393/?X-Plex-Token=1t--XCCkS47xxKoUEncV
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-608a2c722957c9002c6a617b" tvg-name="Wired2Fish" tvg-logo="https://provider-static.plex.tv/epg/cms/production/146827c9-ba03-4f25-86b2-d99c501e8227/wired2fish_white.png" group-title="Spain",Wired2Fish
@@ -1523,8 +1527,6 @@ https://jmp2.uk/stvp-ES4300004JP
 https://jmp2.uk/stvp-ES3400002PY
 #EXTINF:-1 tvg-id="ESBD2600001ME" tvg-name="Tennis Channel" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2600001ME_20250923T011606SQUARE.png" group-title="Deporte",Tennis Channel
 https://jmp2.uk/stvp-ESBD2600001ME
-#EXTINF:-1 tvg-id="ES1100001MT" tvg-name="Top Barça" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1100001MT_20260929T041008SQUARE.png" group-title="Deporte",Top Barça
-https://jmp2.uk/stvp-ES1100001MT
 #EXTINF:-1 tvg-id="ESBD2900001P9" tvg-name="World Poker Tour" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2900001P9_20241022T051205SQUARE.png" group-title="Deporte",World Poker Tour
 https://jmp2.uk/stvp-ESBD2900001P9
 #EXTINF:-1 tvg-id="ES33000025N" tvg-name="Crimen & Historia" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000025N_20250715T004330SQUARE.png" group-title="Crimen",Crimen & Historia
@@ -1537,8 +1539,6 @@ https://jmp2.uk/stvp-ESBD3700001S0
 https://jmp2.uk/stvp-ES2600001MC
 #EXTINF:-1 tvg-id="ESBC27000040I" tvg-name="Journy TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC27000040I_20260818T051644SQUARE.png" group-title="Viajes y Cocina",Journy TV
 https://jmp2.uk/stvp-ESBC27000040I
-#EXTINF:-1 tvg-id="ES300033TI" tvg-name="Viajes & Sabores" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES300033TI_20250805T005128SQUARE.png" group-title="Viajes y Cocina",Viajes & Sabores
-https://jmp2.uk/stvp-ES300033TI
 #EXTINF:-1 tvg-id="ES17000065P" tvg-name="BABY SHARK TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES17000065P_20260915T035727SQUARE.png" group-title="Niños",BABY SHARK TV
 https://jmp2.uk/stvp-ES17000065P
 #EXTINF:-1 tvg-id="ESBA33000262Z" tvg-name="Bob Esponja" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA33000262Z_20250307T152119SQUARE.png" group-title="Niños",Bob Esponja
