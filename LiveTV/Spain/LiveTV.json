@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16T14:58:41+02:00",
+  "date": "2026-10-17T13:56:42+02:00",
   "channels": {
     "Generalistas": [
       {
@@ -150,7 +150,7 @@
         "name": "RNE para todos",
         "tvg_id": "RNE.TV",
         "tvg_name": "RNE para todos",
-        "logo": "https://github.com/pascgallardo/Iconos_TV/blob/main/rneparatodos_cuadrado.jpg",
+        "logo": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rneparatodos_cuadrado.jpg",
         "group": "Generalistas",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8"

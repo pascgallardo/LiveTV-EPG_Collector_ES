@@ -31,7 +31,7 @@ https://live.s2l.workers.dev/hls/energy
 https://live.s2l.workers.dev/hls/bemad
 #EXTINF:-1 tvg-id="TRECE" tvg-name="TRECE" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/trece_cuadrado.jpg" group-title="Generalistas",TRECE
 https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/021/playlist.m3u8
-#EXTINF:-1 tvg-id="RNE.TV" tvg-name="RNE para todos" tvg-logo="https://github.com/pascgallardo/Iconos_TV/blob/main/rneparatodos_cuadrado.jpg" group-title="Generalistas",RNE para todos
+#EXTINF:-1 tvg-id="RNE.TV" tvg-name="RNE para todos" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rneparatodos_cuadrado.jpg" group-title="Generalistas",RNE para todos
 https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8
 #EXTINF:-1 tvg-id="ElToroTV.TV" tvg-name="El Toro TV" tvg-logo="https://graph.facebook.com/eltorotv.es/picture?width=200&height=200" group-title="Generalistas",El Toro TV
 https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.m3u8

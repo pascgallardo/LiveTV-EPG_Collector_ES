@@ -115,7 +115,7 @@ Name: RNE para todos
 TvgID: RNE.TV
 TvgName: RNE para todos
 URL: https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8
-Logo: https://github.com/pascgallardo/Iconos_TV/blob/main/rneparatodos_cuadrado.jpg
+Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rneparatodos_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: El Toro TV
