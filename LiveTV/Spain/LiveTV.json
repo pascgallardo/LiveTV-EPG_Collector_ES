@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-18T14:24:52+02:00",
+  "date": "2026-10-19T17:14:05+02:00",
   "channels": {
     "Generalistas": [
       {
@@ -1182,6 +1182,15 @@
         "group": "Int. Europa",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "http://38.252.238.18:8000/play/a04a/index.m3u8"
+      },
+      {
+        "name": "WDR Westdeutscher Alemania DE",
+        "tvg_id": "",
+        "tvg_name": "WDR Westdeutscher Alemania",
+        "logo": "https://pbs.twimg.com/profile_images/1368636275243315201/mWySSrnO_200x200.jpg",
+        "group": "Int. Europa",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8"
       }
     ],
     "Musicales": [
@@ -1323,6 +1332,15 @@
         "group": "Radio_Internacional",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_re_main.m3u8"
+      },
+      {
+        "name": "BFBS Gibraltar",
+        "tvg_id": "",
+        "tvg_name": "BFBS Gibraltar",
+        "logo": "https://graph.facebook.com/BFBSRadio/picture?width=200&height=200",
+        "group": "Radio_Internacional",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://edge-audio-03-gos2.sharp-stream.com/ssvcbfbs2.aac"
       }
     ],
     "Radio_Musicales": [
