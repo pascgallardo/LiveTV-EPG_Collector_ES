@@ -128,20 +128,20 @@
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/trece_cuadrado.jpg"
   },
   {
-    "name": "RNE para todos",
-    "tvg_id": "RNE.TV",
-    "tvg_name": "RNE para todos",
-    "type": "Generalistas",
-    "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rneparatodos_cuadrado.jpg"
-  },
-  {
     "name": "El Toro TV",
     "tvg_id": "El Toro TV",
     "tvg_name": "El Toro TV",
     "type": "Generalistas",
     "url": "https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.m3u8",
     "img": "https://graph.facebook.com/eltorotv.es/picture?width=200&height=200"
+  },
+  {
+    "name": "RNE Accesible",
+    "tvg_id": "RNE.TV",
+    "tvg_name": "RNE Accesible",
+    "type": "Generalistas",
+    "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8",
+    "img": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200"
   },
   {
     "name": "Canal Málaga",
@@ -262,14 +262,6 @@
     "type": "Eventuales",
     "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm1_main.m3u8",
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplaypromesa_cuadrado.jpg"
-  },
-  {
-    "name": "En Play",
-    "tvg_id": "RTVE_En_Play.TV",
-    "tvg_name": "En Play (RTVE)",
-    "type": "Eventuales",
-    "url": "https://ztnr.rtve.es/ztnr/6712399.m3u8",
-    "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/rtveplayenplay_cuadrado.jpg"
   },
   {
     "name": "Los Conciertos Radio 3",
@@ -1524,7 +1516,7 @@
     "tvg_id": "",
     "tvg_name": "COPE Málaga",
     "type": "Radio_Andalucía",
-    "url": "https://wecast-bl01.flumotion.com/copesedes/malaga.mp3",
+    "url": "https://wecast-bl01.flumotion.com/copesedes/malaga-mas.mp3",
     "img": "https://pbs.twimg.com/profile_images/1763515200110575616/8TKel8u8_200x200.jpg"
   },
   {
