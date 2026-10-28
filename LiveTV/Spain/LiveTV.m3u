@@ -81,6 +81,8 @@ https://fast-channels.atresmedia.com/d7bd0adb7616750c83bdf3ad204ce9869f8a81d1/64
 https://fast-channels.atresmedia.com/f903abd690456cff8bef97a426a363260c867fb3/648ef5882bfab0e4627e0d61/648ef5882bfab0e4627e0d61.m3u8
 #EXTINF:-1 tvg-id="Flooxer" tvg-name="Canal Flooxer" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/canal_flooxer_cuadrado.jpg" group-title="Eventuales",Canal Flooxer
 https://live.s2l.workers.dev/hls/flooxer
+#EXTINF:-1 tvg-id="RTVE_PopUp2.TV" tvg-name="RTVE 70 años (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Eventuales",RTVE 70 años (RTVE)
+https://rtvelivestream.rtve.es/eventual/gofast/playm28_main_dvr.m3u8
 #EXTINF:-1 tvg-id="24 Horas" tvg-name="24h" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/24h_cuadrado.jpg" group-title="Informativos",24h
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15621
 #EXTINF:-1 tvg-id="RNE.TV" tvg-name="Radio Nacional" tvg-logo="https://graph.facebook.com/radionacionalrne/picture?width=200&height=200" group-title="Informativos",Radio Nacional

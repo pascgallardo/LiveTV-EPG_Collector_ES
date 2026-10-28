@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-27T14:53:32+01:00",
+  "date": "2026-10-28T15:47:59+01:00",
   "channels": {
     "Generalistas": [
       {
@@ -374,6 +374,15 @@
         "group": "Eventuales",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://live.s2l.workers.dev/hls/flooxer"
+      },
+      {
+        "name": "RTVE 70 años (RTVE)",
+        "tvg_id": "RTVE_PopUp2.TV",
+        "tvg_name": "RTVE 70 años (RTVE)",
+        "logo": "https://graph.facebook.com/rtveplay/picture?width=200&height=200",
+        "group": "Eventuales",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm28_main_dvr.m3u8"
       }
     ],
     "Informativos": [

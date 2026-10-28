@@ -328,6 +328,14 @@
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/canal_flooxer_cuadrado.jpg"
   },
   {
+    "name": "RTVE 70 años (RTVE)",
+    "tvg_id": "RTVE_PopUp2.TV",
+    "tvg_name": "RTVE 70 años (RTVE)",
+    "type": "Eventuales",
+    "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm28_main_dvr.m3u8",
+    "img": "https://graph.facebook.com/rtveplay/picture?width=200&height=200"
+  },
+  {
     "name": "24h",
     "tvg_id": "24 Horas",
     "tvg_name": "24h",

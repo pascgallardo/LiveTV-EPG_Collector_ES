@@ -284,6 +284,13 @@ URL: https://live.s2l.workers.dev/hls/flooxer
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/canal_flooxer_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
+Name: RTVE 70 años (RTVE)
+TvgID: RTVE_PopUp2.TV
+TvgName: RTVE 70 años (RTVE)
+URL: https://rtvelivestream.rtve.es/eventual/gofast/playm28_main_dvr.m3u8
+Logo: https://graph.facebook.com/rtveplay/picture?width=200&height=200
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
 
 Group: Informativos
 Name: 24h
