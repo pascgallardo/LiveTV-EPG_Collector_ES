@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28T15:47:59+01:00",
+  "date": "2026-10-29T15:53:58+01:00",
   "channels": {
     "Generalistas": [
       {
@@ -735,15 +735,6 @@
         "url": "https://jmp2.uk/stvp-ESBA330004121"
       },
       {
-        "name": "Space Live",
-        "tvg_id": "ES7000088K",
-        "tvg_name": "Space Live",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000088K_20260901T054146SQUARE.png",
-        "group": "Documentales",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ES7000088K"
-      },
-      {
         "name": "Historia y Vida",
         "tvg_id": "ES12000024R",
         "tvg_name": "Historia y Vida",
@@ -751,15 +742,6 @@
         "group": "Documentales",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES12000024R"
-      },
-      {
-        "name": "Ice Pilots",
-        "tvg_id": "ES24000028L",
-        "tvg_name": "Ice Pilots",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png",
-        "group": "Documentales",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ES24000028L"
       },
       {
         "name": "Mayday: Catástrofe Aérea",
@@ -787,15 +769,6 @@
         "group": "Documentales",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ESBD1400003QN"
-      },
-      {
-        "name": "Top Gear",
-        "tvg_id": "ES2700002YP",
-        "tvg_name": "Top Gear",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2700002YP_20250805T005824SQUARE.png",
-        "group": "Documentales",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ES2700002YP"
       },
       {
         "name": "BBC Historia",
@@ -2711,6 +2684,15 @@
         "url": "https://jmp2.uk/plu-612ce5214bb5790007ad3016.m3u8"
       },
       {
+        "name": "Crimen & Historia",
+        "tvg_id": "64ddcbb14c5ed80008fad416",
+        "tvg_name": "Crimen & Historia",
+        "logo": "https://images.pluto.tv/channels/64ddcbb14c5ed80008fad416/colorLogoPNG.png",
+        "group": "Crimen y Misterio",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-64ddcbb14c5ed80008fad416.m3u8"
+      },
+      {
         "name": "Archivos Forenses",
         "tvg_id": "filmrise-forensic-files-spa",
         "tvg_name": "filmrise-forensic-files-spa",
@@ -2825,6 +2807,15 @@
         "url": "https://jmp2.uk/plu-6080345ebb49b90007ce0baf.m3u8"
       },
       {
+        "name": "Top Gear",
+        "tvg_id": "60d356a534f63f000850cdd7",
+        "tvg_name": "Top Gear",
+        "logo": "https://images.pluto.tv/channels/60d356a534f63f000850cdd7/colorLogoPNG_1756396834691.png",
+        "group": "Entretenimiento",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-60d356a534f63f000850cdd7.m3u8"
+      },
+      {
         "name": "El encantador de perros",
         "tvg_id": "60e45687313c5f0007bc8e94",
         "tvg_name": "El encantador de perros",
@@ -2834,6 +2825,15 @@
         "url": "https://jmp2.uk/plu-60e45687313c5f0007bc8e94.m3u8"
       },
       {
+        "name": "Ice Pilots",
+        "tvg_id": "61b9edc4a4ca6100070bb407",
+        "tvg_name": "Ice Pilots",
+        "logo": "https://images.pluto.tv/channels/61b9edc4a4ca6100070bb407/colorLogoPNG.png",
+        "group": "Entretenimiento",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-61b9edc4a4ca6100070bb407.m3u8"
+      },
+      {
         "name": "Cazasubastas",
         "tvg_id": "6335a6b6e6f7a600076e589e",
         "tvg_name": "Cazasubastas",
@@ -2841,6 +2841,15 @@
         "group": "Entretenimiento",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-6335a6b6e6f7a600076e589e.m3u8"
+      },
+      {
+        "name": "La fiebre del Jade",
+        "tvg_id": "65254e8d81f9420008342cee",
+        "tvg_name": "La fiebre del Jade",
+        "logo": "https://images.pluto.tv/channels/65254e8d81f9420008342cee/colorLogoPNG.png",
+        "group": "Entretenimiento",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-65254e8d81f9420008342cee.m3u8"
       },
       {
         "name": "COPS",
@@ -2994,15 +3003,6 @@
         "group": "Entretenimiento",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ESAJ3800006TT"
-      },
-      {
-        "name": "MTV Originals",
-        "tvg_id": "ESAJ380000226",
-        "tvg_name": "MTV Originals",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ380000226_20241022T050331SQUARE.png",
-        "group": "Entretenimiento",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ESAJ380000226"
       },
       {
         "name": "Sony One Shark Tank",
@@ -3524,6 +3524,15 @@
     ],
     "Deportes": [
       {
+        "name": "World Poker Tour",
+        "tvg_id": "6080381ab7c9ea00074ec64c",
+        "tvg_name": "World Poker Tour",
+        "logo": "https://images.pluto.tv/channels/6080381ab7c9ea00074ec64c/colorLogoPNG.png",
+        "group": "Deportes",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-6080381ab7c9ea00074ec64c.m3u8"
+      },
+      {
         "name": "MODUS Super Series Darts",
         "tvg_id": "67164414e40c4a00087f450d",
         "tvg_name": "MODUS Super Series Darts",
@@ -3531,6 +3540,15 @@
         "group": "Deportes",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-67164414e40c4a00087f450d.m3u8"
+      },
+      {
+        "name": "UFC",
+        "tvg_id": "67921b873de7c8cf94233f52",
+        "tvg_name": "UFC",
+        "logo": "https://images.pluto.tv/channels/67921b873de7c8cf94233f52/colorLogoPNG.png",
+        "group": "Deportes",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-67921b873de7c8cf94233f52.m3u8"
       },
       {
         "name": "Pluto TV Snooker 900",
@@ -3576,6 +3594,15 @@
         "group": "Deportes",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-65f96cd34e01740008ef1c97.m3u8"
+      },
+      {
+        "name": "TOP BARÇA",
+        "tvg_id": "6793ac47f5c74bff95d18a99",
+        "tvg_name": "TOP BARÇA",
+        "logo": "https://images.pluto.tv/channels/6793ac47f5c74bff95d18a99/colorLogoPNG.png",
+        "group": "Deportes",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-6793ac47f5c74bff95d18a99.m3u8"
       },
       {
         "name": "NFL Channel",
@@ -3821,6 +3848,15 @@
         "group": "Cultura",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-61cd7b49543066000713b620.m3u8"
+      },
+      {
+        "name": "Space Live",
+        "tvg_id": "69b3db5d61e8e298254c7108",
+        "tvg_name": "Space Live",
+        "logo": "https://images.pluto.tv/channels/69b3db5d61e8e298254c7108/colorLogoPNG_1775061733929.png",
+        "group": "Cultura",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-69b3db5d61e8e298254c7108.m3u8"
       }
     ],
     "Música": [
@@ -3859,6 +3895,15 @@
         "group": "Música",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-6a846ccd99e7db5e8a1d9b5f.m3u8"
+      },
+      {
+        "name": "MTV Originals",
+        "tvg_id": "5f1aadf373bed3000794d1d7",
+        "tvg_name": "MTV Originals",
+        "logo": "https://images.pluto.tv/channels/5f1aadf373bed3000794d1d7/colorLogoPNG.png",
+        "group": "Música",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-5f1aadf373bed3000794d1d7.m3u8"
       },
       {
         "name": "Metal.Rocks",
@@ -5221,15 +5266,6 @@
         "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64704954e536e0faaf10be9f/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
       },
       {
-        "name": "La Fiebre del Jade",
-        "tvg_id": "643054b1fc3be59477853717-666e1af3d91d13cb4c8cbb6d",
-        "tvg_name": "La Fiebre del Jade",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/fd21a845-1ffb-443d-91de-35d2dc3cb12c/channel_logo_1500x1000_light.png.png",
-        "group": "Spain",
-        "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1af3d91d13cb4c8cbb6d/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
-      },
-      {
         "name": "Legacy",
         "tvg_id": "643054b1fc3be59477853717-69bb1f002028859eafc637e1",
         "tvg_name": "Legacy",
@@ -6202,15 +6238,6 @@
         "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b74a235dc5413c905efd62/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
       },
       {
-        "name": "UFC",
-        "tvg_id": "643054b1fc3be59477853717-66ccac69fdf9cd3a568ef135",
-        "tvg_name": "UFC",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/c2e95493-6f98-4a65-be46-d17200ea068a/UFC_logo_WHT_1500x1000.png",
-        "group": "Spain",
-        "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ccac69fdf9cd3a568ef135/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
-      },
-      {
         "name": "Unbeaten",
         "tvg_id": "643054b1fc3be59477853717-67f45ef989089d917e1b1634",
         "tvg_name": "Unbeaten",
@@ -6636,36 +6663,9 @@
         "group": "Deporte",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES3400002PY"
-      },
-      {
-        "name": "Top Barça",
-        "tvg_id": "ES1100001MT",
-        "tvg_name": "Top Barça",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1100001MT_20260929T041008SQUARE.png",
-        "group": "Deporte",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ES1100001MT"
-      },
-      {
-        "name": "World Poker Tour",
-        "tvg_id": "ESBD2900001P9",
-        "tvg_name": "World Poker Tour",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2900001P9_20241022T051205SQUARE.png",
-        "group": "Deporte",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ESBD2900001P9"
       }
     ],
     "Crimen": [
-      {
-        "name": "Crimen & Historia",
-        "tvg_id": "ES33000025N",
-        "tvg_name": "Crimen & Historia",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000025N_20250715T004330SQUARE.png",
-        "group": "Crimen",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ES33000025N"
-      },
       {
         "name": "Crimenes Reales",
         "tvg_id": "ES3300001MC",

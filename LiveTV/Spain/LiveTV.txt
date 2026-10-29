@@ -549,25 +549,11 @@ URL: https://jmp2.uk/stvp-ESBA330004121
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA330004121_20241022T051202SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
-Name: Space Live
-TvgID: ES7000088K
-TvgName: Space Live
-URL: https://jmp2.uk/stvp-ES7000088K
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000088K_20260901T054146SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
 Name: Historia y Vida
 TvgID: ES12000024R
 TvgName: Historia y Vida
 URL: https://jmp2.uk/stvp-ES12000024R
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES12000024R_20261013T054806SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: Ice Pilots
-TvgID: ES24000028L
-TvgName: Ice Pilots
-URL: https://jmp2.uk/stvp-ES24000028L
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: Mayday: Catástrofe Aérea
@@ -589,13 +575,6 @@ TvgID: ESBD1400003QN
 TvgName: Royalworld - Nobleza y Dinastias
 URL: https://jmp2.uk/stvp-ESBD1400003QN
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD1400003QN_20260210T035856SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: Top Gear
-TvgID: ES2700002YP
-TvgName: Top Gear
-URL: https://jmp2.uk/stvp-ES2700002YP
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2700002YP_20250805T005824SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: BBC Historia
@@ -2032,6 +2011,13 @@ URL: https://jmp2.uk/plu-612ce5214bb5790007ad3016.m3u8
 Logo: https://images.pluto.tv/channels/612ce5214bb5790007ad3016/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Crimen & Historia
+TvgID: 64ddcbb14c5ed80008fad416
+TvgName: Crimen & Historia
+URL: https://jmp2.uk/plu-64ddcbb14c5ed80008fad416.m3u8
+Logo: https://images.pluto.tv/channels/64ddcbb14c5ed80008fad416/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: Archivos Forenses
 TvgID: filmrise-forensic-files-spa
 TvgName: filmrise-forensic-files-spa
@@ -2122,6 +2108,13 @@ URL: https://jmp2.uk/plu-6080345ebb49b90007ce0baf.m3u8
 Logo: https://images.pluto.tv/channels/6080345ebb49b90007ce0baf/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Top Gear
+TvgID: 60d356a534f63f000850cdd7
+TvgName: Top Gear
+URL: https://jmp2.uk/plu-60d356a534f63f000850cdd7.m3u8
+Logo: https://images.pluto.tv/channels/60d356a534f63f000850cdd7/colorLogoPNG_1756396834691.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: El encantador de perros
 TvgID: 60e45687313c5f0007bc8e94
 TvgName: El encantador de perros
@@ -2129,11 +2122,25 @@ URL: https://jmp2.uk/plu-60e45687313c5f0007bc8e94.m3u8
 Logo: https://images.pluto.tv/channels/60e45687313c5f0007bc8e94/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Ice Pilots
+TvgID: 61b9edc4a4ca6100070bb407
+TvgName: Ice Pilots
+URL: https://jmp2.uk/plu-61b9edc4a4ca6100070bb407.m3u8
+Logo: https://images.pluto.tv/channels/61b9edc4a4ca6100070bb407/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: Cazasubastas
 TvgID: 6335a6b6e6f7a600076e589e
 TvgName: Cazasubastas
 URL: https://jmp2.uk/plu-6335a6b6e6f7a600076e589e.m3u8
 Logo: https://images.pluto.tv/channels/6335a6b6e6f7a600076e589e/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: La fiebre del Jade
+TvgID: 65254e8d81f9420008342cee
+TvgName: La fiebre del Jade
+URL: https://jmp2.uk/plu-65254e8d81f9420008342cee.m3u8
+Logo: https://images.pluto.tv/channels/65254e8d81f9420008342cee/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: COPS
@@ -2253,13 +2260,6 @@ TvgID: ESAJ3800006TT
 TvgName: MTV Cribs
 URL: https://jmp2.uk/stvp-ESAJ3800006TT
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800006TT_20241106T142236SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: MTV Originals
-TvgID: ESAJ380000226
-TvgName: MTV Originals
-URL: https://jmp2.uk/stvp-ESAJ380000226
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ380000226_20241022T050331SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: Sony One Shark Tank
@@ -2667,11 +2667,25 @@ Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 
 Group: Deportes
+Name: World Poker Tour
+TvgID: 6080381ab7c9ea00074ec64c
+TvgName: World Poker Tour
+URL: https://jmp2.uk/plu-6080381ab7c9ea00074ec64c.m3u8
+Logo: https://images.pluto.tv/channels/6080381ab7c9ea00074ec64c/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: MODUS Super Series Darts
 TvgID: 67164414e40c4a00087f450d
 TvgName: MODUS Super Series Darts
 URL: https://jmp2.uk/plu-67164414e40c4a00087f450d.m3u8
 Logo: https://images.pluto.tv/channels/67164414e40c4a00087f450d/colorLogoPNG_1732095042151.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: UFC
+TvgID: 67921b873de7c8cf94233f52
+TvgName: UFC
+URL: https://jmp2.uk/plu-67921b873de7c8cf94233f52.m3u8
+Logo: https://images.pluto.tv/channels/67921b873de7c8cf94233f52/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: Pluto TV Snooker 900
@@ -2707,6 +2721,13 @@ TvgID: 65f96cd34e01740008ef1c97
 TvgName: Realmadrid TV
 URL: https://jmp2.uk/plu-65f96cd34e01740008ef1c97.m3u8
 Logo: https://images.pluto.tv/channels/65f96cd34e01740008ef1c97/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: TOP BARÇA
+TvgID: 6793ac47f5c74bff95d18a99
+TvgName: TOP BARÇA
+URL: https://jmp2.uk/plu-6793ac47f5c74bff95d18a99.m3u8
+Logo: https://images.pluto.tv/channels/6793ac47f5c74bff95d18a99/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: NFL Channel
@@ -2900,6 +2921,13 @@ URL: https://jmp2.uk/plu-61cd7b49543066000713b620.m3u8
 Logo: https://images.pluto.tv/channels/61cd7b49543066000713b620/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Space Live
+TvgID: 69b3db5d61e8e298254c7108
+TvgName: Space Live
+URL: https://jmp2.uk/plu-69b3db5d61e8e298254c7108.m3u8
+Logo: https://images.pluto.tv/channels/69b3db5d61e8e298254c7108/colorLogoPNG_1775061733929.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 
 Group: Música
 Name: Metal Rocks
@@ -2928,6 +2956,13 @@ TvgID: 6a846ccd99e7db5e8a1d9b5f
 TvgName: That's Rock
 URL: https://jmp2.uk/plu-6a846ccd99e7db5e8a1d9b5f.m3u8
 Logo: https://images.pluto.tv/channels/6a846ccd99e7db5e8a1d9b5f/colorLogoPNG_1790781023873.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: MTV Originals
+TvgID: 5f1aadf373bed3000794d1d7
+TvgName: MTV Originals
+URL: https://jmp2.uk/plu-5f1aadf373bed3000794d1d7.m3u8
+Logo: https://images.pluto.tv/channels/5f1aadf373bed3000794d1d7/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: Metal.Rocks
@@ -3990,13 +4025,6 @@ URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6470495
 Logo: https://provider-static.plex.tv/epg/cms/production/a3d02bc9-13e3-4263-aff8-6a8512501b80/1500x1500_Just_for_laughs_CARLOS_PACHECO.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
-Name: La Fiebre del Jade
-TvgID: 643054b1fc3be59477853717-666e1af3d91d13cb4c8cbb6d
-TvgName: La Fiebre del Jade
-URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-666e1af3d91d13cb4c8cbb6d/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
-Logo: https://provider-static.plex.tv/epg/cms/production/fd21a845-1ffb-443d-91de-35d2dc3cb12c/channel_logo_1500x1000_light.png.png
-Source: https://m3u.work/hJiHE3ad.m3u
---------------------------------------------------
 Name: Legacy
 TvgID: 643054b1fc3be59477853717-69bb1f002028859eafc637e1
 TvgName: Legacy
@@ -4753,13 +4781,6 @@ URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-68b74a2
 Logo: https://provider-static.plex.tv/epg/cms/production/1fbf682f-90ba-4318-a649-12c7f89cdc48/LOGO_PLEX_VOYAGE_1500X1000_WHITE.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
-Name: UFC
-TvgID: 643054b1fc3be59477853717-66ccac69fdf9cd3a568ef135
-TvgName: UFC
-URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-66ccac69fdf9cd3a568ef135/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
-Logo: https://provider-static.plex.tv/epg/cms/production/c2e95493-6f98-4a65-be46-d17200ea068a/UFC_logo_WHT_1500x1000.png
-Source: https://m3u.work/hJiHE3ad.m3u
---------------------------------------------------
 Name: Unbeaten
 TvgID: 643054b1fc3be59477853717-67f45ef989089d917e1b1634
 TvgName: Unbeaten
@@ -5093,29 +5114,8 @@ URL: https://jmp2.uk/stvp-ES3400002PY
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3400002PY_20250121T012834SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
-Name: Top Barça
-TvgID: ES1100001MT
-TvgName: Top Barça
-URL: https://jmp2.uk/stvp-ES1100001MT
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1100001MT_20260929T041008SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: World Poker Tour
-TvgID: ESBD2900001P9
-TvgName: World Poker Tour
-URL: https://jmp2.uk/stvp-ESBD2900001P9
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2900001P9_20241022T051205SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
 
 Group: Crimen
-Name: Crimen & Historia
-TvgID: ES33000025N
-TvgName: Crimen & Historia
-URL: https://jmp2.uk/stvp-ES33000025N
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES33000025N_20250715T004330SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
 Name: Crimenes Reales
 TvgID: ES3300001MC
 TvgName: Crimenes Reales
