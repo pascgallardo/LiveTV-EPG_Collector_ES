@@ -161,6 +161,8 @@ https://jmp2.uk/stvp-ESBC170000388
 https://jmp2.uk/stvp-ESBA330004121
 #EXTINF:-1 tvg-id="ES12000024R" tvg-name="Historia y Vida" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES12000024R_20261013T054806SQUARE.png" group-title="Documentales",Historia y Vida
 https://jmp2.uk/stvp-ES12000024R
+#EXTINF:-1 tvg-id="ES24000028L" tvg-name="Ice Pilots" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png" group-title="Documentales",Ice Pilots
+https://jmp2.uk/stvp-ES24000028L
 #EXTINF:-1 tvg-id="ES2800002MM" tvg-name="Mayday: Catástrofe Aérea" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2800002MM_20251013T053451SQUARE.png" group-title="Documentales",Mayday: Catástrofe Aérea
 https://jmp2.uk/stvp-ES2800002MM
 #EXTINF:-1 tvg-id="ES1400002CJ" tvg-name="CURIOSITY Now" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1400002CJ_20250527T014616SQUARE.png" group-title="Documentales",CURIOSITY Now
@@ -573,6 +575,10 @@ https://jmp2.uk/stvp-ES1600006S8
 https://jmp2.uk/stvp-ESBC2700008SK
 #EXTINF:-1 tvg-id="ESAJ3800003LX" tvg-name="MTV Catfish" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png" group-title="Comedia",MTV Catfish
 https://jmp2.uk/stvp-ESAJ3800003LX
+#EXTINF:-1 tvg-id="ESAJ4500023Y5" tvg-name="People Are Awesome" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500023Y5_20241022T050750SQUARE.png" group-title="Comedia",People Are Awesome
+https://jmp2.uk/stvp-ESAJ4500023Y5
+#EXTINF:-1 tvg-id="ESAJ4500016BH" tvg-name="The Pet Collective" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png" group-title="Comedia",The Pet Collective
+https://jmp2.uk/stvp-ESAJ4500016BH
 #EXTINF:-1 tvg-id="5f1acba0d1f6340007db8843" tvg-name="Los nuevos detectives" tvg-logo="https://images.pluto.tv/channels/5f1acba0d1f6340007db8843/colorLogoPNG.png" group-title="Crimen y Misterio",Los nuevos detectives
 https://jmp2.uk/plu-5f1acba0d1f6340007db8843.m3u8
 #EXTINF:-1 tvg-id="5f1acbed25948a0007ffbe65" tvg-name="Los archivos del FBI" tvg-logo="https://images.pluto.tv/channels/5f1acbed25948a0007ffbe65/colorLogoPNG.png" group-title="Crimen y Misterio",Los archivos del FBI
@@ -615,8 +621,6 @@ https://jmp2.uk/plu-6080345ebb49b90007ce0baf.m3u8
 https://jmp2.uk/plu-60d356a534f63f000850cdd7.m3u8
 #EXTINF:-1 tvg-id="60e45687313c5f0007bc8e94" tvg-name="El encantador de perros" tvg-logo="https://images.pluto.tv/channels/60e45687313c5f0007bc8e94/colorLogoPNG.png" group-title="Entretenimiento",El encantador de perros
 https://jmp2.uk/plu-60e45687313c5f0007bc8e94.m3u8
-#EXTINF:-1 tvg-id="61b9edc4a4ca6100070bb407" tvg-name="Ice Pilots" tvg-logo="https://images.pluto.tv/channels/61b9edc4a4ca6100070bb407/colorLogoPNG.png" group-title="Entretenimiento",Ice Pilots
-https://jmp2.uk/plu-61b9edc4a4ca6100070bb407.m3u8
 #EXTINF:-1 tvg-id="6335a6b6e6f7a600076e589e" tvg-name="Cazasubastas" tvg-logo="https://images.pluto.tv/channels/6335a6b6e6f7a600076e589e/colorLogoPNG.png" group-title="Entretenimiento",Cazasubastas
 https://jmp2.uk/plu-6335a6b6e6f7a600076e589e.m3u8
 #EXTINF:-1 tvg-id="65254e8d81f9420008342cee" tvg-name="La fiebre del Jade" tvg-logo="https://images.pluto.tv/channels/65254e8d81f9420008342cee/colorLogoPNG.png" group-title="Entretenimiento",La fiebre del Jade
@@ -643,8 +647,6 @@ https://jmp2.uk/stvp-ES3000288I
 https://jmp2.uk/stvp-ES1400001T8
 #EXTINF:-1 tvg-id="ES2100003VE" tvg-name="Inazuma Eleven" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2100003VE_20260818T050632SQUARE.png" group-title="Entretenimiento",Inazuma Eleven
 https://jmp2.uk/stvp-ES2100003VE
-#EXTINF:-1 tvg-id="ES7000056Z" tvg-name="Yu-Gi-Oh!" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000056Z_20250408T021823SQUARE.png" group-title="Entretenimiento",Yu-Gi-Oh!
-https://jmp2.uk/stvp-ES7000056Z
 #EXTINF:-1 tvg-id="ES18000040D" tvg-name="BBC Lifestyle" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES18000040D_20260929T040939SQUARE.png" group-title="Entretenimiento",BBC Lifestyle
 https://jmp2.uk/stvp-ES18000040D
 #EXTINF:-1 tvg-id="ES4300001K6" tvg-name="Chicas Guapas TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4300001K6_20251125T101421SQUARE.png" group-title="Entretenimiento",Chicas Guapas TV
@@ -659,8 +661,6 @@ https://jmp2.uk/stvp-ESAJ3800006TT
 https://jmp2.uk/stvp-ES300004C9
 #EXTINF:-1 tvg-id="ESBC4700003RJ" tvg-name="Teen Vee" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4700003RJ_20241106T142207SQUARE.png" group-title="Entretenimiento",Teen Vee
 https://jmp2.uk/stvp-ESBC4700003RJ
-#EXTINF:-1 tvg-id="ES1200005Z1" tvg-name="H2O & Friends" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1200005Z1_20260505T085421SQUARE.png" group-title="Entretenimiento",H2O & Friends
-https://jmp2.uk/stvp-ES1200005Z1
 #EXTINF:-1 tvg-id="ES42000022E" tvg-name="Xataka" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES42000022E_20251202T002550SQUARE.png" group-title="Entretenimiento",Xataka
 https://jmp2.uk/stvp-ES42000022E
 #EXTINF:-1 tvg-id="ES26000025M" tvg-name="¡Hola! Play" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES26000025M_20241210T052650SQUARE.png" group-title="Entretenimiento",¡Hola! Play
@@ -679,6 +679,8 @@ https://jmp2.uk/plu-68e8fd7c3ede4398bc69af93.m3u8
 https://jmp2.uk/plu-680ba8c3a48b3ead0db701cc.m3u8
 #EXTINF:-1 tvg-id="680ba8992472a7200a183eb5" tvg-name="One Piece" tvg-logo="https://images.pluto.tv/channels/680ba8992472a7200a183eb5/colorLogoPNG_1748955630923.png" group-title="Infantil",One Piece
 https://jmp2.uk/plu-680ba8992472a7200a183eb5.m3u8
+#EXTINF:-1 tvg-id="63eb96754e83e70008ab8941" tvg-name="Yu-Gi-Oh!" tvg-logo="https://images.pluto.tv/channels/63eb96754e83e70008ab8941/colorLogoPNG.png" group-title="Infantil",Yu-Gi-Oh!
+https://jmp2.uk/plu-63eb96754e83e70008ab8941.m3u8
 #EXTINF:-1 tvg-id="5f1aa9bcd8160700076d45d1" tvg-name="Pluto TV Junior" tvg-logo="https://images.pluto.tv/channels/5f1aa9bcd8160700076d45d1/colorLogoPNG_1747402544424.png" group-title="Infantil",Pluto TV Junior
 https://jmp2.uk/plu-5f1aa9bcd8160700076d45d1.m3u8
 #EXTINF:-1 tvg-id="5f1aab1d29b39600073e243f" tvg-name="Pluto TV Kids" tvg-logo="https://images.pluto.tv/channels/5f1aab1d29b39600073e243f/colorLogoPNG_1750751398943.png" group-title="Infantil",Pluto TV Kids
@@ -715,6 +717,8 @@ https://jmp2.uk/plu-6888928eb52fb742416673d2.m3u8
 https://jmp2.uk/plu-628751bb7154a40007168843.m3u8
 #EXTINF:-1 tvg-id="6a0c25fe09705ebdf7e4599a" tvg-name="Pippi Calzaslargas" tvg-logo="https://images.pluto.tv/channels/6a0c25fe09705ebdf7e4599a/colorLogoPNG_1780925919473.png" group-title="Infantil",Pippi Calzaslargas
 https://jmp2.uk/plu-6a0c25fe09705ebdf7e4599a.m3u8
+#EXTINF:-1 tvg-id="69fc906b90dc413f536059a1" tvg-name="H2O & Friends" tvg-logo="https://images.pluto.tv/channels/69fc906b90dc413f536059a1/colorLogoPNG_1780583615660.png" group-title="Infantil",H2O & Friends
+https://jmp2.uk/plu-69fc906b90dc413f536059a1.m3u8
 #EXTINF:-1 tvg-id="6a31544f2c1c785c1138dbb1" tvg-name="Mr. Bean" tvg-logo="https://images.pluto.tv/channels/6a31544f2c1c785c1138dbb1/colorLogoPNG_1781617788564.png" group-title="Infantil",Mr. Bean
 https://jmp2.uk/plu-6a31544f2c1c785c1138dbb1.m3u8
 #EXTINF:-1 tvg-id="mr-bean-es" tvg-name="mr-bean-es" tvg-logo="https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/7ff74f0d-63d9-44f5-99e3-d11bdbf81197.jpeg" group-title="Infantil",Mr. Bean
@@ -1215,8 +1219,6 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6578e7b5eef1
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-646c0dfbfb58444e4e1e262d/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-67db3546d66f778a752f7eaa" tvg-name="PeliMex" tvg-logo="https://provider-static.plex.tv/epg/cms/production/fc750061-c748-4016-83e0-9f56a40a493c/Pelimex_red_logo_RDXC2.png" group-title="Spain",PeliMex
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67db3546d66f778a752f7eaa/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
-#EXTINF:-1 tvg-id="643054b1fc3be59477853717-5f0ff263d71dcb00449ec021" tvg-name="People are Awesome" tvg-logo="https://provider-static.plex.tv/epg/cms/production/72b8f0fc-fe7f-4a92-9881-866cfc043d94/people-are-awesome-2.png" group-title="Spain",People are Awesome
-https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff263d71dcb00449ec021/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-643f0ecd76de2b4015ae6c01" tvg-name="PFL MMA" tvg-logo="https://provider-static.plex.tv/epg/cms/production/96dd0531-b500-4bd4-93ca-763cbf46defe/1500x1000_PFL_SHIELD_DARK_BG_-_Allie_Dinsmore.png" group-title="Spain",PFL MMA
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-643f0ecd76de2b4015ae6c01/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-63ec0b739866d8d2120ac759" tvg-name="PickleTV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/6b1c4bff-1077-4ba0-a8d6-f4c39365f126/PickleTV_1500x1000_3_ChannelLogoLight_Casey_Murawskirdx.png" group-title="Spain",PickleTV
@@ -1327,8 +1329,6 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-640205c68ecb
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67294a601055ef3897c73477/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-672948f0297d4ea7584a2e13" tvg-name="The Martha Stewart Channel" tvg-logo="https://provider-static.plex.tv/epg/cms/production/a0aadc76-1caf-419f-83c7-ff8e066355a7/MSChannel_Logo_Light_-_Kimberly_DumerRDX.png" group-title="Spain",The Martha Stewart Channel
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
-#EXTINF:-1 tvg-id="643054b1fc3be59477853717-5f170d61b898490041b49369" tvg-name="The Pet Collective" tvg-logo="https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png" group-title="Spain",The Pet Collective
-https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-69f52ffb6e5708fb20d36d9c" tvg-name="The Prof G Channel" tvg-logo="https://provider-static.plex.tv/epg/cms/production/883ee6c5-8ed3-41ed-b45f-b39af995fe37/TPGC-Logos_97_.ai_-_Steve_Shannon_WHT_TEXTRDX2.png" group-title="Spain",The Prof G Channel
 https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-69f52ffb6e5708fb20d36d9c/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
 #EXTINF:-1 tvg-id="643054b1fc3be59477853717-5eea71d65252710041e0ccbc" tvg-name="The Reuters 60" tvg-logo="https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png" group-title="Spain",The Reuters 60

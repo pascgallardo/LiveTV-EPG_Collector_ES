@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-29T15:53:58+01:00",
+  "date": "2026-10-30T15:46:48+01:00",
   "channels": {
     "Generalistas": [
       {
@@ -742,6 +742,15 @@
         "group": "Documentales",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ES12000024R"
+      },
+      {
+        "name": "Ice Pilots",
+        "tvg_id": "ES24000028L",
+        "tvg_name": "Ice Pilots",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png",
+        "group": "Documentales",
+        "source": "https://m3u.work/qKChzP8.m3u",
+        "url": "https://jmp2.uk/stvp-ES24000028L"
       },
       {
         "name": "Mayday: Catástrofe Aérea",
@@ -2626,6 +2635,24 @@
         "group": "Comedia",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ESAJ3800003LX"
+      },
+      {
+        "name": "People Are Awesome",
+        "tvg_id": "ESAJ4500023Y5",
+        "tvg_name": "People Are Awesome",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500023Y5_20241022T050750SQUARE.png",
+        "group": "Comedia",
+        "source": "https://m3u.work/qKChzP8.m3u",
+        "url": "https://jmp2.uk/stvp-ESAJ4500023Y5"
+      },
+      {
+        "name": "The Pet Collective",
+        "tvg_id": "ESAJ4500016BH",
+        "tvg_name": "The Pet Collective",
+        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png",
+        "group": "Comedia",
+        "source": "https://m3u.work/qKChzP8.m3u",
+        "url": "https://jmp2.uk/stvp-ESAJ4500016BH"
       }
     ],
     "Crimen y Misterio": [
@@ -2825,15 +2852,6 @@
         "url": "https://jmp2.uk/plu-60e45687313c5f0007bc8e94.m3u8"
       },
       {
-        "name": "Ice Pilots",
-        "tvg_id": "61b9edc4a4ca6100070bb407",
-        "tvg_name": "Ice Pilots",
-        "logo": "https://images.pluto.tv/channels/61b9edc4a4ca6100070bb407/colorLogoPNG.png",
-        "group": "Entretenimiento",
-        "source": "https://m3u.work/YawDD3.m3u",
-        "url": "https://jmp2.uk/plu-61b9edc4a4ca6100070bb407.m3u8"
-      },
-      {
         "name": "Cazasubastas",
         "tvg_id": "6335a6b6e6f7a600076e589e",
         "tvg_name": "Cazasubastas",
@@ -2951,15 +2969,6 @@
         "url": "https://jmp2.uk/stvp-ES2100003VE"
       },
       {
-        "name": "Yu-Gi-Oh!",
-        "tvg_id": "ES7000056Z",
-        "tvg_name": "Yu-Gi-Oh!",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000056Z_20250408T021823SQUARE.png",
-        "group": "Entretenimiento",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ES7000056Z"
-      },
-      {
         "name": "BBC Lifestyle",
         "tvg_id": "ES18000040D",
         "tvg_name": "BBC Lifestyle",
@@ -3021,15 +3030,6 @@
         "group": "Entretenimiento",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ESBC4700003RJ"
-      },
-      {
-        "name": "H2O & Friends",
-        "tvg_id": "ES1200005Z1",
-        "tvg_name": "H2O & Friends",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1200005Z1_20260505T085421SQUARE.png",
-        "group": "Entretenimiento",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ES1200005Z1"
       },
       {
         "name": "Xataka",
@@ -3113,6 +3113,15 @@
         "group": "Infantil",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-680ba8992472a7200a183eb5.m3u8"
+      },
+      {
+        "name": "Yu-Gi-Oh!",
+        "tvg_id": "63eb96754e83e70008ab8941",
+        "tvg_name": "Yu-Gi-Oh!",
+        "logo": "https://images.pluto.tv/channels/63eb96754e83e70008ab8941/colorLogoPNG.png",
+        "group": "Infantil",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-63eb96754e83e70008ab8941.m3u8"
       },
       {
         "name": "Pluto TV Junior",
@@ -3275,6 +3284,15 @@
         "group": "Infantil",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-6a0c25fe09705ebdf7e4599a.m3u8"
+      },
+      {
+        "name": "H2O & Friends",
+        "tvg_id": "69fc906b90dc413f536059a1",
+        "tvg_name": "H2O & Friends",
+        "logo": "https://images.pluto.tv/channels/69fc906b90dc413f536059a1/colorLogoPNG_1780583615660.png",
+        "group": "Infantil",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-69fc906b90dc413f536059a1.m3u8"
       },
       {
         "name": "Mr. Bean",
@@ -5545,15 +5563,6 @@
         "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67db3546d66f778a752f7eaa/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
       },
       {
-        "name": "People are Awesome",
-        "tvg_id": "643054b1fc3be59477853717-5f0ff263d71dcb00449ec021",
-        "tvg_name": "People are Awesome",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/72b8f0fc-fe7f-4a92-9881-866cfc043d94/people-are-awesome-2.png",
-        "group": "Spain",
-        "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff263d71dcb00449ec021/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
-      },
-      {
         "name": "PFL MMA",
         "tvg_id": "643054b1fc3be59477853717-643f0ecd76de2b4015ae6c01",
         "tvg_name": "PFL MMA",
@@ -6047,15 +6056,6 @@
         "group": "Spain",
         "source": "https://m3u.work/hJiHE3ad.m3u",
         "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
-      },
-      {
-        "name": "The Pet Collective",
-        "tvg_id": "643054b1fc3be59477853717-5f170d61b898490041b49369",
-        "tvg_name": "The Pet Collective",
-        "logo": "https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png",
-        "group": "Spain",
-        "source": "https://m3u.work/hJiHE3ad.m3u",
-        "url": "https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=r1wXeGxLpAYoARTviZSe"
       },
       {
         "name": "The Prof G Channel",

@@ -556,6 +556,13 @@ URL: https://jmp2.uk/stvp-ES12000024R
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES12000024R_20261013T054806SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
+Name: Ice Pilots
+TvgID: ES24000028L
+TvgName: Ice Pilots
+URL: https://jmp2.uk/stvp-ES24000028L
+Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES24000028L_20251111T011935SQUARE.png
+Source: https://m3u.work/qKChzP8.m3u
+--------------------------------------------------
 Name: Mayday: Catástrofe Aérea
 TvgID: ES2800002MM
 TvgName: Mayday: Catástrofe Aérea
@@ -1967,6 +1974,20 @@ URL: https://jmp2.uk/stvp-ESAJ3800003LX
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ3800003LX_20241022T050742SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
+Name: People Are Awesome
+TvgID: ESAJ4500023Y5
+TvgName: People Are Awesome
+URL: https://jmp2.uk/stvp-ESAJ4500023Y5
+Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500023Y5_20241022T050750SQUARE.png
+Source: https://m3u.work/qKChzP8.m3u
+--------------------------------------------------
+Name: The Pet Collective
+TvgID: ESAJ4500016BH
+TvgName: The Pet Collective
+URL: https://jmp2.uk/stvp-ESAJ4500016BH
+Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESAJ4500016BH_20241022T050852SQUARE.png
+Source: https://m3u.work/qKChzP8.m3u
+--------------------------------------------------
 
 Group: Crimen y Misterio
 Name: Los nuevos detectives
@@ -2122,13 +2143,6 @@ URL: https://jmp2.uk/plu-60e45687313c5f0007bc8e94.m3u8
 Logo: https://images.pluto.tv/channels/60e45687313c5f0007bc8e94/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
-Name: Ice Pilots
-TvgID: 61b9edc4a4ca6100070bb407
-TvgName: Ice Pilots
-URL: https://jmp2.uk/plu-61b9edc4a4ca6100070bb407.m3u8
-Logo: https://images.pluto.tv/channels/61b9edc4a4ca6100070bb407/colorLogoPNG.png
-Source: https://m3u.work/YawDD3.m3u
---------------------------------------------------
 Name: Cazasubastas
 TvgID: 6335a6b6e6f7a600076e589e
 TvgName: Cazasubastas
@@ -2220,13 +2234,6 @@ URL: https://jmp2.uk/stvp-ES2100003VE
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2100003VE_20260818T050632SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
-Name: Yu-Gi-Oh!
-TvgID: ES7000056Z
-TvgName: Yu-Gi-Oh!
-URL: https://jmp2.uk/stvp-ES7000056Z
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES7000056Z_20250408T021823SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
 Name: BBC Lifestyle
 TvgID: ES18000040D
 TvgName: BBC Lifestyle
@@ -2274,13 +2281,6 @@ TvgID: ESBC4700003RJ
 TvgName: Teen Vee
 URL: https://jmp2.uk/stvp-ESBC4700003RJ
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC4700003RJ_20241106T142207SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: H2O & Friends
-TvgID: ES1200005Z1
-TvgName: H2O & Friends
-URL: https://jmp2.uk/stvp-ES1200005Z1
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES1200005Z1_20260505T085421SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: Xataka
@@ -2346,6 +2346,13 @@ TvgID: 680ba8992472a7200a183eb5
 TvgName: One Piece
 URL: https://jmp2.uk/plu-680ba8992472a7200a183eb5.m3u8
 Logo: https://images.pluto.tv/channels/680ba8992472a7200a183eb5/colorLogoPNG_1748955630923.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: Yu-Gi-Oh!
+TvgID: 63eb96754e83e70008ab8941
+TvgName: Yu-Gi-Oh!
+URL: https://jmp2.uk/plu-63eb96754e83e70008ab8941.m3u8
+Logo: https://images.pluto.tv/channels/63eb96754e83e70008ab8941/colorLogoPNG.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: Pluto TV Junior
@@ -2472,6 +2479,13 @@ TvgID: 6a0c25fe09705ebdf7e4599a
 TvgName: Pippi Calzaslargas
 URL: https://jmp2.uk/plu-6a0c25fe09705ebdf7e4599a.m3u8
 Logo: https://images.pluto.tv/channels/6a0c25fe09705ebdf7e4599a/colorLogoPNG_1780925919473.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
+Name: H2O & Friends
+TvgID: 69fc906b90dc413f536059a1
+TvgName: H2O & Friends
+URL: https://jmp2.uk/plu-69fc906b90dc413f536059a1.m3u8
+Logo: https://images.pluto.tv/channels/69fc906b90dc413f536059a1/colorLogoPNG_1780583615660.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
 Name: Mr. Bean
@@ -4242,13 +4256,6 @@ URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-67db354
 Logo: https://provider-static.plex.tv/epg/cms/production/fc750061-c748-4016-83e0-9f56a40a493c/Pelimex_red_logo_RDXC2.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
-Name: People are Awesome
-TvgID: 643054b1fc3be59477853717-5f0ff263d71dcb00449ec021
-TvgName: People are Awesome
-URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f0ff263d71dcb00449ec021/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
-Logo: https://provider-static.plex.tv/epg/cms/production/72b8f0fc-fe7f-4a92-9881-866cfc043d94/people-are-awesome-2.png
-Source: https://m3u.work/hJiHE3ad.m3u
---------------------------------------------------
 Name: PFL MMA
 TvgID: 643054b1fc3be59477853717-643f0ecd76de2b4015ae6c01
 TvgName: PFL MMA
@@ -4632,13 +4639,6 @@ TvgID: 643054b1fc3be59477853717-672948f0297d4ea7584a2e13
 TvgName: The Martha Stewart Channel
 URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-672948f0297d4ea7584a2e13/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
 Logo: https://provider-static.plex.tv/epg/cms/production/a0aadc76-1caf-419f-83c7-ff8e066355a7/MSChannel_Logo_Light_-_Kimberly_DumerRDX.png
-Source: https://m3u.work/hJiHE3ad.m3u
---------------------------------------------------
-Name: The Pet Collective
-TvgID: 643054b1fc3be59477853717-5f170d61b898490041b49369
-TvgName: The Pet Collective
-URL: https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-5f170d61b898490041b49369/?X-Plex-Token=r1wXeGxLpAYoARTviZSe
-Logo: https://provider-static.plex.tv/epg/cms/production/29129b53-2f46-425d-ac3f-3a76dc2d147f/TPC_PLEX_CHANNEL-LOGOS_WHITE.png
 Source: https://m3u.work/hJiHE3ad.m3u
 --------------------------------------------------
 Name: The Prof G Channel
