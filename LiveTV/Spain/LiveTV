@@ -192,6 +192,14 @@
     "img": "https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/parlamentoandalucia_cuadrado.jpg"
   },
   {
+    "name": "9 La Loma TV",
+    "tvg_id": "9LaLoma.TV",
+    "tvg_name": "9 La Loma TV",
+    "type": "Andalucía",
+    "url": "https://9laloma.tv/live.m3u8",
+    "img": "https://graph.facebook.com/9laloma/picture?width=200&height=200"
+  },
+  {
     "name": "Canal Parlamento",
     "tvg_id": "Canal Parlamento",
     "tvg_name": "Canal Parlamento",
@@ -365,7 +373,7 @@
     "tvg_name": "Radio 5",
     "type": "Informativos",
     "url": "https://ztnr.rtve.es/ztnr/6982917.m3u8",
-    "img": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg"
+    "img": "https://pbs.twimg.com/profile_images/2116820353640964096/JDGVKMUL_200x200.jpg"
   },
   {
     "name": "Canal Sur Más Noticias",
@@ -1022,6 +1030,14 @@
     "type": "Int. Europa",
     "url": "http://38.252.238.18:8000/play/a04a/index.m3u8",
     "img": "https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/antena3internacional_cuadrado.jpg"
+  },
+  {
+    "name": "TRT Haber Turquía",
+    "tvg_id": "",
+    "tvg_name": "TRT Haber Turquía",
+    "type": "Int. Europa",
+    "url": "https://tv-trthaber.medya.trt.com.tr/master.m3u8",
+    "img": "https://graph.facebook.com/trthaber/picture?width=200&height=200"
   },
   {
     "name": "Sol Música España",
