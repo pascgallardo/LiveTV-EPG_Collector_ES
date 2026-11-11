@@ -858,12 +858,6 @@ URL: https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8
 Logo: https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/startve_cuadrado.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Antena 3 Internacional
-TvgID: Antena3Internacional.es@SD
-URL: http://38.252.238.18:8000/play/a04a/index.m3u8
-Logo: https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/antena3internacional_cuadrado.jpg
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 Name: TRT Haber Turquía
 TvgName: TRT Haber Turquía
 URL: https://tv-trthaber.medya.trt.com.tr/master.m3u8
@@ -950,7 +944,7 @@ Name: Radio 5 RNE
 TvgID: RNE5.Radio
 TvgName: Radio 5 RNE
 URL: https://rtvelivestream.rtve.es/rtvesec/rne/rne_r5_madrid_main.m3u8
-Logo: https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg
+Logo: https://pbs.twimg.com/profile_images/2116820353640964096/JDGVKMUL_200x200.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: RAC1
@@ -1278,7 +1272,7 @@ Name: Radio 5 Andalucía
 TvgID: RNE5.Radio
 TvgName: Radio 5 Andalucía
 URL: https://dispatcher.rndfnk.com/crtve/rne5/sev/mp3/high
-Logo: https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg
+Logo: https://pbs.twimg.com/profile_images/2116820353640964096/JDGVKMUL_200x200.jpg
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 Name: Radio Marca Málaga

@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-10T17:00:45+01:00",
+  "date": "2026-11-11T16:48:40+01:00",
   "channels": {
     "Generalistas": [
       {
@@ -1148,15 +1148,6 @@
         "url": "https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8"
       },
       {
-        "name": "Antena 3 Internacional",
-        "tvg_id": "Antena3Internacional.es@SD",
-        "tvg_name": "",
-        "logo": "https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/antena3internacional_cuadrado.jpg",
-        "group": "Int. Europa",
-        "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "http://38.252.238.18:8000/play/a04a/index.m3u8"
-      },
-      {
         "name": "TRT Haber Turquía",
         "tvg_id": "",
         "tvg_name": "TRT Haber Turquía",
@@ -1272,7 +1263,7 @@
         "name": "Radio 5 RNE",
         "tvg_id": "RNE5.Radio",
         "tvg_name": "Radio 5 RNE",
-        "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
+        "logo": "https://pbs.twimg.com/profile_images/2116820353640964096/JDGVKMUL_200x200.jpg",
         "group": "Radio_Populares",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_r5_madrid_main.m3u8"
@@ -1728,7 +1719,7 @@
         "name": "Radio 5 Andalucía",
         "tvg_id": "RNE5.Radio",
         "tvg_name": "Radio 5 Andalucía",
-        "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
+        "logo": "https://pbs.twimg.com/profile_images/2116820353640964096/JDGVKMUL_200x200.jpg",
         "group": "Radio_Andalucía",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/sev/mp3/high"

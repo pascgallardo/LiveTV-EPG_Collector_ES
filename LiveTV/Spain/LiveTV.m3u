@@ -249,8 +249,6 @@ https://jmp2.uk/plu-5f1aca8310a30e00074fab92.m3u8
 https://rtvelivestream.rtve.es/rtvesec/int/tvei_eu_main_dvr.m3u8
 #EXTINF:-1 tvg-id="Star TVE HD" tvg-name="Star TVE Europa" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/startve_cuadrado.jpg" group-title="Int. Europa",Star TVE Europa
 https://rtvelivestream.rtve.es/rtvesec/int/star_main_dvr.m3u8
-#EXTINF:-1 tvg-id="Antena3Internacional.es@SD" tvg-logo="https://raw.githubusercontent.com/pascgallardo/Iconos_TV/main/antena3internacional_cuadrado.jpg" group-title="Int. Europa",Antena 3 Internacional
-http://38.252.238.18:8000/play/a04a/index.m3u8
 #EXTINF:-1 tvg-name="TRT Haber Turquía" tvg-logo="https://graph.facebook.com/trthaber/picture?width=200&height=200" group-title="Int. Europa",TRT Haber Turquía
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="Sol Música" tvg-name="Sol Música España" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/solmusica_rosa_cuadrado.jpg" group-title="Musicales",Sol Música España
@@ -275,7 +273,7 @@ https://atres-live.ondacero.es/live/ondaceroeventos1/master.m3u8
 https://libertaddigital-radio-live1.flumotion.com/libertaddigital/ld-live1-high.mp3
 #EXTINF:-1 tvg-id="Marca.Radio" tvg-name="Radio Marca" tvg-logo="https://graph.facebook.com/RadioMARCA/picture?width=200&height=200" group-title="Radio_Populares",Radio Marca
 https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMARCA_NACIONAL.mp3
-#EXTINF:-1 tvg-id="RNE5.Radio" tvg-name="Radio 5 RNE" tvg-logo="https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg" group-title="Radio_Populares",Radio 5 RNE
+#EXTINF:-1 tvg-id="RNE5.Radio" tvg-name="Radio 5 RNE" tvg-logo="https://pbs.twimg.com/profile_images/2116820353640964096/JDGVKMUL_200x200.jpg" group-title="Radio_Populares",Radio 5 RNE
 https://rtvelivestream.rtve.es/rtvesec/rne/rne_r5_madrid_main.m3u8
 #EXTINF:-1 tvg-id="RAC1.Radio" tvg-name="RAC1" tvg-logo="https://graph.facebook.com/rac1oficial/picture?width=200&height=200" group-title="Radio_Populares",RAC1
 https://playerservices.streamtheworld.com/api/livestream-redirect/RAC_MES_1.mp3
@@ -375,7 +373,7 @@ https://rtva-live-radio.flumotion.com/rtva/csm.mp3
 https://rtva-live-radio.flumotion.com/rtva/csrmal.mp3
 #EXTINF:-1 tvg-id="RNE.Radio" tvg-name="Radio Nacional Andalucía" tvg-logo="https://graph.facebook.com/radionacionalrne/picture?width=200&height=200" group-title="Radio_Andalucía",Radio Nacional Andalucía
 https://dispatcher.rndfnk.com/crtve/rne1/and/mp3/high
-#EXTINF:-1 tvg-id="RNE5.Radio" tvg-name="Radio 5 Andalucía" tvg-logo="https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg" group-title="Radio_Andalucía",Radio 5 Andalucía
+#EXTINF:-1 tvg-id="RNE5.Radio" tvg-name="Radio 5 Andalucía" tvg-logo="https://pbs.twimg.com/profile_images/2116820353640964096/JDGVKMUL_200x200.jpg" group-title="Radio_Andalucía",Radio 5 Andalucía
 https://dispatcher.rndfnk.com/crtve/rne5/sev/mp3/high
 #EXTINF:-1 tvg-name="Radio Marca Málaga" tvg-logo="https://graph.facebook.com/radiomarcamalaga/picture?width=200&height=200" group-title="Radio_Andalucía",Radio Marca Málaga
 https://malagafm.streaming-pro.com:8131/malagafmmobile
