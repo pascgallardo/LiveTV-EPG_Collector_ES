@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-20T17:38:20+01:00",
+  "date": "2026-11-21T16:52:29+01:00",
   "channels": {
     "Generalistas": [
       {
@@ -3282,6 +3282,15 @@
         "group": "Infantil",
         "source": "https://m3u.work/YawDD3.m3u",
         "url": "https://jmp2.uk/plu-609e7e423e9173000706a681.m3u8"
+      },
+      {
+        "name": "Rugrats",
+        "tvg_id": "610c09219fc0430007a3fce6",
+        "tvg_name": "Rugrats",
+        "logo": "https://images.pluto.tv/channels/610c09219fc0430007a3fce6/colorLogoPNG.png",
+        "group": "Infantil",
+        "source": "https://m3u.work/YawDD3.m3u",
+        "url": "https://jmp2.uk/plu-610c09219fc0430007a3fce6.m3u8"
       },
       {
         "name": "Las Tortugas Ninja",
@@ -6928,15 +6937,6 @@
         "group": "Niños",
         "source": "https://m3u.work/qKChzP8.m3u",
         "url": "https://jmp2.uk/stvp-ESBD2300003S5"
-      },
-      {
-        "name": "Rugrats",
-        "tvg_id": "ESBA33000324U",
-        "tvg_name": "Rugrats",
-        "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA33000324U_20241022T050615SQUARE.png",
-        "group": "Niños",
-        "source": "https://m3u.work/qKChzP8.m3u",
-        "url": "https://jmp2.uk/stvp-ESBA33000324U"
       },
       {
         "name": "SuperToons TV",

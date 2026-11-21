@@ -2479,6 +2479,13 @@ URL: https://jmp2.uk/plu-609e7e423e9173000706a681.m3u8
 Logo: https://images.pluto.tv/channels/609e7e423e9173000706a681/colorLogoPNG_1750147033956.png
 Source: https://m3u.work/YawDD3.m3u
 --------------------------------------------------
+Name: Rugrats
+TvgID: 610c09219fc0430007a3fce6
+TvgName: Rugrats
+URL: https://jmp2.uk/plu-610c09219fc0430007a3fce6.m3u8
+Logo: https://images.pluto.tv/channels/610c09219fc0430007a3fce6/colorLogoPNG.png
+Source: https://m3u.work/YawDD3.m3u
+--------------------------------------------------
 Name: Las Tortugas Ninja
 TvgID: 61373f1a12dd9f00077dcd6f
 TvgName: Las Tortugas Ninja
@@ -5319,13 +5326,6 @@ TvgID: ESBD2300003S5
 TvgName: Rabbids : La invasion
 URL: https://jmp2.uk/stvp-ESBD2300003S5
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2300003S5_20251013T053506SQUARE.png
-Source: https://m3u.work/qKChzP8.m3u
---------------------------------------------------
-Name: Rugrats
-TvgID: ESBA33000324U
-TvgName: Rugrats
-URL: https://jmp2.uk/stvp-ESBA33000324U
-Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA33000324U_20241022T050615SQUARE.png
 Source: https://m3u.work/qKChzP8.m3u
 --------------------------------------------------
 Name: SuperToons TV

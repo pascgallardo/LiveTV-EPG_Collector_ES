@@ -2872,6 +2872,14 @@
     "img": "https://images.pluto.tv/channels/609e7e423e9173000706a681/colorLogoPNG_1750147033956.png"
   },
   {
+    "name": "Rugrats",
+    "tvg_id": "610c09219fc0430007a3fce6",
+    "tvg_name": "Rugrats",
+    "type": "Infantil",
+    "url": "https://jmp2.uk/plu-610c09219fc0430007a3fce6.m3u8",
+    "img": "https://images.pluto.tv/channels/610c09219fc0430007a3fce6/colorLogoPNG.png"
+  },
+  {
     "name": "Las Tortugas Ninja",
     "tvg_id": "61373f1a12dd9f00077dcd6f",
     "tvg_name": "Las Tortugas Ninja",
@@ -6086,14 +6094,6 @@
     "type": "Niños",
     "url": "https://jmp2.uk/stvp-ESBD2300003S5",
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD2300003S5_20251013T053506SQUARE.png"
-  },
-  {
-    "name": "Rugrats",
-    "tvg_id": "ESBA33000324U",
-    "tvg_name": "Rugrats",
-    "type": "Niños",
-    "url": "https://jmp2.uk/stvp-ESBA33000324U",
-    "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA33000324U_20241022T050615SQUARE.png"
   },
   {
     "name": "SuperToons TV",
