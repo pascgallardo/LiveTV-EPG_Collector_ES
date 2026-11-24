@@ -125,6 +125,78 @@ URL: https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.
 Logo: https://graph.facebook.com/eltorotv.es/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
+Name: La 2 (1080p)
+TvgID: La 2
+URL: https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/la2.m3u8
+Logo: https://i.ibb.co/rfsr9PSh/La-2.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: La Septima (1080p)
+TvgID: La Séptima
+URL: https://cache2.zapitv.com/live/eds_c2/la_septima/dash_live_ez/la_septima.mpd
+Logo: https://static.wikia.nocookie.net/logopedia/images/8/8d/La_S%C3%A9ptima_2026_II.svg/revision/latest?cb=20261106050649
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Atreseries (480p)
+TvgID: Atreseries.es@SD
+URL: https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/a3s.mpd
+Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Atreseries H (1080p)
+TvgID: Atreseries.es@HD
+URL: https://ignac16.github.io/voxel-tv-streams/a3s.mpd
+Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Nova (Spain)
+TvgID: Nova.es@SD
+URL: https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/nova.mpd
+Logo: https://i.imgur.com/Vx1F4o5.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Nova (Spain) (1080p)
+TvgID: Nova.es@HD
+URL: https://ignac16.github.io/voxel-tv-streams/nova.mpd
+Logo: https://i.imgur.com/Vx1F4o5.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Mega (Spain)
+TvgID: Mega.es@SD
+URL: https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/mega.mpd
+Logo: https://i.imgur.com/Udrt2eK.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Mega (Spain) (1080p)
+TvgID: Mega.es@HD
+URL: https://ignac16.github.io/voxel-tv-streams/mega.mpd
+Logo: https://i.imgur.com/Udrt2eK.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: like Gecko) Chrome/156.0.0.0 Safari/537.36" group-title="Generalistas",DMAX (Spain)
+TvgID: DMAX.es@SD
+URL: http://90.163.85.113:8093/stream/51/index.m3u8
+Logo: https://i.imgur.com/En2sLlW.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Squirrel (576p)
+TvgID: Squirrel.es@SD
+URL: https://cdn78-at.azotosolutions.com/cdnedge39/Canale1/master.m3u8
+Logo: https://i.imgur.com/9y8VcBr.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Bom Cine (576p)
+TvgID: BomCine.es@SD
+URL: https://cdn78-at.azotosolutions.com/cdnedge39/Canale3/master.m3u8
+Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Logo-bom.svg/960px-Logo-bom.svg.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Comedy Central (Spain) (1080p)
+TvgID: ComedyCentral.es@SD
+URL: http://90.170.214.40:9700/stream/avatel/comedycentral/master.m3u8
+Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
 
 Group: Andalucía
 Name: Canal Málaga
@@ -669,6 +741,24 @@ URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=
 Logo: https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC3900004ED_20250211T014050SQUARE.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
+Name: Boing (Spain) (1080p)
+TvgID: Boing.es@SD
+URL: http://90.170.214.40:9700/stream/avatel/boing/master.m3u8
+Logo: https://i.imgur.com/nUYuCAP.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Nickelodeon (Spain)
+TvgID: Nickelodeon.es@SD
+URL: http://90.170.214.40:9700/stream/avatel/nickelodeon/master.m3u8
+Logo: https://i.imgur.com/E84jnP8.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Nickelodeon (Spain) (1080p)
+TvgID: Nickelodeon.es@HD
+URL: http://90.170.214.40:9700/stream/avatel/nickelodeonhd/master.m3u8
+Logo: https://i.imgur.com/E84jnP8.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
 
 Group: Films
 Name: LG 1
@@ -786,6 +876,24 @@ TvgID: Sangre Fría
 TvgName: Sangre Fría
 URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6130&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5
 Logo: https://img.static-ottera.com/prod/run/linear_channel/logo/f5457ac0-sangre_fria_1920x1080_0.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Sundance TV (Spain)
+TvgID: SundanceTV.es@SD
+URL: https://cdn.stmify.com/zapitv/stream/SUNDANCE_TV/sundance_hd.mpd
+Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: AXN (Spain)
+TvgID: AXN.es@SD
+URL: https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fgeil.to%2Flive%2Fplay%2F4238619703
+Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: AXN (Spain) (1080p)
+TvgID: AXN.es@HD
+URL: http://90.170.214.40:9700/stream/avatel/axn/master.m3u8
+Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 

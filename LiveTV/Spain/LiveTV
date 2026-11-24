@@ -144,6 +144,102 @@
     "img": "https://graph.facebook.com/eltorotv.es/picture?width=200&height=200"
   },
   {
+    "name": "La 2 (1080p)",
+    "tvg_id": "La 2",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/la2.m3u8",
+    "img": "https://i.ibb.co/rfsr9PSh/La-2.png"
+  },
+  {
+    "name": "La Septima (1080p)",
+    "tvg_id": "La Séptima",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://cache2.zapitv.com/live/eds_c2/la_septima/dash_live_ez/la_septima.mpd",
+    "img": "https://static.wikia.nocookie.net/logopedia/images/8/8d/La_S%C3%A9ptima_2026_II.svg/revision/latest?cb=20261106050649"
+  },
+  {
+    "name": "Atreseries (480p)",
+    "tvg_id": "Atreseries.es@SD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/a3s.mpd",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png"
+  },
+  {
+    "name": "Atreseries H (1080p)",
+    "tvg_id": "Atreseries.es@HD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://ignac16.github.io/voxel-tv-streams/a3s.mpd",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png"
+  },
+  {
+    "name": "Nova (Spain)",
+    "tvg_id": "Nova.es@SD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/nova.mpd",
+    "img": "https://i.imgur.com/Vx1F4o5.png"
+  },
+  {
+    "name": "Nova (Spain) (1080p)",
+    "tvg_id": "Nova.es@HD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://ignac16.github.io/voxel-tv-streams/nova.mpd",
+    "img": "https://i.imgur.com/Vx1F4o5.png"
+  },
+  {
+    "name": "Mega (Spain)",
+    "tvg_id": "Mega.es@SD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/mega.mpd",
+    "img": "https://i.imgur.com/Udrt2eK.png"
+  },
+  {
+    "name": "Mega (Spain) (1080p)",
+    "tvg_id": "Mega.es@HD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://ignac16.github.io/voxel-tv-streams/mega.mpd",
+    "img": "https://i.imgur.com/Udrt2eK.png"
+  },
+  {
+    "name": "like Gecko) Chrome/156.0.0.0 Safari/537.36\" group-title=\"Generalistas\",DMAX (Spain)",
+    "tvg_id": "DMAX.es@SD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "http://90.163.85.113:8093/stream/51/index.m3u8",
+    "img": "https://i.imgur.com/En2sLlW.png"
+  },
+  {
+    "name": "Squirrel (576p)",
+    "tvg_id": "Squirrel.es@SD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://cdn78-at.azotosolutions.com/cdnedge39/Canale1/master.m3u8",
+    "img": "https://i.imgur.com/9y8VcBr.png"
+  },
+  {
+    "name": "Bom Cine (576p)",
+    "tvg_id": "BomCine.es@SD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "https://cdn78-at.azotosolutions.com/cdnedge39/Canale3/master.m3u8",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Logo-bom.svg/960px-Logo-bom.svg.png"
+  },
+  {
+    "name": "Comedy Central (Spain) (1080p)",
+    "tvg_id": "ComedyCentral.es@SD",
+    "tvg_name": "",
+    "type": "Generalistas",
+    "url": "http://90.170.214.40:9700/stream/avatel/comedycentral/master.m3u8",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png"
+  },
+  {
     "name": "Canal Málaga",
     "tvg_id": "CanalMalaga.TV",
     "tvg_name": "Canal Málaga",
@@ -776,6 +872,30 @@
     "img": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBC3900004ED_20250211T014050SQUARE.png"
   },
   {
+    "name": "Boing (Spain) (1080p)",
+    "tvg_id": "Boing.es@SD",
+    "tvg_name": "",
+    "type": "Infantiles",
+    "url": "http://90.170.214.40:9700/stream/avatel/boing/master.m3u8",
+    "img": "https://i.imgur.com/nUYuCAP.png"
+  },
+  {
+    "name": "Nickelodeon (Spain)",
+    "tvg_id": "Nickelodeon.es@SD",
+    "tvg_name": "",
+    "type": "Infantiles",
+    "url": "http://90.170.214.40:9700/stream/avatel/nickelodeon/master.m3u8",
+    "img": "https://i.imgur.com/E84jnP8.png"
+  },
+  {
+    "name": "Nickelodeon (Spain) (1080p)",
+    "tvg_id": "Nickelodeon.es@HD",
+    "tvg_name": "",
+    "type": "Infantiles",
+    "url": "http://90.170.214.40:9700/stream/avatel/nickelodeonhd/master.m3u8",
+    "img": "https://i.imgur.com/E84jnP8.png"
+  },
+  {
     "name": "LG 1",
     "tvg_id": "",
     "tvg_name": "",
@@ -918,6 +1038,30 @@
     "type": "Films",
     "url": "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=6130&coppa=0&is_lat=0&dnt=0&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=dpid&app_bundle=com.ammo.runtime.tv.html5&app_store_url=https%3A%2F%2Fhtml5.runtime.tv%2F&app_domain=runtime.tv&app_name=Runtime&custom_targeting=html5&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=Runtime&content_network=Runtime&content_language=en&content_cat=IAB1-5%2CIAB1-7&partner_domain=runtime.tv&content_dist_name=internal&device_make=&device_model=&device_os=html5&device_language=en&preferred_language=EN&gdpr=1&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=es&country_region=catalonia&postal_code=08950&gender=not_specified&yob=0&consent=0&livestream=1&custom_param_0=&custom_param_1=tablet&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=html5",
     "img": "https://img.static-ottera.com/prod/run/linear_channel/logo/f5457ac0-sangre_fria_1920x1080_0.jpg"
+  },
+  {
+    "name": "Sundance TV (Spain)",
+    "tvg_id": "SundanceTV.es@SD",
+    "tvg_name": "",
+    "type": "Films",
+    "url": "https://cdn.stmify.com/zapitv/stream/SUNDANCE_TV/sundance_hd.mpd",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png"
+  },
+  {
+    "name": "AXN (Spain)",
+    "tvg_id": "AXN.es@SD",
+    "tvg_name": "",
+    "type": "Films",
+    "url": "https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fgeil.to%2Flive%2Fplay%2F4238619703",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png"
+  },
+  {
+    "name": "AXN (Spain) (1080p)",
+    "tvg_id": "AXN.es@HD",
+    "tvg_name": "",
+    "type": "Films",
+    "url": "http://90.170.214.40:9700/stream/avatel/axn/master.m3u8",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png"
   },
   {
     "name": "Sony One Series Comedia",
