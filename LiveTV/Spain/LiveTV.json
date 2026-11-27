@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26T19:03:52+01:00",
+  "date": "2026-11-27T18:47:49+01:00",
   "channels": {
     "Generalistas": [
       {
@@ -271,6 +271,33 @@
         "group": "Generalistas",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "http://90.170.214.40:9700/stream/avatel/comedycentral/master.m3u8"
+      },
+      {
+        "name": "Squirrel",
+        "tvg_id": "Squirrel.TV",
+        "tvg_name": "Squirrel",
+        "logo": "https://pbs.twimg.com/profile_images/1868605710218514432/98bLWAHa_200x200.jpg",
+        "group": "Generalistas",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://squirrel.cdn.plenitas.pro/squirrel-es/hls/master.m3u8"
+      },
+      {
+        "name": "Squirrel2",
+        "tvg_id": "Squirrel2.TV",
+        "tvg_name": "Squirrel2",
+        "logo": "https://pbs.twimg.com/profile_images/2007038154994294784/NqJe7hvI_200x200.jpg",
+        "group": "Generalistas",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://squirrel.cdn.plenitas.pro/squirreldos/hls/master.m3u8"
+      },
+      {
+        "name": "BOM Cine",
+        "tvg_id": "BOM.TV",
+        "tvg_name": "BOM Cine",
+        "logo": "https://pbs.twimg.com/profile_images/1450728866377568257/B8HFyLJe_200x200.jpg",
+        "group": "Generalistas",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://squirrel.cdn.plenitas.pro/bomcine/hls/master.m3u8"
       }
     ],
     "Andalucía": [
@@ -500,15 +527,6 @@
         "group": "Eventuales",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm28_main_dvr.m3u8"
-      },
-      {
-        "name": "Segunda estrella (RTVE)",
-        "tvg_id": "RTVE_PopUp3.TV",
-        "tvg_name": "Segunda estrella (RTVE)",
-        "logo": "https://graph.facebook.com/rtveplay/picture?width=200&height=200",
-        "group": "Eventuales",
-        "source": "https://m3u.work/OI0Q3l.m3u",
-        "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm29_main.m3u8"
       }
     ],
     "Informativos": [
@@ -612,6 +630,24 @@
         "group": "Deportivos",
         "source": "https://m3u.work/OI0Q3l.m3u",
         "url": "https://amg17560-fcb-amg17560c3-lg-es-11383.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcacatala-lges/playlist.m3u8"
+      },
+      {
+        "name": "Horse TV",
+        "tvg_id": "Horse.TV",
+        "tvg_name": "Horse TV",
+        "logo": "https://graph.facebook.com/horsetvES/picture?width=200&height=200",
+        "group": "Deportivos",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://squirrel.cdn.plenitas.pro/hprse-es/hls/master.m3u8"
+      },
+      {
+        "name": "Nautical Channel",
+        "tvg_id": "Nautical_Channel.TV",
+        "tvg_name": "Nautical Channel",
+        "logo": "https://graph.facebook.com/nauticalchannelesp/picture?width=200&height=200",
+        "group": "Deportivos",
+        "source": "https://m3u.work/OI0Q3l.m3u",
+        "url": "https://squirrel.cdn.plenitas.pro/nautical-es/hls/master.m3u8"
       }
     ],
     "Cocina": [

@@ -240,6 +240,30 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png"
   },
   {
+    "name": "Squirrel",
+    "tvg_id": "Squirrel.TV",
+    "tvg_name": "Squirrel",
+    "type": "Generalistas",
+    "url": "https://squirrel.cdn.plenitas.pro/squirrel-es/hls/master.m3u8",
+    "img": "https://pbs.twimg.com/profile_images/1868605710218514432/98bLWAHa_200x200.jpg"
+  },
+  {
+    "name": "Squirrel2",
+    "tvg_id": "Squirrel2.TV",
+    "tvg_name": "Squirrel2",
+    "type": "Generalistas",
+    "url": "https://squirrel.cdn.plenitas.pro/squirreldos/hls/master.m3u8",
+    "img": "https://pbs.twimg.com/profile_images/2007038154994294784/NqJe7hvI_200x200.jpg"
+  },
+  {
+    "name": "BOM Cine",
+    "tvg_id": "BOM.TV",
+    "tvg_name": "BOM Cine",
+    "type": "Generalistas",
+    "url": "https://squirrel.cdn.plenitas.pro/bomcine/hls/master.m3u8",
+    "img": "https://pbs.twimg.com/profile_images/1450728866377568257/B8HFyLJe_200x200.jpg"
+  },
+  {
     "name": "Canal Málaga",
     "tvg_id": "CanalMalaga.TV",
     "tvg_name": "Canal Málaga",
@@ -440,14 +464,6 @@
     "img": "https://graph.facebook.com/rtveplay/picture?width=200&height=200"
   },
   {
-    "name": "Segunda estrella (RTVE)",
-    "tvg_id": "RTVE_PopUp3.TV",
-    "tvg_name": "Segunda estrella (RTVE)",
-    "type": "Eventuales",
-    "url": "https://rtvelivestream.rtve.es/eventual/gofast/playm29_main.m3u8",
-    "img": "https://graph.facebook.com/rtveplay/picture?width=200&height=200"
-  },
-  {
     "name": "24h",
     "tvg_id": "24 Horas",
     "tvg_name": "24h",
@@ -534,6 +550,22 @@
     "type": "Deportivos",
     "url": "https://amg17560-fcb-amg17560c3-lg-es-11383.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcacatala-lges/playlist.m3u8",
     "img": "https://graph.facebook.com/fcbarcelona/picture?width=200&height=200"
+  },
+  {
+    "name": "Horse TV",
+    "tvg_id": "Horse.TV",
+    "tvg_name": "Horse TV",
+    "type": "Deportivos",
+    "url": "https://squirrel.cdn.plenitas.pro/hprse-es/hls/master.m3u8",
+    "img": "https://graph.facebook.com/horsetvES/picture?width=200&height=200"
+  },
+  {
+    "name": "Nautical Channel",
+    "tvg_id": "Nautical_Channel.TV",
+    "tvg_name": "Nautical Channel",
+    "type": "Deportivos",
+    "url": "https://squirrel.cdn.plenitas.pro/nautical-es/hls/master.m3u8",
+    "img": "https://graph.facebook.com/nauticalchannelesp/picture?width=200&height=200"
   },
   {
     "name": "Andalucía Cocina",

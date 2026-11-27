@@ -59,6 +59,12 @@ https://cdn78-at.azotosolutions.com/cdnedge39/Canale1/master.m3u8
 https://cdn78-at.azotosolutions.com/cdnedge39/Canale3/master.m3u8
 #EXTINF:-1 tvg-id="ComedyCentral.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png" group-title="Generalistas",Comedy Central (Spain) (1080p)
 http://90.170.214.40:9700/stream/avatel/comedycentral/master.m3u8
+#EXTINF:-1 tvg-id="Squirrel.TV" tvg-name="Squirrel" tvg-logo="https://pbs.twimg.com/profile_images/1868605710218514432/98bLWAHa_200x200.jpg" group-title="Generalistas",Squirrel
+https://squirrel.cdn.plenitas.pro/squirrel-es/hls/master.m3u8
+#EXTINF:-1 tvg-id="Squirrel2.TV" tvg-name="Squirrel2" tvg-logo="https://pbs.twimg.com/profile_images/2007038154994294784/NqJe7hvI_200x200.jpg" group-title="Generalistas",Squirrel2
+https://squirrel.cdn.plenitas.pro/squirreldos/hls/master.m3u8
+#EXTINF:-1 tvg-id="BOM.TV" tvg-name="BOM Cine" tvg-logo="https://pbs.twimg.com/profile_images/1450728866377568257/B8HFyLJe_200x200.jpg" group-title="Generalistas",BOM Cine
+https://squirrel.cdn.plenitas.pro/bomcine/hls/master.m3u8
 #EXTINF:-1 tvg-id="CanalMalaga.TV" tvg-name="Canal Málaga" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/canalmalaga_cuadrado.jpg" group-title="Andalucía",Canal Málaga
 https://canalmalaga-tv-live.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="101Malaga.TV" tvg-name="101TV Málaga" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/101tv_cuadrado.jpg" group-title="Andalucía",101TV Málaga
@@ -109,8 +115,6 @@ https://fast-channels.atresmedia.com/f903abd690456cff8bef97a426a363260c867fb3/64
 https://live.s2l.workers.dev/hls/flooxer
 #EXTINF:-1 tvg-id="RTVE_PopUp2.TV" tvg-name="RTVE 70 años (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Eventuales",RTVE 70 años (RTVE)
 https://rtvelivestream.rtve.es/eventual/gofast/playm28_main_dvr.m3u8
-#EXTINF:-1 tvg-id="RTVE_PopUp3.TV" tvg-name="Segunda estrella (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Eventuales",Segunda estrella (RTVE)
-https://rtvelivestream.rtve.es/eventual/gofast/playm29_main.m3u8
 #EXTINF:-1 tvg-id="24 Horas" tvg-name="24h" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/24h_cuadrado.jpg" group-title="Informativos",24h
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15621
 #EXTINF:-1 tvg-id="RNE.TV" tvg-name="Radio Nacional" tvg-logo="https://graph.facebook.com/radionacionalrne/picture?width=200&height=200" group-title="Informativos",Radio Nacional
@@ -133,6 +137,10 @@ https://live.enfoque.media:5443/live/streams/vinxtv.m3u8
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 #EXTINF:-1 tvg-id="Top_Barça.TV" tvg-name="Top Barça" tvg-logo="https://graph.facebook.com/fcbarcelona/picture?width=200&height=200" group-title="Deportivos",Top Barça
 https://amg17560-fcb-amg17560c3-lg-es-11383.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcacatala-lges/playlist.m3u8
+#EXTINF:-1 tvg-id="Horse.TV" tvg-name="Horse TV" tvg-logo="https://graph.facebook.com/horsetvES/picture?width=200&height=200" group-title="Deportivos",Horse TV
+https://squirrel.cdn.plenitas.pro/hprse-es/hls/master.m3u8
+#EXTINF:-1 tvg-id="Nautical_Channel.TV" tvg-name="Nautical Channel" tvg-logo="https://graph.facebook.com/nauticalchannelesp/picture?width=200&height=200" group-title="Deportivos",Nautical Channel
+https://squirrel.cdn.plenitas.pro/nautical-es/hls/master.m3u8
 #EXTINF:-1 tvg-name="Andalucía Cocina" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/canalandaluciacocina_cuadrado.jpg" group-title="Cocina",Andalucía Cocina
 https://cloud.fastchannel.es/mic/manifiest/hls/acocina/acocina.m3u8
 #EXTINF:-1 tvg-name="Tastemade" tvg-logo="https://github.com/pascgallardo/Iconos_TV/raw/refs/heads/main/tastemade_cuadrado.jpg" group-title="Cocina",Tastemade

@@ -197,6 +197,27 @@ URL: http://90.170.214.40:9700/stream/avatel/comedycentral/master.m3u8
 Logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
+Name: Squirrel
+TvgID: Squirrel.TV
+TvgName: Squirrel
+URL: https://squirrel.cdn.plenitas.pro/squirrel-es/hls/master.m3u8
+Logo: https://pbs.twimg.com/profile_images/1868605710218514432/98bLWAHa_200x200.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Squirrel2
+TvgID: Squirrel2.TV
+TvgName: Squirrel2
+URL: https://squirrel.cdn.plenitas.pro/squirreldos/hls/master.m3u8
+Logo: https://pbs.twimg.com/profile_images/2007038154994294784/NqJe7hvI_200x200.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: BOM Cine
+TvgID: BOM.TV
+TvgName: BOM Cine
+URL: https://squirrel.cdn.plenitas.pro/bomcine/hls/master.m3u8
+Logo: https://pbs.twimg.com/profile_images/1450728866377568257/B8HFyLJe_200x200.jpg
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
 
 Group: Andalucía
 Name: Canal Málaga
@@ -370,13 +391,6 @@ URL: https://rtvelivestream.rtve.es/eventual/gofast/playm28_main_dvr.m3u8
 Logo: https://graph.facebook.com/rtveplay/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
-Name: Segunda estrella (RTVE)
-TvgID: RTVE_PopUp3.TV
-TvgName: Segunda estrella (RTVE)
-URL: https://rtvelivestream.rtve.es/eventual/gofast/playm29_main.m3u8
-Logo: https://graph.facebook.com/rtveplay/picture?width=200&height=200
-Source: https://m3u.work/OI0Q3l.m3u
---------------------------------------------------
 
 Group: Informativos
 Name: 24h
@@ -453,6 +467,20 @@ TvgID: Top_Barça.TV
 TvgName: Top Barça
 URL: https://amg17560-fcb-amg17560c3-lg-es-11383.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcacatala-lges/playlist.m3u8
 Logo: https://graph.facebook.com/fcbarcelona/picture?width=200&height=200
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Horse TV
+TvgID: Horse.TV
+TvgName: Horse TV
+URL: https://squirrel.cdn.plenitas.pro/hprse-es/hls/master.m3u8
+Logo: https://graph.facebook.com/horsetvES/picture?width=200&height=200
+Source: https://m3u.work/OI0Q3l.m3u
+--------------------------------------------------
+Name: Nautical Channel
+TvgID: Nautical_Channel.TV
+TvgName: Nautical Channel
+URL: https://squirrel.cdn.plenitas.pro/nautical-es/hls/master.m3u8
+Logo: https://graph.facebook.com/nauticalchannelesp/picture?width=200&height=200
 Source: https://m3u.work/OI0Q3l.m3u
 --------------------------------------------------
 
